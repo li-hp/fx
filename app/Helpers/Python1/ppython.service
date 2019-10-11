@@ -1,0 +1,13 @@
+[Unit]
+Description=PHP-Python Service
+After=network.target remote-fs.target nss-lookup.target
+ 
+[Service]
+ExecStart=/bin/bash -c "/usr/bin/python3 ~/project/partybuilding/app/Helpers/Python1/php_python.py"
+#ExecReload=
+#ExecStop=
+
+[Install]
+
+WantedBy=multi-user.target
+
