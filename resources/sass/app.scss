@@ -27,11 +27,11 @@ body {
   margin-bottom: 20px;
   margin-top: 0px;
   height: 13rem;
-  font-size:20px;
+  font-size:3rem;
 }
 
 .navbar-brand{
-  font-size:3rem;
+  font-size:5rem;
 }
 
 /* Sticky footer styles */
@@ -65,7 +65,7 @@ body {
     p {
       margin: 19px 0;
       color: #c1c1c1;
-
+      font-size:2rem;
       a {
         color: inherit;
       }
@@ -80,7 +80,7 @@ body {
 
 /* box */
 .boxall {
-  border: 2px solid rgba(25,186,139,.17);
+  border: 3px solid rgba(25,186,139,.17);
   padding:0 2rem 4rem 2rem;
   background: rgba(255,255,255,.04);
   background-size: 100% auto;
@@ -95,20 +95,20 @@ body {
   width: 3rem;
   height: 3rem;
   content: "";
-  border-top: 2px solid #02a6b5;
+  border-top: 3px solid #02a6b5;
   top: 0;
 }
 .boxall:before,.boxfoot:before {
-  border-left: 2px solid #02a6b5;
+  border-left: 3px solid #02a6b5;
   left: 0;
 }
 .boxall:after,.boxfoot:after {
-  border-right: 2px solid #02a6b5;
+  border-right: 3px solid #02a6b5;
   right: 0;
 }
 
 .boxall_3d {
-  border: 2px solid rgba(25,186,139,.17);
+  border: 3px solid rgba(25,186,139,.17);
   padding: 0 2rem 4rem 2rem;
   background: rgba(255,255,255,.04);
   background-size: 100% auto;
@@ -124,20 +124,20 @@ body {
   width: 3rem;
   height: 3rem;
   content: "";
-  border-top: 2px solid #02a6b5;
+  border-top: 3px solid #02a6b5;
   top: 0;
 }
 .boxall_3d:before,.boxfoot:before {
-  border-left: 2px solid #02a6b5;
+  border-left: 3px solid #02a6b5;
   left: 0;
 }
 .boxall_3d:after,.boxfoot:after {
-  border-right: 2px solid #02a6b5;
+  border-right: 3px solid #02a6b5;
   right: 0;
 }
 
 .alltitle {
-  font-size: 2rem;
+  font-size: 3rem;
   color: #fff;
   text-align: center;
   line-height: 4rem;
@@ -152,9 +152,12 @@ body {
 .boxfoot:before,
 .boxfoot:after {
   position: absolute;
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   content: "";
-  border-bottom: 2px solid #02a6b5;
+  border-bottom: 3px solid #02a6b5;
   bottom: 0;
 }
+
+
+

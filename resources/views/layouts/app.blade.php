@@ -21,11 +21,10 @@
 </head>
 
 <body>
-
-        @include('layouts._header')
-    
         <div class="container-fulid">
-    
+          
+          @include('layouts._header')
+  
           @yield('content')
     
         </div>
