@@ -58,7 +58,7 @@
 <script src="{{ mix('js/app.js') }}"></script>
 <script type="text/javascript" src="js/china.js"></script> 
 <script type="text/javascript" src="js/area_echarts.js"></script> 
-<script type="text/javascript" src="js/js1.js"></script> 
+{{-- <script type="text/javascript" src="js/js1.js"></script>  --}}
 {{-- <script type="text/javascript" src="js/led_controller.js"></script>  --}}
 </body>
 
