@@ -22,11 +22,10 @@
 
 <body>
         <div class="container-fulid">
-          
-          @include('layouts._header')
-  
-          @yield('content')
-    
+
+            @include('layouts._header')      
+            @yield('content')
+
         </div>
     
         @include('layouts._footer')
