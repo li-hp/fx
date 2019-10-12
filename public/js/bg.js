@@ -53,13 +53,16 @@ function maxOrbit(x, y) {
 var Star = function() {
 
   this.orbitRadius = random(maxOrbit(w, h));
-  this.radius = random(60, this.orbitRadius) / 8; 
   //星星大小
+  this.radius = random(60, this.orbitRadius) / 20; 
+  // 性性旋转中心作表
   this.orbitX = w / 2;
   this.orbitY = h / 2;
+
   this.timePassed = random(0, maxStars);
-  this.speed = random(this.orbitRadius) / 50000; 
   //星星移动速度
+  this.speed = random(this.orbitRadius) / 1200000; 
+  
   this.alpha = random(2, 10) / 10;
 
   count++;

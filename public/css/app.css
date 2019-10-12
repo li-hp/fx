@@ -16540,12 +16540,12 @@ body {
 .navbar-static-top {
   border-color: #0e3c41;
   background-color: #fff;
-  box-shadow: 0px 1px 11px 2px #246d77;
-  border-top: 14px solid #0e3c41;
+  box-shadow: 0px 1px 11px 2px #5a86ff;
+  border-top: 14px solid #0a0929;
   border-bottom: 1px solid #0e3c41;
   margin-bottom: 20px;
   margin-top: 0px;
-  height: 13rem;
+  height: 12rem;
   font-size: 3rem;
 }
 
@@ -16567,7 +16567,7 @@ body {
   background-size: cover;
   color: #666;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
 .footer {
@@ -16619,19 +16619,19 @@ body {
   width: 3rem;
   height: 3rem;
   content: "";
-  border-top: 3px solid #02a6b5;
+  border-top: 3px solid #0252ffa2;
   top: 0;
 }
 
 .boxall:before,
 .boxfoot:before {
-  border-left: 3px solid #02a6b5;
+  border-left: 3px solid #0252ffa2;
   left: 0;
 }
 
 .boxall:after,
 .boxfoot:after {
-  border-right: 3px solid #02a6b5;
+  border-right: 3px solid #0252ffa2;
   right: 0;
 }
 
@@ -16652,19 +16652,19 @@ body {
   width: 3rem;
   height: 3rem;
   content: "";
-  border-top: 3px solid #02a6b5;
+  border-top: 3px solid #0252ffa2;
   top: 0;
 }
 
 .boxall_3d:before,
 .boxfoot:before {
-  border-left: 3px solid #02a6b5;
+  border-left: 3px solid #0252ffa2;
   left: 0;
 }
 
 .boxall_3d:after,
 .boxfoot:after {
-  border-right: 3px solid #02a6b5;
+  border-right: 3px solid #0252ffa2;
   right: 0;
 }
 
@@ -16688,7 +16688,7 @@ body {
   width: 3rem;
   height: 3rem;
   content: "";
-  border-bottom: 3px solid #02a6b5;
+  border-bottom: 3px solid #0252ffa2;
   bottom: 0;
 }
 
@@ -16705,7 +16705,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #5bc0de;
+  background-color: #0252ffa2;
 }
 
 ::-webkit-scrollbar-track {
@@ -16714,12 +16714,21 @@ body {
 
 /*动态背景*/
 
-.canvas {
-  position: relative;
-  width: 100%;
-  left: 0;
+canvas {
+  opacity: 0.8;
   top: 0;
-  height: 99%;
-  z-index: 1;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 1000px;
+  position: fixed;
+  z-index: -10;
+  zoom: 1;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;
 }
 

@@ -24,38 +24,15 @@
 <body>
 
   
-
-
  <div class="container-fulid">
-    <canvas id="canvas" style="top: 0;
-  left: 0;
-  width:100%;
-  height:100%;
-  min-width: 1000px;
-  position:fixed;z-index:-10;
-  zoom: 1;
-  background-color: #fff;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-position: center 0;"></canvas>
-        @include('layouts._header')
-       
-       
+    <canvas id="canvas" class="xingkongbg"></canvas>
     
-          @yield('content')
-      
-        </div>
-   
-        @include('layouts._footer')
-       
+    @include('layouts._header')
     
-
-
+    @yield('content')
   
-  
-  
+    @include('layouts._footer')
+  </div>
 
   <!-- Scripts -->
   <script src="{{ mix('js/app.js') }}"></script>
