@@ -16724,7 +16724,6 @@ canvas {
   position: fixed;
   z-index: -10;
   zoom: 1;
-  background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;

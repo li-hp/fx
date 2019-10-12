@@ -1,11 +1,13 @@
 ﻿
 $(function () {
 
-airdata();setInterval(function(){airdata();}, 60000);
+// airdata();setInterval(function(){airdata();}, 60000);
+echarts_6();
+
 
 function airdata(){
     $.ajax({
-        url:'/airdatashow',
+        // url:'/airdatashow',
         type:'get',
         success: function (result) {
             echarts_1(result[0]);
@@ -659,7 +661,7 @@ function echarts_5(resultdata) {
     });
 }    
 
-function echarts_6(resultdata) {
+function echarts_6() {
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('echart6'));
 

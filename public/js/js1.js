@@ -13,10 +13,9 @@ function airdata(){
             echarts_3(result[4]);
             echarts_4(result[5]);
             echarts_5(result[2]);
-            echarts_6(result[3]);
+            // echarts_6(result[3]);
         },
         error : function() {
-            alert("数据异常！");
         }
     })
 }
