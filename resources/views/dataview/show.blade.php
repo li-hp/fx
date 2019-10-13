@@ -30,13 +30,13 @@
         <div class="col-xs-12 col-sm-3">
             <div class="boxall">
                 <div class="alltitle">4营养</div>
-                <div class="allnav"></div>
+                <div class="allnav" id="echart4"></div>
                 <div class="boxfoot"></div>
             </div>
 
             <div class="boxall">
                 <div class="alltitle">5安防</div>
-                <div class="allnav"></div>
+                <div class="allnav" id="e555"></div>
                 <div class="boxfoot"></div>
             </div>
         </div>
