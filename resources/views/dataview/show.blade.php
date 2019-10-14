@@ -70,10 +70,73 @@
 
         <div class="col-xs-12 col-sm-3">
             <div class="boxall">
-                <div class="alltitle">9消防</div>
+                <div class="alltitle">9安防</div>
+                <div class="allnav" id="e999"></div>
                 <div class="boxfoot"></div>
             </div>
         </div>
+
+        {{-- <div class="col-xs-12 col-sm-3">
+            <div class="boxall">
+                <div class="alltitle">9安防</div>
+
+
+                <div class="bar">
+                    <div class="barbox1">
+                      <ul class="clearfix">
+                        <li class="pulll_left">办公区人数</li>
+                        <li class="pulll_left">会议区人数</li>
+                        <li class="pulll_left">来访人数</li>
+                      </ul>
+                    </div>
+                    <div class="barbox2">
+                      <ul class="clearfix">
+                        <li class="pulll_left">75</li>
+                        <li class="pulll_left">10</li>
+                        <li class="pulll_left">3</li>
+                      </ul>
+                    </div>
+                </div>  
+
+                <div class="bar">
+                    <div class="barbox1">
+                      <ul class="clearfix">
+                        <li class="pulll_left">已开活动窗</li>
+                        <li class="pulll_left">已开门</li>
+                        <li class="pulll_left">门窗状态</li>
+                      </ul>
+                    </div>
+                    <div class="barbox2">
+                      <ul class="clearfix">
+                        <li class="pulll_left">5</li>
+                        <li class="pulll_left">3</li>
+                        <li class="pulll_left">正常</li>
+
+                      </ul>
+                    </div>
+                </div>  
+
+                <div class="bar">
+                    <div class="barbox1">
+                      <ul class="clearfix">
+                        <li class="pulll_left">已开活动窗</li>
+                        <li class="pulll_left">已开门</li>
+                        <li class="pulll_left">门窗状态</li>
+                      </ul>
+                    </div>
+                    <div class="barbox2">
+                      <ul class="clearfix">
+                        <li class="pulll_left">5</li>
+                        <li class="pulll_left">3</li>
+                        <li class="pulll_left">正常</li>
+
+                      </ul>
+                    </div>
+                </div>
+
+                <div class="boxfoot"></div>
+            </div>
+        </div> --}}
     </div>  
 
 @stop
