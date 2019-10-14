@@ -224,8 +224,8 @@ canvas {
   border-radius: 300px 0 0 0;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  -webkit-animation: radar 5s infinite linear;
-  animation: radar 5s infinite linear;
+  -webkit-animation: radar 10 infinite linear;
+  animation: radar 10s infinite linear;
   background-image: -webkit-linear-gradient(45deg, rgba(139, 168, 146, 0.01) 0%, rgba(139, 168, 146, 0.01) 50%, #8ba892 100%);
   background-image: linear-gradient(45deg, rgba(139, 168, 146, 0.01) 0%, rgba(139, 168, 146, 0.01) 50%, #8ba892 100%);
 }
