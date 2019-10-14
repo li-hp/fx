@@ -8,13 +8,13 @@
         <div class="col-xs-12 col-sm-3">
             <div class="boxall">
                 <div class="alltitle">1空气</div>
-                <div class="allnav" id="echart1"></div>
+                <div class="allnav" id="e111"></div>
                 <div class="boxfoot"></div>
             </div>
 
             <div class="boxall">
                 <div class="alltitle">2水</div>
-                <div class="allnav" id="echart2"></div>
+                <div class="allnav" id="e222"></div>
                 <div class="boxfoot"></div>
             </div>
         </div>
@@ -22,7 +22,7 @@
         <div class="col-xs-12 col-sm-6">
             <div class="boxall_3d">
                 <div class="alltitle">3全景地图</div>
-                <div class="allnav" id="echart3"></div>
+                <div class="allnav"></div>
                 <div class="boxfoot"></div>
             </div>
         </div>
