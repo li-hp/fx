@@ -2,7 +2,7 @@
 $(function () {
 
 // airdata();setInterval(function(){airdata();}, 60000);
-e555();
+
 e666();
 e777();
 e888();
@@ -13,28 +13,6 @@ function e555() {
 
     var radarStyle = document.createElement("style"); 
     var str = `
-        #radar:after {
-          content: ' ';
-          display: block;
-          background-image: linear-gradient(44deg, rgba(0, 255, 51, 0) 50%, #00ff33 100%);
-          width: 180px;
-          height: 180px;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          animation: radar-beam 4s infinite;
-          animation-timing-function: linear;
-          transform-origin: bottom right;
-          border-radius: 100% 0 0 0;
-        }
-        @keyframes radar-beam {
-          0% {
-            transform: rotate(0deg);
-          }
-          100% {
-            transform: rotate(360deg);
-          }
-        }
     `;
     if(radarStyle.styleSheet){         //ie下  
         radarStyle.styleSheet.cssText = str;  

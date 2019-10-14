@@ -36,7 +36,14 @@
 
             <div class="boxall">
                 <div class="alltitle">5安防</div>
-                <div class="allnav" id="e555"></div>
+                <div class="allnav" id="e555">
+                    <div class="radar">
+                        <div class="line"></div>
+                    </div>
+
+
+                </div>
+                
                 <div class="boxfoot"></div>
             </div>
         </div>
