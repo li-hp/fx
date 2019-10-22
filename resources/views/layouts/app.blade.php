@@ -27,6 +27,7 @@
  <div class="container-fulid">
     <canvas id="canvas" class="xingkongbg"></canvas>
 
+
     @include('layouts._header')
     
     @yield('content')
