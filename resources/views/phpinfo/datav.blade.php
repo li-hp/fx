@@ -18,33 +18,44 @@
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
 
-<canvas>
-    <iframe frameborder="0"
-    {{-- src="https://datav.aliyuncs.com/share/53acbc42122368a68f2de87a816f38ae"  --}}
-    src="https://www.baidu.com" 
-    style="width: 100%; height: 100%">
-    </iframe>
-</canvas>
 
 
 <body>
-    <canvas>
-        <iframe frameborder="0"
-                {{-- src="https://datav.aliyuncs.com/share/53acbc42122368a68f2de87a816f38ae"  --}}
-                src="https://www.baidu.com" 
-                style="width: 100%; height: 100%">
-        </iframe>
-    </canvas>
+
+  
+ <div class="container-fulid">
+    <iframe id="beijin" class="xingkongbg" src="https://datav.aliyuncs.com/share/53acbc42122368a68f2de87a816f38ae" style=" opacity: 0.8;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  min-width: 500px;
+  position:fixed;z-index:-10;
+  zoom: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;"  ></iframe>
 
 
-    <div class="container-fulid">
+   
+    
+   
+  
+    
+  </div>
 
-    </div>
-
-<!-- Scripts -->
-<script src="{{ mix('js/app.js') }}"></script>
-<script type="text/javascript" src="js/led_controller.js"></script> 
-
+  <!-- Scripts -->
+  <script src="{{ mix('js/app.js') }}"></script>
+  <script type="text/javascript" src="js/bg.js"></script>  
+  <script type="text/javascript" src="js/china.js"></script> 
+  <script type="text/javascript" src="js/area_echarts.js"></script> 
+  
+  <script type="text/javascript" src="js/js1.js"></script> 
+  <script type="text/javascript" src="js/js.js"></script> 
+  @yield('scripts')
+  
 </body>
-
-</html>
+ 
+</html>>
