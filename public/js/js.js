@@ -19,23 +19,25 @@ function e111() {
     option = {
     //    backgroundColor: '#0f375f',
        grid: {
-           top: "15%",
-           bottom: "10%"
+            left: '5%', // 与容器左侧的距离
+            right: '5%', // 与容器右侧的距离
+            top: "15%",
+            bottom: "10%"
        },
-       tooltip: {
-           trigger: "axis",
-           axisPointer: {
-               type: "shadow",
-               label: {
-                   show: true
-               }
-           }
-       },
+    //    tooltip: {
+    //        trigger: "axis",
+    //        axisPointer: {
+    //            type: "line",
+    //            label: {
+    //                show: false,
+    //            }
+    //        }
+    //    },
        legend: {
            data: ["甲醛浓度", "VOC"],
            top: "15%",
            textStyle: {
-               fontSize: 24,
+               fontSize: 16,
                color: "#ffffff"
            }
        },
@@ -49,7 +51,6 @@ function e111() {
                "六月",
                "七月",
                "八月",
-               
            ],
            axisLine: {
                show: true //隐藏X轴轴线
@@ -60,15 +61,16 @@ function e111() {
            axisLabel: {
                show: true,
                textStyle: {
-                    fontSize:24,
-                   color: "#ebf8ac" //X轴文字颜色
+                    fontSize:12,
+                   color: "#ebf8ac", //X轴文字颜色
+                   margin:20,
                }
            },
             axisLine: {
                        lineStyle: {
-                           color: '#01FCE3'
+                           color: '#ebf8ac'
                            }
-                   },
+                   },    
        },
        yAxis: [
            {
@@ -92,7 +94,7 @@ function e111() {
                axisLabel: {
                    show: true,
                    textStyle: {
-                       fontSize:24,
+                       fontSize:16,
                        color: "#ebf8ac"
                    }
                },
@@ -126,7 +128,7 @@ function e111() {
                    formatter: "{value} %", //右侧Y轴文字显示
                    textStyle: {
                        color: "#ebf8ac",
-                       fontSize:24
+                       fontSize:16
                    }
                }
            },
@@ -179,7 +181,7 @@ function e111() {
            {
                name: "VOC",
                type: "bar",
-               barWidth: 15,
+               barWidth: 5,
                itemStyle: {
                    normal: {
                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
@@ -204,11 +206,6 @@ function e111() {
         myChart.resize();
     });
 }
-
-
-
-
-
 
 function e222() {
 
@@ -588,7 +585,6 @@ function e222() {
     });
 }
 
-
 function e444() {
     // 基于准备好的dom，初始化echarts实例
 var myChart = echarts.init(document.getElementById('e444'));
@@ -850,9 +846,6 @@ function e555() {
       //  myChart.resize();
     
 }
-
-
-
 
 function e666() {
     // 基于准备好的dom，初始化echarts实例

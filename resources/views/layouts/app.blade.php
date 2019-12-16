@@ -25,7 +25,7 @@
 
   
  <div class="container-fulid">
-    <canvas id="canvas"></canvas>
+  <canvas id="canvas"></canvas>
 
 
     @include('layouts._header')
