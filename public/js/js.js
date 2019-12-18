@@ -6,6 +6,7 @@ $(function () {
 e111();
 e222();
 e444();
+e555();
 e666();
 e777();
 e888();setInterval(function(){e888();}, 1500);
@@ -37,7 +38,7 @@ function e111() {
            data: ["甲醛浓度", "VOC"],
            top: "15%",
            textStyle: {
-               fontSize: 16,
+               fontSize: 24,
                color: "#ffffff"
            }
        },
@@ -51,6 +52,10 @@ function e111() {
                "六月",
                "七月",
                "八月",
+               "九月",
+               "十月",
+               "十一月",
+               "十二月",
            ],
            axisLine: {
                show: true //隐藏X轴轴线
@@ -61,7 +66,7 @@ function e111() {
            axisLabel: {
                show: true,
                textStyle: {
-                    fontSize:12,
+                    fontSize:24,
                    color: "#ebf8ac", //X轴文字颜色
                    margin:20,
                }
@@ -77,7 +82,8 @@ function e111() {
                type: "value",
                name: "PPM",
                nameTextStyle: {
-                   color: "#ebf8ac"
+                   color: "#ebf8ac",
+                   fontSize: 24,
                },
                splitLine: {
                    show: false
@@ -94,7 +100,7 @@ function e111() {
                axisLabel: {
                    show: true,
                    textStyle: {
-                       fontSize:16,
+                       fontSize:24,
                        color: "#ebf8ac"
                    }
                },
@@ -108,7 +114,8 @@ function e111() {
                type: "value",
                name: "浓度",
                nameTextStyle: {
-                   color: "#ebf8ac"
+                   color: "#ebf8ac",
+                   fontSize:24
                },
                position: "right",
                splitLine: {
@@ -128,7 +135,7 @@ function e111() {
                    formatter: "{value} %", //右侧Y轴文字显示
                    textStyle: {
                        color: "#ebf8ac",
-                       fontSize:16
+                       fontSize:24
                    }
                }
            },
@@ -165,7 +172,7 @@ function e111() {
                smooth: true, //平滑曲线显示
                showAllSymbol: true, //显示所有图形。
                symbol: "circle", //标记的图形为实心圆
-               symbolSize: 10, //标记的大小
+               symbolSize: 30, //标记的大小
                itemStyle: {
                    //折线拐点标志的样式
                    color: "#058cff"
@@ -176,12 +183,12 @@ function e111() {
                areaStyle:{
                    color: "rgba(5,140,255, 0.2)"
                },
-               data: [4.2, 3.8, 4.8, 3.5, 2.9, 2.8, 3, 5]
+               data: [4.2, 3.8, 4.8, 3.5, 2.9, 2.8, 3, 5, 2, 3.3, 8.8, 4.6]
            },
            {
                name: "VOC",
                type: "bar",
-               barWidth: 5,
+               barWidth: 25,
                itemStyle: {
                    normal: {
                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
@@ -195,7 +202,7 @@ function e111() {
                        ])
                    }
                },
-               data: [4.2, 3.8, 4.8, 3.5, 2.9, 2.8, 3, 5]
+               data: [4.2, 3.8, 4.8, 3.5, 2.9, 2.8, 3, 5, 2, 3.3, 8.8,4.6]
            }
        ]
    };
@@ -657,194 +664,205 @@ option = {
 }
 
 function e555() {
-    // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('e555'));
 
-    var radarStyle = document.createElement("style"); 
-    var str = `
-    `;
-    if(radarStyle.styleSheet){         //ie下  
-        radarStyle.styleSheet.cssText = str;  
-    } else {  
-        radarStyle.innerHTML = str;
-    };
-    document.getElementsByTagName("head")[0].appendChild(radarStyle);
-    
-    var radarDiv = document.createElement('div');
-    radarDiv.id = 'radar';
-    radarDiv.style.position = 'relative';
-    radarDiv.style.width = '500px';
-    radarDiv.style.height = '500px';
-    radarDiv.style.margin = '0 auto';
-    var body = document.querySelector('body');
-    body.appendChild(radarDiv);
-    
-    var mockData = [{
-        text: '灭火器压力检测',
-        value: 2
-    }, {
-        text: '燃气检测',
-        value: 3.2
-    }, {
-        text: '烟雾检测',
-        value: 5
-    }, {
-        text: '火源探测',
-        value: 4.1
-    }];
-    
-    var container = document.getElementById('radar');
-    var radar = echarts.init(container);
-    
-    initRadar(mockData);
-    
-    function initRadar(mockData){
-        var minAngle = 10;	// 最小角度
-        var indicator = [];
-        var data = [];
-        var idx = 0;
-        var randomArr = getRandom(360 / minAngle, mockData.length);
-        for(var i=0;i<360 / minAngle;i++){
-            if(randomArr.indexOf(i) > -1){
-                indicator.push({
-                    text: mockData[idx].text
-                });
-                data.push(mockData[idx].value);
-                idx++;
-            }else{
-                indicator.push({
-                    text: i * 10 + '`'
-                });
-                data.push('-');
+    var data = {
+        age: [{
+                value: 1,
+                name: '会议室使用'
+            },
+            {
+                value: 9,
+                name: '会议室空闲'
+            },
+        ],
+        stature: [{
+                value: 3,
+                name: '洽谈室1使用'
+            },
+            {
+                value: 6,
+                name: '洽谈室1空闲'
             }
-        };
-        var option = {
-            
-            radar: [
-                {
-                    indicator: indicator,
-                    center: ['50%', '50%'],
-                    radius: 180,
-                    startAngle: 90,
-                    splitNumber: 4,
-                    shape: 'circle',
-                    name: {
-                        show: false,
-                        // formatter:'【{value}】',
-                        // textStyle: {
-                        //     color:'rgba(0, 255, 51, 1)'
-                        // }
-                    },
-                    splitArea: {
-                        areaStyle: {
-                            color: 'rgba(255, 255, 255, 0)'
-                        }
-                    },
-                    axisLine: {
-                        lineStyle: {
-                            color: 'rgba(0, 255, 51, 0)'
-                        }
-                    },
-                    splitLine: {
-                        lineStyle: {
-                            color: 'rgba(0, 255, 51, 1)'
+        ],
+        education: [{
+                value: 5,
+                name: '洽谈室2使用'
+            },
+            {
+                value: 6,
+                name: '洽谈室2空闲'
+            }
+        ],
+        skill: [{
+                value: 11,
+                name: '洽谈室3使用'
+            },
+            {
+                value: 8,
+                name: '洽谈室3空闲'
+            },
+        ]
+    };
+    
+    function setText() {
+        colors = ["#f29de4", "#e6a15c", "#61b1f2", "#73e699"];
+        texts = ["会议室", "洽谈室1", "洽谈室2", "洽谈室3"];
+        var label = [];
+        for (var i = 0; i < texts.length; i++) {
+    
+            var obj = {
+                tooltip: {
+                    show: false, //取消鼠标放上去时会显示信息的样式
+                    trigger: 'item',
+                },
+                label: {
+                    normal: {
+                        formatter: [
+                            '{c|' + texts[i] + '}',
+                        ].join('\n'),
+                        position: 'center', //让文字居中
+                        show: true,
+                        rich: {
+                            c: {
+                                fontSize: '24',
+                                fontWeight: 'bold',
+                                color: '' + colors[i] + '',
+                                lineHeight: '10'
+                            },
                         }
                     }
-                }
-            ],
-            series: [
-                {
-                    name: '雷达图',
-                    type: 'radar',
-                    symbol: 'circle',
-                    symbolSize: 24,
-                    silent: true,
-                    animationEasing: 'quarticOut',
-                    animationEasingUpdate: 'quarticOut',
-                    animationDuration: 2000,
-                    animationDurationUpdate: 2000,
-                    label: {
-                        normal: {
-                            show: true,
-                            textStyle: {
-                                color: 'rgba(0, 255, 51, 1)'
-                            }
-                        }
-                    },
-                    itemStyle: {
-                        normal: {
-                            opacity: 0
-                        },
-                        emphasis: {
-                            color: {
-                                type: 'radial',
-                                x: 0.5,
-                                y: 0.5,
-                                r: 0.3,
-                                colorStops: [{
-                                    offset: 0,
-                                    color: 'rgba(0, 255, 51, 1)'
-                                }, {
-                                    offset: 1,
-                                    color: 'rgba(255, 255, 255, .1)'
-                                }]
-                            },
-                            borderWidth: 0, 
-                            opacity: 1
-                        }
-                    },
-                    data: [
-                        {
-                            value: data,
-                            label: {
-                                normal: {
-                                    textStyle: {
-                                        color: 'rgba(0, 255, 51, 1)'
-                                    }
-                                }
-                            },
-                            lineStyle: {
-                                normal: {
-                                    opacity: 0
-                                }
-                            }
-                        }
-                    ]
-                }
-            ]
-        };
-        
-        myChart.setOption(option);
-        
-        function getRandom(range, count){
-            var randomArr = [];
-            for(var i = 0;i < count;i++){
-                var r = Math.round(Math.random() * (range - 1));
-                randomArr.push(r);
+                },
             }
-            return randomArr;
+            label.push(obj);
         }
-    }
+        return label;
+    };
     
-    // 点动画
-    (function(){
-        var highlight = false;
-        var type;
-        setInterval(function(){
-            initRadar(mockData);
-            type = highlight ? 'downplay' : 'highlight';
-            radar.dispatchAction({
-                type: type,
-                seriesIndex: 0
-            });
-            highlight = !highlight;
-        }, 2000);
-    })();
-    // 使用刚指定的配置项和数据显示图表。
-  //  myChart.setOption(option);
-   // window.addEventListener("resize",function(){
-      //  myChart.resize();
     
+    var labels = setText();
+        var Index = ["age", "stature", "education", "skill"];
+        for (var i = 0; i < Index.length; i++) {
+            data[Index[i]].push(labels[i])
+        }
+
+    var radius = ['45%', '40%'];
+
+    var option = {
+        // backgroundColor:'#0d213b',
+        tooltip: {
+            trigger: 'item',
+            formatter: "{a} <br/>{b}:{d}%"
+        },
+        grid: {
+            left: '0%',
+            top: '0px',
+            right: '0%',
+            bottom: '0px',
+            containLabel: true
+        },
+        series: [{
+            type: 'pie',
+            name: '会议室',
+            radius: radius,
+            center: ['25%', '28%'],
+            color: [ "#e55ce5", "#ffe5f6", "#ffe5f6","#c500dc",],
+            minAngle: 30,
+            animation: false,
+            label: {    
+                normal: {
+                    show: true,
+                    position: 'outside',
+                    fontWeight: 'bold',
+                    fontSize: 20,
+                    formatter: '{b}',
+                }
+            },
+            labelLine: {
+                show: true,
+                length: 0,
+                length2: 30
+            },
+            data: data.age,
+        }, {
+            type: 'pie',
+            name: '洽谈室1',
+            radius: radius,
+            center: ['75%', '28%'],
+            color: [ "#e5a15c", "#ffeecc","#e55c00","#f2cf9d"],
+            minAngle: 30,
+            animation: false,
+            label: {    
+                normal: {
+                    show: true,
+                    position: 'outside',
+                    fontWeight: 'bold',
+                    fontSize: 20,
+                    formatter: '{b}',
+                }
+            },
+            labelLine: {
+                show: true,
+                length: 0,
+                length2: 30
+            },
+            data: data.stature
+
+        }, {
+            type: 'pie',
+            name: '洽谈室2',
+            radius: radius,
+            center: ['25%', '75%'],
+            // color: ["#0371ec", "#61b1f2", "#b2e3ff", "#e5f8ff"],
+            color: ["#0371ec", "#b2e3ff"],
+            minAngle: 30,
+            animation: false,
+            label: {    
+                normal: {
+                    show: true,
+                    position: 'outside',
+                    fontSize: 20,
+                    fontWeight: 'bold',
+                    formatter: '{b}',
+                }
+            },
+            labelLine: {
+                show: true,
+                length: 0,
+                length2: 30
+            },
+            data: data.education
+        }, {
+            type: 'pie',
+            name: '洽谈室3',
+            radius: radius,
+            center: ['75%', '75%'],
+            color: ["#06ca2b",  "#e5fff2"],
+            minAngle: 30,
+            animation: false,
+            label: {    
+                normal: {
+                    show: true,
+                    position: 'outside',
+                    fontWeight: 'bold',
+                    fontSize: 20,
+                    formatter: '{b}',
+                }
+            },
+            labelLine: {
+                show: true,
+                length: 0,
+                length2: 30
+            },
+            data: data.skill
+        }]
+    };
+
+    myChart.setOption(option);
+    window.addEventListener("resize",function(){
+        myChart.resize();
+    });
+
 }
 
 function e666() {

@@ -19,13 +19,13 @@
 
       <!-- Right Side Of Navbar -->
       <ul class="navbar-nav navbar-right ">
-          <li class="nav-item "><a class="nav-link" href=""><i class="fa fa-thermometer-half"></i>&nbsp;空气</a></li>
-          <li class="nav-item "><a class="nav-link" href=""><i class="fa fa-tint" aria-hidden="true"></i>&nbsp;水质</a></li>
-          <li class="nav-item "><a class="nav-link" href=""><i class="fa fa-child"></i>&nbsp;舒适</a></li>
-          <li class="nav-item "><a class="nav-link" href=""><i class="fa fa-sun" aria-hidden="true"></i>&nbsp;光强</a></li>
-          <li class="nav-item "><a class="nav-link" href=""><i class="fa fa-futbol"></i>&nbsp;健身</a></li>
-          <li class="nav-item "><a class="nav-link" href=""><i class="fa fa-fire" aria-hidden="true"></i>&nbsp;消防</a></li>
-          <li class="nav-item "><a class="nav-link" href=""><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;安防</a></li>
+          <li class="nav-item "><a class="nav-link" href=""><i class="fa fa-thermometer-half"></i>&nbsp;空气&nbsp;&nbsp;&nbsp;</a></li>
+          <li class="nav-item "><a class="nav-link" href=""><i class="fa fa-tint" aria-hidden="true"></i>&nbsp;水质&nbsp;&nbsp;&nbsp;</a></li>
+          <li class="nav-item "><a class="nav-link" href=""><i class="fa fa-child"></i>&nbsp;舒适&nbsp;&nbsp;</a></li>
+          <li class="nav-item "><a class="nav-link" href=""><i class="fa fa-sun" aria-hidden="true"></i>&nbsp;光强&nbsp;&nbsp;&nbsp;</a></li>
+          <li class="nav-item "><a class="nav-link" href=""><i class="fa fa-futbol"></i>&nbsp;健身&nbsp;&nbsp;&nbsp;</a></li>
+          <li class="nav-item "><a class="nav-link" href=""><i class="fa fa-fire" aria-hidden="true"></i>&nbsp;营养&nbsp;&nbsp;&nbsp;</a></li>
+          <li class="nav-item "><a class="nav-link" href=""><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;综合&nbsp;&nbsp;&nbsp;</a></li>
         </ul>
     </div>
 

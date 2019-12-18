@@ -16586,8 +16586,8 @@ body {
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 3rem;
-  background-color: #000;
+  height: 4rem;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .footer .container {
@@ -16621,7 +16621,7 @@ body {
   position: relative;
   margin-bottom: 20px;
   z-index: 10;
-  height: 38rem;
+  height: 40rem;
 }
 
 .boxall:before,
@@ -16661,7 +16661,7 @@ body {
   position: relative;
   margin-bottom: 20px;
   z-index: 10;
-  height: 155rem;
+  height: 163rem;
 }
 
 .boxall_3d:before,
