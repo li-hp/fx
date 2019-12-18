@@ -13,6 +13,44 @@ class PagessController extends Controller
     {
         return view('dataview.show');
     }
+    public function kongqi()
+    {
+        return view('dataview.kongqi');
+    }
+    public function shuizhi()
+    {
+        return view('dataview.shuizhi');
+    }
+    public function shushi()
+    {
+        return view('dataview.shushi');
+    }
+    public function guangqiang()
+    {
+        return view('dataview.guangqiang');
+    }
+    public function yingyang()
+    {
+        return view('dataview.yingyang');
+    }
+    public function jianshen()
+    {
+        return view('dataview.jianshen');
+    }
+    public function huiyi()
+    {
+        return view('dataview.huiyi');
+    }
+    public function renyuan()
+    {
+        return view('dataview.renyuan');
+    }
+
+
+
+
+
+
 
     public function phpinfo()
     {

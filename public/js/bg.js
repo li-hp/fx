@@ -4,7 +4,7 @@ var canvas = document.getElementById('canvas'),
   ctx = canvas.getContext('2d'),
   w = canvas.width = window.innerWidth,
   h = canvas.height = window.innerHeight,
- 
+
   hue = 217,
   stars = [],
   count = 0,
@@ -54,15 +54,15 @@ var Star = function() {
 
   this.orbitRadius = random(maxOrbit(w, h));
   //星星大小
-  this.radius = random(60, this.orbitRadius) / 20; 
+  this.radius = random(60, this.orbitRadius) / 20;
   // 性性旋转中心作表
   this.orbitX = w / 2;
   this.orbitY = h / 2;
 
   this.timePassed = random(0, maxStars);
   //星星移动速度
-  this.speed = random(this.orbitRadius) / 1200000; 
-  
+  this.speed = random(this.orbitRadius) / 1200000;
+
   this.alpha = random(2, 10) / 10;
 
   count++;
@@ -104,3 +104,7 @@ function animation() {
 }
 
 animation();
+$("a").click(function(){
+    $(this).addClass("a");
+    $(this).siblings("a").removeClass("a");
+});

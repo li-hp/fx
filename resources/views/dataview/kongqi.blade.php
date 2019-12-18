@@ -3,6 +3,9 @@
 @section('title')
 
 @section('content')
+<script>
+getdocument.getElementByClass("nav-link1").innerHTML="font-color:rgb(90, 134, 255)";
+</script>
 
     <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:9.5px; margin-right:9.5px;">
         <div class="col-xs-12 col-sm-3">

@@ -15,6 +15,14 @@ Route::get('/phpinfo', 'PagessController@phpinfo')->name('phpinfo');
 
 //主页
 Route::get('/', 'PagessController@index')->name('index');
+Route::get('/kongqi', 'PagessController@kongqi')->name('kongqi');
+Route::get('/shuizhi', 'PagessController@shuizhi')->name('shuizhi');
+Route::get('/guangqiang', 'PagessController@guangqiang')->name('guangqiang');
+Route::get('/shushi', 'PagessController@shushi')->name('shushi');
+Route::get('/jianshen', 'PagessController@jianshen')->name('jianshen');
+Route::get('/yingyang', 'PagessController@yingyang')->name('yingyang');
+Route::get('/huiyi', 'PagessController@huiyi')->name('huiyi');
+Route::get('/renyuan', 'PagessController@renyuan')->name('huiyi');
 
 // 灯光控制和模拟展示
 

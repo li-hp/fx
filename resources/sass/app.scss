@@ -31,15 +31,19 @@ body {
 }
 
 .navbar-brand{
-  font-size:3rem;  
+  font-size:3rem;
 }
+
+
+
+
 
 /* Sticky footer styles */
 html {
     position: relative;
     min-height: 100%;
   }
-  
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
@@ -172,7 +176,7 @@ body {
 .boxfoot:after {
   // 调整底部蓝色的小边框
   position: absolute;
-  width: 1rem;           //蓝色边框的宽 
+  width: 1rem;           //蓝色边框的宽
   height: 1rem;         //蓝色边框的高
   content: "";
   border-bottom: 2px solid #0252ffa2;;   //蓝色边框的粗细和颜色
@@ -196,7 +200,7 @@ body {
 
 .barbox1 {
   li {
-    width:33%; 
+    width:33%;
     text-align: center;
     position: relative;
     z-index: 100;
@@ -208,7 +212,7 @@ body {
 
 .barbox2{
   li {
-    width:33%; 
+    width:33%;
     text-align: center;
     position: relative;
     z-index: 100;
@@ -291,7 +295,7 @@ canvas {
   margin: 5% auto;
   border: 2px solid #8ba892;
   overflow: hidden;
-  
+
   -webkit-border-radius: 300px;
   border-radius: 300px;
   -webkit-background-clip: padding-box;
