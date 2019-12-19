@@ -16549,6 +16549,10 @@ body {
   font-size: 3rem;
 }
 
+.navbar-static-top .navbar-right {
+  font-size: 2rem;
+}
+
 .navbar-brand {
   font-size: 3rem;
 }

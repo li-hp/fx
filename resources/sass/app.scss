@@ -28,6 +28,9 @@ body {
   margin-top: 0px;
   height: 10rem; // 顶部导航栏宽度
   font-size: 3rem; // 导航栏上的文字大小
+  .navbar-right{
+      font-size:2rem;
+  }
 }
 
 .navbar-brand{
@@ -107,6 +110,16 @@ body {
   z-index: 10;
   height: 40rem; // 容器高度
 }
+.boxall1 {
+    border: 3px solid rgba(25,186,139,.17);
+    padding:0 2rem 4rem 2rem;
+    background: rgba(255,255,255,.04);
+    background-size: 100% auto;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: 10;
+    height: 50rem; // 容器高度
+  }
 .boxall:before,
 .boxall:after {
   position: absolute;
@@ -160,7 +173,7 @@ body {
   left: 0;
 }
 .boxall_3d:after,.boxfoot:after { //3d全景框的右边
-  border-right: 2px solid #0252ffa2; 
+  border-right: 2px solid #0252ffa2;
   right: 0;
 }
 
