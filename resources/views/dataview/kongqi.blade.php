@@ -7,6 +7,7 @@
 getdocument.getElementByClass("nav-link1").innerHTML="font-color:rgb(90, 134, 255)";
 </script>
 
+
     <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:9.5px; margin-right:9.5px;">
         <div class="col-xs-12 col-sm-3">
             <div class="boxall">
@@ -27,7 +28,7 @@ getdocument.getElementByClass("nav-link1").innerHTML="font-color:rgb(90, 134, 25
                 <div class="boxfoot"></div>
             </div>   <div class="boxall">
                 <div class="alltitle">   </div>
-                <div class="allnav" id="kechart3"></div>
+                <div class="allnav" id="kechart7"></div>
                 <div class="boxfoot"></div>
             </div>
 
@@ -38,10 +39,14 @@ getdocument.getElementByClass("nav-link1").innerHTML="font-color:rgb(90, 134, 25
         <div class="col-xs-12 col-sm-6">
             <div class="boxall_3d">
                 <div class="alltitle">全景地图</div>
-                <div class="allnav"></div>
+                <div class="allnav">
+
+                <img src="/img/东田三层.png"    style="position: relative;width:100%;height:100%;opacity:0.4">
+                </div>
                 <div class="boxfoot"></div>
             </div>
         </div>
+
 
         <div class="col-xs-12 col-sm-3">
             <div class="boxall">
@@ -62,7 +67,7 @@ getdocument.getElementByClass("nav-link1").innerHTML="font-color:rgb(90, 134, 25
                 <div class="boxfoot"></div>
             </div> <div class="boxall">
                 <div class="alltitle">  </div>
-                <div class="allnav" id="kechart6"></div>
+                <div class="allnav" id="kechart8"></div>
                 <div class="boxfoot"></div>
             </div>
 

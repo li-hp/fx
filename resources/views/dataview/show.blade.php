@@ -35,7 +35,10 @@
         <div class="col-xs-12 col-sm-6">
             <div class="boxall_3d">
                 <div class="alltitle">全景地图</div>
-                <div class="allnav"></div>
+                <div class="allnav">
+
+                <img src="/img/东田三层.png"    style="position: relative;width:100%;height:100%;opacity:0.4">
+                </div>
                 <div class="boxfoot"></div>
             </div>
         </div>

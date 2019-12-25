@@ -12,10 +12,11 @@ e777();
 e888();setInterval(function(){e888();}, 1500);
 e999();setInterval(function(){e999();}, 2000);
 
+
 function e111() {
 
     // 基于准备好的dom，初始化echarts实例
-    var myChart = echarts.init(document.getElementById('e111'));   
+    var myChart = echarts.init(document.getElementById('e111'));
 
     option = {
     //    backgroundColor: '#0f375f',
@@ -75,7 +76,7 @@ function e111() {
                        lineStyle: {
                            color: '#ebf8ac'
                            }
-                   },    
+                   },
        },
        yAxis: [
            {
@@ -206,7 +207,7 @@ function e111() {
            }
        ]
    };
-  
+
     // 使用刚指定的配置项和数据显示图表。
     myChart.setOption(option);
     window.addEventListener("resize",function(){
@@ -216,10 +217,10 @@ function e111() {
 
 function e222() {
 
-    var myChart = echarts.init(document.getElementById('e222'));   
+    var myChart = echarts.init(document.getElementById('e222'));
 
     let scaleData = [
-   
+
         {
             'name': '浑浊度',
             'value': 25
@@ -242,7 +243,7 @@ function e222() {
             'name': '微量有害化学元素含量',
             'value': 15
         }
-    
+
     ];
     let colorgraphic = new echarts.graphic.LinearGradient(0, 0, 1, 0, [
         {
@@ -340,10 +341,10 @@ function e222() {
                     shadowBlur: 20,
                     borderColor:'#00f948',
                     shadowColor: '#12b4ff',
-    
+
                 }
             }
-    
+
         }, {
             value: 0.5,
             name: '',
@@ -480,7 +481,7 @@ function e222() {
                 axisLabel: {
                     show: false
                 }
-            }, 
+            },
             {
                 type: 'gauge',
                 name: '外层辅助',
@@ -534,8 +535,8 @@ function e222() {
                 axisLabel: {
                     show: false
                 }
-            },  
-            
+            },
+
             {
         name: '',
         type: 'pie',
@@ -564,10 +565,10 @@ function e222() {
                     textStyle: {
                         fontSize: 24
                     },
-        
+
                 },
-    
-    
+
+
             }
         },
         data: data
@@ -584,7 +585,7 @@ function e222() {
         },
         series: seriesObj
     };
-    
+
 
     myChart.setOption(option);
     window.addEventListener("resize",function(){
@@ -598,7 +599,7 @@ var myChart = echarts.init(document.getElementById('e444'));
 option = {
 
     calculable: true,
-    
+
     series: [
         {
             name:'漏斗图表',
@@ -615,12 +616,12 @@ option = {
             maxSize: '100%',
             sort: 'descending',
             gap: 2,
-          
+
             label: {
                 show: true,
                 position: 'inside',
                 fontSize: 15
-                
+
             },
             color:['#00B2E1','#083A03','#DF3A01','#CCCC33','#660099'],
             labelLine: {
@@ -631,31 +632,31 @@ option = {
                 }
             },
             itemStyle: {
-               
+
                 borderWidth: 1
             },
             emphasis: {
                 label: {
                     fontSize: 50
                 },
-            
+
             },
-          
+
             data: [
-               
+
                 {value: 20, name: '油：:20-30g\n盐：:6g'},
                 {value: 40, name: '奶类和奶制品：300g\n大豆及坚果：:30-50g'},
                 {value: 60, name: '畜禽肉类：50-75g\n鱼虾类：50-100g\n蛋类：25-50g'},
                 {value: 80, name: '蔬果：300-500g\n水果：200-400g'},
                 {value: 100, name: '水：1200ml\n谷类，豆类，薯类：250-400g'}
             ]
-             
+
         },
-        
+
     ]
 };
 
-    
+
     // 使用刚指定的配置项和数据显示图表。
     myChart.setOption(option);
     window.addEventListener("resize",function(){
@@ -704,13 +705,13 @@ function e555() {
             },
         ]
     };
-    
+
     function setText() {
         colors = ["#f29de4", "#e6a15c", "#61b1f2", "#73e699"];
         texts = ["会议室", "洽谈室1", "洽谈室2", "洽谈室3"];
         var label = [];
         for (var i = 0; i < texts.length; i++) {
-    
+
             var obj = {
                 tooltip: {
                     show: false, //取消鼠标放上去时会显示信息的样式
@@ -738,8 +739,8 @@ function e555() {
         }
         return label;
     };
-    
-    
+
+
     var labels = setText();
         var Index = ["age", "stature", "education", "skill"];
         for (var i = 0; i < Index.length; i++) {
@@ -769,7 +770,7 @@ function e555() {
             color: [ "#e55ce5", "#ffe5f6", "#ffe5f6","#c500dc",],
             minAngle: 30,
             animation: false,
-            label: {    
+            label: {
                 normal: {
                     show: true,
                     position: 'outside',
@@ -792,7 +793,7 @@ function e555() {
             color: [ "#e5a15c", "#ffeecc","#e55c00","#f2cf9d"],
             minAngle: 30,
             animation: false,
-            label: {    
+            label: {
                 normal: {
                     show: true,
                     position: 'outside',
@@ -817,7 +818,7 @@ function e555() {
             color: ["#0371ec", "#b2e3ff"],
             minAngle: 30,
             animation: false,
-            label: {    
+            label: {
                 normal: {
                     show: true,
                     position: 'outside',
@@ -840,7 +841,7 @@ function e555() {
             color: ["#06ca2b",  "#e5fff2"],
             minAngle: 30,
             animation: false,
-            label: {    
+            label: {
                 normal: {
                     show: true,
                     position: 'outside',
@@ -973,7 +974,7 @@ function e666() {
     ];
 
     var colorArr = ['#4A99FF', '#4BFFFC']; //颜色
-    
+
     option = {
         // backgroundColor: '#101736',
         color: colorArr,
@@ -1054,9 +1055,9 @@ function e777() {
     function echart7(data) {
 
         var myChart7 = echarts.init(document.getElementById('e777'));
-        
+
         var fontColor = '#FAFAFA';
-        
+
         option ={
             grid: {
                 left: '5%',
@@ -1094,13 +1095,13 @@ function e777() {
                     axisLine:{
                         show:true,
                         lineStyle:{
-                            
+
                             color:'#397cbc'
                         }
                     },
                     axisTick:{
                         show:false,
-                    },  
+                    },
                     splitLine:{
                         show:false,
                         lineStyle:{
@@ -1153,7 +1154,7 @@ function e777() {
                                 color: "#0092f6",
                                 width:1
                             },
-                            areaStyle: { 
+                            areaStyle: {
                                 //color: '#94C9EC'
                                 color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
                                     offset: 0,
@@ -1187,7 +1188,7 @@ function e777() {
                                 color: "#00d4c7",
                                 width:1
                             },
-                            areaStyle: { 
+                            areaStyle: {
                                 //color: '#94C9EC'
                                 color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
                                     offset: 0,
@@ -1214,7 +1215,7 @@ function e777() {
                                 color: "#aecb56",
                                 width:1
                             },
-                            areaStyle: { 
+                            areaStyle: {
                                 //color: '#94C9EC'
                                 color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
                                     offset: 0,
@@ -1241,7 +1242,7 @@ function e777() {
                                 color: "#3A44FB",
                                 width:1
                             },
-                            areaStyle: { 
+                            areaStyle: {
                                 //color: '#94C9EC'
                                 color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [{
                                     offset: 0,
@@ -1257,7 +1258,7 @@ function e777() {
                 }
             ]
         };
-        
+
         myChart7.setOption(option);
         window.addEventListener("resize",function(){
             myChart7.resize();
@@ -1271,7 +1272,7 @@ function e777() {
             data[i].shift();
             if (i == 0) {
                 data[i].push(randomNum(2, 4)*10);
-            } 
+            }
             else if (i == 1) {
                 data[i].push(randomNum(5, 7)*10);
             } else if (i == 2) {
@@ -1286,7 +1287,7 @@ function e777() {
 
     qidong();setInterval(function(){qidong();}, 2500);
 }
-    
+
 function e888() {
 
     var myChart = echarts.init(document.getElementById('e888'));
@@ -1400,7 +1401,7 @@ function e888() {
                 }]),
                 barBorderRadius: 11,
             }
-            
+
             },
             data: randome82
         },
@@ -1423,7 +1424,7 @@ function e888() {
             data: randome83
         }]
     };
-   
+
     // var app = {
     //     currentIndex: -1,
     //   };
@@ -1470,7 +1471,7 @@ function e999() {
     var radius = ['45%', '40%'];
 
     option = {
-        
+
         series: [
             {
                 name: '办公区人数',
@@ -1507,7 +1508,7 @@ function e999() {
                                 }
                             }
                         }
-                }, 
+                },
                 {
                     value: randomdata[0],
                     name: '%',
@@ -1530,7 +1531,7 @@ function e999() {
                                 textStyle: {
                                     color: '#EFFBFB',
                                     fontSize: 24,
-    
+
                                 }
                             }
                         }
@@ -1572,7 +1573,7 @@ function e999() {
                                 }
                             }
                         }
-                }, 
+                },
                 {
                     value: randomdata[1],
                     name: '%',
@@ -1582,7 +1583,7 @@ function e999() {
                                 textStyle: {
                                     color: '#9FE6B8',
                                     fontSize: 24,
-    
+
                                 }
                             }
                         }
@@ -1596,7 +1597,7 @@ function e999() {
                                 textStyle: {
                                     color: '#FFFFFF',
                                     fontSize: 24,
-    
+
                                 }
                             }
                         }
@@ -1639,7 +1640,7 @@ function e999() {
                                 textStyle: {
                                     color: '#ffff',
                                     fontSize: 24
-    
+
                                 }
                             }
                         }
@@ -1652,7 +1653,7 @@ function e999() {
                                 textStyle: {
                                     color: '#FF9F7F',
                                     fontSize: 24,
-    
+
                                 }
                             }
                         }
@@ -1666,7 +1667,7 @@ function e999() {
                                 textStyle: {
                                     color: '#fff',
                                     fontSize: 24,
-    
+
                                 }
                             }
                         }
@@ -1713,7 +1714,7 @@ function e999() {
                 {
                     value: randomdata[3],
                     name: '%',
-                    label: { 
+                    label: {
                         formatter: '\n\n{c0}',
                         textStyle: {
                             color: '#58FA58',
@@ -1730,7 +1731,7 @@ function e999() {
                                 textStyle: {
                                     color: '#FAFAFA',
                                     fontSize: 24,
-    
+
                                 }
                             }
                         }
@@ -1774,7 +1775,7 @@ function e999() {
                                 textStyle: {
                                     color: '#ffff',
                                     fontSize: 24
-    
+
                                 }
                             }
                         }
@@ -1787,7 +1788,7 @@ function e999() {
                                 textStyle: {
                                     color: '#e74a3b',
                                     fontSize: 24
-    
+
                                 }
                             }
                         }
@@ -1801,7 +1802,7 @@ function e999() {
                                 textStyle: {
                                     color: '#ffff',
                                     fontSize: 24
-    
+
                                 }
                             }
                         }
@@ -1838,7 +1839,7 @@ function e999() {
                             }]),
                         }
                     },
-                
+
                         label: {
                             normal: {
                                 formatter: '门窗状态',
@@ -1877,7 +1878,7 @@ function e999() {
             },
         ]
     };
-    
+
     myChart.setOption(option);
     window.addEventListener("resize",function(){
         myChart.resize();
@@ -1885,31 +1886,31 @@ function e999() {
 }
 
 //生成从minNum到maxNum的随机数
-function randomNum(minNum,maxNum){ 
-    switch(arguments.length){ 
-        case 1: 
-            return parseInt(Math.random()*minNum+1,10); 
-        break; 
-        case 2: 
-            return parseInt(Math.random()*(maxNum-minNum+1)+minNum,10); 
-        break; 
-            default: 
-                return 0; 
-            break; 
-    } 
-} 
+function randomNum(minNum,maxNum){
+    switch(arguments.length){
+        case 1:
+            return parseInt(Math.random()*minNum+1,10);
+        break;
+        case 2:
+            return parseInt(Math.random()*(maxNum-minNum+1)+minNum,10);
+        break;
+            default:
+                return 0;
+            break;
+    }
+}
 
 
 })
 
 
 
-		
-		
-		
 
 
-		
+
+
+
+
 
 
 

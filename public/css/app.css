@@ -16628,6 +16628,17 @@ body {
   height: 40rem;
 }
 
+.boxall1 {
+  border: 3px solid rgba(25, 186, 139, 0.17);
+  padding: 0 2rem 4rem 2rem;
+  background: rgba(255, 255, 255, 0.04);
+  background-size: 100% auto;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: 10;
+  height: 50rem;
+}
+
 .boxall:before,
 .boxall:after {
   position: absolute;
