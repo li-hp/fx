@@ -3,9 +3,7 @@
 @section('title')
 
 @section('content')
-<script>
-getdocument.getElementByClass("nav-link1").innerHTML="font-color:rgb(90, 134, 255)";
-</script>
+
 
 
     <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:9.5px; margin-right:9.5px;">
@@ -29,6 +27,13 @@ getdocument.getElementByClass("nav-link1").innerHTML="font-color:rgb(90, 134, 25
             </div>   <div class="boxall">
                 <div class="alltitle">   </div>
                 <div class="allnav" id="kechart7"></div>
+
+
+
+
+
+
+
                 <div class="boxfoot"></div>
             </div>
 
@@ -65,9 +70,25 @@ getdocument.getElementByClass("nav-link1").innerHTML="font-color:rgb(90, 134, 25
                 <div class="alltitle">甲醛</div>
                 <div class="allnav" id="kechart6"></div>
                 <div class="boxfoot"></div>
-            </div> <div class="boxall">
-                <div class="alltitle">  </div>
-                <div class="allnav" id="kechart8"></div>
+            </div>
+
+            <div class="boxall">
+                <div class="alltitle">新风控制</div>
+                <div class="sysw">
+                    <a type="button"
+                    class="btn btn-primary center-block btn-sm" >
+                    <p style="font-size:5rem;">总开关</p>
+                    </a>
+                </div>
+                <div class="sysw">
+                    <a type="button"
+                    class="btn btn-primary center-block btn-sm"
+                    aria-label="Right Align">
+                    <p style="font-size:5rem;">AUTO</p>
+                    </a>
+                </div>
+
+
                 <div class="boxfoot"></div>
             </div>
 

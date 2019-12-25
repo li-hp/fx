@@ -16668,6 +16668,15 @@ body {
   line-height: 4rem;
 }
 
+.sysw {
+  float: left;
+  width: 48%;
+  height: 100%;
+  margin-top: 5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
 .boxall_3d {
   border: 3px solid rgba(25, 186, 139, 0.17);
   padding: 0 2rem 4rem 2rem;
@@ -16779,6 +16788,12 @@ ul {
 ul > li {
   float: left;
   padding: 0 0.1rem;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*谷哥滚动条样式*/

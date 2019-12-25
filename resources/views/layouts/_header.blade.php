@@ -19,14 +19,14 @@
 
       <!-- Right Side Of Navbar -->
       <ul class="navbar-nav navbar-right ">
-          <li class="nav-item1 "><a class="nav-link" href="/kongqi"><i class="fa fa-thermometer-half"></i>&nbsp;<span>空气</span></a></li>
-          <li class="nav-item2 "><a class="nav-link" href="/shuizhi"><i class="fa fa-tint" aria-hidden="true"></i>&nbsp;水质</a></li>
-          <li class="nav-item3 "><a class="nav-link" href="/shushi"><i class="fa fa-child"></i>&nbsp;舒适</a></li>
-          <li class="nav-item4 "><a class="nav-link" href="/guangqiang"><i class="fa fa-sun" aria-hidden="true"></i>&nbsp;光强</a></li>
-          <li class="nav-item5 "><a class="nav-link" href="/yingyang"><i class="fa fa-futbol"></i>&nbsp;营养</a></li>
-          <li class="nav-item6 "><a class="nav-link" href="/jianshen"><i class="fa fa-fire" aria-hidden="true"></i>&nbsp;健身</a></li>
-          <li class="nav-item7 "><a class="nav-link" href="/huiyi"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;会议室管理</a></li>
-          <li class="nav-item8 "><a class="nav-link" href="/renyuan"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;人员管理</a></li>
+          <li class="nav-item1 "><a class="nav-link" href="/kongqi"><i class="fa fa-thermometer-half"></i>&nbsp;<span>空气</span>&nbsp;&nbsp;&nbsp;</a></li>
+          <li class="nav-item2 "><a class="nav-link" href="/shuizhi"><i class="fa fa-tint" aria-hidden="true"></i>&nbsp;水质&nbsp;&nbsp;&nbsp;</a></li>
+          <li class="nav-item3 "><a class="nav-link" href="/shushi"><i class="fa fa-child"></i>&nbsp;舒适&nbsp;&nbsp;&nbsp;</a></li>
+          <li class="nav-item4 "><a class="nav-link" href="/guangqiang"><i class="fa fa-sun" aria-hidden="true"></i>&nbsp;光强&nbsp;&nbsp;&nbsp;</a></li>
+          <li class="nav-item5 "><a class="nav-link" href="/yingyang"><i class="fa fa-futbol"></i>&nbsp;营养&nbsp;&nbsp;&nbsp;</a></li>
+          <li class="nav-item6 "><a class="nav-link" href="/jianshen"><i class="fa fa-fire" aria-hidden="true"></i>&nbsp;健身&nbsp;&nbsp;&nbsp;</a></li>
+          <li class="nav-item7 "><a class="nav-link" href="/huiyi"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;会议室管理&nbsp;&nbsp;&nbsp;</a></li>
+          <li class="nav-item8 "><a class="nav-link" href="/renyuan"><i class="fa fa-camera" aria-hidden="true"></i>&nbsp;人员管理&nbsp;&nbsp;&nbsp;</a></li>
         </ul>
     </div>
 
