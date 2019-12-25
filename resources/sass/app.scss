@@ -27,16 +27,12 @@ body {
   margin-bottom: 20px;
   margin-top: 0px;
   height: 10rem; // 顶部导航栏宽度
-  font-size: 3rem; // 导航栏上的文字大小
+  font-size: 2rem; // 导航栏上的文字大小
 }
 
 .navbar-brand{
   font-size:3rem;
 }
-
-
-
-
 
 /* Sticky footer styles */
 html {
@@ -132,6 +128,10 @@ body {
   line-height: 4rem;
 }
 
+.sysw{ 
+  float:left; width:48%; height:100%; 
+  margin-top: 5rem; margin-right: .5rem; margin-left: .5rem;
+}
 
 // ---------------------boxall3d------------------ //
 
@@ -184,9 +184,13 @@ body {
 }
 
 
+
+
 .allnav {
   height: calc(100% - 30px);
 }
+
+
 
 /*安防box特供*/
 .pulll_left{
@@ -252,6 +256,14 @@ ul {
     padding: 0 .1rem;
   }
 }
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 /*谷哥滚动条样式*/
 ::-webkit-scrollbar {
   width: 5px;

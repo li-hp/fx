@@ -16546,7 +16546,7 @@ body {
   margin-bottom: 20px;
   margin-top: 0px;
   height: 10rem;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .navbar-brand {
@@ -16651,6 +16651,15 @@ body {
   color: #fff;
   text-align: center;
   line-height: 4rem;
+}
+
+.sysw {
+  float: left;
+  width: 48%;
+  height: 100%;
+  margin-top: 5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .boxall_3d {
@@ -16764,6 +16773,12 @@ ul {
 ul > li {
   float: left;
   padding: 0 0.1rem;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*谷哥滚动条样式*/
