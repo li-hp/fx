@@ -620,8 +620,13 @@ option = {
             label: {
                 show: true,
                 position: 'inside',
+<<<<<<< HEAD
                 fontSize: 15
 
+=======
+                fontSize: 24
+                
+>>>>>>> 4f1140f660b31f30c775b822783fed3299f57925
             },
             color:['#00B2E1','#083A03','#DF3A01','#CCCC33','#660099'],
             labelLine: {
