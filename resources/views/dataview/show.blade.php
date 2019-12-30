@@ -48,12 +48,10 @@
 
             {{-- <div class="boxall_3d">
                 <div class="alltitle">全景地图</div>
-                
-                <div class="allnav" id="player" style="display:none;"></div>
-                <div class="begin">
-                    <button type="button" class="cloud-btn">立即体验</button>
-                </div>
+                <div class="allnav">
 
+                <img src="/img/东田三层.png"    style="position: relative;width:100%;height:100%;opacity:0.4">
+                </div>
                 <div class="boxfoot"></div>
             </div> --}}
         </div>
