@@ -26,7 +26,7 @@
   
  <div class="container-fulid">
   <canvas id="canvas"></canvas>
-
+ 
 
     @include('layouts._header')
     
@@ -42,7 +42,9 @@
   <script type="text/javascript" src="js/area_echarts.js"></script> 
   
   <script type="text/javascript" src="js/js1.js"></script> 
-  <script type="text/javascript" src="js/js.js"></script> 
+  <script type="text/javascript" src="js/js.js"></script>
+  <script type="text/javascript" src="js/superAPI.min.js"></script>
+  <script type="text/javascript" src="js/51vr.js"></script>
   @yield('scripts')
   
 </body>

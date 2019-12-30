@@ -16547,6 +16547,7 @@ body {
   margin-top: 0px;
   height: 10rem;
   font-size: 2rem;
+  z-index: 10;
 }
 
 .navbar-brand {
@@ -16611,12 +16612,32 @@ body {
   margin-bottom: 100px;
 }
 
+.alltitle {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  line-height: 4rem;
+}
+
+.sysw {
+  float: left;
+  width: 48%;
+  height: 100%;
+  margin-top: 5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.allnav {
+  height: calc(100% - 30px);
+}
+
 /* ----------- box --------------*/
 
 .boxall {
   border: 3px solid rgba(25, 186, 139, 0.17);
   padding: 0 2rem 4rem 2rem;
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(0, 0, 0, 0.418);
   background-size: 100% auto;
   position: relative;
   margin-bottom: 20px;
@@ -16646,20 +16667,13 @@ body {
   right: 0;
 }
 
-.alltitle {
-  font-size: 1.5rem;
-  color: #fff;
-  text-align: center;
-  line-height: 4rem;
-}
-
-.sysw {
-  float: left;
-  width: 48%;
-  height: 100%;
-  margin-top: 5rem;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
+.boxno {
+  padding: 0 2rem 0.5rem 2rem;
+  background-size: 100% auto;
+  position: relative;
+  margin-bottom: 0.5rem;
+  z-index: 9;
+  height: 3rem;
 }
 
 .boxall_3d {
@@ -16710,10 +16724,6 @@ body {
   content: "";
   border-bottom: 2px solid #0252ffa2;
   bottom: 0;
-}
-
-.allnav {
-  height: calc(100% - 30px);
 }
 
 /*安防box特供*/

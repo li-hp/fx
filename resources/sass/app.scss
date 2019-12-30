@@ -28,6 +28,7 @@ body {
   margin-top: 0px;
   height: 10rem; // 顶部导航栏宽度
   font-size: 2rem; // 导航栏上的文字大小
+  z-index: 10;
 }
 
 .navbar-brand{
@@ -91,12 +92,29 @@ body {
   margin-bottom: 100px;
 }
 
+.alltitle {
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  line-height: 4rem;
+}
+
+.sysw{ 
+  float:left; width:48%; height:100%; 
+  margin-top: 5rem; margin-right: .5rem; margin-left: .5rem;
+}
+
+
+.allnav {
+  height: calc(100% - 30px);
+}
+
 /* ----------- box --------------*/
 
 .boxall {
   border: 3px solid rgba(25,186,139,.17);
   padding:0 2rem 4rem 2rem;
-  background: rgba(255,255,255,.04);
+  background: rgba(0, 0, 0, 0.418);
   background-size: 100% auto;
   position: relative;
   margin-bottom: 20px;
@@ -121,17 +139,38 @@ body {
   right: 0;
 }
 
-.alltitle {
-  font-size: 1.5rem;
-  color: #fff;
-  text-align: center;
-  line-height: 4rem;
-}
 
-.sysw{ 
-  float:left; width:48%; height:100%; 
-  margin-top: 5rem; margin-right: .5rem; margin-left: .5rem;
+// ---------------------boxno------------------ //
+
+.boxno {
+  // border: 3px solid rgba(25,186,139,.17);
+  padding:0 2rem 0.5rem 2rem;
+  // background: rgba(255,255,255,.04);
+  background-size: 100% auto;
+  position: relative;
+  margin-bottom: 0.5rem;
+  z-index: 9;
+  height: 3rem; // 容器高度
 }
+// .boxno:before,
+// .boxno:after {
+//   position: absolute;
+//   width: 1rem;
+//   height: 1rem;
+//   content: "";
+//   border-top: 2px solid #0252ffa2;
+//   top: 0;
+// }
+// .boxno:before,.boxfoot:before {
+//   border-left: 2px solid #0252ffa2;
+//   left: 0;
+// }
+// .boxno:after,.boxfoot:after {
+//   border-right: 2px solid #0252ffa2;
+//   right: 0;
+// }
+
+
 
 // ---------------------boxall3d------------------ //
 
@@ -182,14 +221,6 @@ body {
   border-bottom: 2px solid #0252ffa2;;   //蓝色边框的粗细和颜色
   bottom: 0;
 }
-
-
-
-
-.allnav {
-  height: calc(100% - 30px);
-}
-
 
 
 /*安防box特供*/
