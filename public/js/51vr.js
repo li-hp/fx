@@ -1,6 +1,6 @@
 "use strict";
 const params = new URLSearchParams(location.search);
-
+var cloudRender = new cloudRenderer('player', 0);
 // 云渲染url 前端获取  仅限用于测试
 function createXmlHttpRequest() {
     if(window.ActiveXObject) {
@@ -23,7 +23,7 @@ function fetchPixelStreaming(token) {
                 alert('访问人数过多, 请稍后访问www.51hitech.com')
             } else {
                 // document.querySelector('body');
-                document.querySelector('body').classList.remove('fixed');
+                cloudRender.SuperAPI('StartRenderCloud', sessionStorage.getItem('cloudurl'));
             }
         }
     }
@@ -58,18 +58,10 @@ let staticPwd = '123456';
 
 SuperAPI_StartRenderCloud_GetUrl();
 
-const cloudBtn = document.querySelector('.cloud-btn');
-var cloudRender = new cloudRenderer('player', 0);
-
-window.addEventListener('click', (event) => {
-    event.preventDefault();
-    cloudRender.SuperAPI('StartRenderCloud', sessionStorage.getItem('cloudurl'));
-    cloudBtn.textContent = 'Loading ...';
-}, true)
 
 // var cloudBtn = document.getElementById('player1');
 
-// var cloudRender = new cloudRenderer('player', 0);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+// var cloudRender = new cloudRenderer('player', 0);
 // cloudRender.SuperAPI('StartRenderCloud', sessionStorage.getItem('cloudurl'));
 
 // window.addEventListener("resize",function(){

@@ -5,18 +5,16 @@
 @section('content')
 
     <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:9.5px; margin-right:9.5px;">
-      
-       
+
+
 
         <div class="col-xs-12 col-sm-3">
 
             <div class="boxno">
-                <div class="begin">
-                    <button type="button" class="cloud-btn">立即体验</button>
-                </div>
+
                 <div class="allnav" id="player" style="display:none;"></div>
-            
-            </div>                
+
+            </div>
 
             <div class="boxall">
                 <div class="alltitle">1空气</div>
@@ -58,7 +56,7 @@
 
         <div class="col-xs-12 col-sm-3">
             <div class="boxno">
-            </div>  
+            </div>
 
             <div class="boxall">
                 <div class="alltitle">6光强</div>
