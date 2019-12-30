@@ -12,7 +12,7 @@
   <!-- Js -->
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/echarts.min.js"></script>
-
+  <script type="text/javascript" src="js/superAPI.min.js"></script>
   <!-- Styles -->
   <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
@@ -42,8 +42,8 @@
   <script type="text/javascript" src="js/area_echarts.js"></script>
    <script type="text/javascript" src="js/kongqi.js"></script>
   <script type="text/javascript" src="js/guangqiang.js"></script>
-  <script type="text/javascript" src="js/js1.js"></script>
   <script type="text/javascript" src="js/js.js"></script>
+  <script type="text/javascript" src="js/51vr.js"></script>
   @yield('scripts')
 
 </body>

@@ -59,11 +59,19 @@ let staticPwd = '123456';
 SuperAPI_StartRenderCloud_GetUrl();
 
 const cloudBtn = document.querySelector('.cloud-btn');
-
 var cloudRender = new cloudRenderer('player', 0);
 
-cloudBtn.addEventListener('click', (event) => {
+window.addEventListener('click', (event) => {
     event.preventDefault();
     cloudRender.SuperAPI('StartRenderCloud', sessionStorage.getItem('cloudurl'));
     cloudBtn.textContent = 'Loading ...';
 }, true)
+
+// var cloudBtn = document.getElementById('player1');
+
+// var cloudRender = new cloudRenderer('player', 0);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+// cloudRender.SuperAPI('StartRenderCloud', sessionStorage.getItem('cloudurl'));
+
+// window.addEventListener("resize",function(){
+//     cloudBtn.resize();
+// });
