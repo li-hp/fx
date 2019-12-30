@@ -16546,10 +16546,6 @@ body {
   margin-bottom: 20px;
   margin-top: 0px;
   height: 10rem;
-  font-size: 3rem;
-}
-
-.navbar-static-top .navbar-right {
   font-size: 2rem;
   z-index: 10;
 }

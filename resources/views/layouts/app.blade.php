@@ -37,16 +37,6 @@
 
   <!-- Scripts -->
   <script src="{{ mix('js/app.js') }}"></script>
-<<<<<<< HEAD
-  <script type="text/javascript" src="js/bg.js"></script>  
-  <script type="text/javascript" src="js/china.js"></script> 
-  <script type="text/javascript" src="js/area_echarts.js"></script> 
-  
-  <script type="text/javascript" src="js/js1.js"></script> 
-  <script type="text/javascript" src="js/js.js"></script>
-  <script type="text/javascript" src="js/superAPI.min.js"></script>
-  <script type="text/javascript" src="js/51vr.js"></script>
-=======
   <script type="text/javascript" src="js/bg.js"></script>
   <script type="text/javascript" src="js/china.js"></script>
   <script type="text/javascript" src="js/area_echarts.js"></script>
@@ -54,7 +44,6 @@
   <script type="text/javascript" src="js/guangqiang.js"></script>
   <script type="text/javascript" src="js/js1.js"></script>
   <script type="text/javascript" src="js/js.js"></script>
->>>>>>> 4dd7e439d0e968c4c37eabd2f98197f14ce95836
   @yield('scripts')
 
 </body>
