@@ -32,8 +32,55 @@
                 <div class="allnav" id="kechart3"></div>
                 <div class="boxfoot"></div>
             </div>   <div class="boxall">
-                <div class="alltitle">   </div>
-                <div class="allnav" id="kechart7"></div>
+                <div class="alltitle">  空气实时数据 </div>
+                <div class="allnav" id="kechart7">
+
+
+                                                        <div class="barbox3">
+
+                                        <ul class="clearfix">
+                                            <li class="pulll_left counter">3</li>
+                                            <li class="pulll_left counter">4</li>
+                                            <li class="pulll_left counter">5</li>
+                                            <li class="pulll_left counter">6</li>
+                                        </ul>
+                                        </div>
+
+                                        <div class="barbox4">
+                                        <ul class="clearfix">
+                                        <li class="pulll_left">温度</li>
+                                        <li class="pulll_left">湿度</li>
+                                        <li class="pulll_left">PM2.5</li>
+                                        <li class="pulll_left">二氧化碳浓度</li>
+                                        </ul>
+                                        </div>
+
+
+
+
+                                        <div class="barbox3">
+                                        <ul class="clearfix">
+                                            <li class="pulll_left counter">7</li>
+                                            <li class="pulll_left counter">8
+                                            </li>
+                                            <li class="pulll_left counter" id="tmp"></li>
+                                            <li class="pulll_left counter" id="hum"></li>
+                                        </ul>
+                                        </div>
+                                        <div class="barbox4">
+                                        <ul class="clearfix">
+                                            <li class="pulll_left">甲醛浓度</li>
+                                            <li class="pulll_left">空气可挥发物</li>
+                                            <li class="pulll_left">温度ajax</li>
+                                            <li class="pulll_left">湿度ajax</li>
+                                        </ul>
+                                        </div>
+
+
+                </div>
+
+
+
 
 
 

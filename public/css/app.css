@@ -16551,7 +16551,7 @@ body {
 }
 
 .navbar-brand {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 /* Sticky footer styles */
@@ -16885,5 +16885,33 @@ canvas {
   to {
     transform: rotate(360deg);
   }
+}
+
+.barbox3 li {
+  width: 25%;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+}
+
+.barbox4 li {
+  width: 25%;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+}
+
+.barbox3 li {
+  font-size: 2.5rem;
+  color: #16db79;
+  padding: 0.05rem 0;
+  font-weight: bold;
+  margin-top: 5%;
+}
+
+.barbox4 li {
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 0.1rem;
 }
 
