@@ -45,6 +45,10 @@ class PagessController extends Controller
     {
         return view('dataview.renyuan');
     }
+    public function test()
+    {
+        return view('dataview.test');
+    }
 
 
 

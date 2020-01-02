@@ -23,6 +23,7 @@ Route::get('/jianshen', 'PagessController@jianshen')->name('jianshen');
 Route::get('/yingyang', 'PagessController@yingyang')->name('yingyang');
 Route::get('/huiyi', 'PagessController@huiyi')->name('huiyi');
 Route::get('/renyuan', 'PagessController@renyuan')->name('huiyi');
+Route::get('/test', 'PagessController@test')->name('test');
 
 // 灯光控制和模拟展示
 
