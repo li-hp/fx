@@ -26,7 +26,7 @@ body {
   border-bottom: 1px solid rgb(14, 60, 65);
   margin-bottom: 20px;
   margin-top: 0px;
-  height: 10rem; // 顶部导航栏宽度
+  height: 7rem; // 顶部导航栏宽度
   font-size: 2rem; // 导航栏上的文字大小
   z-index: 10;
 }
@@ -112,40 +112,34 @@ body {
 /* ----------- box --------------*/
 
 .boxall {
-  border: 3px solid rgba(25,186,139,.17);
+  // border: 3px solid rgba(25,186,139,.17);
   padding:0 2rem 4rem 2rem;
   background: rgba(0, 0, 0, 0.418);
   background-size: 100% auto;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 20px;
   z-index: 10;
   height: 40rem; // 容器高度
 }
-.boxall1 {
-    border: 3px solid rgba(25,186,139,.17);
-    padding:0 2rem 4rem 2rem;
-    background: rgba(255,255,255,.04);
-    background-size: 100% auto;
-    position: relative;
-    margin-bottom: 20px;
-    z-index: 10;
-    height: 50rem; // 容器高度
-  }
+
 .boxall:before,
 .boxall:after {
   position: absolute;
-  width: 1rem;
-  height: 1rem;
+  width: 0rem;
+  height: 0rem;
   content: "";
-  border-top: 2px solid #0252ffa2;
+  border-top: 0px solid #0252ffa2;
   top: 0;
 }
 .boxall:before,.boxfoot:before {
-  border-left: 2px solid #0252ffa2;
+  border-left: 0px solid #0252ffa2;
   left: 0;
 }
 .boxall:after,.boxfoot:after {
-  border-right: 2px solid #0252ffa2;
+  border-right: 0px solid #0252ffa2;
   right: 0;
 }
 
@@ -201,11 +195,11 @@ body {
   width: 1rem;
   height: 1rem;
   content: "";
-  border-top: 2px solid #0252ffa2;
+  border-top: 0px solid #0252ffa2;
   top: 0;
 }
 .boxall_3d:before,.boxfoot:before {  //3d全景框的左边
-  border-left: 2px solid #0252ffa2;
+  border-left: 0px solid #0252ffa2;
   left: 0;
 }
 .boxall_3d:after,.boxfoot:after { //3d全景框的右边
@@ -225,10 +219,10 @@ body {
 .boxfoot:after {
   // 调整底部蓝色的小边框
   position: absolute;
-  width: 1rem;           //蓝色边框的宽
-  height: 1rem;         //蓝色边框的高
+  width: 0rem;           //蓝色边框的宽
+  height: 0rem;         //蓝色边框的高
   content: "";
-  border-bottom: 2px solid #0252ffa2;;   //蓝色边框的粗细和颜色
+  border-bottom: 0px solid #0252ffa2;;   //蓝色边框的粗细和颜色
   bottom: 0;
 }
 

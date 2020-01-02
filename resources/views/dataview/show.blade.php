@@ -4,15 +4,15 @@
 
 @section('content')
 
-    <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:9.5px; margin-right:9.5px;">
+    <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:0.5px; margin-right:0.5px;">
 
 
 
-        <div class="col-xs-12 col-sm-3">
+        <div class="col-xs-12 col-sm-3" style="padding-left:0px; padding-right: 0px">
 
             <div class="boxno">
 
-                <div class="allnav" id="player" style="display:none;"></div>
+                <div class="allnav" id="player"></div>
 
             </div>
 
@@ -54,7 +54,7 @@
             </div> --}}
         </div>
 
-        <div class="col-xs-12 col-sm-3">
+        <div class="col-xs-12 col-sm-3" style="padding-left:0px; padding-right: 0px">
             <div class="boxno">
             </div>
 
