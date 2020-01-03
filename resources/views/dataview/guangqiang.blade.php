@@ -68,9 +68,26 @@ font-size:5rem;
                 <div class="alltitle">光强曲线</div>
                 <div class="allnav" id="gechart3"></div>
                 <div class="boxfoot"></div>
-            </div>   <div class="boxall">
-                <div class="alltitle"> 控制按钮  </div>
-                <div class="allnav" id="gechart4"></div>
+            </div>
+
+
+             <div class="boxall">
+                <div class="alltitle">光照控制</div>
+                <div class="sysw">
+                    <a type="button"
+                    class="btn btn-primary center-block btn-sm" >
+                    <p style="font-size:5rem;">总开关</p>
+                    </a>
+                </div>
+                <div class="sysw">
+                    <a type="button"
+                    class="btn btn-primary center-block btn-sm"
+                    aria-label="Right Align">
+                    <p style="font-size:5rem;">AUTO</p>
+                    </a>
+                </div>
+
+
                 <div class="boxfoot"></div>
             </div>
 

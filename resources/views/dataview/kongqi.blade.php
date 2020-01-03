@@ -15,23 +15,10 @@
                  <div class="allnav" id="player" style="display:none;"></div>
 
          </div>
-            <div class="boxall">
-                <div class="alltitle">二氧化碳</div>
-                <div class="allnav" id="kechart1"></div>
-                <div class="boxfoot"></div>
-            </div>
 
-            <div class="boxall">
-                <div class="alltitle">可挥发化合物</div>
-                <div class="allnav" id="kechart2"></div>
-                <div class="boxfoot"></div>
-            </div>
 
-            <div class="boxall">
-                <div class="alltitle">湿度</div>
-                <div class="allnav" id="kechart3"></div>
-                <div class="boxfoot"></div>
-            </div>   <div class="boxall">
+
+         <div class="boxall">
                 <div class="alltitle">  空气实时数据 </div>
                 <div class="allnav" id="kechart7">
 
@@ -39,10 +26,10 @@
                                                         <div class="barbox3">
 
                                         <ul class="clearfix">
-                                            <li class="pulll_left counter">3</li>
-                                            <li class="pulll_left counter">4</li>
-                                            <li class="pulll_left counter">5</li>
-                                            <li class="pulll_left counter">6</li>
+                                            <li class="pulll_left counter">25℃</li>
+                                            <li class="pulll_left counter">40%</li>
+                                            <li class="pulll_left counter">50ppm</li>
+                                            <li class="pulll_left counter">300ppm</li>
                                         </ul>
                                         </div>
 
@@ -60,19 +47,19 @@
 
                                         <div class="barbox3">
                                         <ul class="clearfix">
-                                            <li class="pulll_left counter">7</li>
-                                            <li class="pulll_left counter">8
+                                            <li class="pulll_left counter">20ppm</li>
+                                            <li class="pulll_left counter">300ppm
                                             </li>
-                                            <li class="pulll_left counter" id="tmp"></li>
-                                            <li class="pulll_left counter" id="hum"></li>
+                                            <li class="pulll_left counter" id="tmp">30db</li>
+                                            <li class="pulll_left counter" id="hum">300lux</li>
                                         </ul>
                                         </div>
                                         <div class="barbox4">
                                         <ul class="clearfix">
                                             <li class="pulll_left">甲醛浓度</li>
                                             <li class="pulll_left">空气可挥发物</li>
-                                            <li class="pulll_left">温度ajax</li>
-                                            <li class="pulll_left">湿度ajax</li>
+                                            <li class="pulll_left">声音强度</li>
+                                            <li class="pulll_left">光照强度</li>
                                         </ul>
                                         </div>
 
@@ -87,6 +74,26 @@
 
                 <div class="boxfoot"></div>
             </div>
+
+            <div class="boxall">
+                <div class="alltitle">二氧化碳</div>
+                <div class="allnav" id="kechart1"></div>
+                <div class="boxfoot"></div>
+            </div>
+
+            <div class="boxall">
+                <div class="alltitle">可挥发化合物</div>
+                <div class="allnav" id="kechart2"></div>
+                <div class="boxfoot"></div>
+            </div>
+
+            <div class="boxall">
+                <div class="alltitle">湿度</div>
+                <div class="allnav" id="kechart3"></div>
+                <div class="boxfoot"></div>
+            </div>
+
+
 
 
 

@@ -16548,6 +16548,8 @@ body {
   height: 10rem;
   font-size: 2rem;
   z-index: 10;
+  opacity: 0.5;
+  font-optical-sizing: 1;
 }
 
 .navbar-brand {

@@ -19,7 +19,7 @@
 
       <!-- Right Side Of Navbar -->
       <ul class="navbar-nav navbar-right ">
-          <li class="nav-item1 "><a class="nav-link" href="/kongqi"><i class="fa fa-thermometer-half"></i>&nbsp;<span>空气</span>&nbsp;&nbsp;&nbsp;</a></li>
+          <li class="nav-item1 "><a class="nav-link" href="/kongqi" target="_top"><i class="fa fa-thermometer-half"></i>&nbsp;<span>空气</span>&nbsp;&nbsp;&nbsp;</a></li>
           <li class="nav-item2 "><a class="nav-link" href="/shuizhi"><i class="fa fa-tint" aria-hidden="true"></i>&nbsp;水质&nbsp;&nbsp;&nbsp;</a></li>
           <li class="nav-item3 "><a class="nav-link" href="/shushi"><i class="fa fa-child"></i>&nbsp;舒适&nbsp;&nbsp;&nbsp;</a></li>
           <li class="nav-item4 "><a class="nav-link" href="/guangqiang"><i class="fa fa-sun" aria-hidden="true"></i>&nbsp;光强&nbsp;&nbsp;&nbsp;</a></li>
