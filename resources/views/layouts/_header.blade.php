@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-static-top">
+<nav class="navbar navbar-expand-lg navbar-dark  navbar-static-top">
 
     <!-- Branding Image -->
     <a class="navbar-brand " href="{{ url('/') }}">

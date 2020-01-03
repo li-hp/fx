@@ -16538,20 +16538,19 @@ body {
 /* header */
 
 .navbar-static-top {
-  border-color: #0e3c41;
-  background-color: #fff;
-  box-shadow: 0px 1px 11px 2px #5a86ff;
+  background-color: rgba(14, 60, 65, 0.479);
+  box-shadow: 0px 1px 11px 2px rgba(14, 60, 65, 0.479);
   border-top: 14px solid #0a0929;
-  border-bottom: 1px solid #0e3c41;
+  border-bottom: 1px solid rgba(14, 60, 65, 0.479);
   margin-bottom: 20px;
   margin-top: 0px;
-  height: 7rem;
-  font-size: 2rem;
+  height: 7.25rem;
+  font-size: 2.25rem;
   z-index: 10;
 }
 
 .navbar-brand {
-  font-size: 3rem;
+  font-size: 2.25rem;
 }
 
 /* Sticky footer styles */
@@ -16613,7 +16612,7 @@ body {
 }
 
 .alltitle {
-  font-size: 1.5rem;
+  font-size: 2.25rem;
   color: #fff;
   text-align: center;
   line-height: 4rem;
@@ -16632,17 +16631,15 @@ body {
   height: calc(100% - 30px);
 }
 
-/* ----------- box --------------*/
+/* ----------- boxleft --------------*/
 
 .boxall {
-  padding: 0 2rem 4rem 2rem;
-  background: rgba(0, 0, 0, 0.418);
+  border: 0px solid rgba(25, 186, 138, 0);
+  padding: 0 0rem 8rem 0rem;
+  background: url(/images/jianbian.png?c18003e90c43981cd831f77f6f9ad5a3);
   background-size: 100% auto;
   position: relative;
   margin-bottom: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 20px;
   z-index: 10;
   height: 40rem;
 }
@@ -16653,19 +16650,54 @@ body {
   width: 0rem;
   height: 0rem;
   content: "";
-  border-top: 0px solid #0252ffa2;
+  border-top: 0px solid #0252ff00;
   top: 0;
 }
 
 .boxall:before,
 .boxfoot:before {
-  border-left: 0px solid #0252ffa2;
+  border-left: 0px solid #0252ff00;
   left: 0;
 }
 
 .boxall:after,
 .boxfoot:after {
-  border-right: 0px solid #0252ffa2;
+  border-right: 0px solid #0252ff00;
+  right: 0;
+}
+
+/* ----------- boxright --------------*/
+
+.boxallright {
+  border: 0px solid rgba(25, 186, 138, 0);
+  padding: 0 0rem 8rem 0rem;
+  background: url(/images/jianbian-you.png?48faab756f02d2a7325e5479ac7296fc);
+  background-size: 100% auto;
+  position: relative;
+  margin-bottom: 0px;
+  z-index: 10;
+  height: 40rem;
+}
+
+.boxallright:before,
+.boxallright:after {
+  position: absolute;
+  width: 0rem;
+  height: 0rem;
+  content: "";
+  border-top: 0px solid #0252ff00;
+  top: 0;
+}
+
+.boxallright:before,
+.boxfoot:before {
+  border-left: 0px solid #0252ff00;
+  left: 0;
+}
+
+.boxallright:after,
+.boxfoot:after {
+  border-right: 0px solid #0252ff00;
   right: 0;
 }
 

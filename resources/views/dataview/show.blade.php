@@ -11,9 +11,7 @@
         <div class="col-xs-12 col-sm-3" style="padding-left:0px; padding-right: 0px">
 
             <div class="boxno">
-
                 <div class="allnav" id="player"></div>
-
             </div>
 
             <div class="boxall">
@@ -58,25 +56,25 @@
             <div class="boxno">
             </div>
 
-            <div class="boxall">
+            <div class="boxallright">
                 <div class="alltitle">6光强</div>
                 <div class="allnav" id="e666"></div>
                 <div class="boxfoot"></div>
             </div>
 
-            <div class="boxall">
+            <div class="boxallright">
                 <div class="alltitle">7健身</div>
                 <div class="allnav" id="e777"></div>
                 <div class="boxfoot"></div>
             </div>
 
-            <div class="boxall">
+            <div class="boxallright">
                 <div class="alltitle">8舒适</div>
                 <div class="allnav" id="e888"></div>
                 <div class="boxfoot"></div>
             </div>
 
-            <div class="boxall">
+            <div class="boxallright">
                 <div class="alltitle">9人员管理</div>
                 <div class="allnav" id="e999"></div>
                 <div class="boxfoot"></div>
