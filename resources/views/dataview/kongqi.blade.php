@@ -94,10 +94,7 @@
                 <div class="boxfoot"></div>
             </div>
 
-
-
-
-            </div>
+       </div>
 
         <div class="col-xs-12 col-sm-6">
         {{-- <div class="boxall_3d">
@@ -156,6 +153,8 @@
 
 
 
+
+</div>
 
 
 @stop
