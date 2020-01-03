@@ -75,6 +75,7 @@
                 <div class="boxfoot"></div>
             </div>
 
+
             <div class="boxall">
                 <div class="alltitle">二氧化碳</div>
                 <div class="allnav" id="kechart1"></div>
@@ -96,8 +97,7 @@
 
 
 
-
-        </div>
+            </div>
 
         <div class="col-xs-12 col-sm-6">
         {{-- <div class="boxall_3d">
@@ -110,48 +110,52 @@
             </div> --}}
         </div>
 
-
         <div class="col-xs-12 col-sm-3">
-            <div class="boxall">
-                <div class="alltitle">温度</div>
-                <div class="allnav" id="kechart4"></div>
-                <div class="boxfoot"></div>
+
+        <div class="boxall">
+            <div class="alltitle">温度</div>
+            <div class="allnav" id="kechart4"></div>
+            <div class="boxfoot"></div>
+        </div>
+
+        <div class="boxall">
+            <div class="alltitle">PM2.5</div>
+            <div class="allnav" id="kechart5"></div>
+            <div class="boxfoot"></div>
+        </div>
+
+        <div class="boxall">
+            <div class="alltitle">甲醛</div>
+            <div class="allnav" id="kechart6"></div>
+            <div class="boxfoot"></div>
+        </div>
+
+        <div class="boxall">
+            <div class="alltitle">新风控制</div>
+            <div class="sysw">
+                <a type="button"
+                class="btn btn-success center-block btn-sm" >
+                <p style="font-size:5rem;">总开关</p>
+                </a>
             </div>
-
-            <div class="boxall">
-                <div class="alltitle">PM2.5</div>
-                <div class="allnav" id="kechart5"></div>
-                <div class="boxfoot"></div>
+            <div class="sysw">
+                <a type="button"
+                class="btn btn-success center-block btn-sm"
+                aria-label="Right Align">
+                <p style="font-size:5rem;">AUTO</p>
+                </a>
             </div>
+            <div class="boxfoot"></div>
+        </div>
 
-            <div class="boxall">
-                <div class="alltitle">甲醛</div>
-                <div class="allnav" id="kechart6"></div>
-                <div class="boxfoot"></div>
-            </div>
-
-            <div class="boxall">
-                <div class="alltitle">新风控制</div>
-                <div class="sysw">
-                    <a type="button"
-                    class="btn btn-primary center-block btn-sm" >
-                    <p style="font-size:5rem;">总开关</p>
-                    </a>
-                </div>
-                <div class="sysw">
-                    <a type="button"
-                    class="btn btn-primary center-block btn-sm"
-                    aria-label="Right Align">
-                    <p style="font-size:5rem;">AUTO</p>
-                    </a>
-                </div>
-
-
-                <div class="boxfoot"></div>
-            </div>
 
         </div>
         </div>
+
+
+
+
+
 
 
 @stop

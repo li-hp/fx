@@ -16545,7 +16545,7 @@ body {
   border-bottom: 1px solid #0e3c41;
   margin-bottom: 20px;
   margin-top: 0px;
-  height: 10rem;
+  height: 7rem;
   font-size: 2rem;
   z-index: 10;
   opacity: 0.5;
@@ -16637,46 +16637,37 @@ body {
 /* ----------- box --------------*/
 
 .boxall {
-  border: 3px solid rgba(25, 186, 139, 0.17);
   padding: 0 2rem 4rem 2rem;
   background: rgba(0, 0, 0, 0.418);
   background-size: 100% auto;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 20px;
   z-index: 10;
   height: 40rem;
-}
-
-.boxall1 {
-  border: 3px solid rgba(25, 186, 139, 0.17);
-  padding: 0 2rem 4rem 2rem;
-  background: rgba(255, 255, 255, 0.04);
-  background-size: 100% auto;
-  position: relative;
-  margin-bottom: 20px;
-  z-index: 10;
-  height: 50rem;
 }
 
 .boxall:before,
 .boxall:after {
   position: absolute;
-  width: 1rem;
-  height: 1rem;
+  width: 0rem;
+  height: 0rem;
   content: "";
-  border-top: 2px solid #0252ffa2;
+  border-top: 0px solid #0252ffa2;
   top: 0;
 }
 
 .boxall:before,
 .boxfoot:before {
-  border-left: 2px solid #0252ffa2;
+  border-left: 0px solid #0252ffa2;
   left: 0;
 }
 
 .boxall:after,
 .boxfoot:after {
-  border-right: 2px solid #0252ffa2;
+  border-right: 0px solid #0252ffa2;
   right: 0;
 }
 
@@ -16706,13 +16697,13 @@ body {
   width: 1rem;
   height: 1rem;
   content: "";
-  border-top: 2px solid #0252ffa2;
+  border-top: 0px solid #0252ffa2;
   top: 0;
 }
 
 .boxall_3d:before,
 .boxfoot:before {
-  border-left: 2px solid #0252ffa2;
+  border-left: 0px solid #0252ffa2;
   left: 0;
 }
 
@@ -16732,10 +16723,10 @@ body {
 .boxfoot:before,
 .boxfoot:after {
   position: absolute;
-  width: 1rem;
-  height: 1rem;
+  width: 0rem;
+  height: 0rem;
   content: "";
-  border-bottom: 2px solid #0252ffa2;
+  border-bottom: 0px solid #0252ffa2;
   bottom: 0;
 }
 
