@@ -29,6 +29,9 @@ body {
   height: 7.25rem; // 顶部导航栏宽度
   font-size: 2.25rem; // 导航栏上的文字大小
   z-index: 10;
+  opacity: 0.5 ;
+  font-optical-sizing: 1;
+
 }
 
 .navbar-brand{
@@ -417,3 +420,11 @@ canvas {
       transform: rotate(360deg);
   }
 }
+
+
+///////////////////////////////////////////////实时数据文字//////////////////////
+.barbox3 li{ width:25%; text-align: center; position: relative; z-index: 100;}
+.barbox4 li{ width:25%; text-align: center; position: relative; z-index: 100;}
+
+.barbox3 li{ font-size: 2.5rem; color: rgb(22, 219, 121); padding: .05rem 0;   font-weight: bold;margin-top:5%;}
+.barbox4 li{ font-size: 2.5rem; color:rgba(255,255,255,.7); padding-top:.1rem;}
