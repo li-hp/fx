@@ -15,21 +15,23 @@
 body {
   font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
   font-size: 10px;
+  overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 /* header */
 .navbar-static-top {
   // border-color: rgba(14, 60, 65, 0.479);
-  background-color: rgba(14, 60, 65, 0.479);
-  box-shadow: 0px 1px 11px 2px rgba(14, 60, 65, 0.479);
-  border-top: 14px solid rgb(10, 9, 41);
-  border-bottom: 1px solid rgba(14, 60, 65, 0.479);
+  background-color: rgba(5, 4, 70, 0.582);
+  box-shadow: 0px 1px 11px 2px rgba(5, 4, 70, 0.582);
+  border-top: 14px solid rgba(5, 4, 70, 0.582);
+  border-bottom: 1px solid rgba(5, 4, 70, 0.582);
   margin-bottom: 20px;
   margin-top: 0px;
-  height: 7.25rem; // 顶部导航栏宽度
+  height: 8rem; // 顶部导航栏宽度
   font-size: 2.25rem; // 导航栏上的文字大小
   z-index: 10;
-  opacity: 0.5 ;
+  // opacity: 0.5 ;
   font-optical-sizing: 1;
 
 }
@@ -116,14 +118,14 @@ body {
 
 .boxall {
   border: 0px solid rgba(25, 186, 138, 0);
-  padding:0 0rem 8rem 0rem;
+  padding:0 0rem 10rem 0rem;
   background: url(../picture/jianbian.png);
   // background: rgba(0, 0, 0, 0.418);
   background-size: 100% auto;
   position: relative;
   margin-bottom: 0px;
   z-index: 10;
-  height: 40rem; // 容器高度
+  height: 43rem; // 容器高度
 }
 
 .boxall:before,
@@ -148,14 +150,14 @@ body {
 
 .boxallright {
   border: 0px solid rgba(25, 186, 138, 0);
-  padding:0 0rem 8rem 0rem;
+  padding:0 0rem 10rem 0rem;
   background: url(../picture/jianbian-you.png);
   // background: rgba(0, 0, 0, 0.418);
   background-size: 100% auto;
   position: relative;
   margin-bottom: 0px;
   z-index: 10;
-  height: 40rem; // 容器高度
+  height: 43rem; // 容器高度
 }
 
 .boxallright:before,
@@ -182,7 +184,7 @@ body {
 
 .boxno {
   // border: 3px solid rgba(25,186,139,.17);
-  padding:0 2rem 0.5rem 2rem;
+  padding:0 2rem 1rem 2rem;
   // background: rgba(255,255,255,.04);
   background-size: 100% auto;
   position: relative;
