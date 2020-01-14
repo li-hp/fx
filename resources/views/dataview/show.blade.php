@@ -32,12 +32,28 @@
                 <div class="boxfoot"></div>
             </div>
 
-            <div class="boxall">
+            {{-- <div class="boxall">
                 <div class="alltitle">5会议室管理</div>
                 <div class="allnav" id="e555"></div>
                 <div class="boxfoot"></div>
-            </div>
+            </div> --}}
 
+            <div class="boxall">
+                <div class="alltitle">交互指令</div>
+                <div class="sysw">
+                    <button 
+                    class="changjingqiehuan btn-success center-block btn-sm ">
+                    <p style="font-size:5rem;">场景</p>
+                    </button>
+                </div>
+                <div class="sysw">
+                    <button 
+                    class="light btn-success center-block btn-sm ">
+                    <p style="font-size:5rem;">灯光</p>
+                    </button>
+                </div>
+                <div class="boxfoot"></div>
+            </div>
         </div>
 
         <div class="col-xs-12 col-sm-6">

@@ -1,16 +1,51 @@
-﻿
-$(function () {
+﻿$(function () {
 
 // airdata();setInterval(function(){airdata();}, 60000);
+// --------------- 场景切换 -----------------//
+let specialChannel_changjing = document.querySelector('.changjingqiehuan');
+let objData = {
+            "actionname": "changeScene",  //关键字
+            "id": "1" //0外部,1,俯视,2,室内漫游
+            }
+    specialChannel_changjing.addEventListener('click', function() {
+        cloudRender.SuperAPI('specialChannel', objData);  // 这里 specialChannel 不能修改
+
+        if ( objData.id == '1' ) {
+            objData.id = '0';
+            }
+        else {
+            objData.id = '1';}
+        })
+
+// --------------- 灯光控制  -----------------//
+let specialChannel_lightControl = document.querySelector('.light');
+let lightData = {
+            "actionname": "lightControl",//关键字
+            "id": "LightArea1",  //区域id：LightArea1-7
+            "state": "0",  //开关状态 0关,1开
+            "all": "true"  //是否控制全部 true,false
+            }
+    specialChannel_lightControl.addEventListener('click', function() {
+        cloudRender.SuperAPI('specialChannel', lightData);  // 这里 specialChannel 不能修改
+
+        if ( lightData.state == '1' ) {
+            lightData.state = '0';
+            }
+        else {
+            lightData.state = '1';}
+    })
+
+    
 
 e111();
 e222();
 e444();
-e555();
+// e555();
 e666();
 e777();
 e888();setInterval(function(){e888();}, 1500);
 e999();setInterval(function(){e999();}, 2000);
+
 
 
 function e111() {
@@ -1899,6 +1934,9 @@ function randomNum(minNum,maxNum){
             break;
     }
 }
+
+
+
 
 
 })

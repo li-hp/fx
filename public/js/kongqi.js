@@ -7,6 +7,7 @@ $(function () {
 
 // airdata();setInterval(function(){airdata();}, 60000);
 
+// --------------- 每1.5秒随机数 -----------------//
 kecharts_1();setInterval(function(){kecharts_1();}, 15000);
 kecharts_2();setInterval(function(){kecharts_2();}, 15000);
 kecharts_3();setInterval(function(){kecharts_3();}, 15000);
@@ -14,9 +15,7 @@ kecharts_4();setInterval(function(){kecharts_4();}, 15000);
 kecharts_5();setInterval(function(){kecharts_5();}, 15000);
 kecharts_6();setInterval(function(){kecharts_6();}, 15000);
 
-
-
-
+// --------------- echart图表 -----------------//
 function kecharts_1() {
 
     // 基于准备好的dom，初始化echarts实例
@@ -791,7 +790,62 @@ function kecharts_6() {
     });
 }
 
+// --------------- 场景切换 -----------------//
+let specialChannel_fushi = document.querySelector('.fushi');
+    specialChannel_fushi.addEventListener('click', function() {
+        let objData = {
+            "actionname": "changeScene",  //关键字
+            "id": "1" //0外部,1,俯视,2,室内漫游
+        }
+        cloudRender.SuperAPI('specialChannel', objData);  // 这里 specialChannel 不能修改
+     })
 
+// --------------- lightControl  -----------------//
+let specialChannel_lightControl = document.querySelector('.light');
+    specialChannel_lightControl.addEventListener('click', function() {
+        let objData =
+        {
+        "actionname": "lightControl",//关键字
+        "id": "LightArea1",  //窗帘id
+        "state": "0",  //开关状态 0关,1开
+        "all": "true"  //是否控制全部 true,false
+        }
+        cloudRender.SuperAPI('specialChannel', objData);  // 这里 specialChannel 不能修改
+        // if (lightData[2] = 0) {
+        //     lightData[2]
+        // }
+    })
+
+    
+let specialChannel_manyou = document.querySelector('.manyou');
+    specialChannel_manyou.addEventListener('click', function() {
+        let objData = {
+            "actionname": "changeScene",  //关键字
+            "id": "2" //0外部,1,俯视,2,室内漫游poi
+        }
+        cloudRender.SuperAPI('specialChannel', objData); 
+    })
+
+// --------------- poi点 -----------------//   
+let poi = document.querySelector('.addpoi');
+    poi.addEventListener('click', function(){
+        let poiData = 
+            {
+            "object_id" : "stripLight1",   //POI点的ID
+            "object_name": "大堂灯光", //POI提示文本
+            "object_floor": "3",//用于建筑楼层, 1 一层 (非必填)
+            "object_type": "light",//图标的类别 (图标的样式, 需双方沟通约定)//此项目中. 约定为：①cameraLine; ②buildingLine; ③portLine;
+            "coord_type": "1",  //(0: 经纬度gis, 1: cad坐标                                                                              )
+            "object_coord" : "280930.5555,-129875.3333",//POI点的坐标(坐标类型需与该POI点的object_type相同)
+            "coord_z": '0',//单位米, 坐标为GIS时决定POI图标高度; CAD时无效, 不用填
+            "showtitle":"true",//true 显示提示文本(默认), false 不显示提示文本
+            "showtitlerange":"30, 100",//此POI点显示title的镜头距离范围(单位米, 范围最小、最大距离; 在此范围内显示, 超出范围隐藏title, 注: showtitle属性为true时生效)
+            "monitormouseoverlap":"ture",//此POI是否允许监听鼠标划过事件
+            }
+            cloudRender.SuperAPI('AddPOI', poiData);
+            cloudRender.SuperAPI('ShowPOI', stripLight1);
+            // cloudRender.SuperAPI('FocusPOI', stripLight1, 20);
+        })
 
 
 
