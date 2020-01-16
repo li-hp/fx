@@ -1,0 +1,343 @@
+[
+    {
+        "secName": "模块行为",
+        "item": [
+            {
+                "dataCommand": "NextModule",
+                "itemName": "切换不同模块"
+            },
+            {
+                "dataCommand": "GetFrustumArea",
+                "itemName": "查询当前3D世界视口可视区域范围"
+            },
+            {
+                "dataCommand": "GetCameraInfo",
+                "itemName": "获取镜头信息"
+            }
+        ]
+    },
+    {
+        "secName": "POI点行为",
+        "item": [
+            {
+                "dataCommand": "AddPOI",
+                "itemName": "增加POI点"
+            },
+            {
+                "dataCommand": "UpdatePOIStyle",
+                "itemName": "更新POI点的样式"
+            },
+            {
+                "dataCommand": "UpdataPOITitleInfo",
+                "itemName": "更新POI点中的提示文本"
+            },
+            {
+                "dataCommand": "FocusPOI",
+                "itemName": "聚焦至POI点"
+            },
+            {
+                "dataCommand": "FocusAllPOI",
+                "itemName": "聚焦至全部POI点"
+            },
+            {
+                "dataCommand": "GetPOIScreenRange",
+                "itemName": "查询一个POI点位置信息"
+            },
+            {
+                "dataCommand": "ShowPOI",
+                "itemName": "显示POI点"
+            },
+            {
+                "dataCommand": "HidePOI",
+                "itemName": "隐藏POI点"
+            },
+            {
+                "dataCommand": "SetPOISelect",
+                "itemName": "控制POI选中状态"
+            },
+            {
+                "dataCommand": "RemovePOI",
+                "itemName": "删除POI点"
+            },
+            {
+                "dataCommand": "RemoveAllPOI",
+                "itemName": "删除全部POI点"
+            }
+        ]
+    },
+    {
+        "secName": "路径行为",
+        "item": [
+            {
+                "dataCommand": "AddPath",
+                "itemName": "增加路径"
+            },
+            {
+                "dataCommand": "FocusPath",
+                "itemName": "聚焦至路径"
+            },
+            {
+                "dataCommand": "FocusAllPath",
+                "itemName": "聚焦至全部路径"
+            },
+            {
+                "dataCommand": "ShowPath",
+                "itemName": "显示路径"
+            },
+            {
+                "dataCommand": "HidePath",
+                "itemName": "隐藏路径"
+            },
+            {
+                "dataCommand": "RemovePath",
+                "itemName": "删除路径"
+            },
+            {
+                "dataCommand": "RemoveAllPath",
+                "itemName": "删除全部路径"
+            }
+        ]
+    },
+    {
+        "secName": "区域热力图",
+        "item": [
+            {
+                "dataCommand": "AddHeatMapand",
+                "itemName": "增加区域热力图"
+            },
+            {
+                "dataCommand": "UpdateHeatMap",
+                "itemName": "更新区域热力图"
+            },
+            {
+                "dataCommand": "FocusHeatMap",
+                "itemName": "聚焦至区域热力图"
+            },
+            {
+                "dataCommand": "FocusAllHeatMap",
+                "itemName": "聚焦至全部区域热力图"
+            },
+            {
+                "dataCommand": "ShowHeatMap",
+                "itemName": "显示区域热力图"
+            },
+            {
+                "dataCommand": "HideHeatMap",
+                "itemName": "隐藏区域热力图"
+            },
+            {
+                "dataCommand": "RemoveHeatMap",
+                "itemName": "删除区域热力图"
+            },
+            {
+                "dataCommand": "RemoveAllHeatMap",
+                "itemName": "删除全部区域热力图"
+            }
+        ]
+    },
+    {
+        "secName": "路径热力图",
+        "item": [
+            {
+                "dataCommand": "AddRoadHeatMap",
+                "itemName": "增加路径热力图"
+            },
+            {
+                "dataCommand": "UpdateRoadHeatMap",
+                "itemName": "更新路径热力图"
+            },
+            {
+                "dataCommand": "FocusRoadHeatMap",
+                "itemName": "聚焦至路径热力图"
+            },
+            {
+                "dataCommand": "FocusAllRoadHeatMap",
+                "itemName": "聚焦至全部路径热力图"
+            },
+            {
+                "dataCommand": "ShowRoadHeatMap",
+                "itemName": "显示路径热力图"
+            },
+            {
+                "dataCommand": "HideRoadHeatMap",
+                "itemName": "隐藏路径热力图"
+            },
+            {
+                "dataCommand": "RemoveRoadHeatMap",
+                "itemName": "删除路径热力图"
+            },
+            {
+                "dataCommand": "RemoveAllRoadHeatMap",
+                "itemName": "删除全部路径热力图"
+            }
+        ]
+    },
+    {
+        "secName": "迁徙图",
+        "item": [
+            {
+                "dataCommand": "AddMigrationMap",
+                "itemName": "增加迁徙图"
+            },
+            {
+                "dataCommand": "FocusMigrationMap",
+                "itemName": "聚焦至迁徙图"
+            },
+            {
+                "dataCommand": "FocusAllMigrationMap",
+                "itemName": "聚焦至全部迁徙图"
+            },
+            {
+                "dataCommand": "ShowMigrationMap",
+                "itemName": "显示迁徙图"
+            },
+            {
+                "dataCommand": "HideMigrationMap",
+                "itemName": "隐藏迁徙图"
+            },
+            {
+                "dataCommand": "RemoveMigrationMap",
+                "itemName": "删除迁徙图"
+            },
+            {
+                "dataCommand": "RemoveAllMigrationMap",
+                "itemName": "删除全部迁徙图"
+            }
+        ]
+    },
+    {
+        "secName": "区域轮廓",
+        "item": [
+            {
+                "dataCommand": "AddRange",
+                "itemName": "增加区域轮廓"
+            },
+            {
+                "dataCommand": "FocusRange",
+                "itemName": "聚焦至区域轮廓"
+            },
+            {
+                "dataCommand": "FocusAllRange",
+                "itemName": "聚焦至全部区域轮廓"
+            },
+            {
+                "dataCommand": "ShowRange",
+                "itemName": "显示区域轮廓"
+            },
+            {
+                "dataCommand": "HideRange",
+                "itemName": "隐藏区域轮廓"
+            },
+            {
+                "dataCommand": "RemoveRange",
+                "itemName": "删除区域轮廓"
+            },
+            {
+                "dataCommand": "RemoveAllRange",
+                "itemName": "删除全部区域轮廓"
+            }
+        ]
+    },
+    {
+        "secName": "圆形区域轮廓",
+        "item": [
+            {
+                "dataCommand": "AddCircularRange",
+                "itemName": "增加圆形区域轮廓"
+            },
+            {
+                "dataCommand": "FocusCircularRange",
+                "itemName": "聚焦至圆形区域轮廓"
+            },
+            {
+                "dataCommand": "FocusAllCircularRange",
+                "itemName": "聚焦至全部圆形区域轮廓"
+            },
+            {
+                "dataCommand": "ShowCircularRange",
+                "itemName": "显示圆形区域轮廓"
+            },
+            {
+                "dataCommand": "HideCircularRange",
+                "itemName": "隐藏圆形区域轮廓"
+            },
+            {
+                "dataCommand": "RemoveCircularRange",
+                "itemName": "删除圆形区域轮廓"
+            },
+            {
+                "dataCommand": "RemoveAllCircularRange",
+                "itemName": "删除全部圆形区域轮廓"
+            }
+        ]
+    },
+    {
+        "secName": "场景特效",
+        "item": [
+            {
+                "dataCommand": "AddEffect",
+                "itemName": "增加特效"
+            },
+            {
+                "dataCommand": "FocusEffect",
+                "itemName": "聚焦至特效 "
+            },
+            {
+                "dataCommand": "FocusAllEffect",
+                "itemName": "聚焦至全部特效 "
+            },
+            {
+                "dataCommand": "ShowEffect",
+                "itemName": "显示特效 "
+            },
+            {
+                "dataCommand": "HideEffect",
+                "itemName": "隐藏特效 "
+            },
+            {
+                "dataCommand": "RemoveEffect",
+                "itemName": "删除特效"
+            },
+            {
+                "dataCommand": "RemoveAllEffect",
+                "itemName": "删除全部特效"
+            }
+        ]
+    },
+    {
+        "secName": "控件",
+        "item": [
+            {
+                "dataCommand": "SetEnvTime",
+                "itemName": "光照"
+            },
+            {
+                "dataCommand": "SetEnvWeather",
+                "itemName": "天气"
+            }
+        ]
+    },
+    {
+        "secName": "测量工具",
+        "item": [
+            {
+                "dataCommand": "StartMeasureTool",
+                "itemName": "开启测量工具"
+            },
+            {
+                "dataCommand": "EndMeasureTool",
+                "itemName": "关闭测量工具"
+            }
+        ]
+    },
+    {
+        "secName": "清除",
+        "item": [
+            {
+                "dataCommand": "ClearAll",
+                "itemName": "清除全部场景元素"
+            }
+        ]
+    }
+]
+

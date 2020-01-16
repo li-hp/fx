@@ -48,7 +48,7 @@
                 </div>
                 <div class="sysw">
                     <button 
-                    class="light button-3d button-plain button-primary center-block btn-sm ">
+                    class="light button-3d button-primary center-block btn-sm ">
                     <p style="font-size:5rem;">灯光</p>
                     </button>
                 </div>

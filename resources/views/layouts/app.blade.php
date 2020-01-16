@@ -12,8 +12,8 @@
   <!-- Js -->
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/echarts.min.js"></script>
-  <script type="text/javascript" src=" https://api.51hitech.com/jsapi/vender/superAPI-2.6.0-owell.min.js"></script>
-  {{-- <script type="text/javascript" src="js/superAPI.min.js"></script> --}}
+  {{-- <script type="text/javascript" src=" https://api.51hitech.com/jsapi/vender/superAPI-2.6.0-owell.min.js"></script> --}}
+  <script type="text/javascript" src="js/superAPI-2.6.0-owell.min.js"></script>
   
   <!-- Styles -->
   <link href="{{ mix('css/app.css') }}" rel="stylesheet">
@@ -41,14 +41,14 @@
   <script src="{{ mix('js/app.js') }}"></script>
 
 
-  <script type="text/javascript" src="js/area_echarts.js"></script>
+
      {{-- <script type="text/javascript" src="js/kongqi.js"></script> --}}
   <script type="text/javascript" src="js/guangqiang.js"></script>
   <script type="text/javascript" src="js/js.js"></script>
   <script type="text/javascript" src="js/51vr.js"></script>
   <script type="text/javascript" src="js/let.js"></script>
 
-  {{-- <script type="text/javascript" src="js/bg.js"></script> --}}
+  <script type="text/javascript" src="js/bg.js"></script>
   {{-- <script type="text/javascript" src="js/51.js"></script> --}}
     {{-- <script type="text/javascript" src="js/china.js"></script> --}}
   @yield('scripts')

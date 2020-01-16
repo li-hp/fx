@@ -1,4 +1,16 @@
-// 全局场景 
+/*
+
+这个是专门放变量的js
+文件存放组织结构为：全局、空气、光强、水、、、、等。
+每个结构下面分为控制模块和poi点。
+
+注意命名规范，缩进正确。
+
+2020/01/16 许耿瑞
+*/
+
+
+// --------------------------全局场景----------------------------------- //
 objData = {
          "actionname": "changeScene",  //关键字
          "id": "1" //0外部,1,俯视,2,室内漫游
@@ -13,7 +25,9 @@ objData1 = {
             "id": "1" //0外部,1,俯视,2,室内漫游
     }
 
-// 空气
+// --------------------------空气----------------------------------- //
+
+// 空气控制模块
 mapData = {
     "actionname": "showHideHeatMap",//关键字
     "state": "1",  //显隐状态 0隐,1显
@@ -26,13 +40,22 @@ freshairData ={
     "all": "true"  //是否控制全部 true,false
     }
 
-aircleanerData ={
+aircleanerData = {
     "actionname": "showHideAirCleaner",//关键字
         "id": "airCleaner1",  //id
         "state": "1",  //显隐状态 0隐,1显
         "all": "true"  //是否控制全部 true,false
     }
 
+airConditionerData = {
+        "actionname": "airConditionerControl",//关键字
+        "id": "0",  //id
+        "state": "1",  //显隐状态 0隐,1显
+        "all": "true"  //是否控制全部 true,false
+        }
+
+
+// 空气POI点
 airpoiData = {
     "object_id" : "air_conditioner",   //POI点的ID
     "object_name": "空调1-综合院", //POI提示文本
@@ -120,6 +143,7 @@ lightData = {
     "state": "0",  //开关状态 0关,1开
     "all": "true"  //是否控制全部 true,false
     }
+
 curtainsData = {
     "actionname": "curtainsControl",//关键字
     "id": "curtain9",  //窗帘id

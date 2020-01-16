@@ -58,7 +58,6 @@ let staticPwd = '123456';
 
 SuperAPI_StartRenderCloud_GetUrl();
 
-
 // var cloudBtn = document.getElementById('player1');
 
 // var cloudRender = new cloudRenderer('player', 0);
@@ -93,7 +92,12 @@ function myHandleResponseFunction(data) {
                     cloudRender.SuperAPI('specialChannel', roamData); 
                     break;
                 case 'air_conditioner':
-                    cloudRender.SuperAPI('specialChannel', mapData);  // 这里 specialChannel 不能修改
+                    cloudRender.SuperAPI('specialChannel', airConditionerData); 
+                    if ( airConditionerData.state == '1' ) {
+                        airConditionerData.state = '0';
+                        }
+                    else {
+                        airConditionerData.state = '1';}
                     break;
             }
             break;
@@ -120,7 +124,7 @@ function myHandleResponseFunction(data) {
 
 cloudRender.SuperAPI('RegisterCloudResponse', myHandleResponseFunction);
 
-const url = 'https://api.51hitech.com/jsapi/json/list.json', req = new Request(url);
+const url = 'js/list.json', req = new Request(url);
 
 fetch(req).then(response => response.json()).then(data => {
     let navList = document.querySelector('.nav-list'), _html = '';
