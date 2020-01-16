@@ -48,11 +48,48 @@
                 </div>
                 <div class="sysw">
                     <button 
-                    class="light btn-success center-block btn-sm ">
+                    class="light button-3d button-plain button-primary center-block btn-sm ">
                     <p style="font-size:5rem;">灯光</p>
                     </button>
                 </div>
+                <div class="sysw">
+                    <button 
+                    class="heatmap btn-success center-block btn-sm ">
+                    <p style="font-size:5rem;">热力</p>
+                    </button>
+                </div>
+                <div class="sysw">
+                    <button 
+                    class="curtains btn-primary center-block btn-sm ">
+                    <p style="font-size:5rem;">窗帘</p>
+                    </button>
+                </div>
+                <div class="sysw">
+                    <button 
+                    class="roam btn-primary center-block btn-sm ">
+                    <p style="font-size:5rem;">漫游</p>
+                    </button>
+                </div>
+                <div class="sysw">
+                    <button 
+                    class="freshair btn-primary center-block btn-sm ">
+                    <p style="font-size:5rem;">新风</p>
+                    </button>
+                </div>
+                <div class="sysw">
+                    <button 
+                    class="airpoi btn-primary center-block btn-sm ">
+                    <p style="font-size:5rem;">空气</p>
+                    </button>
+                </div>
+                <div class="sysw">
+                    <button 
+                    class="dianji btn-primary center-block btn-sm ">
+                    <p style="font-size:5rem;">测试</p>
+                    </button>
+                </div>
                 <div class="boxfoot"></div>
+                
             </div>
         </div>
 

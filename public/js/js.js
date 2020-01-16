@@ -1,12 +1,10 @@
 ﻿$(function () {
+//  ----------------------------------------------------------- 变量集合 ------------------------------------------------------------------------//
 
-// airdata();setInterval(function(){airdata();}, 60000);
+// ----------------------------------------------------------- 八个按钮 ------------------------------------------------------------------------//
+
 // --------------- 场景切换 -----------------//
 let specialChannel_changjing = document.querySelector('.changjingqiehuan');
-let objData = {
-            "actionname": "changeScene",  //关键字
-            "id": "1" //0外部,1,俯视,2,室内漫游
-            }
     specialChannel_changjing.addEventListener('click', function() {
         cloudRender.SuperAPI('specialChannel', objData);  // 这里 specialChannel 不能修改
 
@@ -19,14 +17,9 @@ let objData = {
 
 // --------------- 灯光控制  -----------------//
 let specialChannel_lightControl = document.querySelector('.light');
-let lightData = {
-            "actionname": "lightControl",//关键字
-            "id": "LightArea1",  //区域id：LightArea1-7
-            "state": "0",  //开关状态 0关,1开
-            "all": "true"  //是否控制全部 true,false
-            }
+
     specialChannel_lightControl.addEventListener('click', function() {
-        cloudRender.SuperAPI('specialChannel', lightData);  // 这里 specialChannel 不能修改
+        cloudRender.SuperAPI('specialChannel', lightData);  
 
         if ( lightData.state == '1' ) {
             lightData.state = '0';
@@ -35,8 +28,70 @@ let lightData = {
             lightData.state = '1';}
     })
 
-    
+    // --------------- 温度热力图  -----------------//
+let specialChannel_heatMap = document.querySelector('.heatmap');
+    specialChannel_heatMap.addEventListener('click', function() {
+        cloudRender.SuperAPI('specialChannel', mapData);  
 
+        if ( mapData.state == '1' ) {
+            mapData.state = '0';
+            }
+        else {
+            mapData.state = '1';}
+    })
+    
+// --------------- 窗帘控制  -----------------//
+let specialChannel_curTains = document.querySelector('.curtains');
+    specialChannel_curTains.addEventListener('click', function() {
+        cloudRender.SuperAPI('specialChannel', curtainsData); 
+
+        if ( curtainsData.state == '2' ) {
+            curtainsData.state = '0';
+            }
+        else {
+            curtainsData.state = '2';}
+    })
+
+// --------------- 漫游 -----------------//
+let specialChannel_roam = document.querySelector('.roam');
+    specialChannel_roam.addEventListener('click', function() {
+        cloudRender.SuperAPI('specialChannel', roamData); 
+    })
+
+// --------------- 新风管道  -----------------//
+let specialChannel_freshair = document.querySelector('.freshair');
+    specialChannel_freshair.addEventListener('click', function() {
+        cloudRender.SuperAPI('specialChannel', freshairData);  
+        cloudRender.SuperAPI('specialChannel', aircleanerData); 
+        // alert(freshairData[0].all); 
+
+        if ( freshairData.state == '1' && aircleanerData.state == '1') {
+            freshairData.state = '0';
+            aircleanerData.state = '0';
+            }
+        else {
+            freshairData.state = '1';
+            aircleanerData.state = '1';}
+    })
+
+// --------------- 空气POI点加载 -----------------//
+    let specialChannel_airpoi = document.querySelector('.airpoi');
+    specialChannel_airpoi.addEventListener('click', function() {
+        cloudRender.SuperAPI('specialChannel', objData1);
+        cloudRender.SuperAPI('AddPOI', airpoiData);
+        cloudRender.SuperAPI('AddPOI', airpoiData2);
+        cloudRender.SuperAPI('AddPOI', airpoiData3);
+        cloudRender.SuperAPI('AddPOI', airpoiData4);
+        cloudRender.SuperAPI('AddPOI', airpoiData5);
+        cloudRender.SuperAPI('AddPOI', airpoiData6);
+
+        // alert("已完成"); 
+    })
+
+    
+// ------------------------------------------------------------------------echart图表区------------------------------------------------------------//
+
+// airdata();setInterval(function(){airdata();}, 60000);
 e111();
 e222();
 e444();
@@ -1934,10 +1989,6 @@ function randomNum(minNum,maxNum){
             break;
     }
 }
-
-
-
-
 
 })
 

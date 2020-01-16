@@ -69,6 +69,7 @@ SuperAPI_StartRenderCloud_GetUrl();
 // });
 
 // 事件注册
+
 function myHandleResponseFunction(data) {
     let jsonObject = JSON.parse(data);
     console.log('receive: ' + data);
@@ -87,6 +88,14 @@ function myHandleResponseFunction(data) {
             let OnPOIClick_id = jsonObject.args.id;
             console.log('OnPOIClick id = ' + OnPOIClick_id);
             // 返回一个点击POI的ID值
+            switch(OnPOIClick_id) {
+                case 'air_pm25':
+                    cloudRender.SuperAPI('specialChannel', roamData); 
+                    break;
+                case 'air_conditioner':
+                    cloudRender.SuperAPI('specialChannel', mapData);  // 这里 specialChannel 不能修改
+                    break;
+            }
             break;
 
         case 'OnPOIMouseOverlap':

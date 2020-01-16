@@ -1,6 +1,6 @@
 // Variables
 @import 'variables';
-
+@import 'buttons';
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
@@ -105,7 +105,7 @@ body {
 }
 
 .sysw{
-  float:left; width:48%; height:100%;
+  float:left; width:20%; height:48%;
   margin-top: 5rem; margin-right: .5rem; margin-left: .5rem;
 }
 

@@ -28,6 +28,7 @@
 
  <div class="container-fulid">
     @include('layouts._header')
+
     @yield('content')
 
     @include('layouts._footer')
@@ -38,13 +39,18 @@
 
   <!-- Scripts -->
   <script src="{{ mix('js/app.js') }}"></script>
-  <script type="text/javascript" src="js/bg.js"></script>
-  <script type="text/javascript" src="js/china.js"></script>
+
+
   <script type="text/javascript" src="js/area_echarts.js"></script>
-   {{-- <script type="text/javascript" src="js/kongqi.js"></script> --}}
+     {{-- <script type="text/javascript" src="js/kongqi.js"></script> --}}
   <script type="text/javascript" src="js/guangqiang.js"></script>
   <script type="text/javascript" src="js/js.js"></script>
   <script type="text/javascript" src="js/51vr.js"></script>
+  <script type="text/javascript" src="js/let.js"></script>
+
+  {{-- <script type="text/javascript" src="js/bg.js"></script> --}}
+  {{-- <script type="text/javascript" src="js/51.js"></script> --}}
+    {{-- <script type="text/javascript" src="js/china.js"></script> --}}
   @yield('scripts')
 
 </body>
