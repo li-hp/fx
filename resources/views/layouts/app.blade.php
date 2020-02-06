@@ -64,10 +64,10 @@
   <script type="text/javascript" src="js/bg.js"></script>
 
   <script type="text/javascript" src="js/fashionfoucs.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+  <script type="text/javascript" src="https://echarts.baidu.com/resource/echarts-liquidfill-latest/dist/echarts-liquidfill.min.js"></script>
 
 
-  {{-- <script type="text/javascript" src="js/51.js"></script> --}}
-    {{-- <script type="text/javascript" src="js/china.js"></script> --}}
   @yield('scripts')
 
 </body>

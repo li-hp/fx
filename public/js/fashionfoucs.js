@@ -4,15 +4,22 @@ var slideTime = 5000;
 var adTxt = $("#banner_img>li>div>.ad_txt");
 var adImg = $("#banner_img>li>div>.ad_img");
 var int = setInterval("autoSlide()", slideTime);
+
+$( function(){
+    show($(this).index("#banner_ctr>ul>li[class!='first-item'][class!='last-item']"));
+});
+
 $("#banner_ctr>ul>li[class!='first-item'][class!='last-item']").click(function () {
     show($(this).index("#banner_ctr>ul>li[class!='first-item'][class!='last-item']"));
     window.clearInterval(int);
     int = setInterval("autoSlide()", slideTime);
 });
+
 function autoSlide() {
     curIndex + 1 >= $("#banner_img>li").size() ? curIndex = -1 : false;
     show(curIndex + 1);
 }
+
 function show(index) {
     $.easing.def = "easeOutQuad";
     $("#drag_ctr,#drag_arrow").stop(false, true).animate({ left: index * 115 + 20 }, 300);
