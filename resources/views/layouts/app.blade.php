@@ -14,60 +14,56 @@
   <script type="text/javascript" src="js/echarts.min.js"></script>
   {{-- <script type="text/javascript" src=" https://api.51hitech.com/jsapi/vender/superAPI-2.6.0-owell.min.js"></script> --}}
   <script type="text/javascript" src="js/superAPI-2.6.0-owell.min.js"></script>
-  
+
   <!-- Styles -->
   <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
  <!--<link href="css/index_style.css" rel="stylesheet" type="text/css">-->
-
-  <!-- 20200204新增 -->
-  <link href="css/fashionfoucs.css" rel="stylesheet">
-  <script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
-  <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
-  <script src="js/jquery.plugin.min.js" type="text/javascript"></script>
-
-
-
   @yield('styles')
 
 </head>
 
-<body>
-  <div class="boxno"> 
-    <div class="allnav" id="player" style="display:block;"></div>> 
-  </div>
-
-<div class="container-fulid">
-
-    
+<body >
+<!--container-fulid是之前做的星空背景，覆盖整个网页的背景图，未启用>-->
+<!--miancontain是想要填充子页面的大的div   将各个子页面用load方法填充进maincontian里>-->
+ <div class="container-fulid">
     @include('layouts._header')
+
 
     @yield('content')
 
     @include('layouts._footer')
-</div>
+  </div>
 
 
 
 
   <!-- Scripts -->
   <script src="{{ mix('js/app.js') }}"></script>
-
-
-
-  <script type="text/javascript" src="js/kongqi.js"></script> 
-  <script type="text/javascript" src="js/guangqiang.js"></script>
   <script type="text/javascript" src="js/js.js"></script>
+  <script type="text/javascript" src="js/show.js"></script>
+  <script type="text/javascript" src="js/guangqiang.js"></script>
+  <script type="text/javascript" src="js/kongqi.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <script type="text/javascript" src="js/51vr.js"></script>
   <script type="text/javascript" src="js/let.js"></script>
 
-  <script type="text/javascript" src="js/bg.js"></script>
 
-  <script type="text/javascript" src="js/fashionfoucs.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
-  <script type="text/javascript" src="https://echarts.baidu.com/resource/echarts-liquidfill-latest/dist/echarts-liquidfill.min.js"></script>
-
-
+  {{-- <script type="text/javascript" src="js/bg.js"></script>--}}
+  {{-- <script type="text/javascript" src="js/51.js"></script> --}}
+    {{-- <script type="text/javascript" src="js/china.js"></script> --}}
   @yield('scripts')
 
 </body>

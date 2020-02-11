@@ -18763,7 +18763,7 @@ body {
 }
 
 .navbar-brand {
-  font-size: 2.25rem;
+  font-size: 3rem;
 }
 
 /* Sticky footer styles */
@@ -19100,7 +19100,6 @@ canvas {
   background-clip: padding-box;
   -webkit-animation: radar 10 infinite linear;
   animation: radar 10s infinite linear;
-  background-image: linear-gradient(45deg, rgba(139, 168, 146, 0.01) 0%, rgba(139, 168, 146, 0.01) 50%, #8ba892 100%);
 }
 
 @keyframes radar {
@@ -19149,5 +19148,23 @@ canvas {
   font-size: 2.5rem;
   color: rgba(255, 255, 255, 0.7);
   padding-top: 0.1rem;
+}
+
+.all {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  z-index: 10;
+}
+
+.maincontain {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-left: 0.1px;
+  margin-right: 0.1px;
+  position: relative;
+  z-index: 11;
+  display: bloke;
 }
 

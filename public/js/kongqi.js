@@ -1,19 +1,15 @@
 ﻿
-
-
-
-
 $(function () {
 
 // airdata();setInterval(function(){airdata();}, 60000);
 
 // --------------- 每1.5秒随机数 -----------------//
-kecharts_1();setInterval(function(){kecharts_1();}, 15000);
-kecharts_2();setInterval(function(){kecharts_2();}, 15000);
-kecharts_3();setInterval(function(){kecharts_3();}, 15000);
-kecharts_4();setInterval(function(){kecharts_4();}, 15000);
-kecharts_5();setInterval(function(){kecharts_5();}, 15000);
-kecharts_6();setInterval(function(){kecharts_6();}, 15000);
+kecharts_1();setInterval(function(){kecharts_1();}, 1500);
+kecharts_2();setInterval(function(){kecharts_2();}, 1500);
+kecharts_3();setInterval(function(){kecharts_3();}, 1500);
+kecharts_4();setInterval(function(){kecharts_4();}, 1500);
+kecharts_5();setInterval(function(){kecharts_5();}, 1500);
+kecharts_6();setInterval(function(){kecharts_6();}, 1500);
 
 // --------------- echart图表 -----------------//
 function kecharts_1() {
@@ -789,7 +785,7 @@ function kecharts_6() {
         myChart.resize();
     });
 }
-
+/*
 // --------------- 场景切换 -----------------//
 let specialChannel_fushi = document.querySelector('.fushi');
     specialChannel_fushi.addEventListener('click', function() {
@@ -816,20 +812,20 @@ let specialChannel_lightControl = document.querySelector('.light');
         // }
     })
 
-    
+
 let specialChannel_manyou = document.querySelector('.manyou');
     specialChannel_manyou.addEventListener('click', function() {
         let objData = {
             "actionname": "changeScene",  //关键字
             "id": "2" //0外部,1,俯视,2,室内漫游poi
         }
-        cloudRender.SuperAPI('specialChannel', objData); 
+        cloudRender.SuperAPI('specialChannel', objData);
     })
 
-// --------------- poi点 -----------------//   
+// --------------- poi点 -----------------//
 let poi = document.querySelector('.addpoi');
     poi.addEventListener('click', function(){
-        let poiData = 
+        let poiData =
             {
             "object_id" : "stripLight1",   //POI点的ID
             "object_name": "大堂灯光", //POI提示文本
@@ -850,6 +846,7 @@ let poi = document.querySelector('.addpoi');
 
 
 //生成从minNum到maxNum的随机数
+*/
 function randomNum(minNum,maxNum){
     switch(arguments.length){
         case 1:
@@ -863,6 +860,7 @@ function randomNum(minNum,maxNum){
             break;
     }
 }
+
 
 
 })

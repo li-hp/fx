@@ -1,23 +1,12 @@
-@extends('layouts.app')
-
-@section('title')
-
-@section('content')
-{{-- 全局css all  除了头尾意外的部分 --}}
-<div class="all" style="padding-right: 0px; padding-left:0px; margin-left:0px; margin-right:0px;z-index: 10;">
-
-{{--coxno   用来加载51vr --}}
-<div class="boxno">
-                <div class="allnav" id="player"></div>
- </div>
- {{--maincontain 用于加载echart --}}
-<div class="maincontain" style="padding-right: 0px; padding-left:0px; margin-left:0.1px; margin-right:0.1px;">
 
     <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:0.5px; margin-right:0.5px;">
 
 
 
         <div class="col-xs-12 col-sm-3" style="padding-left:0px; padding-right: 0px">
+
+
+
 
 
 
@@ -39,11 +28,7 @@
                 <div class="boxfoot"></div>
             </div>
 
-            {{-- <div class="boxall">
-                <div class="alltitle">5会议室管理</div>
-                <div class="allnav" id="e555"></div>
-                <div class="boxfoot"></div>
-            </div> --}}
+
 
             <div class="boxall">
                 <div class="alltitle">交互指令</div>
@@ -102,14 +87,7 @@
 
         <div class="col-xs-12 col-sm-6">
 
-            {{-- <div class="boxall_3d">
-                <div class="alltitle">全景地图</div>
-                <div class="allnav">
 
-                <img src="/img/东田三层.png"    style="position: relative;width:100%;height:100%;opacity:0.4">
-                </div>
-                <div class="boxfoot"></div>
-            </div> --}}
         </div>
 
         <div class="col-xs-12 col-sm-3" style="padding-left:0px; padding-right: 0px">
@@ -141,8 +119,5 @@
             </div>
 
         </div>
-        </div>
-    </div>
-    </div>
 
-@stop
+    </div>
