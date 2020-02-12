@@ -9,15 +9,13 @@ $(function () {
 // airdata();setInterval(function(){airdata();}, 60000);
 
 e111();setInterval(function(){e111();}, 1500);
-e222();setInterval(function(){e222();},  2000);
-e444();setInterval(function(){e444();}, 1500);
+e222();setInterval(function(){e222();},  5000);
+e444();setInterval(function(){e444();}, 4000);
 // e555();
-e666();setInterval(function(){e666();},  2000);
+e666();setInterval(function(){e666();},  3000);
 e777();
-e888();setInterval(function(){e888();}, 1500);
-
-
-e999();setInterval(function(){e999();},  2000);
+e888();setInterval(function(){e888();}, 3500);
+e999();setInterval(function(){e999();},  2500);
 
 
 
@@ -36,9 +34,9 @@ function e111() {
     //    backgroundColor: '#0f375f',
        grid: {
             left: '5%', // 与容器左侧的距离
-            right: '5%', // 与容器右侧的距离
+            right: '15%', // 与容器右侧的距离
             top: "15%",
-            bottom: "10%"
+            bottom: "20%"
        },
     //    tooltip: {
     //        trigger: "axis",
@@ -72,6 +70,7 @@ function e111() {
                "十一月",
                "十二月",
            ],
+          
            axisLine: {
                show: true //隐藏X轴轴线
            },
@@ -80,10 +79,12 @@ function e111() {
            },
            axisLabel: {
                show: true,
+               rotate:45,
                textStyle: {
                     fontSize:24,
                    color: "#ebf8ac", //X轴文字颜色
                    margin:20,
+                
                }
            },
             axisLine: {
@@ -154,31 +155,7 @@ function e111() {
                    }
                }
            },
-           {
-               type: "value",
-               gridIndex: 0,
-               min: 50,
-               max: 100,
-               splitNumber: 8,
-               splitLine: {
-                   show: false
-               },
-               axisLine: {
-                   show: false
-               },
-               axisTick: {
-                   show: false
-               },
-               axisLabel: {
-                   show: false
-               },
-               splitArea: {
-                   show: true,
-                   areaStyle: {
-                       color: ["rgba(250,250,250,0.0)", "rgba(250,250,250,0.05)"]
-                   }
-               }
-           }
+
        ],
        series: [{
                name: "甲醛浓度",
@@ -233,11 +210,14 @@ function e222() {
 
     var myChart = echarts.init(document.getElementById('e222'));
 
+    var randome21 = [randomNum(1,20)];
+
+
     let scaleData = [
 
         {
             'name': '浑浊度',
-            'value': 25
+            'value': randome21[0]
         },
         {
             'name': '透明度',
@@ -609,67 +589,122 @@ function e222() {
 
 function e444() {
     // 基于准备好的dom，初始化echarts实例
-var myChart = echarts.init(document.getElementById('e444'));
-option = {
-
-    calculable: true,
-
-    series: [
-        {
-            name:'漏斗图表',
-            type:'funnel',
-            left: '15%',
-            top:' 10%',
-            //x2: 80,
-            bottom: '5%',
-            width: '70%',
-            // height: {totalHeight} - y - y2,
-            min: 0,
-            max: 100,
-            minSize: '0%',
-            maxSize: '100%',
-            sort: 'descending',
-            gap: 2,
-
+    var myChart = echarts.init(document.getElementById('e444'));
+    var randome41 = [randomNum(25,40),randomNum(8,15),randomNum(3,5)];
+    var scaleData = [{
+        'name': '谷类',
+        'value': randome41[0]
+    },
+    {
+        'name': '果蔬',
+        'value': randome41[1]
+    },
+    {
+        'name': '奶制品',
+        'value': 10
+    },
+    {
+        'name': '肉类、豆类',
+        'value': randome41[2]
+    },
+    {
+        'name': '脂肪、甜品',
+        'value': 5
+    },
+    ];
+    var rich = {
+    white: {
+        color: '#fff',
+        fontSize: '24',
+        fontWeight: 'bold',
+        align: 'center',
+        padding: [3, 0]
+    }
+    };
+    var placeHolderStyle = {
+    normal: {
+        label: {
+            show: false
+        },
+        labelLine: {
+            show: false
+        },
+        color: 'rgba(0, 0, 0, 0)',
+        borderColor: 'rgba(0, 0, 0, 0)',
+        borderWidth: 0
+    }
+    };
+    var data = [];
+    var color=['#ff3000','#00cfff','#006ced','#ffe000','#ffa800','#ff5b00','#ff3000']
+    for (var i = 0; i < scaleData.length; i++) {
+    data.push({
+        value: scaleData[i].value,
+        name: scaleData[i].name,
+        itemStyle: {
+            normal: {
+                borderWidth: 5,
+                shadowBlur: 20,
+                borderColor:color[i],
+                shadowColor: color[i]
+            }
+        }
+    }, {
+        value: 2,
+        name: '',
+        itemStyle: placeHolderStyle
+    });
+    }
+    var seriesObj = [{
+    name: '',
+    type: 'pie',
+    clockWise: false,
+    radius: [195, 200],
+    hoverAnimation: false,
+    itemStyle: {
+        normal: {
             label: {
                 show: true,
-                position: 'inside',
-                fontSize: 24
-
-            },
-            color:['#00B2E1','#083A03','#DF3A01','#CCCC33','#660099'],
-            labelLine: {
-                length: 1,
-                lineStyle: {
-                    width: 1,
-                    type: 'solid'
-                }
-            },
-            itemStyle: {
-
-                borderWidth: 1
-            },
-            emphasis: {
-                label: {
-                    fontSize: 50
+                position: 'outside',
+                color: '#fff',
+                fontSize: '24',
+                fontWeight: 'bold',
+                formatter: function(params) {
+                    var percent = 0;
+                    var total = 0;
+                    for (var i = 0; i < scaleData.length; i++) {
+                        total += scaleData[i].value;
+                    }
+                    percent = ((params.value / total) * 100).toFixed(0);
+                    if(params.name !== '') {
+                        return params.name + '\n{white|' + '占比' + percent + '%}';
+                    }else {
+                        return '';
+                    }
                 },
-
+                rich: rich
             },
-
-            data: [
-
-                {value: 20, name: '油：:20-30g\n盐：:6g'},
-                {value: 40, name: '奶类和奶制品：300g\n大豆及坚果：:30-50g'},
-                {value: 60, name: '畜禽肉类：50-75g\n鱼虾类：50-100g\n蛋类：25-50g'},
-                {value: 80, name: '蔬果：300-500g\n水果：200-400g'},
-                {value: 100, name: '水：1200ml\n谷类，豆类，薯类：250-400g'}
-            ]
-
-        },
-
-    ]
-};
-
+            labelLine: {
+                length:30,
+                length2:100,
+                show: true,
+                color:'#00ffff'
+            }
+        }
+    },
+    data: data
+    }];
+    option = {
+    tooltip: {
+        show: false
+    },
+    legend: {
+        show: false
+    },
+    toolbox: {
+        show: false
+    },
+    series: seriesObj
+    }
 
     // 使用刚指定的配置项和数据显示图表。
     myChart.setOption(option);
@@ -677,6 +712,7 @@ option = {
         myChart.resize();
     });
 }
+
 
 function e555() {
     var myChart = echarts.init(document.getElementById('e555'));

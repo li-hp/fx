@@ -14,6 +14,7 @@
   <script type="text/javascript" src="js/echarts.min.js"></script>
   {{-- <script type="text/javascript" src=" https://api.51hitech.com/jsapi/vender/superAPI-2.6.0-owell.min.js"></script> --}}
   <script type="text/javascript" src="js/superAPI-2.6.0-owell.min.js"></script>
+  <script type="text/javascript" src="https://echarts.baidu.com/resource/echarts-liquidfill-latest/dist/echarts-liquidfill.min.js"></script>
 
   <!-- Styles -->
   <link href="{{ mix('css/app.css') }}" rel="stylesheet">

@@ -25,8 +25,7 @@
           <li class="nav-item "><div class="nav-link4" ><i class="fa fa-sun" ></i>&nbsp;水质&nbsp;&nbsp;&nbsp;</div></li>
           <li class="nav-item "><div class="nav-link5" ><i class="fa fa-futbol"></i>&nbsp;营养&nbsp;&nbsp;&nbsp;</div></li>
           <li class="nav-item "><div class="nav-link6" ><i class="fa fa-fire" ></i>&nbsp;健身&nbsp;&nbsp;&nbsp;</div></li>
-          <li class="nav-item "><div class="nav-link7" ><i class="fa fa-camera" ></i>&nbsp;会议室管理&nbsp;&nbsp;&nbsp;</div></li>
-          <li class="nav-item "><div class="nav-link8" ><i class="fa fa-camera"></i>&nbsp;人员管理&nbsp;&nbsp;&nbsp;</div></li>
+          <li class="nav-item "><div class="nav-link7" ><i class="fa fa-camera" ></i>&nbsp;综合&nbsp;&nbsp;&nbsp;</div></li>
         </ul>
     </div>
 </nav>

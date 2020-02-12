@@ -367,74 +367,49 @@ canvas {
   background-position: center 0;
 }
 
-////////////////
-/////////雷达
-////////////////
-.allnav .radar {
-  position: relative;
-  z-index: 9995;
-  width: 400px;
-  height: 400px;
-  text-align: center;
-  margin: 5% auto;
-  border: 2px solid #8ba892;
-  overflow: hidden;
-
-  -webkit-border-radius: 300px;
-  border-radius: 300px;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-}
-
- .allnav .radar .line {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 50%;
-  right: 50%;
-  z-index: 9999;
-  -webkit-transform-origin: 300px 300px;
-  transform-origin: 100% 100%;
-  -webkit-border-radius: 300px 0 0 0;
-  border-radius: 300px 0 0 0;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-animation: radar 10 infinite linear;
-  animation: radar 10s infinite linear;
-}
-
-@keyframes radar {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes radar {
-  from {
-      -webkit-transform: rotate(0deg);
-      transform: rotate(0deg);
-  }
-  to {
-      -webkit-transform: rotate(360deg);
-      transform: rotate(360deg);
-  }
-}
-
 
 ///////////////////////////////////////////////实时数据文字//////////////////////
-.barbox3 li{ width:25%;
+.barbox3 li{ 
+  width:25%;
   text-align: center; 
   position: relative;
   z-index: 100;
 }
-.barbox4 li{ width:25%; text-align: center; position: relative; z-index: 100;}
+.barbox4 li{ 
+  width:25%; 
+  text-align: center; 
+  position: relative; 
+  z-index: 100;
+}
 
-.barbox3 li{ font-size: 2.5rem; color: rgb(22, 219, 121); padding: .05rem 0;   font-weight: bold;margin-top:5%;}
-.barbox4 li{ font-size: 2.5rem; color:rgba(255,255,255,.7); padding-top:.1rem;}
+.barbox3 li{ 
+  font-size: 2.5rem; 
+  color: rgb(22, 219, 121); 
+  padding: .05rem 0;   
+  font-weight: bold;margin-top:5%;}
+.barbox4 li{ 
+  font-size: 2.5rem; 
+  color:rgba(255,255,255,.7); 
+  padding-top:.1rem;
+}
 
 
 /////////////大的框部分
-.all{padding-right: 0px; padding-left:0px; margin-left:0px; margin-right:0px;z-index: 10;}
-.maincontain{padding-right: 0px; padding-left:0px; margin-left:0.1px; margin-right:0.1px;position:relative;z-index: 11;display:bloke;}
+.all{
+  padding-right: 0px; 
+  padding-left:0px; 
+  margin-left:0px; 
+  margin-right:0px;
+  z-index: 10;
+}
+
+.maincontain{
+  padding-right: 0px; 
+  padding-left:0px; 
+  margin-left:0.1px; 
+  margin-right:0.1px;
+  position:relative;
+  z-index: 11;
+  display:block;
+}
+

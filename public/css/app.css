@@ -19073,55 +19073,6 @@ canvas {
   background-position: center 0;
 }
 
-.allnav .radar {
-  position: relative;
-  z-index: 9995;
-  width: 400px;
-  height: 400px;
-  text-align: center;
-  margin: 5% auto;
-  border: 2px solid #8ba892;
-  overflow: hidden;
-  border-radius: 300px;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-}
-
-.allnav .radar .line {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 50%;
-  right: 50%;
-  z-index: 9999;
-  transform-origin: 100% 100%;
-  border-radius: 300px 0 0 0;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  -webkit-animation: radar 10 infinite linear;
-  animation: radar 10s infinite linear;
-}
-
-@keyframes radar {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes radar {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .barbox3 li {
   width: 25%;
   text-align: center;
@@ -19165,6 +19116,6 @@ canvas {
   margin-right: 0.1px;
   position: relative;
   z-index: 11;
-  display: bloke;
+  display: block;
 }
 

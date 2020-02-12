@@ -27,19 +27,19 @@
         <div class="col-xs-12 col-sm-3" style="padding-left:0px; padding-right: 0px">
 
             <div class="boxall">
-                <div class="alltitle">1空气</div>
+                <div class="alltitle">空气</div>
                 <div class="allnav" id="e111"></div>
                 <div class="boxfoot"></div>
             </div>
 
             <div class="boxall">
-                <div class="alltitle">2水</div>
+                <div class="alltitle">水</div>
                 <div class="allnav" id="e222"></div>
                 <div class="boxfoot"></div>
             </div>
 
             <div class="boxall">
-                <div class="alltitle">4营养</div>
+                <div class="alltitle">营养</div>
                 <div class="allnav" id="e444"></div>
                 <div class="boxfoot"></div>
             </div>
@@ -108,25 +108,25 @@
 
 
             <div class="boxallright">
-                <div class="alltitle">6光强</div>
+                <div class="alltitle">光强</div>
                 <div class="allnav" id="e666"></div>
                 <div class="boxfoot"></div>
             </div>
 
             <div class="boxallright">
-                <div class="alltitle">7健身</div>
+                <div class="alltitle">健身</div>
                 <div class="allnav" id="e777"></div>
                 <div class="boxfoot"></div>
             </div>
 
             <div class="boxallright">
-                <div class="alltitle">8舒适</div>
+                <div class="alltitle">舒适</div>
                 <div class="allnav" id="e888"></div>
                 <div class="boxfoot"></div>
             </div>
 
             <div class="boxallright">
-                <div class="alltitle">9人员管理</div>
+                <div class="alltitle">综合</div>
                 <div class="allnav" id="e999"></div>
                 <div class="boxfoot"></div>
             </div>
