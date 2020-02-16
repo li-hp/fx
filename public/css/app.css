@@ -19119,3 +19119,293 @@ canvas {
   display: block;
 }
 
+.box {
+  background-color: #202932;
+  margin: 50px 200px;
+}
+
+.f-nav {
+  height: 60px;
+  overflow: hidden;
+  transition: all 1s;
+  display: block;
+  position: relative;
+  padding: 0;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+  background-color: #202932;
+}
+
+.f-nav li {
+  padding: 0;
+  margin: 0;
+  /* float: left; */
+  height: 60px;
+  line-height: 60px;
+  position: relative;
+  z-index: 100;
+  display: inline-block;
+  list-style-type: none;
+  width: 100px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sideline {
+  position: absolute;
+  background-color: #208ff9;
+  left: 0;
+  top: 0;
+  color: #fff;
+  min-height: 30px;
+  z-index: 1;
+  height: 60px;
+  line-height: 60px;
+  display: inline-block;
+  list-style-type: none;
+  width: 100px;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.f-nav li.active {
+  background-color: #208ff9;
+  color: #fff;
+}
+
+.f-nav li.fontNav {
+  background-color: #208ff9;
+  color: #fff;
+  -webkit-animation: fontNav 0.8s;
+          animation: fontNav 0.8s;
+}
+
+.f-nav li.downNav {
+  background-color: #208ff9;
+  color: #fff;
+  -webkit-animation: downNav 0.8s;
+          animation: downNav 0.8s;
+}
+
+.f-nav li.leftNav {
+  background-color: #208ff9;
+  color: #fff;
+  -webkit-animation: leftNav 0.8s;
+          animation: leftNav 0.8s;
+}
+
+.f-nav li.rightNav {
+  background-color: #208ff9;
+  color: #fff;
+  -webkit-animation: rightNav 0.8s;
+          animation: rightNav 0.8s;
+}
+
+/*左边缘*/
+
+.f-nav li.edgeLeft {
+  background-color: #208ff9;
+  color: #fff;
+  -webkit-animation: edgeLeft 0.8s;
+          animation: edgeLeft 0.8s;
+}
+
+/*右边缘*/
+
+.f-nav li.edgeRight {
+  background-color: #208ff9;
+  color: #fff;
+  -webkit-animation: edgeRight 0.8s;
+          animation: edgeRight 0.8s;
+}
+
+/*从中间变大*/
+
+.f-nav li.scaleChange {
+  background-color: #208ff9;
+  color: #fff;
+  -webkit-animation: scaleChange 0.8s;
+          animation: scaleChange 0.8s;
+}
+
+@-webkit-keyframes scaleChange {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleChange {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes fontNav {
+  0% {
+    transform: translate(0, -100%);
+  }
+
+  50% {
+    transform: translate(0, -50%);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes fontNav {
+  0% {
+    transform: translate(0, -100%);
+  }
+
+  50% {
+    transform: translate(0, -50%);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@-webkit-keyframes downNav {
+  0% {
+    transform: translate(0, 100%);
+  }
+
+  50% {
+    transform: translate(0, 5%);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes downNav {
+  0% {
+    transform: translate(0, 100%);
+  }
+
+  50% {
+    transform: translate(0, 5%);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@-webkit-keyframes leftNav {
+  0% {
+    transform: translate(-100%, 0%);
+  }
+
+  50% {
+    transform: translate(-50%, 0%);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes leftNav {
+  0% {
+    transform: translate(-100%, 0%);
+  }
+
+  50% {
+    transform: translate(-50%, 0%);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@-webkit-keyframes rightNav {
+  0% {
+    transform: translate(100%, 0%);
+  }
+
+  50% {
+    transform: translate(50%, 0%);
+  }
+
+  100% {
+    transform: translate(0%, 0);
+  }
+}
+
+@keyframes rightNav {
+  0% {
+    transform: translate(100%, 0%);
+  }
+
+  50% {
+    transform: translate(50%, 0%);
+  }
+
+  100% {
+    transform: translate(0%, 0);
+  }
+}
+
+@-webkit-keyframes edgeLeft {
+  0% {
+    transform: translate(-100%, -100%);
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes edgeLeft {
+  0% {
+    transform: translate(-100%, -100%);
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@-webkit-keyframes edgeRight {
+  0% {
+    transform: translate(100%, 100%);
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes edgeRight {
+  0% {
+    transform: translate(100%, 100%);
+  }
+
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
