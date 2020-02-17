@@ -60,4 +60,9 @@ class PagessController extends Controller
     {
         return view('phpinfo.datav');
     }
+
+    public function biaogetest()
+    {
+        return view('phpinfo.biaogetest');
+    }
 }

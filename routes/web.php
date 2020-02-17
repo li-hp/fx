@@ -12,6 +12,7 @@
 */
 // phpinfo测试页面
 Route::get('/phpinfo', 'PagessController@phpinfo')->name('phpinfo');
+Route::get('/biaogetest', 'PagessController@biaogetest')->name('biaogetest');
 
 //主页
 Route::get('/', 'PagessController@index')->name('index');

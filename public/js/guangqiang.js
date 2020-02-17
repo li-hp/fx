@@ -1,15 +1,11 @@
 ﻿
-
-
-
-
 $(function () {
 
     // airdata();setInterval(function(){airdata();}, 60000);
 
     gecharts_1();
-    gecharts_2();setInterval(function(){gecharts_2();}, 15000);
-    gecharts_3();setInterval(function(){gecharts_3();}, 15000);
+    gecharts_2();setInterval(function(){gecharts_2();}, 1500);
+    gecharts_3();setInterval(function(){gecharts_3();}, 1500);
     //gecharts_4();setInterval(function(){gecharts_4();}, 15000);
     //gecharts_5();setInterval(function(){gecharts_5();}, 15000);
     //gecharts_6();setInterval(function(){gecharts_6();}, 15000);
