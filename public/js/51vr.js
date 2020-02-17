@@ -71,7 +71,7 @@ SuperAPI_StartRenderCloud_GetUrl();
 
 function myHandleResponseFunction(data) {
     let jsonObject = JSON.parse(data);
-    console.log('receive: ' + data);
+    // console.log('receive: ' + data);
 
     switch(jsonObject.func_name) {
         case 'beginPlay':
@@ -89,7 +89,11 @@ function myHandleResponseFunction(data) {
             // 返回一个点击POI的ID值
             switch(OnPOIClick_id) {
                 case 'air_pm25':
-                    cloudRender.SuperAPI('specialChannel', roamData); 
+     
+                    cloudRender.SuperAPI('FocusPOI', 'air_pm25', '25');
+                    cloudRender.SuperAPI('RegisterCloudResponse', 'OnPOIScreenRage');
+                    cloudRender.SuperAPI('RegisterCloudResponse', 'OnPOIMouseOverlap');
+                    
                     break;
                 case 'air_conditioner':
                     cloudRender.SuperAPI('specialChannel', airConditionerData); 
@@ -98,31 +102,46 @@ function myHandleResponseFunction(data) {
                         }
                     else {
                         airConditionerData.state = '1';}
+                    
                     break;
             }
             break;
 
+
         case 'OnPOIMouseOverlap':
-            let OnPOIMouseOverlap_id = jsonObject.args.id;
-            console.log('OnPOIMouseOverlap_id = ' + OnPOIMouseOverlap_id);
-            // 返回一个滑过POI的ID值
+                let OnPOIMouseOverlap_id = jsonObject.args.id;
+                console.log('OnPOIMouseOverlap_id = ' + OnPOIMouseOverlap_id);
+                // 返回一个滑过POI的ID值
+                break;
+    
+        // case 'OnCameraInfo':
+        //     let OnCameraInfo_coord = jsonObject.args.coord;
+        //     console.log('OnCameraInfo_coord = ' + OnCameraInfo_coord);
+        //     // 返回当前镜头经纬度信息
+        //     break;
+
+        case 'OnPOIScreenRage':
+            let OnPOIScreenRageLeftUp = jsonObject.args.LeftUp;
+            console.log('OnPOIScreenRageLeftUp = ' + OnPOIScreenRageLeftUp);
+            //查询一个POI点左上顶点基于3D世界视口区域的左上角距离比值
             break;
 
-        case 'OnCameraInfo':
-            let OnCameraInfo_coord = jsonObject.args.coord;
-            console.log('OnCameraInfo_coord = ' + OnCameraInfo_coord);
-            // 返回当前镜头经纬度信息
-            break;
+        // case 'OnPOIFocusStart':
+        //     let OnPOIFocusStart_id = jsonObject.args.id;
+        //     console.log('OnPOIFocusStart_id = ' + OnPOIFocusStart_id);
+        //     // 场景FOCUS至POI点镜头动作开始时返回信息
+        //     break;
 
-        case 'OnPOIFocusEnd':
-            let OnPOIFocusEnd_id = jsonObject.args.id;
-            console.log('OnPOIFocusEnd_id = ' + OnPOIFocusEnd_id);
-            // 场景FOCUS至POI点镜头动作结束时返回信息
-            break;
+        // case 'OnPOIFocusEnd':
+        //     let OnPOIFocusEnd_id = jsonObject.args.id;
+        //     console.log('OnPOIFocusEnd_id = ' + OnPOIFocusEnd_id);
+        //     // 场景FOCUS至POI点镜头动作结束时返回信息
+        //     break;
     }
 }
 
 cloudRender.SuperAPI('RegisterCloudResponse', myHandleResponseFunction);
+
 
 const url = 'js/list.json', req = new Request(url);
 

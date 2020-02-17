@@ -73,7 +73,7 @@ let specialChannel_freshair = document.querySelector('.freshair');
             aircleanerData.state = '1';}
     })
 
-// --------------- 空气POI点加载 -----------------//
+// --------------- 空气子页面加载 -----------------//
     let specialChannel_airpoi = document.querySelector('.airpoi');
     specialChannel_airpoi.addEventListener('click', function() {
         cloudRender.SuperAPI('specialChannel', objData1);
@@ -83,11 +83,21 @@ let specialChannel_freshair = document.querySelector('.freshair');
         cloudRender.SuperAPI('AddPOI', airpoiData4);
         cloudRender.SuperAPI('AddPOI', airpoiData5);
         cloudRender.SuperAPI('AddPOI', airpoiData6);
-
+        // cloudRender.SuperAPI('FocusAllPOI');
+        layer.msg('hello'); 
+        
         // alert("已完成"); 
     })
 
-    
+
+// ------------------- 天气和日光角度 -------------//
+let specialChannel_tianqi = document.querySelector('.tianqi');
+specialChannel_tianqi.addEventListener('click', function() {
+    let timeString = '20:00';
+    // cloudRender.SuperAPI('SetEnvTime', timeString);
+    cloudRender.SuperAPI('SetEnvWeather', 2);
+    })
+        
 // ------------------------------------------------------------------------echart图表区------------------------------------------------------------//
 
 // airdata();setInterval(function(){airdata();}, 60000);
@@ -1988,6 +1998,10 @@ function randomNum(minNum,maxNum){
             break;
     }
 }
+
+
+
+
 
 })
 

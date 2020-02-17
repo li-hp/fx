@@ -84,8 +84,8 @@
                 </div>
                 <div class="sysw">
                     <button 
-                    class="dianji btn-primary center-block btn-sm ">
-                    <p style="font-size:5rem;">测试</p>
+                    class="tianqi btn-primary center-block btn-sm ">
+                    <p style="font-size:5rem;">天气</p>
                     </button>
                 </div>
                 <div class="boxfoot"></div>
