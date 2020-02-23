@@ -146,7 +146,7 @@
     <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:9.5px; margin-right:9.5px;">
         <div class="col-xs-12 col-sm-3">
 
-            <div class="boxall">
+            <!-- <div class="boxall">
                 <div class="alltitle">  空气实时数据 </div>
                 <div class="allnav" id="kechart7">
 
@@ -187,6 +187,11 @@
                     </ul>
                     </div>
                 </div>
+                <div class="boxfoot"></div>
+            </div> -->
+            <div class="boxall">
+                <div class="alltitle">实时数据</div>
+                <div class="allnav" id="kechart0"></div>
                 <div class="boxfoot"></div>
             </div>
 

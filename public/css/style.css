@@ -16,7 +16,7 @@
 .f-nav li {
 	padding: 0;
 	margin: 0;
-	float: left;
+	/* float: left; */
 	height: 60px;
 	line-height: 60px;
 	position: relative;

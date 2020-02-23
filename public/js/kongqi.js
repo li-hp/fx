@@ -4,19 +4,444 @@ $(function () {
 // airdata();setInterval(function(){airdata();}, 60000);
 
 // --------------- 每1.5秒随机数 -----------------//
-kecharts_1();setInterval(function(){kecharts_1();}, 1500);
-kecharts_2();setInterval(function(){kecharts_2();}, 1500);
-kecharts_3();setInterval(function(){kecharts_3();}, 1500);
-kecharts_4();setInterval(function(){kecharts_4();}, 1500);
-kecharts_5();setInterval(function(){kecharts_5();}, 1500);
-kecharts_6();setInterval(function(){kecharts_6();}, 1500);
+kecharts_0();setInterval(function(){kecharts_0();}, randomNum(2000,7000));
+kecharts_1();setInterval(function(){kecharts_1();}, randomNum(2000,7000));
+kecharts_2();setInterval(function(){kecharts_2();}, randomNum(2000,7000));
+kecharts_3();setInterval(function(){kecharts_3();}, randomNum(2000,7000));
+kecharts_4();setInterval(function(){kecharts_4();}, randomNum(2000,7000));
+kecharts_5();setInterval(function(){kecharts_5();}, randomNum(2000,7000));
+kecharts_6();setInterval(function(){kecharts_6();}, randomNum(2000,7000));
 
 // --------------- echart图表 -----------------//
+function kecharts_0() {
+
+    var myChart = echarts.init(document.getElementById('kechart0'));
+
+    var randomdata = [randomNum(25,29), randomNum(40,70), randomNum(20,90), randomNum(20,90), randomNum(0,15), randomNum(1,5)];
+
+    var radius = ['45%', '40%'];
+
+    option = {
+
+        series: [
+            {
+                name: '温度',
+                type: 'pie',
+                radius: radius,
+                center: ['15%', '25%'],
+                startAngle: 225,
+                color: [new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                    offset: 0,
+                    color: '#FDFF5C'
+                }, {
+                    offset: 1,
+                    color: '#F2F5A9'
+                }]), "transparent"],
+                labelLine: {
+                    normal: {
+                        show: false
+                    }
+                },
+                label: {
+                        normal: {
+                            position: 'center'
+                        }
+                    },
+                data: [{
+                    value: 75,
+                     name: '温度',
+                        label: {
+                            normal: {
+                                formatter: '温度',
+                                textStyle: {
+                                    color: '#EFFBFB',
+                                    fontSize: 24,
+                                }
+                            }
+                        }
+                },
+                {
+                    value: randomdata[0],
+                    name: '%',
+                        label: {
+                            normal: {
+                                formatter: '\n\n{c0}',
+                                textStyle: {
+                                    color: '#FDFF5C',
+                                    fontSize: 24,
+                                }
+                            }
+                        }
+                },
+                {
+                    value: 0,
+                    name: '%',
+                        label: {
+                            normal: {
+                                formatter: '',
+                                textStyle: {
+                                    color: '#EFFBFB',
+                                    fontSize: 24,
+
+                                }
+                            }
+                        }
+                }],
+            },
+
+            {
+                name: '湿度',
+                type: 'pie',
+                radius: radius,
+                center: ['50%', '25%'],
+                startAngle: 225,
+                color: [new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                    offset: 0,
+                    color: '#9FE6B8'
+                }, {
+                    offset: 1,
+                    color: '#32C5E9'
+                }]), "transparent"],
+                labelLine: {
+                    normal: {
+                        show: false
+                    }
+                },
+                label: {
+                        normal: {
+                            position: 'center'
+                        }
+                    },
+                data: [{
+                    value: 75,
+                     name: '湿度',
+                        label: {
+                            normal: {
+                                formatter: '湿度',
+                                textStyle: {
+                                    color: '#FFFFFF',
+                                    fontSize: 24,
+                                }
+                            }
+                        }
+                },
+                {
+                    value: randomdata[1],
+                    name: '%',
+                        label: {
+                            normal: {
+                                formatter: '\n\n{c0}',
+                                textStyle: {
+                                    color: '#9FE6B8',
+                                    fontSize: 24,
+
+                                }
+                            }
+                        }
+                },
+                {
+                    value: 0,
+                    name: '%',
+                        label: {
+                            normal: {
+                                formatter: '',
+                                textStyle: {
+                                    color: '#FFFFFF',
+                                    fontSize: 24,
+
+                                }
+                            }
+                        }
+                }]
+            },
+
+            {
+                name: '甲醛',
+                type: 'pie',
+                radius: radius,
+                center: ['85%', '25%'],
+                startAngle: 225,
+                labelLine: {
+                    normal: {
+                        show: false
+                    }
+                },
+                label: {
+                        normal: {
+                            position: 'center'
+                        }
+                    },
+                data: [{
+                    value: 75,
+                    "itemStyle": {
+                        "normal": {
+                            "color": new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                                "offset": 0,
+                                "color": '#FF9F7F'
+                            }, {
+                                "offset": 1,
+                                "color": '#FB7293'
+                            }]),
+                        }
+                    },
+                     name: '甲醛',
+                        label: {
+                            normal: {
+                                formatter: '甲醛',
+                                textStyle: {
+                                    color: '#ffff',
+                                    fontSize: 24
+
+                                }
+                            }
+                        }
+                }, {
+                    value: randomdata[2],
+                    name: '%',
+                        label: {
+                            normal: {
+                                formatter: '\n\n{c0}',
+                                textStyle: {
+                                    color: '#FF9F7F',
+                                    fontSize: 24,
+
+                                }
+                            }
+                        }
+                },
+                {
+                    value: 0,
+                    name: '%',
+                        label: {
+                            normal: {
+                                formatter: '',
+                                textStyle: {
+                                    color: '#fff',
+                                    fontSize: 24,
+
+                                }
+                            }
+                        }
+                }]
+            },
+            // 下一行3个
+            {
+                name: 'PM2.5',
+                type: 'pie',
+                radius: radius,
+                center: ['15%', '75%'],
+                startAngle: 225,
+                labelLine: {
+                    normal: {
+                        show: false
+                    }
+                },
+                label: {
+                        normal: {
+                            position: 'center',
+                            formatter: 'PM2.5',
+                            textStyle: {
+                                color: '#ffff',
+                                fontSize: 24
+                            }
+                        }
+                    },
+                data: [
+                    {
+                    value: 75,
+                    "itemStyle": {
+                        "normal": {
+                            "color": new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                                "offset": 0,
+                                "color": '#A9A9F5'
+                            }, {
+                                "offset": 1,
+                                "color": '#8258FA'
+                            }]),
+                        }
+                    },
+                    name: 'PM2.5'
+                },
+                {
+                    value: randomdata[3],
+                    name: '%',
+                    label: {
+                        formatter: '\n\n{c0}',
+                        textStyle: {
+                            color: '#A9A9F5',
+                            fontSize: 24,
+                            },
+                    }
+                },
+                {
+                    value: 0,
+                    name: '%',
+                        label: {
+                            normal: {
+                                formatter: '',
+                                textStyle: {
+                                    color: '#FAFAFA',
+                                    fontSize: 24,
+
+                                }
+                            }
+                        }
+                }
+            ]
+            },
+
+            {
+                name: 'CO2 浓度',
+                type: 'pie',
+                radius: radius,
+                center: ['50%', '75%'],
+                startAngle: 225,
+                labelLine: {
+                    normal: {
+                        show: false
+                    }
+                },
+                label: {
+                        normal: {
+                            position: 'center'
+                        }
+                    },
+                data: [{
+                    value: 75,
+                    "itemStyle": {
+                        "normal": {
+                            "color": new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                                "offset": 0,
+                                "color": '#0080FF'
+                            }, {
+                                "offset": 1,
+                                "color": '#00FFFF'
+                            }]),
+                        }
+                    },
+                     name: 'CO2 浓度',
+                        label: {
+                            normal: {
+                                formatter: 'CO2 浓度',
+                                textStyle: {
+                                    color: '#ffff',
+                                    fontSize: 24
+
+                                }
+                            }
+                        }
+                }, {
+                    value: randomdata[4],
+                    name: '%',
+                        label: {
+                            normal: {
+                                formatter: '\n\n{c0}',
+                                textStyle: {
+                                    color: '#00FFFF',
+                                    fontSize: 24
+
+                                }
+                            }
+                        }
+                },
+                {
+                    value: 0,
+                    name: '%',
+                        label: {
+                            normal: {
+                                formatter: '',
+                                textStyle: {
+                                    color: '#ffff',
+                                    fontSize: 24
+
+                                }
+                            }
+                        }
+                }]
+            },
+
+            {
+                name: 'VOC',
+                type: 'pie',
+                radius: radius,
+                center: ['85%', '75%'],
+                startAngle: 225,
+                labelLine: {
+                    normal: {
+                        show: false
+                    }
+                },
+                label: {
+                        normal: {
+                            position: 'center'
+                        }
+                    },
+                data: [
+                    {
+                    value: 75,
+                    "itemStyle": {
+                        "normal": {
+                            "color": new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                                "offset": 0,
+                                "color": '#04B486'
+                            }, {
+                                "offset": 1,
+                                "color": '#01DFD7'
+                            }]),
+                        }
+                    },
+
+                    label: {
+                        normal: {
+                            formatter: '可挥发化合物',
+                            textStyle: {
+                                color: '#04B486',
+                                fontSize: 24,
+                                }
+                        }
+                    }
+                }, 
+                {
+                    value: randomdata[5],
+                    name: '%',
+                    label: {
+                        formatter: '\n\n{c0}',
+                        textStyle: {
+                            color: '#00BFFF',
+                            fontSize: 24,
+                            },
+                    }
+                },
+                {
+                    value: 0,
+                    name: '%',
+                        label: {
+                            normal: {
+                                formatter: '',
+                                textStyle: {
+                                    color: '#fff',
+                                    fontSize: 24,
+                                }
+                            }
+                        }
+                }]
+            },
+        ]
+    };
+    myChart.setOption(option);
+    window.addEventListener("resize",function(){
+        myChart.resize();
+    });
+}
+
 function kecharts_1() {
 
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('kechart1'));
-    var randome81 = [randomNum(600,2000),randomNum(600,2000), randomNum(600,2000), randomNum(600,2000), randomNum(600,2000), randomNum(600,2000)];
+    var randome81 = [randomNum(600,2000), 
+        randomNum(600,2000), randomNum(600,2000), 
+        randomNum(600,2000), randomNum(600,2000), 
+        randomNum(600,2000), randomNum(600,2000)];
 
     option = {
         tooltip: {
@@ -32,29 +457,31 @@ function kecharts_1() {
         top:'0%',
             data:['CO2指标'],
                     textStyle: {
-            color: 'rgba(255,255,255,.5)',
-                fontSize:'12',
+                        color: "#fff",
+                        fontSize:'24',
+                        fontWeight: 'bold',
             }
         },
 
         grid: {
             left: '0%',
             top: '13%',
-            right: '10%',
+            right: '15%',
             bottom: '7%',
             containLabel: true
         },
 
         xAxis: [{
-            name:"分钟前",
+            // name:"分钟前",
             nameLocation:'center',
-            nameGap:23,
+            nameGap:40,
             nameTextStyle:{
-                color:  "rgba(255,255,255,.6)",
-                fontSize: 12,
+                color: "#fff",
+                fontSize:'24',
+                fontWeight: 'bold',
             },
             type: 'category',
-            data: ['5', '4', '3', '2', '1'],
+            data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
             axisLine: {
                 show: true,
              lineStyle: {
@@ -72,8 +499,9 @@ function kecharts_1() {
                     show: true,
                     splitNumber: 15,
                     textStyle: {
-                         color: "rgba(255,255,255,.6)",
-                        fontSize: '12',
+                        color: "#fff",
+                        fontSize:'24',
+                        fontWeight: 'bold',
                     },
                 },
         }],
@@ -81,8 +509,9 @@ function kecharts_1() {
         yAxis: [{
             name:"浓度:PPM",
             nameTextStyle:{
-                color:  "rgba(255,255,255,.6)",
-                fontSize: 12,
+                color: "#fff",
+                fontSize:'24',
+                fontWeight: 'bold',
             },
             type: 'value',
             axisTick: {show: false},
@@ -95,8 +524,9 @@ function kecharts_1() {
             },
         axisLabel:  {
                 textStyle: {
-                        color: "rgba(255,255,255,.6)",
-                    fontSize:12,
+                    color: "#fff",
+                    fontSize:'24',
+                    fontWeight: 'bold',
                 },
             },
             splitArea:{
@@ -117,19 +547,30 @@ function kecharts_1() {
                 type: 'line',
                 smooth: true,
                 symbol: 'circle',
-                symbolSize: 5,
-                showSymbol: false,
+                showAllSymbol: true,
+                // symbol: 'image://./static/images/guang-circle.png',
+                symbolSize: 20,
                 lineStyle: {
                     normal: {
-                        color: '#00B2EE',
-                        width: 2
-                    }
+                        // color: "#53fdfe", // 线条颜色
+                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                            offset: 0,
+                            color: '#0080FF'
+                        }, {
+                            offset: 1,
+                            color: '#00FFFF'
+                        }]),
+                        barBorderRadius: 12,
+                        width:10
+                    },
+
+                    borderColor: '#f0f',
                 },
                 itemStyle: {
                     normal: {
-                        color: '#00B2EE',
+                        color: '#00FFFF',
                         borderColor: 'rgba(221, 220, 107, .1)',
-                        borderWidth: 12
+                        borderWidth: 30
                     }
                 },
                 data: randome81,
@@ -139,7 +580,10 @@ function kecharts_1() {
                     label: {
                         show:true,
                         position:'end', // 'start\middle\end'
-                        formatter: '{b}'
+                        formatter: '{b}',
+                        color: "#fff",
+                        fontSize:'24',
+                        fontWeight: 'bold',
                     },
                     data: [{
                         name: '中',
@@ -165,7 +609,7 @@ function kecharts_1() {
 function kecharts_2() {
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('kechart2'));
-    var randome81 = [randomNum(100,700),randomNum(100,700),randomNum(100,700),randomNum(100,700),randomNum(100,700)];
+    var randome81 = [randomNum(500,700),randomNum(490,700),randomNum(660,700),randomNum(550,700),randomNum(400,700),randomNum(500,700),randomNum(400,700),];
     option = {
         tooltip: {
             trigger: 'axis',
@@ -186,21 +630,22 @@ function kecharts_2() {
         grid: {
             left: '0%',
             top: '13%',
-            right: '10%',
+            right: '15%',
             bottom: '7%',
             containLabel: true
         },
 
         xAxis: [{
-            name:"分钟前",
+            // name:"分钟前",
             nameLocation:'center',
             nameGap:23,
             nameTextStyle:{
-                color:  "rgba(255,255,255,.6)",
-                fontSize: 12,
+                color: "#fff",
+                fontSize:'24',
+                fontWeight: 'bold',
             },
             type: 'category',
-            data: ['5', '4', '3', '2', '1'],
+            data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
             axisLine: {
                 show: true,
              lineStyle: {
@@ -218,8 +663,10 @@ function kecharts_2() {
                     show: true,
                     splitNumber: 15,
                     textStyle: {
-                         color: "rgba(255,255,255,.6)",
-                        fontSize: '12',
+                        color: "#fff",
+                        fontSize:'24',
+                        fontWeight: 'bold',
+
                     },
                 },
         }],
@@ -227,8 +674,9 @@ function kecharts_2() {
         yAxis: [{
             name:"浓度:PPB",
             nameTextStyle:{
-                color:  "rgba(255,255,255,.6)",
-                fontSize: 12,
+                color: "#fff",
+                fontSize:'24',
+                fontWeight: 'bold',
             },
             type: 'value',
             max:750,
@@ -240,8 +688,9 @@ function kecharts_2() {
             },
            axisLabel:  {
                 textStyle: {
-                        color: "rgba(255,255,255,.6)",
-                    fontSize:12,
+                    color: "#fff",
+                    fontSize:'24',
+                    fontWeight: 'bold',
                 },
             },
             splitArea:{
@@ -261,12 +710,19 @@ function kecharts_2() {
             name: '可挥发化合物VOC',
             type: 'bar',
             data: randome81 ,
-            barWidth:'50%', //柱子宽度
+            barWidth:'30px', //柱子宽度
             itemStyle: {
                 normal: {
-                    color:'#00B2EE',
-                    opacity: 1,
-                    barBorderRadius: 5,
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: '#04B486'// 0% 处的颜色
+                    }, {
+                        offset: 1,
+                        color: '#01DFD7' // 100% 处的颜色
+                    }], false),
+                    barBorderRadius: [30, 30, 0, 0],
+                    shadowColor: 'rgba(0,255,225,1)',
+                    shadowBlur: 4,
                 }
             },
             markLine:{
@@ -275,7 +731,10 @@ function kecharts_2() {
                 label: {
                     show:true,
                     position:'end', // 'start\middle\end'
-                    formatter: '{b}'
+                    formatter: '{b}',
+                    color: "#fff",
+                    fontSize:'24',
+                    fontWeight: 'bold',
                 },
                 data: [{
                     name: '中',
@@ -299,93 +758,136 @@ function kecharts_2() {
 
 function kecharts_3() {
     // 基于准备好的dom，初始化echarts实例
-    var myChart = echarts.init(document.getElementById('kechart3'));
-    var fuhao = "%";
-    var randome81 = [randomNum(1,100)];
+    var value = randomNum(1,9) / 10;
+    var data = [value,value];
+    var dom = document.getElementById("kechart3");
+    // dom.style.height=window.innerHeight+'px';
+    var myChart = echarts.init(dom);
+    var app = {};
+    option = null;
     option = {
-        grid: {
-            left: '5%',
-            top:'1px',
-            right: '15%',
-            bottom: '2%',
-        containLabel: true
-        },
-
-        tooltip : {
-            formatter: "{a} <br/>{b} : {c}%"
-        },
-
-        series: [
-            {
-                name:'湿度',
-                type:'gauge',
-                min:0,
-                max:99,
-                splitNumber:5,
-                center : ['50%', '55%'],
-                radius: '90%',
-                axisLine: {            // 坐标轴线
-                    lineStyle: {       // 属性lineStyle控制线条样式
-                        color: [[0.3, '#ff4500'],[0.75, 'lime'],[1,'#436EEE']],
-                        width: 5,
-                        shadowColor : '#fff', //默认透明
-                        shadowBlur: 1
-                    }
-                },
-                axisLabel: {            // 坐标轴小标记
-                    textStyle: {       // 属性lineStyle控制线条样式
-                        fontWeight: 'bolder',
-                        color: '#fff',
-                        shadowColor : '#fff', //默认透明
-                        shadowBlur: 1
-                    }
-                },
-                axisTick: {            // 坐标轴小标记
-                    length :15,        // 属性length控制线长
-                    lineStyle: {       // 属性lineStyle控制线条样式
-                        color: 'auto',
-                        shadowColor : '#fff', //默认透明
-                        shadowBlur: 1
-                    }
-                },
-                splitLine: {           // 分隔线
-                    length :25,         // 属性length控制线长
-                    lineStyle: {       // 属性lineStyle（详见lineStyle）控制线条样式
-                        width:3,
-                        color: '#fff',
-                        shadowColor : '#fff', //默认透明
-                        shadowBlur: 10
-                    }
-                },
-                pointer: {           // 分隔线
-                    shadowColor : '#fff', //默认透明
-                    shadowBlur: 5
-                },
-                title : {
-                    textStyle: {
-                        // 表盘中央符号的设置，其余属性默认使用全局文本样式，详见TEXTSTYLE
-                        fontWeight: 'bolder',
-                        fontSize: 20,
-                        fontStyle: 'italic',
-                        color: '#fff',
-                        shadowColor : '#fff', //默认透明
-                        shadowBlur: 10
-                    }
-                },
-                detail : {
-                    show:true,
-                    backgroundColor: 'rgba(255,255,255,.04)',
-                    borderWidth: 1,
-                    offsetCenter: [0, '50%'],       // x, y，单位px
-                    textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
-                        fontWeight: 'bolder',
-                        fontSize: 15,
-                        color: '#FCFCFC'
-                    }
-                },
-                data: randome81,
-            }]
-    };
+        //  backgroundColor: new echarts.graphic.RadialGradient(0.3, 0.3, 0.8, [{
+        //     offset: 0,
+        //     color: '#431ab8'
+        // }, {
+        //     offset: 1,
+        //     color: '#471bba'
+        // }]),
+         title: {
+             text: (value * 100).toFixed(0) + '{a|%}',
+             textStyle: {
+                 fontSize: 50,
+                 fontFamily: 'Microsoft Yahei',
+                 fontWeight: 'normal',
+                 color: '#fff',
+                 rich: {
+                     a: {
+                         fontSize: 28,
+                         fontWeight: 'bold',
+                     }
+                 }
+             },
+             x: 'center',
+             y: '35%'
+         },
+         graphic: [{
+             type: 'group',
+             left: 'center',
+             top: '60%',
+             children: [{
+                 type: 'text',
+                 z: 100,
+                 left: '10',
+                 top: 'middle',
+                 style: {
+                     fill: '#fff',
+                     text: '实时湿度',
+                     font: '24px Microsoft YaHei',
+                     fontWeight: 'bold',
+                 }
+             }]
+         }],
+         series: [{
+             type: 'liquidFill',
+             radius: '80%',
+             center: ['50%', '50%'],
+             //  shape: 'roundRect',
+             data: data,
+             backgroundStyle: {
+                 color: {
+                     type: 'linear',
+                     x: 1,
+                     y: 0,
+                     x2: 0.5,
+                     y2: 1,
+                     colorStops: [{
+                         offset: 1,
+                         color: 'rgba(68, 145, 253, 0)'
+                     }, {
+                         offset: 0.5,
+                         color: 'rgba(68, 145, 253, .25)'
+                     }, {
+                         offset: 0,
+                         color: 'rgba(68, 145, 253, 1)'
+                     }],
+                     globalCoord: false
+                 },
+             },
+             outline: {
+                 borderDistance: 0,
+                 itemStyle: {
+                     borderWidth: 20,
+                     borderColor: {
+                         type: 'linear',
+                         x: 0,
+                         y: 0,
+                         x2: 0,
+                         y2: 1,
+                         colorStops: [{
+                             offset: 0,
+                             color: 'rgba(69, 73, 240, 0)'
+                         }, {
+                             offset: 0.5,
+                             color: 'rgba(69, 73, 240, .25)'
+                         }, {
+                             offset: 1,
+                             color: 'rgba(69, 73, 240, 1)'
+                         }],
+                         globalCoord: false
+                     },
+                     shadowBlur: 10,
+                     shadowColor: '#000',
+                 }
+             },
+             color: {
+                 type: 'linear',
+                 x: 0,
+                 y: 0,
+                 x2: 0,
+                 y2: 1,
+                 colorStops: [{
+                     offset: 1,
+                     color: 'rgba(58, 71, 212, 0)'
+                 }, {
+                     offset: 0.5,
+                     color: 'rgba(31, 222, 225, .2)'
+                 }, {
+                     offset: 0,
+                     color: 'rgba(31, 222, 225, 1)'
+                 }],
+                 globalCoord: false
+             },
+             label: {
+                 normal: {
+                     formatter: '',
+                 }
+             }
+         }, ]
+     };
+     myChart.setOption(option);
+     window.addEventListener("resize",function(){
+         myChart.resize();
+     });
 
     // 使用刚指定的配置项和数据显示图表。
     myChart.setOption(option);
@@ -397,92 +899,156 @@ function kecharts_3() {
 function kecharts_4() {
     // 基于准备好的dom，初始化echarts实例
 var myChart = echarts.init(document.getElementById('kechart4'));
-var randome81 = [randomNum(10,40)];
-    option = {
+var randome81 = [randomNum(22,29),randomNum(22,29),randomNum(22,29),randomNum(22,29),randomNum(22,29),randomNum(22,29),randomNum(22,29),randomNum(22,29)];
+option = {
+    // backgroundColor: "#05224d",
+    tooltip: {},
     grid: {
+        top: '8%',
         left: '5%',
-        top:'1px',
         right: '5%',
-        bottom: '2%',
-    containLabel: true
+        bottom: '8%',
+        containLabel: true,
     },
-
-    tooltip : {
-        formatter: "{a} <br/>{b} : {c}%"
+    legend: {
+        itemGap: 50,
+        data: ['变化趋势' ,'每日数据'],
+        textStyle: {
+            color: "#fff",
+            fontSize:'24',
+            fontWeight: 'bold',
+        },
     },
+    xAxis: [{
+        type: 'category',
+        boundaryGap: true,
+        axisLine: { //坐标轴轴线相关设置。数学上的x轴
+            show: true,
+            lineStyle: {
+                color: '#f9f9f9'
+            },
+        },
+        axisLabel: { //坐标轴刻度标签的相关设置
+            textStyle: {
+                color: "#fff",
+                fontSize:'24',
+                fontWeight: 'bold',
+                margin: 15,
+            },
+        },
+        axisTick: {
+            show: false,
+        },
+        data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
+    }],
+    yAxis: [{
+        type: 'value',
+        min: 0,
+        // max: 140,
+        splitNumber: 7,
+        splitLine: {
+            show: true,
+            lineStyle: {
+                color: '#0a3256'
+            }
+        },
+        axisLine: {
+            show: false,
+        },
+        axisLabel: {
+            margin: 20,
+            textStyle: {
+                color: "#fff",
+                fontSize:'24',
+                fontWeight: 'bold',
 
+            },
+        },
+        axisTick: {
+            show: false,
+        },
+    }],
     series: [
         {
-            name:'温度仪表盘',
-            type:'gauge',
-            min:0,
-            max:60,
-            splitNumber:4,
-            center : ['50%', '55%'],
-            radius: '90%',
-            axisLine: {            // 坐标轴线
-                lineStyle: {       // 属性lineStyle控制线条样式
-                    color: [[0.4, '#436EEE'],[0.52, 'lime'],[1, '#ff4500']],
-                    width: 5,
-                    shadowColor : '#fff', //默认透明
-                    shadowBlur: 1
-                }
+        name: '变化趋势',
+        type: 'line',
+        // smooth: true, //是否平滑曲线显示
+        // symbol:'circle',  // 默认是空心圆（中间是白色的），改成实心圆
+        showAllSymbol: true,
+        symbol: 'emptyCircle',
+        symbolSize: 20,
+        lineWidth:'15px',
+        lineStyle: {
+            normal: {
+                color: "#28ffb3", // 线条颜色
             },
-            axisLabel: {            // 坐标轴小标记
-                textStyle: {       // 属性lineStyle控制线条样式
-                    fontWeight: 'bolder',
-                    color: '#fff',
-                    shadowColor : '#fff', //默认透明
-                    shadowBlur: 1
-                }
-            },
-            axisTick: {            // 坐标轴小标记
-                length :15,        // 属性length控制线长
-                lineStyle: {       // 属性lineStyle控制线条样式
-                    color: 'auto',
-                    shadowColor : '#fff', //默认透明
-                    shadowBlur: 1
-                }
-            },
-            splitLine: {           // 分隔线
-                length :25,         // 属性length控制线长
-                lineStyle: {       // 属性lineStyle（详见lineStyle）控制线条样式
-                    width:3,
-                    color: '#fff',
-                    shadowColor : '#fff', //默认透明
-                    shadowBlur: 10
-                }
-            },
-            pointer: {           // 分隔线
-                shadowColor : '#fff', //默认透明
-                shadowBlur: 5
-            },
-            title : {
-                textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
-                    fontWeight: 'bolder',
-                    fontSize: 20,
-                    fontStyle: 'italic',
-                    color: '#fff',
-                    shadowColor : '#fff', //默认透明
-                    shadowBlur: 10
-                }
-            },
-            detail : {
-                show:true,
-                backgroundColor: 'rgba(255,255,255,.04)',
-                borderWidth: 1,
-                offsetCenter: [0, '50%'],       // x, y，单位px
-                textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
-                    fontWeight: 'bolder',
-                    fontSize: 15,
-                    color: '#FCFCFC',
+            barBorderRadius: 12,
+            Width:10,
+                },
+        label: {
+            show: false,
+            position: 'top',
+            textStyle: {
+                color: "#fff",
+                fontSize:'24',
+                fontWeight: 'bold',
+            }
+        },
+        itemStyle: {
+            normal: {
+                color: "#28ffb3",
 
+            }
+        },
+        tooltip: {
+            show: false
+        },
+        areaStyle: { //区域填充样式
+            normal: {
+                //线性渐变，前4个参数分别是x0,y0,x2,y2(范围0~1);相当于图形包围盒中的百分比。如果最后一个参数是‘true’，则该四个值是绝对像素位置。
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: 'rgba(0,154,120,1)'
+                    },
+                    {
+                        offset: 1,
+                        color: 'rgba(0,0,0, 0)'
+                    }
+                ], false),
+                shadowColor: 'rgba(53,142,215, 0.9)', //阴影颜色
+                shadowBlur: 20 //shadowBlur设图形阴影的模糊大小。配合shadowColor,shadowOffsetX/Y, 设置图形的阴影效果。
                 }
             },
-            // data:[{value: resultdata, name: '℃'}]
-            data:randome81,
-        }]
-    };
+            data: [randome81[0]+10,randome81[1]+10,randome81[2]+10,randome81[3]+10,randome81[4]+10,randome81[5]+10,randome81[0]+10,]
+        }, {
+        name: '每日数据',
+        type: 'bar',
+        barWidth: '30px',
+        tooltip: {
+            show: false
+        },
+         label: {
+            show: true,
+            position: 'top',
+            textStyle: {
+                color: "#fff",
+                fontSize:'24',
+                fontWeight: 'bold',
+            }
+        },
+        itemStyle: {
+            normal: {
+                color: function(params) {
+                    var colorList = ['#0ec1ff', '#10cdff', '#12daff', '#15ebff', '#17f8ff', '#1cfffb', '#1dfff1'];
+                    return colorList[params.dataIndex];
+                },
+                barBorderRadius: [30, 30, 0, 0],
+                shadowBlur: 4,
+            }
+        },
+        data: randome81
+    }]
+};
 
     // 使用刚指定的配置项和数据显示图表。
     myChart.setOption(option);
@@ -494,13 +1060,13 @@ var randome81 = [randomNum(10,40)];
 function kecharts_5() {
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('kechart5'));
-    var randome81 = [randomNum(0,90),randomNum(0,70),randomNum(1,70),randomNum(1,70),randomNum(10,70)];
+    var randome81 = [randomNum(20,90),randomNum(20,90),randomNum(20,90),randomNum(20,90),randomNum(20,90),randomNum(20,90),randomNum(20,90),];
     option = {
 
         grid: {
-            left: '0%',
+            left: '5%',
             top: '13%',
-            right: '10%',
+            right: '5%',
             bottom: '7%',
             containLabel: true
         },
@@ -510,15 +1076,16 @@ function kecharts_5() {
         },
 
         xAxis: [{
-            name:"分钟前",
+            // name:"分钟前",
             nameLocation:'center',
             nameGap:23,
             nameTextStyle:{
-                color:  "rgba(255,255,255,.6)",
-                fontSize: 12,
+                color: "#fff",
+                fontSize:'24',
+                fontWeight: 'bold',
             },
             type: 'category',
-            data: ['5', '4', '3', '2', '1'],
+            data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
             axisLine: {
                 show: true,
              lineStyle: {
@@ -536,8 +1103,9 @@ function kecharts_5() {
                     show: true,
                     splitNumber: 15,
                     textStyle: {
-                         color: "rgba(255,255,255,.6)",
-                        fontSize: '12',
+                        color: "#fff",
+                        fontSize:'24',
+                        fontWeight: 'bold',
                     },
                 },
         }],
@@ -545,8 +1113,9 @@ function kecharts_5() {
         yAxis: {
             name:"μg/m3",
             nameTextStyle:{
-                color:  "rgba(255,255,255,.6)",
-                fontSize: 12,
+                color: "#fff",
+                fontSize:'24',
+                fontWeight: 'bold',
             },
             min:0,
             max:90,
@@ -554,8 +1123,9 @@ function kecharts_5() {
                 //formatter: '{value} %'
                  show:true,
                   textStyle: {
-                        color: "rgba(255,255,255,.6)",
-                        fontSize: '12',
+                    color: "#fff",
+                    fontSize:'24',
+                    fontWeight: 'bold',
                      },
              },
              axisTick: {
@@ -590,7 +1160,8 @@ function kecharts_5() {
             }, {
                 gt: 75,
                 lte: 115,
-                color: '#ff9933'
+                // color: '#ff9933'
+                color: '#cc0033'
             }, {
                 gt: 115,
                 lte: 150,
@@ -611,7 +1182,14 @@ function kecharts_5() {
         series: [{
             name: 'PM25',
             type: 'line',
+            smooth: true,
             data: randome81,
+            lineStyle: {
+                normal: {
+                    barBorderRadius: 12,
+                    width:10
+                },
+            },
 
             markLine: {
                 silent: false,
@@ -619,7 +1197,10 @@ function kecharts_5() {
                 label: {
                     show:true,
                     position:'end', // 'start\middle\end'
-                    formatter: '{b}'
+                    formatter: '{b}',
+                    color: "#fff",
+                    fontSize:'24',
+                    fontWeight: 'bold',
                 },
                 data: [{
                     name: '重度污染',
@@ -656,128 +1237,121 @@ function kecharts_6() {
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('kechart6'));
     var randome81 = [randomNum(100,700),randomNum(100,700),randomNum(100,700),randomNum(100,700),randomNum(100,700)];
+    var data = [70, 34, 60, 78, 69];
+    var titlename = ['综合院', '无线院', '会议室', '培训室', '茶水间'];
+    var valdata = [683, 234, 234, 523, 345];
+    var myColor = ['#1089E7', '#1011E7', '#56D0E3', '#12a256', '#8B78F6'];
     option = {
-        tooltip: {
-            trigger: 'axis',
-            axisPointer: {
-                type: 'shadow'
-            }
-        },
-
-        legend: {
-        top:'0%',
-            data:['VOC'],
-                    textStyle: {
-            color: 'rgba(255,255,255,.5)',
-                fontSize:'12',
-            }
-        },
-
+        // backgroundColor: '#0e2147',
         grid: {
-            left: '0%',
-            top: '13%',
-            right: '10%',
+            left: '5%',
+            top: '10%',
+            right: '5%',
             bottom: '7%',
             containLabel: true
         },
-
-        xAxis: [{
-            name:"分钟前",
-            nameLocation:'center',
-            nameGap:23,
-            nameTextStyle:{
-                color:  "rgba(255,255,255,.6)",
-                fontSize: 12,
-            },
-            type: 'category',
-            data: ['5', '4', '3', '2', '1'],
+        xAxis: {
+            show: false
+        },
+        yAxis: [{
+            show: true,
+            data: titlename,
+            inverse: true,
             axisLine: {
-                show: true,
-             lineStyle: {
-                    color: "rgba(255,255,255,.1)",
-                    width: 1,
-                    type: "solid"
-                },
+                show: false
+            },
+            splitLine: {
+                show: false
             },
             axisTick: {
-                show: false,
+                show: false
             },
-            axisLabel:  {
-                    interval: 0,
-                   // rotate:50,
-                    show: true,
-                    textStyle: {
-                         color: "rgba(255,255,255,.6)",
-                        fontSize: '12',
-                    },
-            },
-        }],
-
-        yAxis: [{
-            name:"浓度:PPB",
-            nameTextStyle:{
-                color:  "rgba(255,255,255,.6)",
-                fontSize: 12,
-            },
-            type: 'value',
-            axisTick: {show: false},
-            axisLine: {
-                lineStyle: {
-                    color: 'rgba(255,255,255,.1)'
-                }
-            },
-           axisLabel:  {
-                textStyle: {
-                    color: "rgba(255,255,255,.6)",
-                    fontSize:12,
+            axisLabel: {
+                color: "#fff",
+                fontSize:'24',
+                fontWeight: 'bold',
+                formatter: function(value, index) {
+                    return [
+                        '{lg|' + (index + 1) + '}' + '{title|' + value + '} '
+                    ].join('\n')
                 },
-                formatter: '{value}',
-            },
-            splitArea:{
-                show:false,
-                interval:(15-25),
-            },
-            splitNumber: 6,
-            splitLine: {
-                interval:2,
-                lineStyle: {
-                     color: 'rgba(255,255,255,.1)',
+                rich: {
+                    lg: {
+                        backgroundColor: '#339911',
+                        color: '#fff',
+                        borderRadius: 15,
+                        // padding: 5,
+                        align: 'center',
+                        width: 15,
+                        height: 15
+                    },
                 }
             },
+    
+    
+        }, {
+            show: true,
+            // inverse: true,
+            data: valdata,
+            axisLabel: {
+                textStyle: {
+                    color: '#ffff',
+                    fontSize:'25',
+                    fontWeight: 'bold',
+                },
+            },
+            axisLine: {
+                show: false
+            },
+            splitLine: {
+                show: false
+            },
+            axisTick: {
+                show: false
+            },
+    
         }],
-
         series: [{
-            name: '甲醛浓度',
+            name: '条',
             type: 'bar',
-            data: randome81,
-            barWidth:'50%', //柱子宽度
+            yAxisIndex: 0,
+            data: data,
+            barWidth: 30,
             itemStyle: {
                 normal: {
-                    color:'#F3944C',
-                    opacity: 1,
-                    barBorderRadius: 5,
+                    barBorderRadius: 30,
+                    color: function(params) {
+                        var num = myColor.length;
+                        return myColor[params.dataIndex % num]
+                    },
                 }
             },
-            markLine:{
-                silent: false,
-                symbol: 'none',
-                label: {
-                    show:true,
-                    position:'end', // 'start\middle\end'
-                    formatter: '{b}'
-                },
-                data: [{
-                    name: '中',
-                    yAxis: 300
-                }, {
-                    name: '优',
-                    yAxis: 80
-                }],
-                lineStyle:{
-                    color:'#8E8E8E',
-                },
+            label: {
+                normal: {
+                    show: true,
+                    position: 'inside',
+                    formatter: '{c}%',
+                    color: "#fff",
+                    fontSize:'24',
+                    fontWeight: 'bold',
+                }
             },
-        }]
+        }, {
+            name: '框',
+            type: 'bar',
+            yAxisIndex: 1,
+            barGap: '-100%',
+            data: [100, 100, 100, 100, 100],
+            barWidth: 40,
+            itemStyle: {
+                normal: {
+                    color: 'none',
+                    borderColor: '#00c1de',
+                    borderWidth: 3,
+                    barBorderRadius: 15,
+                }
+            }
+        }, ]
     };
     // 使用刚指定的配置项和数据显示图表。
     myChart.setOption(option);
@@ -786,63 +1360,6 @@ function kecharts_6() {
     });
 }
 /*
-// --------------- 场景切换 -----------------//
-let specialChannel_fushi = document.querySelector('.fushi');
-    specialChannel_fushi.addEventListener('click', function() {
-        let objData = {
-            "actionname": "changeScene",  //关键字
-            "id": "1" //0外部,1,俯视,2,室内漫游
-        }
-        cloudRender.SuperAPI('specialChannel', objData);  // 这里 specialChannel 不能修改
-     })
-
-// --------------- lightControl  -----------------//
-let specialChannel_lightControl = document.querySelector('.light');
-    specialChannel_lightControl.addEventListener('click', function() {
-        let objData =
-        {
-        "actionname": "lightControl",//关键字
-        "id": "LightArea1",  //窗帘id
-        "state": "0",  //开关状态 0关,1开
-        "all": "true"  //是否控制全部 true,false
-        }
-        cloudRender.SuperAPI('specialChannel', objData);  // 这里 specialChannel 不能修改
-        // if (lightData[2] = 0) {
-        //     lightData[2]
-        // }
-    })
-
-
-let specialChannel_manyou = document.querySelector('.manyou');
-    specialChannel_manyou.addEventListener('click', function() {
-        let objData = {
-            "actionname": "changeScene",  //关键字
-            "id": "2" //0外部,1,俯视,2,室内漫游poi
-        }
-        cloudRender.SuperAPI('specialChannel', objData);
-    })
-
-// --------------- poi点 -----------------//
-let poi = document.querySelector('.addpoi');
-    poi.addEventListener('click', function(){
-        let poiData =
-            {
-            "object_id" : "stripLight1",   //POI点的ID
-            "object_name": "大堂灯光", //POI提示文本
-            "object_floor": "3",//用于建筑楼层, 1 一层 (非必填)
-            "object_type": "light",//图标的类别 (图标的样式, 需双方沟通约定)//此项目中. 约定为：①cameraLine; ②buildingLine; ③portLine;
-            "coord_type": "1",  //(0: 经纬度gis, 1: cad坐标                                                                              )
-            "object_coord" : "280930.5555,-129875.3333",//POI点的坐标(坐标类型需与该POI点的object_type相同)
-            "coord_z": '0',//单位米, 坐标为GIS时决定POI图标高度; CAD时无效, 不用填
-            "showtitle":"true",//true 显示提示文本(默认), false 不显示提示文本
-            "showtitlerange":"30, 100",//此POI点显示title的镜头距离范围(单位米, 范围最小、最大距离; 在此范围内显示, 超出范围隐藏title, 注: showtitle属性为true时生效)
-            "monitormouseoverlap":"ture",//此POI是否允许监听鼠标划过事件
-            }
-            cloudRender.SuperAPI('AddPOI', poiData);
-            cloudRender.SuperAPI('ShowPOI', stripLight1);
-            // cloudRender.SuperAPI('FocusPOI', stripLight1, 20);
-        })
-
 
 
 //生成从minNum到maxNum的随机数
