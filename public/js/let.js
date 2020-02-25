@@ -11,6 +11,9 @@
 
 
 // --------------------------全局场景----------------------------------- //
+
+ziyemiandata =["zhuye","kongqi","guangqiang", "shushi"]
+
 objData = {
          "actionname": "changeScene",  //关键字
          "id": "1" //0外部,1,俯视,2,室内漫游

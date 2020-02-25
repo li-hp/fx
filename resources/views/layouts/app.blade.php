@@ -47,17 +47,19 @@
   <!-- Scripts -->
   <script src="{{ mix('js/app.js') }}"></script>
   <script type="text/javascript" src="js/js.js"></script>
-  <script type="text/javascript" src="js/show.js"></script>
-  <script type="text/javascript" src="js/guangqiang.js"></script>
-  <script type="text/javascript" src="js/kongqi.js"></script>
   <script type="text/javascript" src="js/51vr.js"></script>
   <script type="text/javascript" src="js/let.js"></script>
-
-
-
   <script type="text/javascript" src="js/echarts-liquidfill.min.js"></script>
   <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
   <script type="text/javascript" src="js/jquery-nav.js"></script>
+
+
+  <script type="text/javascript" src="js/charts/show.js"></script>
+  <script type="text/javascript" src="js/charts/guangqiang.js"></script>
+  <script type="text/javascript" src="js/charts/kongqi.js"></script>
+  <script type="text/javascript" src="js/charts/shushi.js"></script>
+
+
   <script type="text/javascript">
     $('#f-nav').tooltip({
           default: 2,       // 默认为空  --  选中默认值

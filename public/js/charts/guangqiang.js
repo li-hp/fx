@@ -1,16 +1,9 @@
 ﻿
 $(function () {
 
-    // airdata();setInterval(function(){airdata();}, 60000);
-
     gecharts_1();setInterval(function(){gecharts_1();}, 2000);
     gecharts_2();setInterval(function(){gecharts_2();}, 1500);
     gecharts_3();setInterval(function(){gecharts_3();}, 1500);
-    //gecharts_4();setInterval(function(){gecharts_4();}, 15000);
-    //gecharts_5();setInterval(function(){gecharts_5();}, 15000);
-    //gecharts_6();setInterval(function(){gecharts_6();}, 15000);
-
-
 
 
     function gecharts_1() {
@@ -226,27 +219,239 @@ $(function () {
     }
 
     function gecharts_2() {
-        // 基于准备好的dom，初始化echarts实例
-       /*
         var myChart = echarts.init(document.getElementById('gechart2'));
-        var randome81 = [randomNum(100,700),randomNum(100,700),randomNum(100,700),randomNum(100,700),randomNum(100,700)];
 
-        // 使用刚指定的配置项和数据显示图表。
+        option = {
+            // backgroundColor: "#404A59",
+            color: ['#ffd285', '#ff733f', '#ec4863'],
+        
+            title: [{
+                text: '每日光强变化曲线',
+                left: '1%',
+                top: '6%',
+                textStyle: {
+                    color: '#fff',
+                    fontSize:24
+                }
+            }, {
+                text: '实时光强（LUX）',
+                left: '83%',
+                top: '6%',
+                textAlign: 'center',
+                textStyle: {
+                    color: '#fff',
+                    fontSize:24
+                }
+            }],
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                x: 300,
+                top: '7%',
+                textStyle: {
+                    color: '#ffd285',
+                    fontSize:'24',
+                    fontWeight: 'bold',
+                },
+                data: ['室内', '室外']
+            },
+            grid: {
+                left: '1%',
+                right: '35%',
+                top: '16%',
+                bottom: '6%',
+                containLabel: true
+            },
+            toolbox: {
+                "show": false,
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
+                type: 'category',
+                "axisLine": {
+                    lineStyle: {
+                        color: '#FF4500'
+                    }
+                },
+                "axisTick": {
+                    "show": false
+                },
+                axisLabel: {
+                    textStyle: {
+                        color: "#fff",
+                        fontSize:'24',
+                        fontWeight: 'bold',
+                    }
+                },
+                boundaryGap: false,
+                data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+            },
+            yAxis: {
+                "axisLine": {
+                    lineStyle: {
+                        color: '#fff'
+                    }
+                },
+                splitLine: {
+                    show: true,
+                    lineStyle: {
+                        color: '#fff'
+                    }
+                },
+                "axisTick": {
+                    "show": false
+                },
+                axisLabel: {
+                    textStyle: {
+                        color: '#fff',
+                        fontSize:'24',
+                        fontWeight: 'bold',
+                    }
+                },
+                type: 'value'
+            },
+            series: [{
+                name: '室内',
+                smooth: true,
+                type: 'line',
+                symbolSize: 8,
+                  symbol: 'circle',
+                data: [90, 50, 39, 50, 120, 82, 80],
+                lineStyle: {
+                    normal: {
+                        barBorderRadius: 12,
+                        width:10
+                    },
+                },
+
+            }, {
+                name: '室外',
+                smooth: true,
+                type: 'line',
+                symbolSize: 8,
+                  symbol: 'circle',
+                data: [70, 50, 50, 87, 90, 80, 70],
+                lineStyle: {
+                    normal: {
+                        barBorderRadius: 12,
+                        width:10
+                    },
+                },
+            }, 
+            {
+                type: 'pie',
+                center: ['83%', '33%'],
+                radius: ['25%', '30%'],
+                label: {
+                    normal: {
+                        position: 'center'
+                    }
+                },
+                data: [{
+                    value: 335,
+                    name: '满足要求的部分',
+                    itemStyle: {
+                        normal: {
+                            color: '#ffd285'
+                        }
+                    },
+                    label: {
+                        normal: {
+                            formatter: '{d}',
+                            textStyle: {
+                                color: '#ffd285',
+                                fontSize:'24',
+                                fontWeight: 'bold',
+                            }
+                        }
+                    }
+                }, {
+                    value: 180,
+                    name: '未满足要求的部分',
+                    tooltip: {
+                        show: false
+                    },
+                    itemStyle: {
+                        normal: {
+                            color: '#87CEFA'
+                        }
+                    },
+                    label: {
+                        normal: {
+                            textStyle: {
+                                color: '#ffd285',
+                                fontSize:'24',
+                                fontWeight: 'bold',
+                            },
+                            formatter: '\n室内光强'
+                        }
+                    }
+                }]
+            },
+            {
+                type: 'pie',
+                center: ['83%', '72%'],
+                radius: ['25%', '30%'],
+                label: {
+                    normal: {
+                        position: 'center'
+                    }
+                },
+                data: [{
+                    value: 435,
+                    name: '用户来源分析',
+                    itemStyle: {
+                        normal: {
+                            color: '#ff733f'
+                        }
+                    },
+                    label: {
+                        normal: {
+                            formatter: '{d} %',
+                            textStyle: {
+                                color: '#ff733f',
+                                fontSize:'24',
+                                fontWeight: 'bold',
+        
+                            }
+                        }
+                    }
+                }, {
+                    value: 100,
+                    name: '占位',
+                    tooltip: {
+                        show: false
+                    },
+                    itemStyle: {
+                        normal: {
+                            color: '#87CEFA'
+        
+        
+                        }
+                    },
+                    label: {
+                        normal: {
+                            textStyle: {
+                                color: '#FF4500',
+                                fontSize:'24',
+                                fontWeight: 'bold',
+                            },
+                            formatter: '\n室外光强'
+                        }
+                    }
+                }]
+            }]
+        }
+
         myChart.setOption(option);
         window.addEventListener("resize",function(){
             myChart.resize();
         });
-        */
-
-      data1=500;
-      data2=1000;     ///////////////////////////室内光强和室外光强，从数据库调取
-       document.getElementById("shineiguangqiang").innerHTML = data1+"lux";
-       document.getElementById("shiwaiguangqiang").innerHTML = data2+"lux";
-
-
 
     }
-
 
     function gecharts_3() {
         // 基于准备好的dom，初始化echarts实例
@@ -358,7 +563,7 @@ $(function () {
 
         var option = {
         title: {
-            text: '一周跑步数据',
+            text: '各区域光强',
             textStyle: {
             color: '#fff',
             fontSize: 32,
@@ -374,13 +579,13 @@ $(function () {
             left: 80
         },
         legend: {
-            top: 220,
+            top: 150,
             left: 80,
             orient: 'vertical',
             itemGap: 15,
             itemWidth: 12,
             itemHeight: 12,
-            data: ['平均指标', '我的指标'],
+            data: ['平均指标', '当前区域指标'],
             textStyle: {
                 color: "#fff",
                 fontSize:'24',
@@ -391,7 +596,7 @@ $(function () {
             trigger: 'item'
         },
         radar: {
-            center: ['68%', '27%'],
+            center: ['68%', '30%'],
             radius: '40%',
             name: {
                 textStyle: {
@@ -423,16 +628,16 @@ $(function () {
                 }
             },
             indicator: [{
-            name: '全程距离(m)',
+            name: '光照强度',
             max: maxData
             }, {
-            name: '平均速度(km/h)',
+            name: '节能效比',
             max: 10
             }, {
-            name: '最快速度(km/h)',
+            name: '稳定度',
             max: 12
             }, {
-            name: '总计时间(h)',
+            name: '炫光控制',
             max: 3.5
             }]
         },
@@ -454,7 +659,7 @@ $(function () {
             data: weekCategory,
         },
         yAxis: {
-            name: 'km/h',
+            name: 'LUX',
             nameLocation: 'end',
             nameGap: 24,
             nameTextStyle: {
@@ -688,402 +893,6 @@ $(function () {
             myChart.resize();
         });
     }
-
-    function gecharts_4() {
-        // 基于准备好的dom，初始化echarts实例
-    var myChart = echarts.init(document.getElementById('gechart4'));
-    var randome81 = [randomNum(10,40)];
-        option = {
-        grid: {
-            left: '5%',
-            top:'1px',
-            right: '5%',
-            bottom: '2%',
-        containLabel: true
-        },
-
-        tooltip : {
-            formatter: "{a} <br/>{b} : {c}%"
-        },
-
-        series: [
-            {
-                name:'温度仪表盘',
-                type:'gauge',
-                min:0,
-                max:60,
-                splitNumber:4,
-                center : ['50%', '55%'],
-                radius: '90%',
-                axisLine: {            // 坐标轴线
-                    lineStyle: {       // 属性lineStyle控制线条样式
-                        color: [[0.4, '#436EEE'],[0.52, 'lime'],[1, '#ff4500']],
-                        width: 5,
-                        shadowColor : '#fff', //默认透明
-                        shadowBlur: 1
-                    }
-                },
-                axisLabel: {            // 坐标轴小标记
-                    textStyle: {       // 属性lineStyle控制线条样式
-                        fontWeight: 'bolder',
-                        color: '#fff',
-                        shadowColor : '#fff', //默认透明
-                        shadowBlur: 1
-                    }
-                },
-                axisTick: {            // 坐标轴小标记
-                    length :15,        // 属性length控制线长
-                    lineStyle: {       // 属性lineStyle控制线条样式
-                        color: 'auto',
-                        shadowColor : '#fff', //默认透明
-                        shadowBlur: 1
-                    }
-                },
-                splitLine: {           // 分隔线
-                    length :25,         // 属性length控制线长
-                    lineStyle: {       // 属性lineStyle（详见lineStyle）控制线条样式
-                        width:3,
-                        color: '#fff',
-                        shadowColor : '#fff', //默认透明
-                        shadowBlur: 10
-                    }
-                },
-                pointer: {           // 分隔线
-                    shadowColor : '#fff', //默认透明
-                    shadowBlur: 5
-                },
-                title : {
-                    textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
-                        fontWeight: 'bolder',
-                        fontSize: 20,
-                        fontStyle: 'italic',
-                        color: '#fff',
-                        shadowColor : '#fff', //默认透明
-                        shadowBlur: 10
-                    }
-                },
-                detail : {
-                    show:true,
-                    backgroundColor: 'rgba(255,255,255,.04)',
-                    borderWidth: 1,
-                    offsetCenter: [0, '50%'],       // x, y，单位px
-                    textStyle: {       // 其余属性默认使用全局文本样式，详见TEXTSTYLE
-                        fontWeight: 'bolder',
-                        fontSize: 15,
-                        color: '#FCFCFC',
-
-                    }
-                },
-                // data:[{value: resultdata, name: '℃'}]
-                data:randome81,
-            }]
-        };
-
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-        window.addEventListener("resize",function(){
-            myChart.resize();
-        });
-    }
-
-    function gecharts_5() {
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('gechart5'));
-        var randome81 = [randomNum(0,90),randomNum(0,70),randomNum(1,70),randomNum(1,70),randomNum(10,70)];
-        option = {
-
-            grid: {
-                left: '0%',
-                top: '13%',
-                right: '10%',
-                bottom: '7%',
-                containLabel: true
-            },
-
-            tooltip: {
-                trigger: 'axis'
-            },
-
-            xAxis: [{
-                name:"分钟前",
-                nameLocation:'center',
-                nameGap:23,
-                nameTextStyle:{
-                    color:  "rgba(255,255,255,.6)",
-                    fontSize: 12,
-                },
-                type: 'category',
-                data: ['5', '4', '3', '2', '1'],
-                axisLine: {
-                    show: true,
-                 lineStyle: {
-                        color: "rgba(255,255,255,.1)",
-                        width: 1,
-                        type: "solid"
-                    },
-                },
-                axisTick: {
-                    show: false,
-                },
-                axisLabel:  {
-                        interval: 0,
-                       // rotate:50,
-                        show: true,
-                        splitNumber: 15,
-                        textStyle: {
-                             color: "rgba(255,255,255,.6)",
-                            fontSize: '12',
-                        },
-                    },
-            }],
-
-            yAxis: {
-                name:"μg/m3",
-                nameTextStyle:{
-                    color:  "rgba(255,255,255,.6)",
-                    fontSize: 12,
-                },
-                min:0,
-                max:90,
-                axisLabel: {
-                    //formatter: '{value} %'
-                     show:true,
-                      textStyle: {
-                            color: "rgba(255,255,255,.6)",
-                            fontSize: '12',
-                         },
-                 },
-                 axisTick: {
-                    show: false,
-                },
-                axisLine: {
-                    lineStyle: {
-                        color: "rgba(255,255,255,.1)",
-                        width: 1,
-                        type: "solid"
-                    },
-                },
-                splitNumber:0,
-                splitLine: {
-                    show:false,
-                    lineStyle: {
-                        color: 'rgba(255,255,255,.1)',
-                    },
-                },
-            },
-
-            visualMap: {
-                show: false,
-                pieces: [{
-                    gt: 0,
-                    lte: 35,
-                    color: '#096'
-                }, {
-                    gt: 35,
-                    lte: 75,
-                    color: '#ffde33'
-                }, {
-                    gt: 75,
-                    lte: 115,
-                    color: '#ff9933'
-                }, {
-                    gt: 115,
-                    lte: 150,
-                    color: '#cc0033'
-                }, {
-                    gt: 150,
-                    lte: 250,
-                    color: '#7e0023'
-                }, {
-                    gt: 250,
-                    color: '#660099'
-                }],
-                outOfRange: {
-                    color: '#999'
-                }
-            },
-
-            series: [{
-                name: 'PM25',
-                type: 'line',
-                data: randome81,
-
-                markLine: {
-                    silent: false,
-                    symbol: 'none',
-                    label: {
-                        show:true,
-                        position:'end', // 'start\middle\end'
-                        formatter: '{b}'
-                    },
-                    data: [{
-                        name: '重度污染',
-                        yAxis: 250
-                    }, {
-                        name: '中度污染',
-                        yAxis: 150
-
-                    }, {
-                        name: '轻度污染',
-                        yAxis: 115
-                    }, {
-                        name: '良',
-                        yAxis: 75
-                    }, {
-                        name: '优',
-                        yAxis: 35
-                    }],
-                    lineStyle:{
-                        color:'#8E8E8E',
-                    },
-                },
-            }],
-        };
-
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-        window.addEventListener("resize",function(){
-            myChart.resize();
-        });
-    }
-
-    function gecharts_6() {
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('gechart6'));
-        var randome81 = [randomNum(100,700),randomNum(100,700),randomNum(100,700),randomNum(100,700),randomNum(100,700)];
-        option = {
-            tooltip: {
-                trigger: 'axis',
-                axisPointer: {
-                    type: 'shadow'
-                }
-            },
-
-            legend: {
-            top:'0%',
-                data:['VOC'],
-                        textStyle: {
-                color: 'rgba(255,255,255,.5)',
-                    fontSize:'12',
-                }
-            },
-
-            grid: {
-                left: '0%',
-                top: '13%',
-                right: '10%',
-                bottom: '7%',
-                containLabel: true
-            },
-
-            xAxis: [{
-                name:"分钟前",
-                nameLocation:'center',
-                nameGap:23,
-                nameTextStyle:{
-                    color:  "rgba(255,255,255,.6)",
-                    fontSize: 12,
-                },
-                type: 'category',
-                data: ['5', '4', '3', '2', '1'],
-                axisLine: {
-                    show: true,
-                 lineStyle: {
-                        color: "rgba(255,255,255,.1)",
-                        width: 1,
-                        type: "solid"
-                    },
-                },
-                axisTick: {
-                    show: false,
-                },
-                axisLabel:  {
-                        interval: 0,
-                       // rotate:50,
-                        show: true,
-                        textStyle: {
-                             color: "rgba(255,255,255,.6)",
-                            fontSize: '12',
-                        },
-                },
-            }],
-
-            yAxis: [{
-                name:"浓度:PPB",
-                nameTextStyle:{
-                    color:  "rgba(255,255,255,.6)",
-                    fontSize: 12,
-                },
-                type: 'value',
-                axisTick: {show: false},
-                axisLine: {
-                    lineStyle: {
-                        color: 'rgba(255,255,255,.1)'
-                    }
-                },
-               axisLabel:  {
-                    textStyle: {
-                        color: "rgba(255,255,255,.6)",
-                        fontSize:12,
-                    },
-                    formatter: '{value}',
-                },
-                splitArea:{
-                    show:false,
-                    interval:(15-25),
-                },
-                splitNumber: 6,
-                splitLine: {
-                    interval:2,
-                    lineStyle: {
-                         color: 'rgba(255,255,255,.1)',
-                    }
-                },
-            }],
-
-            series: [{
-                name: '甲醛浓度',
-                type: 'bar',
-                data: randome81,
-                barWidth:'50%', //柱子宽度
-                itemStyle: {
-                    normal: {
-                        color:'#F3944C',
-                        opacity: 1,
-                        barBorderRadius: 5,
-                    }
-                },
-                markLine:{
-                    silent: false,
-                    symbol: 'none',
-                    label: {
-                        show:true,
-                        position:'end', // 'start\middle\end'
-                        formatter: '{b}'
-                    },
-                    data: [{
-                        name: '中',
-                        yAxis: 300
-                    }, {
-                        name: '优',
-                        yAxis: 80
-                    }],
-                    lineStyle:{
-                        color:'#8E8E8E',
-                    },
-                },
-            }]
-        };
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-        window.addEventListener("resize",function(){
-            myChart.resize();
-        });
-    }
-
-
-
-
 
     //生成从minNum到maxNum的随机数
     function randomNum(minNum,maxNum){

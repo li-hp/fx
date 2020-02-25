@@ -4,7 +4,24 @@ $(function () {
 // airdata();setInterval(function(){airdata();}, 60000);
 
 // --------------- 每1.5秒随机数 -----------------//
-kecharts_0();setInterval(function(){kecharts_0();}, randomNum(2000,7000));
+
+function airdata(){
+    $.ajax({
+        url:'js/data_json/jj111.json',
+        type:'get',
+        success: function (result) {
+            kecharts_0(result);
+            
+        },
+        error : function() {
+            alert("数据异常！");
+        }
+    })
+}
+
+// kecharts_0();setInterval(function(){kecharts_0();}, randomNum(2000,7000));
+
+airdata();
 kecharts_1();setInterval(function(){kecharts_1();}, randomNum(2000,7000));
 kecharts_2();setInterval(function(){kecharts_2();}, randomNum(2000,7000));
 kecharts_3();setInterval(function(){kecharts_3();}, randomNum(2000,7000));
@@ -13,11 +30,12 @@ kecharts_5();setInterval(function(){kecharts_5();}, randomNum(2000,7000));
 kecharts_6();setInterval(function(){kecharts_6();}, randomNum(2000,7000));
 
 // --------------- echart图表 -----------------//
-function kecharts_0() {
+function kecharts_0(data) {
 
     var myChart = echarts.init(document.getElementById('kechart0'));
 
-    var randomdata = [randomNum(25,29), randomNum(40,70), randomNum(20,90), randomNum(20,90), randomNum(0,15), randomNum(1,5)];
+    // var randomdata = [randomNum(25,29), randomNum(40,70), randomNum(20,90), randomNum(20,90), randomNum(0,15), randomNum(1,5)];
+    var randomdata = data;
 
     var radius = ['45%', '40%'];
 
