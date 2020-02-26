@@ -57,6 +57,18 @@ airConditionerData = {
         "all": "true"  //是否控制全部 true,false
         }
 
+airHeatData = {
+    "object_id": "item_heatmap_1",       //区域热力图id
+    "coord_type": "1",      //区域热力图中坐标类型(0: 经纬度gis, 1: cad 坐标, 2: UE4WorldPostion)
+    "heatmap_type": "1",    //区域热力图样式类型(1: 经典类型(红绿热力图))
+    "leftupper_coord": "281852,-120342",     //区域热力图范围左上坐标(坐标类型需与heatmap_type相同)
+    "lowerright_coord": "296764,-132198",    //区域热力图范围右下坐标(坐标类型需与heatmap_type相同)
+    "coord_z": '0',       //区域热力图Z轴值(项目约定)
+    "brush_diameter": "100.0",       //区域热力点笔刷直径(米, 单个热力点覆盖直径)
+    "heatpoint_minvalue": "5.00",   //区域热力点取值范围最小值(此热力图中数值范围的最小值, 例如人流密度最小1(绿色接近透明), 最大1000(最红), 线性计算)
+    "heatpoint_maxvalue": "500.0"   //区域热力点取值范围最大值
+}
+
 
 // 空气POI点
 airpoiData = {
@@ -69,7 +81,7 @@ airpoiData = {
     "coord_z": '0',//单位米, 坐标为GIS时决定POI图标高度; CAD时无效, 不用填
     "showtitle":"true",//true 显示提示文本(默认), false 不显示提示文本
     "showtitlerange":"30, 500",//此POI点显示title的镜头距离范围(单位米, 范围最小、最大距离; 在此范围内显示, 超出范围隐藏title, 注: showtitle属性为true时生效)
-    "monitormouseoverlap":"ture",//此POI是否允许监听鼠标划过事件
+    "monitormouseoverlap":"ture"//此POI是否允许监听鼠标划过事件
     }
 
 airpoiData2 = {
