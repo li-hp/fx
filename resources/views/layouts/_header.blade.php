@@ -1,42 +1,37 @@
-<nav class="navbar navbar-expand-lg  navbar-static-top">
+<nav class="navbar">
 
-    <!-- Branding Image -->
-    <a class="navbar-brand " href="{{ url('/') }}" style="color:#fff">
-      {{-- <img alt="Brand" src="..."> --}}
-      &nbsp;&nbsp;OWELL
-    </a>
+  <div class="mod-header">
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="layout clearfix">
+      <a href="" class="mod-header-logo nav-lin0"></a>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <!-- Left Side Of Navbar -->
+      <div class="mod-header-nav ">
+        <ul id="jmod-header-nav">
+          <li id="nav-header-hr" class="top-cat nav-lin1"><i class="fa fa-thermometer-half"></i><h2>&nbsp;&nbsp;空气&nbsp;&nbsp;</h2></li>
+          <li id="nav-header-hr" class="top-cat nav-lin2"><i class="fa fa-tint" ></i><h2>&nbsp;&nbsp;光强&nbsp;&nbsp;</h2></li>
+          <li id="nav-header-hr" class="top-cat nav-lin3"><i class="fa fa-child"></i><h2>&nbsp;&nbsp;舒适&nbsp;&nbsp;</h2></li>
+          <li id="nav-header-hr" class="top-cat nav-lin4"><i class="fa fa-sun" ></i><h2>&nbsp;&nbsp;营养&nbsp;&nbsp;</h2></li>
+          <li id="nav-header-hr" class="top-cat nav-lin5"><i class="fa fa-futbol"></i><h2>&nbsp;&nbsp;健身&nbsp;&nbsp;</h2></li>
+          <li id="nav-header-hr" class="top-cat nav-lin6"><i class="fa fa-fire" ></i><h2>&nbsp;&nbsp;水质&nbsp;&nbsp;</h2></li>
+          <li id="nav-header-hr" class="top-cat nav-lin7"><i class="fa fa-camera"></i><h2>&nbsp;&nbsp;综合&nbsp;&nbsp;</h2></li>
+        </ul>
+        <i class="jmod-nav-slider slider hidden" style="transform: translateX(0px);"></i>
+      </div>
 
-      <ul class="navbar-nav navbar-left mr-auto">
-          <li class="nav-item"><div style="color:#fff" class="nav-link0" >&nbsp;健康办公可视化平台</div></li>
-      </ul>
-
-      <!-- Right Side Of Navbar -->
-      <ul class="navbar-nav navbar-righ">
-          <li class="nav-item "><div class="nav-link1" ><i class="fa fa-thermometer-half"></i>&nbsp;<span>空气</span>&nbsp;&nbsp;&nbsp;</div></li>
-          <li class="nav-item "><div class="nav-link2" ><i class="fa fa-tint" ></i>&nbsp;光强&nbsp;&nbsp;&nbsp;</div></li>
-          <li class="nav-item "><div class="nav-link3" ><i class="fa fa-child"></i>&nbsp;舒适&nbsp;&nbsp;&nbsp;</div></li>
-          <li class="nav-item "><div class="nav-link4" ><i class="fa fa-sun" ></i>&nbsp;水质&nbsp;&nbsp;&nbsp;</div></li>
-          <li class="nav-item "><div class="nav-link5" ><i class="fa fa-futbol"></i>&nbsp;营养&nbsp;&nbsp;&nbsp;</div></li>
-          <li class="nav-item "><div class="nav-link6" ><i class="fa fa-fire" ></i>&nbsp;健身&nbsp;&nbsp;&nbsp;</div></li>
-          <li class="nav-item "><div class="nav-link7" ><i class="fa fa-camera" ></i>&nbsp;综合&nbsp;&nbsp;&nbsp;</div></li>
-
-      </ul>
-
-
-       
+      <div class="mod-header-user">
+        <a href="#" target="_blank" class="try jmod-header-try">控制台</a>
+        <a href="#" target="_blank" class="console jmod-header-console hidden">控制台</a>
+      </div>
     </div>
 
+  </div>
+
+  <div class="banner jmod_banner">
+    <div class="ban cur" style="background-color:#ff0;background-image:url('自定义Banner图片地址');height: 62px;">
+  </div>
 
 </nav>
-<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-<script type="text/javascript" src="js/jquery-nav.js"></script>
+
 
 
 

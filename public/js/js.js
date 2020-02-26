@@ -119,7 +119,7 @@ function test2 (data) {
     for (let i = 0 ; i < zymdata.length; i++) {
 
         let data123 = zymdata[i];
-        document.querySelector('.nav-link' + i).addEventListener('click', function() {
+        document.querySelector('.nav-lin' + i).addEventListener('click', function() {
             
             $(str1 + data123).css("display","block");
             let newdata = delOne(data123,zymdata);

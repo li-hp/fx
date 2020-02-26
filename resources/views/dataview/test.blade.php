@@ -18,8 +18,7 @@
 
 
     {{--maincontain 用于加载echart--}}
-    <div class="maincontain maincontain_zhuye" 
-        style="padding-right: 0px; padding-left:0px; margin-left:0.1px; margin-right:0.1px;position:relative;z-index: 11;display:bloke;">
+    <div class="maincontain maincontain_zhuye">
         
         <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:0.5px; margin-right:0.5px;">
 
@@ -139,55 +138,12 @@
     </div>
 
 
-    <div class="miancontain maincontain_kongqi" 
-        style="padding-right: 0px; padding-left:0px; margin-left:0.1px; margin-right:0.1px;position:relative;z-index:12;display:bloke;">
+    <div class="miancontain maincontain_kongqi" style="margin-top:50px">
+
 
         <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:9.5px; margin-right:9.5px;">
             <div class="col-xs-12 col-sm-3">
 
-                <!-- <div class="boxall">
-                    <div class="alltitle">  空气实时数据 </div>
-                    <div class="allnav" id="kechart7">
-
-                        <div class="barbox3">
-                        <ul class="clearfix">
-                            <li class="pulll_left counter">25℃</li>
-                            <li class="pulll_left counter">40%</li>
-                            <li class="pulll_left counter">50ppm</li>
-                            <li class="pulll_left counter">300ppm</li>
-                        </ul>
-                        </div>
-
-                        <div class="barbox4">
-                        <ul class="clearfix">
-                        <li class="pulll_left">温度</li>
-                        <li class="pulll_left">湿度</li>
-                        <li class="pulll_left">PM2.5</li>
-                        <li class="pulll_left">二氧化碳浓度</li>
-                        </ul>
-                        </div>
-
-
-                        <div class="barbox3">
-                        <ul class="clearfix">
-                            <li class="pulll_left counter">20ppm</li>
-                            <li class="pulll_left counter">300ppm
-                            </li>
-                            <li class="pulll_left counter" id="tmp">30db</li>
-                            <li class="pulll_left counter" id="hum">300lux</li>
-                        </ul>
-                        </div>
-                        <div class="barbox4">
-                        <ul class="clearfix">
-                            <li class="pulll_left">甲醛浓度</li>
-                            <li class="pulll_left">空气可挥发物</li>
-                            <li class="pulll_left">声音强度</li>
-                            <li class="pulll_left">光照强度</li>
-                        </ul>
-                        </div>
-                    </div>
-                    <div class="boxfoot"></div>
-                </div> -->
                 <div class="boxall">
                     <div class="alltitle">实时数据</div>
                     <div class="allnav" id="kechart0"></div>
@@ -258,21 +214,10 @@
         </div>
     </div>
 
-    <div class="maincontain maincontain_guangqiang" 
-        style="padding-right: 0px; padding-left:0px; margin-left:0.1px; margin-right:0.1px;position:relative;z-index: 12;display:bloke;">
+    <div class="maincontain maincontain_guangqiang">
 
 
-        <style>
-        .content { width:100%;
-        height:100%;}
-        .div_td { width:50%;
-        height:50%;
-        float:left;
-        color:#3490dc;
-        text-align:center;
-        line-height:250px;
-        font-size:5rem; }
-        </style>
+
 
         <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:9.5px; margin-right:9.5px;">
             <div class="col-xs-12 col-sm-3">
@@ -348,9 +293,7 @@
 
     </div>
 
-    <div class="maincontain maincontain_shushi" 
-        style="padding-right: 0px; padding-left:0px; margin-left:0.1px;
-         margin-right:0.1px;position:relative;z-index: 12;display:bloke;">
+    <div class="maincontain maincontain_shushi">
 
         <style>
         .content { width:100%;

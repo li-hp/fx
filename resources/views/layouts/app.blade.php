@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- CSRF Token -->
@@ -20,17 +20,12 @@
 
   <!-- Styles -->
   <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
- <!--<link href="css/index_style.css" rel="stylesheet" type="text/css">-->
+  <link rel="stylesheet" href="./css/ai.css">
   @yield('styles')
 
 </head>
 
 <body >
-<!--container-fulid是之前做的星空背景，覆盖整个网页的背景图，未启用>-->
-<!--miancontain是想要填充子页面的大的div   将各个子页面用load方法填充进maincontian里>-->
-
-
 
  <div class="container-fulid">
     @include('layouts._header')
@@ -51,8 +46,8 @@
   <script type="text/javascript" src="js/let.js"></script>
   <script type="text/javascript" src="js/echarts-liquidfill.min.js"></script>
   <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-  <script type="text/javascript" src="js/jquery-nav.js"></script>
 
+  <script src="js/ai.js"></script>
 
   <script type="text/javascript" src="js/charts/show.js"></script>
   <script type="text/javascript" src="js/charts/guangqiang.js"></script>

@@ -1,128 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <title>导航插件</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
+<meta charset="UTF-8" />
+<title>jQuery仿腾讯AI开发平台导航代码</title>
+<meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
 
+<link rel="stylesheet" href="./css/ai.css">
+
+</head>
 <body>
-	<h1>左右滚动</h1>
-	<div class="box">
-	      <ul class="f-nav" id='f-nav'>
-	        <li>首页</li>
-	        <li>分页一</li>
-	        <li>分页二</li>
-	        <li>分页三</li>
-	        <li>分页四</li>
-	         <div class='sideline'></div>
-	    </ul>
+<div class="mod-header">
+
+
+  <div class="layout clearfix">
+    <a href="" class="mod-header-logo"></a>
+
+    <div class="mod-header-nav">
+      <ul id="jmod-header-nav">
+        <li id="nav-header-accelerator" class="top-cat"><h2><a href="#">AI加速器</a></h2></li>
+        <li id="nav-header-info" class="top-cat"><h2><a href="#">资讯动态</a></h2></li>
+        <li id="nav-header-hr" class="top-cat"><h2><a href="#">AI在腾讯</a></h2></li>
+        <li id="nav-header-join" class="top-cat"><h2><a href="#">加入我们</a></h2></li>
+        <li id="nav-header-doc" class="top-cat"><h2><a href="#">文档中心</a></h2></li>
+      </ul>
+      <i class="jmod-nav-slider slider hidden" style="transform: translateX(0px);"></i>
     </div>
 
+    <div class="mod-header-user">
+      <a href="#" target="_blank" class="try jmod-header-try">控制台</a>
+      <a href="#" target="_blank" class="console jmod-header-console hidden">控制台</a>
+    </div>
+  </div>
 
-    <h1>从上向下滚动</h1>
-    <div class="box">
-    <ul class="f-nav" id='f-nav2'>
-	        <li>首页</li>
-	        <li>分页一</li>
-	        <li>分页二</li>
-	        <li>分页三</li>
-	        <li>分页四</li>
-	       <div class='sideline'></div>
-	</ul>
 </div>
 
-
-
-
-    <h1>从下向上滚动</h1>
-    <div class="box">
-    <ul class="f-nav" id='f-nav3'>
-	        <li>首页</li>
-	        <li>分页一</li>
-	        <li>分页二</li>
-	        <li>分页三</li>
-	        <li>分页四</li>
-	      <div class='sideline'></div>
-	</ul>
-</div>
-
-
-
-
-
-    <h1>从左边缘向右边缘滚动</h1>
-    <div class="box">
-    <ul class="f-nav" id='f-nav4'>
-	        <li>首页</li>
-	        <li>分页一</li>
-	        <li>分页二</li>
-	        <li>分页三</li>
-	        <li>分页四</li>
-	       <div class='sideline'></div>
-	</ul>
-</div>
-
-
-
-    <h1>从右边缘向左边缘滚动</h1>
-    <div class="box">
-    <ul class="f-nav" id='f-nav5'>
-	        <li>首页</li>
-	        <li>分页一</li>
-	        <li>分页二</li>
-	        <li>分页三</li>
-	        <li>分页四</li>
-	    <div class='sideline'></div>
-	</ul>
-</div>
-
-
-  <h1>从中间变大至填满</h1>
-    <div class="box">
-    <ul class="f-nav" id='f-nav6'>
-	        <li>首页</li>
-	        <li>分页一</li>
-	        <li>分页二</li>
-	        <li>分页三</li>
-	        <li>分页四</li>
-	    <div class='sideline'></div>
-	</ul>
-</div>
-
-    
-    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="js/jquery-nav.js"></script>
-    <script type="text/javascript">
-    	$('#f-nav').tooltip({
-    		default: 2,       // 默认为空  --  选中默认值
-    		width: '200',     // 限制宽度
-    		height: '100',
-    		textList: ['首页','分页1','分页2','分页3'],   // 每个导航的内容
-    		type: 'slideMove',  // 必填, 选择内容
-    		success: function(ret){
-
-    		}   //初始化回调
-    	});
-    	$('#f-nav2').tooltip({
-    		default: 3,    
-    		type: 'fontUp',
-    		width: '150',
-    	});
-    	$('#f-nav3').tooltip({
-    		type: 'downUp'
-    	});
-    	$('#f-nav4').tooltip({
-    		type: 'edgeLeft'
-    	});
-    	$('#f-nav5').tooltip({
-    		type: 'edgeRight'
-    	});
-    		$('#f-nav6').tooltip({
-    		type: 'scaleChange'
-    	});
-    </script>
+  <div class="banner jmod_banner">
+    <div class="ban cur" style="background-color:#ff0;background-image:url('自定义Banner图片地址');height: 62px;">
+    </div>
+  </div>
+<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="./js/ai.js"></script>
 </body>
-
 </html>
