@@ -51,7 +51,7 @@ function SuperAPI_StartRenderCloud_GetUrl() {
 
 // 测试地址 联系51VR获得可用地址
 let _url = 'http://192.168.17.222:8889/';
-let renderPath = 'Renderers/Any/5e1c19758b9529146cadaf6b/';
+let renderPath = 'Renderers/Any/5e55e70b6cb9c20750243aed/';
 let staticUserName = 'guest';
 let staticPwd = '123456';
 
