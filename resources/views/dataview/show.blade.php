@@ -197,25 +197,25 @@
                     <div class="alltitle">新风控制</div>
                     <div class="sysw">
                         <button
-                        class="kongtiao btn-success center-block btn-sm ">
+                        class="kq_kongtiao btn-success center-block btn-sm ">
                         <p style="font-size:5rem;">空调</p>
                         </button>
                     </div>
                     <div class="sysw">
                         <button
-                        class="freshair button-3d button-primary center-block btn-sm ">
+                        class="kq_xinfeng button-3d button-primary center-block btn-sm ">
                         <p style="font-size:5rem;">新风</p>
                         </button>
                     </div>
                     <div class="sysw">
                         <button
-                        class="airpoi btn-primary center-block btn-sm">
+                        class="kq_airpoi btn-primary center-block btn-sm">
                         <p style="font-size:5rem;">poi</p>
                         </button>
                     </div>
                     <div class="sysw">
                         <button
-                        class="heatmap btn-primary center-block btn-sm ">
+                        class="kq_reli btn-primary center-block btn-sm ">
                         <p style="font-size:5rem;">热力</p>
                         </button>
                     </div>
@@ -279,13 +279,13 @@
                     <div class="alltitle">光照控制</div>
                     <div class="sysw">
                         <button
-                        class="changjingqiehuan btn-success center-block btn-sm ">
+                        class="gq_kaiguan btn-success center-block btn-sm ">
                         <p style="font-size:5rem;">开关</p>
                         </button>
                     </div>
                     <div class="sysw">
                         <button
-                        class="light button-3d button-primary center-block btn-sm ">
+                        class="ligpoi button-3d button-primary center-block btn-sm ">
                         <p style="font-size:5rem;">光强</p>
                         </button>
                     </div>

@@ -15,6 +15,9 @@ let tiaozhuan_show = document.querySelector('.nav-lin0');     //跳转到空�
     tiaozhuan_show.addEventListener('click', function() {
         cloudRender.SuperAPI('RemoveAllPOI');
         cloudRender.SuperAPI('specialChannel', objData0); 
+        var mapChart = echarts.init(document.getElementById('main'));
+
+        
 
     // alert("已完成");
        })
@@ -90,6 +93,16 @@ let specialChannel_freshair = document.querySelector('.freshair');
     })
 
 
+let specialChannel_door = document.querySelector('.dianji');
+    specialChannel_door.addEventListener('click', function() {
+        console.log('333');
+        cloudRender.SuperAPI('specialChannel',doorData);
+       
+    })
+
+   
+
+
 
 
 
@@ -131,6 +144,7 @@ tiaozhuan_kongqi.addEventListener('click', function() {
     cloudRender.SuperAPI('AddPOI', airpoiData_kongqi);
     cloudRender.SuperAPI('AddPOI', airpoiData_youhai);
     cloudRender.SuperAPI('AddPOI', airpoiData_paifeng);
+    $(window).trigger('resize');
    
 
     // alert("已完成");
@@ -138,16 +152,82 @@ tiaozhuan_kongqi.addEventListener('click', function() {
 
 
 
+let specialChannel_kq_kongtiao = document.querySelector('.kq_kongtiao');
+    specialChannel_kq_kongtiao.addEventListener('click', function() {
+
+        cloudRender.SuperAPI('specialChannel', airConditionerData); 
+                   
+        if ( airConditionerData.state == '1' ) {
+            airConditionerData.state = '0';
+            }
+        else {
+            airConditionerData.state = '1';}
+
+     })
+let specialChannel_kq_xinfeng = document.querySelector('.kq_xinfeng');
+    specialChannel_kq_xinfeng.addEventListener('click', function() {
+        cloudRender.SuperAPI('specialChannel', freshairData);
+        cloudRender.SuperAPI('specialChannel', aircleanerData);
+        // alert(freshairData[0].all);
+
+        if ( freshairData.state == '1' && aircleanerData.state == '1') {
+            freshairData.state = '0';
+            aircleanerData.state = '0';
+            }
+        else {
+            freshairData.state = '1';
+            aircleanerData.state = '1';}
+    })
+
+let specialChannel_kq_airpoi = document.querySelector('.kq_airpoi');     //跳转到空气页面，显示空气大类poi点
+    specialChannel_kq_airpoi.addEventListener('click', function() {
+        cloudRender.SuperAPI('specialChannel', objData1);
+        cloudRender.SuperAPI('AddPOI', airpoiData);
+        cloudRender.SuperAPI('AddPOI', airpoiData2);
+        cloudRender.SuperAPI('AddPOI', airpoiData3);
+        cloudRender.SuperAPI('AddPOI', airpoiData4);
+        cloudRender.SuperAPI('AddPOI', airpoiData5);
+        cloudRender.SuperAPI('AddPOI', airpoiData6);
+       
+    
+    })
+let specialChannel_kq_reli = document.querySelector('.kq_reli');
+    specialChannel_kq_reli.addEventListener('click', function() {
+        cloudRender.SuperAPI('specialChannel', mapData);
+
+        if ( mapData.state == '1' ) {
+            mapData.state = '0';
+            }
+        else {
+            mapData.state = '1';}
+    })
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 let tiaozhuan_guangqiang = document.querySelector('.nav-lin2');     //跳转到空气页面，显示空气大类poi点
 tiaozhuan_guangqiang.addEventListener('click', function() {
+    
     cloudRender.SuperAPI('RemoveAllPOI');
     cloudRender.SuperAPI('specialChannel', objData1);
     cloudRender.SuperAPI('AddPOI', ligpoiData_curtain);
     cloudRender.SuperAPI('AddPOI', ligpoiData_kaiguan);
     cloudRender.SuperAPI('AddPOI', ligpoiData_qiangdu);
     cloudRender.SuperAPI('AddPOI', ligpoiData_guanggan);
+    
    
 
     // alert("已完成");

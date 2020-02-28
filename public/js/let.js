@@ -72,6 +72,12 @@ airHeatData = {
     "heatpoint_minvalue": "5.00",   //区域热力点取值范围最小值(此热力图中数值范围的最小值, 例如人流密度最小1(绿色接近透明), 最大1000(最红), 线性计算)
     "heatpoint_maxvalue": "500.0"   //区域热力点取值范围最大值
 }
+doorData = {
+    "actionname": "doorControl",//关键字
+    "id": "1",  //id
+    "state": "1",  //开关状态 0关,1开
+    "all": "true"  //是否控制全部 true,false
+}
 
 
 // 空气POI点
