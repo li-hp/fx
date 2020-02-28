@@ -88,22 +88,43 @@ function myHandleResponseFunction(data) {
             console.log('OnPOIClick id = ' + OnPOIClick_id);
             // 返回一个点击POI的ID值
             switch(OnPOIClick_id) {
-                case 'air_pm25':
-     
-                    cloudRender.SuperAPI('FocusPOI', 'air_pm25', '25');
-                    cloudRender.SuperAPI('RegisterCloudResponse', 'OnPOIScreenRage');
-                    cloudRender.SuperAPI('RegisterCloudResponse', 'OnPOIMouseOverlap');
-                    
+          
+        ///////////////////////////////////////空气子页面 poi点击事件//////////////////////////////////////////////////////
+                case 'air_freshAir':
+                    cloudRender.SuperAPI('specialChannel', freshairData);
+                        if ( freshairData.state == '1' && aircleanerData.state == '1') {
+                            freshairData.state = '0';
+                            aircleanerData.state = '0';
+                            }
+                        else {
+                            freshairData.state = '1';
+                            aircleanerData.state = '1';}
                     break;
-                case 'air_conditioner':
+                case 'air_paifeng':
+                    
+                    cloudRender.SuperAPI('specialChannel', aircleanerData);
+                        if ( freshairData.state == '1' && aircleanerData.state == '1') {
+                            freshairData.state = '0';
+                            aircleanerData.state = '0';
+                            }
+                        else {
+                            freshairData.state = '1';
+                            aircleanerData.state = '1';}
+                    break;
+                case 'air_kongtiao':
+                   
+                    
                     cloudRender.SuperAPI('specialChannel', airConditionerData); 
-                    if ( airConditionerData.state == '1' ) {
-                        airConditionerData.state = '0';
-                        }
-                    else {
-                        airConditionerData.state = '1';}
+                   
+                        if ( airConditionerData.state == '1' ) {
+                            airConditionerData.state = '0';
+                            }
+                        else {
+                            airConditionerData.state = '1';}
                     
                     break;
+                
+
             }
             break;
 

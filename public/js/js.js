@@ -2,9 +2,22 @@
 
 //js.js  用于场景切换，点击事件，跳转事件等。
     
-// ---------- 八个按钮 -----------//
+
+// ---------- 八个按钮  首页 -----------//
+// ---------- 八个按钮  首页 -----------//
+// ---------- 八个按钮  首页 -----------//
+// ---------- 八个按钮  首页 -----------//
 
 // --------------- 场景切换 -----------------//
+
+
+let tiaozhuan_show = document.querySelector('.nav-lin0');     //跳转到空气页面，显示空气大类poi点
+    tiaozhuan_show.addEventListener('click', function() {
+        cloudRender.SuperAPI('RemoveAllPOI');
+        cloudRender.SuperAPI('specialChannel', objData0); 
+
+    // alert("已完成");
+       })
 
 let specialChannel_changjing = document.querySelector('.changjingqiehuan');
     specialChannel_changjing.addEventListener('click', function() {
@@ -76,8 +89,14 @@ let specialChannel_freshair = document.querySelector('.freshair');
             aircleanerData.state = '1';}
     })
 
+
+
+
+
 // --------------- 空气POI点加载 -----------------//
-let specialChannel_airpoi = document.querySelector('.airpoi');
+
+
+let specialChannel_airpoi = document.querySelector('.airpoi');     //跳转到空气页面，显示空气大类poi点
 specialChannel_airpoi.addEventListener('click', function() {
     cloudRender.SuperAPI('specialChannel', objData1);
     cloudRender.SuperAPI('AddPOI', airpoiData);
@@ -86,12 +105,91 @@ specialChannel_airpoi.addEventListener('click', function() {
     cloudRender.SuperAPI('AddPOI', airpoiData4);
     cloudRender.SuperAPI('AddPOI', airpoiData5);
     cloudRender.SuperAPI('AddPOI', airpoiData6);
+   
+
+})
+
+
+
+
+// ---------- 八个按钮  空气 -----------//
+// ---------- 八个按钮  空气 -----------//
+// ---------- 八个按钮  空气 -----------//
+// ---------- 八个按钮  空气 -----------//
+
+
+
+
+// -----  点击事件 div版本   -----------//
+
+let tiaozhuan_kongqi = document.querySelector('.nav-lin1');     //跳转到空气页面，显示空气大类poi点
+tiaozhuan_kongqi.addEventListener('click', function() {
+    cloudRender.SuperAPI('RemoveAllPOI');
+    cloudRender.SuperAPI('specialChannel', objData1);
+    cloudRender.SuperAPI('AddPOI', airpoiData_kongtiao);
+    cloudRender.SuperAPI('AddPOI', airpoiData_fresh);
+    cloudRender.SuperAPI('AddPOI', airpoiData_kongqi);
+    cloudRender.SuperAPI('AddPOI', airpoiData_youhai);
+    cloudRender.SuperAPI('AddPOI', airpoiData_paifeng);
+   
 
     // alert("已完成");
 })
 
 
-// -----  点击事件 div版本   -----------//
+
+
+
+let tiaozhuan_guangqiang = document.querySelector('.nav-lin2');     //跳转到空气页面，显示空气大类poi点
+tiaozhuan_guangqiang.addEventListener('click', function() {
+    cloudRender.SuperAPI('RemoveAllPOI');
+    cloudRender.SuperAPI('specialChannel', objData1);
+    cloudRender.SuperAPI('AddPOI', ligpoiData_curtain);
+    cloudRender.SuperAPI('AddPOI', ligpoiData_kaiguan);
+    cloudRender.SuperAPI('AddPOI', ligpoiData_qiangdu);
+    cloudRender.SuperAPI('AddPOI', ligpoiData_guanggan);
+   
+
+    // alert("已完成");
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 test1(ziyemiandata);
 test2(ziyemiandata);

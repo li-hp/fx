@@ -198,7 +198,7 @@
                     <div class="sysw">
                         <button
                         class="fushi btn-success center-block btn-sm ">
-                        <p style="font-size:5rem;">总开关</p>
+                        <p style="font-size:5rem;">开关</p>
                         </button>
                     </div>
                     <div class="sysw">
@@ -215,9 +215,6 @@
     </div>
 
     <div class="maincontain maincontain_guangqiang">
-
-
-
 
         <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:9.5px; margin-right:9.5px;">
             <div class="col-xs-12 col-sm-3">
@@ -311,42 +308,21 @@
             <div class="col-xs-12 col-sm-3">
 
                 <div class="boxall">
-                    <div class="alltitle">光照昼夜节律图</div>
-                    <div class="allnav" id="gechart1"></div>
+                    <div class="alltitle">实时舒适度</div>
+                    <div class="allnav" id="shushi_echart1"></div>
                     <div class="boxfoot"></div>
                 </div>
 
                 <div class="boxall">
-                    <div class="alltitle">实时光强</div>
-                    <div class="allnav" id="gechart2">
-
-
-
-
-                            <div class="content">
-                            <div class="div_td" >
-                            室内光强
-                            </div>
-                            <div class="div_td" >
-                            室外光强
-                            </div>
-                            <div class="div_td" id="shineiguangqiang">
-
-                            </div>
-                            <div class="div_td" id="shiwaiguangqiang">
-
-                            </div>
-                            </div>
-
-
-
+                    <div class="alltitle">舒适度变化趋势</div>
+                        <div class="allnav" id="shushi_echart2">    
                     </div>
                     <div class="boxfoot"></div>
                 </div>
 
                 <div class="boxall">
-                    <div class="alltitle">光强曲线</div>
-                    <div class="allnav" id="gechart3"></div>
+                    <div class="alltitle">舒适度热词分析</div>
+                    <div class="allnav" id="shushi_echart3"></div>
                     <div class="boxfoot"></div>
                 </div>
 

@@ -12,11 +12,9 @@
   <!-- Js -->
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/echarts.min.js"></script>
-  <script type="text/javascript" src="js/layer/layer.js"></script>
+  <script type="text/javascript" src="js/echarts-liquidfill.min.js"></script>
+  <script type="text/javascript" src="js/echarts-wordcloud.min.js"></script>  
   <script type="text/javascript" src="js/superAPI-2.6.0-owell.min.js"></script>
-
-  
-
 
   <!-- Styles -->
   <link href="{{ mix('css/app.css') }}" rel="stylesheet">
@@ -44,7 +42,6 @@
   <script type="text/javascript" src="js/js.js"></script>
   <script type="text/javascript" src="js/51vr.js"></script>
   <script type="text/javascript" src="js/let.js"></script>
-  <script type="text/javascript" src="js/echarts-liquidfill.min.js"></script>
   <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
 
   <script src="js/ai.js"></script>

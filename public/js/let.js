@@ -23,6 +23,10 @@ roamData = {
          "actionname": "changeScene",  //关键字
          "id": "2" //0外部,1,俯视,2,室内漫游
     }
+objData0 = {
+          "actionname": "changeScene",  //关键字
+          "id": "0" //0外部,1,俯视,2,室内漫游
+    }
 objData1 = {
             "actionname": "changeScene",  //关键字
             "id": "1" //0外部,1,俯视,2,室内漫游
@@ -71,9 +75,88 @@ airHeatData = {
 
 
 // 空气POI点
+airpoiData_kongtiao = {
+    "object_id" : "air_kongtiao",   //POI点的ID
+    "object_name": "空调系统", //POI提示文本
+    "object_floor": "3",//用于建筑楼层, 1 一层 (非必填)
+    "object_type": "airConditioner",//图标的类别 (图标的样式, 需双方沟通约定)//此项目中. 约定为：①cameraLine; ②buildingLine; ③portLine;
+    "coord_type": "1",  //(0: 经纬度gis, 1: cad坐标                                                                              )
+    "object_coord" : "276056.0975,-116522.8888",//POI点的坐标(坐标类型需与该POI点的object_type相同)
+    "coord_z": '0',//单位米, 坐标为GIS时决定POI图标高度; CAD时无效, 不用填
+    "showtitle":"true",//true 显示提示文本(默认), false 不显示提示文本
+    "showtitlerange":"30, 500",//此POI点显示title的镜头距离范围(单位米, 范围最小、最大距离; 在此范围内显示, 超出范围隐藏title, 注: showtitle属性为true时生效)
+    "monitormouseoverlap":"ture"//此POI是否允许监听鼠标划过事件
+    }
+ airpoiData_kongqi= {
+    "object_id" : "air_kongqi", 
+    "object_name": "空气检测系统",
+    "object_floor": "3",
+    "object_type": "pm25",
+    "coord_type": "1",                                            
+    "object_coord" : "294145.5555,-134071.3333",
+    "coord_z": '0',
+    "showtitle":"true",
+    "showtitlerange":"30, 500",
+    "monitormouseoverlap":"ture",
+    }
+airpoiData_wendu= {
+    "object_id" : "air_wendu", 
+    "object_name": "温湿度控制",
+    "object_floor": "3",
+    "object_type": "temperature",
+    "coord_type": "1",                                            
+    "object_coord" : "294145.5555,-134071.3333",
+    "coord_z": '0',
+    "showtitle":"true",
+    "showtitlerange":"30, 500",
+    "monitormouseoverlap":"ture",
+    }
+ airpoiData_fresh = {
+    "object_id" : "air_freshAir", 
+    "object_name": "新风系统",
+    "object_floor": "3",
+    "object_type": "freshAir",
+    "coord_type": "1",                                            
+    "object_coord" : "297077,-123624",
+    "coord_z": '0',
+    "showtitle":"true",
+    "showtitlerange":"30, 500",
+    "monitormouseoverlap":"ture",
+    }
+airpoiData_paifeng = {
+    "object_id" : "air_paifeng", 
+    "object_name": "排风系统",
+    "object_floor": "3",
+    "object_type": "airCleaner",
+    "coord_type": "1",                                            
+    "object_coord" : "276176.3578,-138902. 4529",
+    "coord_z": '0',
+    "showtitle":"true",
+    "showtitlerange":"30, 500",
+    "monitormouseoverlap":"ture",
+    }
+airpoiData_youhai = {
+    "object_id" : "air_youhai", 
+    "object_name": "有害气体检测",
+    "object_floor": "3",
+    "object_type": "formaldehyde",
+    "coord_type": "1",                                            
+    "object_coord" : "284555,-115757",
+    "coord_z": '0',
+    "showtitle":"true",
+    "showtitlerange":"30, 500",
+    "monitormouseoverlap":"ture",
+    }
+
+
+
+
+
+
+
 airpoiData = {
     "object_id" : "air_conditioner",   //POI点的ID
-    "object_name": "空调1-综合院", //POI提示文本
+    "object_name": "空调系统", //POI提示文本
     "object_floor": "3",//用于建筑楼层, 1 一层 (非必填)
     "object_type": "airConditioner",//图标的类别 (图标的样式, 需双方沟通约定)//此项目中. 约定为：①cameraLine; ②buildingLine; ③portLine;
     "coord_type": "1",  //(0: 经纬度gis, 1: cad坐标                                                                              )
@@ -168,4 +251,54 @@ curtainsData = {
 
 
 
+
     
+// 光POI点
+ligpoiData_curtain = {
+    "object_id" : "light_curtain",   //POI点的ID
+    "object_name": "窗帘控制", //POI提示文本
+    "object_floor": "3",//用于建筑楼层, 1 一层 (非必填)
+    "object_type": "curtain",//图标的类别 (图标的样式, 需双方沟通约定)//此项目中. 约定为：①cameraLine; ②buildingLine; ③portLine;
+    "coord_type": "1",  //(0: 经纬度gis, 1: cad坐标                                                                              )
+    "object_coord" : "276056.0975,-116522.8888",//POI点的坐标(坐标类型需与该POI点的object_type相同)
+    "coord_z": '0',//单位米, 坐标为GIS时决定POI图标高度; CAD时无效, 不用填
+    "showtitle":"true",//true 显示提示文本(默认), false 不显示提示文本
+    "showtitlerange":"30, 500",//此POI点显示title的镜头距离范围(单位米, 范围最小、最大距离; 在此范围内显示, 超出范围隐藏title, 注: showtitle属性为true时生效)
+    "monitormouseoverlap":"ture"//此POI是否允许监听鼠标划过事件
+    }
+ ligpoiData_kaiguan = {
+    "object_id" : "light_kaiguan", 
+    "object_name": "开关控制",
+    "object_floor": "3",
+    "object_type": "light",
+    "coord_type": "1",                                            
+    "object_coord" : "276176.3578,-138902. 4529",
+    "coord_z": '0',
+    "showtitle":"true",
+    "showtitlerange":"30, 500",
+    "monitormouseoverlap":"ture",
+    }
+ligpoiData_qiangdu = {
+    "object_id" : "light_qiangdu", 
+    "object_name": "照度控制",
+    "object_floor": "3",
+    "object_type": "lightIntension",
+    "coord_type": "1",                                            
+    "object_coord" : "294145.5555,-134071.3333",
+    "coord_z": '0',
+    "showtitle":"true",
+    "showtitlerange":"30, 500",
+    "monitormouseoverlap":"ture",
+    }
+ ligpoiData_guanggan = {
+    "object_id" : "light_guanggan", 
+    "object_name": "光感系统",
+    "object_floor": "3",
+    "object_type": "lightFeel",
+    "coord_type": "1",                                            
+    "object_coord" : "297077,-123624",
+    "coord_z": '0',
+    "showtitle":"true",
+    "showtitlerange":"30, 500",
+    "monitormouseoverlap":"ture",
+    }
