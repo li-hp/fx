@@ -12,7 +12,7 @@
 
 // --------------------------全局场景----------------------------------- //
 
-ziyemiandata =["zhuye","kongqi","guangqiang", "shushi"]
+ziyemiandata =["zhuye","kongqi","guangqiang", "shushi", "szyy","jianshen", "kangyi", "zonghe"]
 
 objData = {
          "actionname": "changeScene",  //关键字

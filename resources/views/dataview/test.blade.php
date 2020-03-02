@@ -11,6 +11,7 @@
 <div class="all" style="padding-right: 0px; padding-left:0px; margin-left:0px; margin-right:0px;z-index: 10;">
 
 
+    
     {{--coxno   用来加载51vr --}}
     <div class="boxno">
         <div class="allnav" id="player"></div>
@@ -21,8 +22,6 @@
     <div class="maincontain maincontain_zhuye">
         
         <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:0.5px; margin-right:0.5px;">
-
-
 
             <div class="col-xs-12 col-sm-3" style="padding-left:0px; padding-right: 0px">
 
@@ -194,7 +193,7 @@
                 </div>
 
                 <div class="boxall">
-                    <div class="alltitle">新风控制</div>
+                    <div class="alltitle">新风控制交互</div>
                     <div class="sysw">
                         <button
                         class="fushi btn-success center-block btn-sm ">
@@ -261,7 +260,7 @@
 
 
                 <div class="boxall">
-                    <div class="alltitle">光照控制</div>
+                    <div class="alltitle">光照控制交互</div>
                     <div class="sysw">
                         <a type="button"
                         class="btn btn-primary center-block btn-sm" >
@@ -292,43 +291,31 @@
 
     <div class="maincontain maincontain_shushi">
 
-        <style>
-        .content { width:100%;
-        height:100%;}
-        .div_td { width:50%;
-        height:50%;
-        float:left;
-        color:#3490dc;
-        text-align:center;
-        line-height:250px;
-        font-size:5rem; }
-        </style>
-
         <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:9.5px; margin-right:9.5px;">
             <div class="col-xs-12 col-sm-3">
 
                 <div class="boxall">
                     <div class="alltitle">实时舒适度</div>
-                    <div class="allnav" id="shushi_echart1"></div>
+                    <div class="allnav" id="shushi_echart_1"></div>
                     <div class="boxfoot"></div>
                 </div>
 
                 <div class="boxall">
                     <div class="alltitle">舒适度变化趋势</div>
-                        <div class="allnav" id="shushi_echart2">    
+                        <div class="allnav" id="shushi_echart_2">    
                     </div>
                     <div class="boxfoot"></div>
                 </div>
 
                 <div class="boxall">
                     <div class="alltitle">舒适度热词分析</div>
-                    <div class="allnav" id="shushi_echart3"></div>
+                    <div class="allnav" id="shushi_echart_3"></div>
                     <div class="boxfoot"></div>
                 </div>
 
 
                 <div class="boxall">
-                    <div class="alltitle">光照控制</div>
+                    <div class="alltitle">舒适交互</div>
                     <div class="sysw">
                         <a type="button"
                         class="btn btn-primary center-block btn-sm" >
@@ -357,7 +344,189 @@
 
     </div>
 
+    <div class="maincontain maincontain_szyy">
+
+
+        <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:9.5px; margin-right:9.5px;">
+            <div class="col-xs-12 col-sm-3">
+
+                <div class="boxall">
+                    <div class="alltitle">水质指标</div>
+                    <div class="allnav" id="szyy_echarts_1"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxall">
+                    <div class="alltitle">净水器滤芯使用情况</div>
+                        <div class="allnav" id="szyy_echarts_2">    
+                    </div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxall">
+                    <div class="alltitle">今日菜品营养结构</div>
+                    <div class="allnav" id="szyy_echarts_3"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+
+                <div class="boxall">
+                    <div class="alltitle">水质&营养交互</div>
+                    <div class="sysw">
+                        <a type="button"
+                        class="btn btn-primary center-block btn-sm" >
+                        <p style="font-size:5rem;">总开关</p>
+                        </a>
+                    </div>
+                    <div class="sysw">
+                        <a type="button"
+                        class="btn btn-primary center-block btn-sm"
+                        aria-label="Right Align">
+                        <p style="font-size:5rem;">AUTO</p>
+                        </a>
+                    </div>
+
+
+                    <div class="boxfoot"></div>
+                </div>
+
+
+            </div>
+
+            <div class="col-xs-12 col-sm-9">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="maincontain maincontain_kangyi">
+        <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:9.5px; margin-right:9.5px;">
+            <div class="col-xs-12 col-sm-3">
+
+                <div class="boxall">
+                    <div class="alltitle">红外测温门禁实时数据</div>
+                    <div class="allnav" id="kangyi_echarts_0"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxall">
+                    <div class="alltitle">消毒时长管理</div>
+                        <div class="allnav" id="kangyi_echarts_1">    
+                    </div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxall">
+                    <div class="alltitle">会议管理</div>
+                    <div class="allnav" id="kangyi_echarts_2"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+
+                <div class="boxall">
+                    <div class="alltitle">舒适交互</div>
+                    <div class="sysw">
+                        <a type="button"
+                        class="btn btn-primary center-block btn-sm" >
+                        <p style="font-size:5rem;">总开关</p>
+                        </a>
+                    </div>
+                    <div class="sysw">
+                        <a type="button"
+                        class="btn btn-primary center-block btn-sm"
+                        aria-label="Right Align">
+                        <p style="font-size:5rem;">AUTO</p>
+                        </a>
+                    </div>
+
+
+                    <div class="boxfoot"></div>
+                </div>
+
+
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+            </div>
+
+            <div class="col-xs-12 col-sm-3" style="padding-left:0px; padding-right: 0px">
+
+
+            <div class="boxallright">
+                <div class="alltitle">表格1</div>
+                <div class="allnav" style="padding-left:100px; padding-right: 10px" id="table" ></div>
+                <div class="boxfoot"></div>
+            </div>
+
+            <div class="boxallright">
+                <div class="alltitle">表格2</div>
+                <div class="allnav" id="kangyi_echarts_5"></div>
+                <div class="boxfoot"></div>
+            </div>
+
+            <div class="boxallright">
+                <div class="alltitle">舒适</div>
+                <div class="allnav" id="kangyi_echarts_6"></div>
+                <div class="boxfoot"></div>
+            </div>
+
+            <div class="boxallright">
+                <div class="alltitle">综合</div>
+                <div class="allnav" id="kangyi_echarts_7"></div>
+                <div class="boxfoot"></div>
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
+
+<script>
+uiduck.setOptions({
+			templateId: "table",
+			url: { url: "http://data.live.126.net/livechannel/sub/3.json", type: "POST", key: "sublives" },
+            loading: { icon: "uiduck-loading-6", time: 1000 },
+            style: { tbClass: "uiduck-dark" },
+			page: true,
+			pageOptions: { layout: ["total", , "prev", "next", "last"] },
+			fieldOptions: [
+				{
+					index: true,
+					title: "序号"
+				},
+				{
+					key: "cid",
+					title: "ID"
+				}, {
+					key: "cname",
+					title: "类型"
+				}, {
+					key: "collectionId",
+					title: "测试",
+					type: "map",
+					computed: {
+						"0": "李白",
+						"1": "杜甫",
+						"2": "白居易",
+						"3": "王安石"
+					}
+				}, {
+					key: "ename",
+					title: "名称"
+				}, {
+					key: "icon",
+					title: "图标",
+					type: "image",
+					width: "30px",
+					height: "30px"
+				}, {
+					key: "tname",
+					title: "节目名称"
+				}]
+		});
+    </script>
 
 
 

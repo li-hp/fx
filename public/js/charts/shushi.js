@@ -6,8 +6,7 @@ $(function(){
 
     function shushi_echarts_1() {
 
-        var myChart = echarts.init(document.getElementById('shushi_echart1'));
-
+        var myChart = echarts.init(document.getElementById('shushi_echart_1'));
 
         var data = [
             {
@@ -24,9 +23,9 @@ $(function(){
                 value: 30
             }]
             
-            var titleArr= [], seriesArr=[];
-            colors=[['#af4', '#dfeaff'],['#ff8c37', '#ffdcc3'],['#fd6f97', '#fed4e0'],['#ffc257', '#ffedcc'], ['#a181fc', '#e3d9fe']]
-            data.forEach(function(item, index){
+        var titleArr= [], seriesArr=[];
+        colors=[['#af4', '#dfeaff'],['#ff8c37', '#ffdcc3'],['#fd6f97', '#fed4e0'],['#ffc257', '#ffedcc'], ['#a181fc', '#e3d9fe']]
+        data.forEach(function(item, index){
                 titleArr.push(
                     {
                         text:item.name,
@@ -94,8 +93,7 @@ $(function(){
                     }    
                 )
             });
-           
-            
+                    
         option = {
             // backgroundColor: "#fff",
             grid: {
@@ -117,7 +115,7 @@ $(function(){
 
     function shushi_echarts_2() {
 
-        var myChart = echarts.init(document.getElementById('shushi_echart2'));
+        var myChart = echarts.init(document.getElementById('shushi_echart_2'));
 
         option = {
             // backgroundColor: '#394056',
@@ -295,7 +293,7 @@ $(function(){
 
     function shushi_echarts_3() {
 
-        var myChart = echarts.init(document.getElementById('shushi_echart3'));
+        var myChart = echarts.init(document.getElementById('shushi_echart_3'));
 
         option = {
 
