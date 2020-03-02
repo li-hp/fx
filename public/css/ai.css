@@ -173,9 +173,9 @@ button,input,select,textarea {
 	/* //鼠标选定前的logo */
 	float: left;
 	width: 1160px;
-	height: 120px; 
-	background-image: url(../img/cpimg/owell.png);
-	background-position: 0 -128px;
+	height: 135px; 
+	background-image: url(../img/cpimg/owell2.jpg);
+	background-position: 0 -42px;
 	margin-left: 12px;
 	background-repeat: no-repeat;
 }
@@ -220,7 +220,7 @@ button,input,select,textarea {
 	content: "";
 	width: 20px;
 	height: 12px;
-	background-image: url(../img/cpimg/owell.png);
+	background-image: url(../img/cpimg/owell2.jpg);
 	background-position: -331px -158px;
 	transition: -webkit-transform .3s ease;
 	transition: transform .3s ease;
@@ -349,8 +349,8 @@ button,input,select,textarea {
 
 .mod-header.active .mod-header-logo,.mod-header.hover .mod-header-logo,.mod-header:hover .mod-header-logo {
 	/* 鼠标定位后的logo */
-	background-image: url(../img/cpimg/owell.png);
-	background-position: 0 -128px
+	background-image: url(../img/cpimg/owell2.jpg);
+	background-position: 0 -43px
 }
 
 .mod-header.active .mod-header-user .user i:after,.mod-header.hover .mod-header-user .user i:after,.mod-header:hover .mod-header-user .user i:after {
