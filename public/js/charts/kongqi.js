@@ -21,7 +21,7 @@ function airdata(){
 
 // kecharts_0();setInterval(function(){kecharts_0();}, randomNum(2000,7000));
 
-airdata();
+kecharts_0();setInterval(function(){kecharts_0();}, randomNum(2000,7000));
 kecharts_1();setInterval(function(){kecharts_1();}, randomNum(2000,7000));
 kecharts_2();setInterval(function(){kecharts_2();}, randomNum(2000,7000));
 kecharts_3();setInterval(function(){kecharts_3();}, randomNum(2000,7000));
@@ -30,12 +30,12 @@ kecharts_5();setInterval(function(){kecharts_5();}, randomNum(2000,7000));
 kecharts_6();setInterval(function(){kecharts_6();}, randomNum(2000,7000));
 
 // --------------- echart图表 -----------------//
-function kecharts_0(data) {
+function kecharts_0() {
 
     var myChart = echarts.init(document.getElementById('kechart0'));
 
-    // var randomdata = [randomNum(25,29), randomNum(40,70), randomNum(20,90), randomNum(20,90), randomNum(0,15), randomNum(1,5)];
-    var randomdata = data;
+    var randomdata = [randomNum(25,29), randomNum(40,70), randomNum(20,90), randomNum(20,90), randomNum(0,15), randomNum(1,5)];
+    // var randomdata = data;
 
     var radius = ['45%', '40%'];
 
@@ -907,11 +907,6 @@ function kecharts_3() {
          myChart.resize();
      });
 
-    // 使用刚指定的配置项和数据显示图表。
-    myChart.setOption(option);
-    window.addEventListener("resize",function(){
-        myChart.resize();
-    });
 }
 
 function kecharts_4() {
