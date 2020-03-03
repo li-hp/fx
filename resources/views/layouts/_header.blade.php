@@ -3,7 +3,7 @@
   <div class="mod-header">
 
     <div class="layout clearfix">
-      <a href="" class="mod-header-logo nav-lin0"></a>
+      <a href="#" class="mod-header-logo nav-lin0"></a>
 
       <div class="mod-header-nav ">
         <ul id="jmod-header-nav">
