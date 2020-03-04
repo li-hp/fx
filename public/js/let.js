@@ -12,7 +12,7 @@
 
 // --------------------------全局场景----------------------------------- //
 
-ziyemiandata =["zhuye","kongqi","guangqiang", "shushi", "szyy","jianshen", "zonghe"]
+ziyemiandata =["zhuye","kongqi","guangqiang", "shushi", "szyy","jianshen", "kangyi", "zonghe"]
 
 objData = {
          "actionname": "changeScene",  //关键字
@@ -465,7 +465,7 @@ shuipoiData_water  = {
     }
 
 
-
+//综合  poi点
 
 zonghepoiData_dian = {
     "object_id" : "zonghe_dian",   //POI点的ID
@@ -533,7 +533,7 @@ zonghepoiData_meetingRoom= {
     "monitormouseoverlap":"ture",
     }
 
-zonghepoiData_meetingRoom = {
+zonghepoiData_kaoqin = {
     "object_id" : "zonghe_checkingIn", 
     "object_name": "考勤",
     "object_floor": "3",
