@@ -223,13 +223,14 @@ body {
 
 .boxall_3d {
   border: 3px solid rgba(25,186,139,.17);
-  padding: 0 2rem 4rem 2rem;
+  padding: 2rem 10rem 2rem 2rem;
   background: rgba(255,255,255,.04);
   background-size: 100% auto;
   position: relative;
   margin-bottom: 20px;
   z-index: 10;
-  height: 163rem; //容器高度
+  height: 155rem; //容器高度
+  
 }
 
 .boxall_3d:before,
@@ -248,6 +249,18 @@ body {
 .boxall_3d:after,.boxfoot:after { //3d全景框的右边
   border-right: 2px solid #0252ffa2;
   right: 0;
+}
+
+.allnav3d {
+  height: 165rem; //容器高度
+  width: auto;
+  display: block;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  // margin-right: auto;
+  z-index:11;
 }
 
 // ------box的底部--------- //
@@ -272,7 +285,7 @@ body {
 ul {
   list-style: none;
   & > li {
-    float: left;
+    float: to left;
     padding: 0 .1rem;
   }
 }

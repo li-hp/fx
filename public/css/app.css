@@ -18929,13 +18929,13 @@ body {
 
 .boxall_3d {
   border: 3px solid rgba(25, 186, 139, 0.17);
-  padding: 0 2rem 4rem 2rem;
+  padding: 2rem 10rem 2rem 2rem;
   background: rgba(255, 255, 255, 0.04);
   background-size: 100% auto;
   position: relative;
   margin-bottom: 20px;
   z-index: 10;
-  height: 163rem;
+  height: 155rem;
 }
 
 .boxall_3d:before,
@@ -18960,6 +18960,17 @@ body {
   right: 0;
 }
 
+.allnav3d {
+  height: 165rem;
+  width: auto;
+  display: block;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  z-index: 11;
+}
+
 .boxfoot {
   position: absolute;
   bottom: 0;
@@ -18982,7 +18993,7 @@ ul {
 }
 
 ul > li {
-  float: left;
+  float: to left;
   padding: 0 0.1rem;
 }
 
@@ -19069,7 +19080,6 @@ canvas {
   margin-left: 0.1px;
   margin-right: 0.1px;
   margin-top: 50px;
-
   z-index: 11;
   display: block;
 }

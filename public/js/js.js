@@ -10,18 +10,6 @@
 
 // --------------- 场景切换 -----------------//
 
-
-let tiaozhuan_show = document.querySelector('.nav-lin0');     //跳转到空气页面，显示空气大类poi点
-    tiaozhuan_show.addEventListener('click', function() {
-        cloudRender.SuperAPI('RemoveAllPOI');
-        cloudRender.SuperAPI('specialChannel', objData0); 
-        var mapChart = echarts.init(document.getElementById('main'));
-
-        
-
-    // alert("已完成");
-       })
-
 let specialChannel_changjing = document.querySelector('.changjingqiehuan');
     specialChannel_changjing.addEventListener('click', function() {
         cloudRender.SuperAPI('specialChannel', objData);  // 这里 specialChannel 不能修改
@@ -135,22 +123,6 @@ specialChannel_airpoi.addEventListener('click', function() {
 
 // -----  点击事件 div版本   -----------//
 
-let tiaozhuan_kongqi = document.querySelector('.nav-lin1');     //跳转到空气页面，显示空气大类poi点
-tiaozhuan_kongqi.addEventListener('click', function() {
-    cloudRender.SuperAPI('RemoveAllPOI');
-    cloudRender.SuperAPI('specialChannel', objData1);
-    cloudRender.SuperAPI('AddPOI', airpoiData_kongtiao);
-    cloudRender.SuperAPI('AddPOI', airpoiData_fresh);
-    cloudRender.SuperAPI('AddPOI', airpoiData_kongqi);
-    cloudRender.SuperAPI('AddPOI', airpoiData_youhai);
-    cloudRender.SuperAPI('AddPOI', airpoiData_paifeng);
-    $(window).trigger('resize');
-   
-
-    // alert("已完成");
-})
-
-
 
 let specialChannel_kq_kongtiao = document.querySelector('.kq_kongtiao');
     specialChannel_kq_kongtiao.addEventListener('click', function() {
@@ -208,68 +180,7 @@ let specialChannel_kq_reli = document.querySelector('.kq_reli');
 
 
 
-
-
-
-
-
-
-
-
-
-
-let tiaozhuan_guangqiang = document.querySelector('.nav-lin2');     //跳转到空气页面，显示空气大类poi点
-tiaozhuan_guangqiang.addEventListener('click', function() {
-    
-    cloudRender.SuperAPI('RemoveAllPOI');
-    cloudRender.SuperAPI('specialChannel', objData1);
-    cloudRender.SuperAPI('AddPOI', ligpoiData_curtain);
-    cloudRender.SuperAPI('AddPOI', ligpoiData_kaiguan);
-    cloudRender.SuperAPI('AddPOI', ligpoiData_qiangdu);
-    cloudRender.SuperAPI('AddPOI', ligpoiData_guanggan);
-    
-   
-
-    // alert("已完成");
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//--导航栏跳转-- //
 
 test1(ziyemiandata);
 test2(ziyemiandata);
@@ -319,22 +230,42 @@ function delOne(str, data){
  }
 
 
+// ---导航栏51vr----//
 
-    // ---导航栏点击事件--load版本--//
+let tiaozhuan_show = document.querySelector('.nav-lin0');     //跳转到空气页面，显示空气大类poi点
+    tiaozhuan_show.addEventListener('click', function() {
+        cloudRender.SuperAPI('RemoveAllPOI');
+        cloudRender.SuperAPI('specialChannel', objData0); 
+        var mapChart = echarts.init(document.getElementById('main'));
 
-    // let tiaozhuan1 = document.querySelector('.nav-link1');
-    // tiaozhuan1.addEventListener('click', function() {
-    //     $.ajax({cache: true});
+       })
 
-    //     $('.maincontain').load('/php/kongqi.blade.php');
-    //    $.getScript("/js/kongqi.js");
-    // })
+let tiaozhuan_kongqi = document.querySelector('.nav-lin1');     //跳转到空气页面，显示空气大类poi点
+tiaozhuan_kongqi.addEventListener('click', function() {
+    cloudRender.SuperAPI('RemoveAllPOI');
+    cloudRender.SuperAPI('specialChannel', objData1);
+    cloudRender.SuperAPI('AddPOI', airpoiData_kongtiao);
+    cloudRender.SuperAPI('AddPOI', airpoiData_fresh);
+    cloudRender.SuperAPI('AddPOI', airpoiData_kongqi);
+    cloudRender.SuperAPI('AddPOI', airpoiData_youhai);
+    cloudRender.SuperAPI('AddPOI', airpoiData_paifeng);
+    $(window).trigger('resize');
+})
+
+let tiaozhuan_guangqiang = document.querySelector('.nav-lin2');     //跳转到空气页面，显示空气大类poi点
+tiaozhuan_guangqiang.addEventListener('click', function() {
+    
+    cloudRender.SuperAPI('RemoveAllPOI');
+    cloudRender.SuperAPI('specialChannel', objData1);
+    cloudRender.SuperAPI('AddPOI', ligpoiData_curtain);
+    cloudRender.SuperAPI('AddPOI', ligpoiData_kaiguan);
+    cloudRender.SuperAPI('AddPOI', ligpoiData_qiangdu);
+    cloudRender.SuperAPI('AddPOI', ligpoiData_guanggan);
+
+})
 
 
-
-
-
-
+// js.js结尾
 })
 
 

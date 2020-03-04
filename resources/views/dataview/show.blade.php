@@ -102,6 +102,13 @@
             </div>
 
             <div class="col-xs-12 col-sm-6">
+                <style type="text/css">#backImg{background: url("/img/owell2dd.png");}</style>
+                {{-- 此处height可以调整3d框图的高度 --}}
+                <div class="boxall_3d" id="backImg" style="width:100%; height:98%; background-size:100%; -moz-background-size:100%; background-repeat: no-repeat;">
+                    <div class="alltitle">全景地图</div>
+                    <div class="allnav3d" id="e555"></div>
+                    <div class="boxfoot"></div>
+                </div> 
             </div>
 
             <div class="col-xs-12 col-sm-3" style="padding-left:0px; padding-right: 0px">
@@ -318,193 +325,193 @@
 
     <div class="maincontain maincontain_shushi">
 
-<div class="row" style="padding-right: 0px; padding-left:0px; margin-left:9.5px; margin-right:9.5px;">
-    <div class="col-xs-12 col-sm-3">
+        <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:9.5px; margin-right:9.5px;">
+            <div class="col-xs-12 col-sm-3">
 
-        <div class="boxall">
-            <div class="alltitle">实时舒适度</div>
-            <div class="allnav" id="shushi_echart_1"></div>
-            <div class="boxfoot"></div>
-        </div>
+                <div class="boxall">
+                    <div class="alltitle">实时舒适度</div>
+                    <div class="allnav" id="shushi_echart_1"></div>
+                    <div class="boxfoot"></div>
+                </div>
 
-        <div class="boxall">
-            <div class="alltitle">舒适度变化趋势</div>
-                <div class="allnav" id="shushi_echart_2">    
+                <div class="boxall">
+                    <div class="alltitle">舒适度变化趋势</div>
+                        <div class="allnav" id="shushi_echart_2">    
+                    </div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxall">
+                    <div class="alltitle">舒适度热词分析</div>
+                    <div class="allnav" id="shushi_echart_3"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+
+                <div class="boxall">
+                    <div class="alltitle">舒适交互</div>
+                    <div class="sysw">
+                        <a type="button"
+                        class="btn btn-primary center-block btn-sm" >
+                        <p style="font-size:5rem;">总开关</p>
+                        </a>
+                    </div>
+                    <div class="sysw">
+                        <a type="button"
+                        class="btn btn-primary center-block btn-sm"
+                        aria-label="Right Align">
+                        <p style="font-size:5rem;">AUTO</p>
+                        </a>
+                    </div>
+
+
+                    <div class="boxfoot"></div>
+                </div>
+
+
             </div>
-            <div class="boxfoot"></div>
-        </div>
 
-        <div class="boxall">
-            <div class="alltitle">舒适度热词分析</div>
-            <div class="allnav" id="shushi_echart_3"></div>
-            <div class="boxfoot"></div>
-        </div>
-
-
-        <div class="boxall">
-            <div class="alltitle">舒适交互</div>
-            <div class="sysw">
-                <a type="button"
-                class="btn btn-primary center-block btn-sm" >
-                <p style="font-size:5rem;">总开关</p>
-                </a>
-            </div>
-            <div class="sysw">
-                <a type="button"
-                class="btn btn-primary center-block btn-sm"
-                aria-label="Right Align">
-                <p style="font-size:5rem;">AUTO</p>
-                </a>
+            <div class="col-xs-12 col-sm-9">
             </div>
 
-
-            <div class="boxfoot"></div>
         </div>
-
 
     </div>
 
-    <div class="col-xs-12 col-sm-9">
+    <div class="maincontain maincontain_szyy">
+
+
+        <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:9.5px; margin-right:9.5px;">
+            <div class="col-xs-12 col-sm-3">
+
+                <div class="boxall">
+                    <div class="alltitle">水质指标</div>
+                    <div class="allnav" id="szyy_echarts_1"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxall">
+                    <div class="alltitle">净水器滤芯使用情况</div>
+                        <div class="allnav" id="szyy_echarts_2">    
+                    </div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxall">
+                    <div class="alltitle">今日菜品营养结构</div>
+                    <div class="allnav" id="szyy_echarts_3"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+
+                <div class="boxall">
+                    <div class="alltitle">水质&营养交互</div>
+                    <div class="sysw">
+                        <a type="button"
+                        class="btn btn-primary center-block btn-sm" >
+                        <p style="font-size:5rem;">总开关</p>
+                        </a>
+                    </div>
+                    <div class="sysw">
+                        <a type="button"
+                        class="btn btn-primary center-block btn-sm"
+                        aria-label="Right Align">
+                        <p style="font-size:5rem;">AUTO</p>
+                        </a>
+                    </div>
+
+
+                    <div class="boxfoot"></div>
+                </div>
+
+
+            </div>
+
+            <div class="col-xs-12 col-sm-9">
+            </div>
+
+        </div>
+
     </div>
 
-</div>
+    <div class="maincontain maincontain_zonghe">
+        <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:9.5px; margin-right:9.5px;">
+        <div class="col-xs-12 col-sm-3">
 
-</div>
-
-<div class="maincontain maincontain_szyy">
-
-
-<div class="row" style="padding-right: 0px; padding-left:0px; margin-left:9.5px; margin-right:9.5px;">
-    <div class="col-xs-12 col-sm-3">
-
-        <div class="boxall">
-            <div class="alltitle">水质指标</div>
-            <div class="allnav" id="szyy_echarts_1"></div>
-            <div class="boxfoot"></div>
-        </div>
-
-        <div class="boxall">
-            <div class="alltitle">净水器滤芯使用情况</div>
-                <div class="allnav" id="szyy_echarts_2">    
-            </div>
-            <div class="boxfoot"></div>
-        </div>
-
-        <div class="boxall">
-            <div class="alltitle">今日菜品营养结构</div>
-            <div class="allnav" id="szyy_echarts_3"></div>
-            <div class="boxfoot"></div>
-        </div>
-
-
-        <div class="boxall">
-            <div class="alltitle">水质&营养交互</div>
-            <div class="sysw">
-                <a type="button"
-                class="btn btn-primary center-block btn-sm" >
-                <p style="font-size:5rem;">总开关</p>
-                </a>
-            </div>
-            <div class="sysw">
-                <a type="button"
-                class="btn btn-primary center-block btn-sm"
-                aria-label="Right Align">
-                <p style="font-size:5rem;">AUTO</p>
-                </a>
+            <div class="boxall">
+                <div class="alltitle">红外测温门禁实时数据</div>
+                <div class="allnav" id="kangyi_echarts_0"></div>
+                <div class="boxfoot"></div>
             </div>
 
-
-            <div class="boxfoot"></div>
-        </div>
-
-
-    </div>
-
-    <div class="col-xs-12 col-sm-9">
-    </div>
-
-</div>
-
-</div>
-
-<div class="maincontain maincontain_kangyi">
-<div class="row" style="padding-right: 0px; padding-left:0px; margin-left:9.5px; margin-right:9.5px;">
-    <div class="col-xs-12 col-sm-3">
-
-        <div class="boxall">
-            <div class="alltitle">红外测温门禁实时数据</div>
-            <div class="allnav" id="kangyi_echarts_0"></div>
-            <div class="boxfoot"></div>
-        </div>
-
-        <div class="boxall">
-            <div class="alltitle">消毒时长管理</div>
-                <div class="allnav" id="kangyi_echarts_1">    
+            <div class="boxall">
+                <div class="alltitle">消毒时长管理</div>
+                    <div class="allnav" id="kangyi_echarts_1">    
+                </div>
+                <div class="boxfoot"></div>
             </div>
-            <div class="boxfoot"></div>
-        </div>
 
-        <div class="boxall">
-            <div class="alltitle">会议管理</div>
-            <div class="allnav" id="kangyi_echarts_2"></div>
-            <div class="boxfoot"></div>
-        </div>
-
-
-        <div class="boxall">
-            <div class="alltitle">舒适交互</div>
-            <div class="sysw">
-                <a type="button"
-                class="btn btn-primary center-block btn-sm" >
-                <p style="font-size:5rem;">总开关</p>
-                </a>
-            </div>
-            <div class="sysw">
-                <a type="button"
-                class="btn btn-primary center-block btn-sm"
-                aria-label="Right Align">
-                <p style="font-size:5rem;">AUTO</p>
-                </a>
+            <div class="boxall">
+                <div class="alltitle">会议管理</div>
+                <div class="allnav" id="kangyi_echarts_2"></div>
+                <div class="boxfoot"></div>
             </div>
 
 
+            <div class="boxall">
+                <div class="alltitle">舒适交互</div>
+                <div class="sysw">
+                    <a type="button"
+                    class="btn btn-primary center-block btn-sm" >
+                    <p style="font-size:5rem;">总开关</p>
+                    </a>
+                </div>
+                <div class="sysw">
+                    <a type="button"
+                    class="btn btn-primary center-block btn-sm"
+                    aria-label="Right Align">
+                    <p style="font-size:5rem;">AUTO</p>
+                    </a>
+                </div>
+
+
+                <div class="boxfoot"></div>
+            </div>
+
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6">
+        </div>
+
+        <div class="col-xs-12 col-sm-3" style="padding-left:0px; padding-right: 0px">
+
+
+        <div class="boxallright">
+            <div class="alltitle">表格1</div>
+            <div class="allnav" style="padding-left:100px; padding-right: 10px" id="table" ></div>
             <div class="boxfoot"></div>
         </div>
 
+        <div class="boxallright">
+            <div class="alltitle">表格2</div>
+            <div class="allnav" id="kangyi_echarts_5"></div>
+            <div class="boxfoot"></div>
+        </div>
+
+        <div class="boxallright">
+            <div class="alltitle">舒适</div>
+            <div class="allnav" id="kangyi_echarts_6"></div>
+            <div class="boxfoot"></div>
+        </div>
+
+        <div class="boxallright">
+            <div class="alltitle">综合</div>
+            <div class="allnav" id="kangyi_echarts_7"></div>
+            <div class="boxfoot"></div>
+        </div>
 
     </div>
-
-    <div class="col-xs-12 col-sm-6">
-    </div>
-
-    <div class="col-xs-12 col-sm-3" style="padding-left:0px; padding-right: 0px">
-
-
-    <div class="boxallright">
-        <div class="alltitle">表格1</div>
-        <div class="allnav" style="padding-left:100px; padding-right: 10px" id="table" ></div>
-        <div class="boxfoot"></div>
-    </div>
-
-    <div class="boxallright">
-        <div class="alltitle">表格2</div>
-        <div class="allnav" id="kangyi_echarts_5"></div>
-        <div class="boxfoot"></div>
-    </div>
-
-    <div class="boxallright">
-        <div class="alltitle">舒适</div>
-        <div class="allnav" id="kangyi_echarts_6"></div>
-        <div class="boxfoot"></div>
-    </div>
-
-    <div class="boxallright">
-        <div class="alltitle">综合</div>
-        <div class="allnav" id="kangyi_echarts_7"></div>
-        <div class="boxfoot"></div>
-    </div>
-
-</div>
 
 </div>
 

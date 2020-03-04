@@ -8,12 +8,11 @@
       <div class="mod-header-nav ">
         <ul id="jmod-header-nav">
           <li id="nav-header-hr" class="top-cat nav-lin1"><i class="fa fa-thermometer-half"></i><h2>&nbsp;&nbsp;空气&nbsp;&nbsp;</h2></li>
-          <li id="nav-header-hr" class="top-cat nav-lin2"><i class="fa fa-tint" ></i><h2>&nbsp;&nbsp;光强&nbsp;&nbsp;</h2></li>
+          <li id="nav-header-hr" class="top-cat nav-lin2"><i class="fa fa-sun" ></i><h2>&nbsp;&nbsp;光强&nbsp;&nbsp;</h2></li>
           <li id="nav-header-hr" class="top-cat nav-lin3"><i class="fa fa-child"></i><h2>&nbsp;&nbsp;舒适&nbsp;&nbsp;</h2></li>
-          <li id="nav-header-hr" class="top-cat nav-lin4"><i class="fa fa-sun" ></i><h2>&nbsp;&nbsp;营养&nbsp;&nbsp;</h2></li>
+          <li id="nav-header-hr" class="top-cat nav-lin4"><i class="fa fa-tint"></i><h2>&nbsp;&nbsp;水质&nbsp;&nbsp;</h2></li>
           <li id="nav-header-hr" class="top-cat nav-lin5"><i class="fa fa-futbol"></i><h2>&nbsp;&nbsp;健身&nbsp;&nbsp;</h2></li>
-          <li id="nav-header-hr" class="top-cat nav-lin6"><i class="fa fa-fire" ></i><h2>&nbsp;&nbsp;水质&nbsp;&nbsp;</h2></li>
-          <li id="nav-header-hr" class="top-cat nav-lin7"><i class="fa fa-camera"></i><h2>&nbsp;&nbsp;综合&nbsp;&nbsp;</h2></li>
+          <li id="nav-header-hr" class="top-cat nav-lin6"><i class="fa fa-camera"></i><h2>&nbsp;&nbsp;综合&nbsp;&nbsp;</h2></li>
         </ul>
         <i class="jmod-nav-slider slider hidden" style="transform: translateX(0px);"></i>
       </div>
