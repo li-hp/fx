@@ -62,6 +62,7 @@ let specialChannel_curTains = document.querySelector('.curtains');
 let specialChannel_roam = document.querySelector('.roam');
     specialChannel_roam.addEventListener('click', function() {
         cloudRender.SuperAPI('specialChannel', roamData);
+        cloudRender.SuperAPI('specialChannel',doorData);
     })
 
 // --------------- 新风管道  -----------------//
@@ -177,11 +178,6 @@ let specialChannel_kq_reli = document.querySelector('.kq_reli');
 
 
 
-
-
-
-//--导航栏跳转-- //
-
 test1(ziyemiandata);
 test2(ziyemiandata);
 
@@ -232,7 +228,7 @@ function delOne(str, data){
 
 // ---导航栏51vr----//
 
-let tiaozhuan_show = document.querySelector('.nav-lin0');     //跳转到空气页面，显示空气大类poi点
+let tiaozhuan_show = document.querySelector('.nav-lin0');    
     tiaozhuan_show.addEventListener('click', function() {
         cloudRender.SuperAPI('RemoveAllPOI');
         cloudRender.SuperAPI('specialChannel', objData0); 
@@ -252,7 +248,7 @@ tiaozhuan_kongqi.addEventListener('click', function() {
     $(window).trigger('resize');
 })
 
-let tiaozhuan_guangqiang = document.querySelector('.nav-lin2');     //跳转到空气页面，显示空气大类poi点
+let tiaozhuan_guangqiang = document.querySelector('.nav-lin2');    
 tiaozhuan_guangqiang.addEventListener('click', function() {
     
     cloudRender.SuperAPI('RemoveAllPOI');
@@ -261,7 +257,71 @@ tiaozhuan_guangqiang.addEventListener('click', function() {
     cloudRender.SuperAPI('AddPOI', ligpoiData_kaiguan);
     cloudRender.SuperAPI('AddPOI', ligpoiData_qiangdu);
     cloudRender.SuperAPI('AddPOI', ligpoiData_guanggan);
+    
+})
 
+let tiaozhuan_shushi = document.querySelector('.nav-lin3');     
+tiaozhuan_shushi.addEventListener('click', function() {
+    
+    cloudRender.SuperAPI('RemoveAllPOI');
+    cloudRender.SuperAPI('specialChannel', objData1);
+    cloudRender.SuperAPI('AddPOI', shushipoiData_body);
+    cloudRender.SuperAPI('AddPOI', shushipoiData_light);
+    cloudRender.SuperAPI('AddPOI', shushipoiData_noise);
+    cloudRender.SuperAPI('AddPOI', shushipoiData_air);
+    cloudRender.SuperAPI('AddPOI', shushipoiData_broad);
+   
+
+    // alert("已完成");
+})
+
+let tiaozhuan_yingyang = document.querySelector('.nav-lin4');    
+tiaozhuan_yingyang.addEventListener('click', function() {
+    
+    cloudRender.SuperAPI('RemoveAllPOI');
+    cloudRender.SuperAPI('specialChannel', objData1);
+    cloudRender.SuperAPI('AddPOI', yingyangpoiData_weibolu);
+    cloudRender.SuperAPI('AddPOI', yingyangpoiData_yingyang);
+    cloudRender.SuperAPI('AddPOI', yingyangpoiData_bingxiang);
+    // alert("已完成");
+})
+
+let tiaozhuan_jianshen = document.querySelector('.nav-lin5');    
+tiaozhuan_jianshen.addEventListener('click', function() {
+    
+    cloudRender.SuperAPI('RemoveAllPOI');
+    cloudRender.SuperAPI('specialChannel', objData1);
+    cloudRender.SuperAPI('AddPOI', jianshenpoiData_jianshenfang );
+    cloudRender.SuperAPI('AddPOI', jianshenpoiData_jianshen);
+
+    // alert("已完成");
+})
+let tiaozhuan_shui = document.querySelector('.nav-lin6');    
+tiaozhuan_shui.addEventListener('click', function() {
+    
+    cloudRender.SuperAPI('RemoveAllPOI');
+    cloudRender.SuperAPI('specialChannel', objData1);
+    cloudRender.SuperAPI('AddPOI', shuipoiData_shui );
+    cloudRender.SuperAPI('AddPOI', shuipoiData_water );
+    
+
+    // alert("已完成");
+})
+
+let tiaozhuan_zonghe= document.querySelector('.nav-lin7');  
+tiaozhuan_zonghe.addEventListener('click', function() {
+    
+    cloudRender.SuperAPI('RemoveAllPOI');
+    cloudRender.SuperAPI('specialChannel', objData1);
+    cloudRender.SuperAPI('AddPOI', zonghepoiData_dian );
+    cloudRender.SuperAPI('AddPOI', zonghepoiData_water );
+    cloudRender.SuperAPI('AddPOI', zonghepoiData_camera );
+    cloudRender.SuperAPI('AddPOI', zonghepoiData_entrance);
+    cloudRender.SuperAPI('AddPOI', zonghepoiData_meetingRoom);
+    cloudRender.SuperAPI('AddPOI', zonghepoiData_kaoqin);
+
+    // alert("已完成");
+})
 })
 
 

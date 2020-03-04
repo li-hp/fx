@@ -308,3 +308,241 @@ ligpoiData_qiangdu = {
     "showtitlerange":"30, 500",
     "monitormouseoverlap":"ture",
     }
+
+
+    
+    
+// 舒适POI点
+shushipoiData_body = {
+    "object_id" : "shushi_body",   //POI点的ID
+    "object_name": "体感舒适", //POI提示文本
+    "object_floor": "3",//用于建筑楼层, 1 一层 (非必填)
+    "object_type": "bodyFeel",//图标的类别 (图标的样式, 需双方沟通约定)//此项目中. 约定为：①cameraLine; ②buildingLine; ③portLine;
+    "coord_type": "1",  //(0: 经纬度gis, 1: cad坐标                                                                              )
+    "object_coord" : "276056.0975,-116522.8888",//POI点的坐标(坐标类型需与该POI点的object_type相同)
+    "coord_z": '0',//单位米, 坐标为GIS时决定POI图标高度; CAD时无效, 不用填
+    "showtitle":"true",//true 显示提示文本(默认), false 不显示提示文本
+    "showtitlerange":"30, 500",//此POI点显示title的镜头距离范围(单位米, 范围最小、最大距离; 在此范围内显示, 超出范围隐藏title, 注: showtitle属性为true时生效)
+    "monitormouseoverlap":"ture"//此POI是否允许监听鼠标划过事件
+    }
+ shushipoiData_light = {
+    "object_id" : "shushi_light", 
+    "object_name": "光感舒适",
+    "object_floor": "3",
+    "object_type": "lightFeel",
+    "coord_type": "1",                                            
+    "object_coord" : "276176.3578,-138902. 4529",
+    "coord_z": '0',
+    "showtitle":"true",
+    "showtitlerange":"30, 500",
+    "monitormouseoverlap":"ture",
+    }
+shushipoiData_noise = {
+    "object_id" : "shushi_noise", 
+    "object_name": "噪声检测",
+    "object_floor": "3",
+    "object_type": "noise",
+    "coord_type": "1",                                            
+    "object_coord" : "294145.5555,-134071.3333",
+    "coord_z": '0',
+    "showtitle":"true",
+    "showtitlerange":"30, 500",
+    "monitormouseoverlap":"ture",
+    }
+ shushipoiData_air = {
+    "object_id" : "shushi_air",
+    "object_name": "空气舒适",
+    "object_floor": "3",
+    "object_type": "airSoft",
+    "coord_type": "1",                                            
+    "object_coord" : "297077,-123624",
+    "coord_z": '0',
+    "showtitle":"true",
+    "showtitlerange":"30, 500",
+    "monitormouseoverlap":"ture",
+    }
+ shushipoiData_broad = {
+    "object_id" : "shushi_broad", 
+    "object_name": "广播系统",
+    "object_floor": "3",
+    "object_type": "broadcast",
+    "coord_type": "1",                                            
+    "object_coord" : "297077,-103624",
+    "coord_z": '0',
+    "showtitle":"true",
+    "showtitlerange":"30, 500",
+    "monitormouseoverlap":"ture",
+    }
+
+    // 营养POI点
+
+ yingyangpoiData_weibolu = {
+    "object_id" : "yingyang_weibolu", 
+    "object_name": "微波炉",
+    "object_floor": "3",
+    "object_type": "microwave",
+    "coord_type": "1",                                            
+    "object_coord" : "276176.3578,-138902. 4529",
+    "coord_z": '0',
+    "showtitle":"true",
+    "showtitlerange":"30, 500",
+    "monitormouseoverlap":"ture",
+    }
+yingyangpoiData_yingyang = {
+    "object_id" : "yingyang_yingyang", 
+    "object_name": "营养",
+    "object_floor": "3",
+    "object_type": "nutrition",
+    "coord_type": "1",                                            
+    "object_coord" : "294145.5555,-134071.3333",
+    "coord_z": '0',
+    "showtitle":"true",
+    "showtitlerange":"30, 500",
+    "monitormouseoverlap":"ture",
+    }
+yingyangpoiData_bingxiang = {
+    "object_id" : "yingyang_bingxiang", 
+    "object_name": "冰箱",
+    "object_floor": "3",
+    "object_type": "refrigerator",
+    "coord_type": "1",                                            
+    "object_coord" : "297077,-103624",
+    "coord_z": '0',
+    "showtitle":"true",
+    "showtitlerange":"30, 500",
+    "monitormouseoverlap":"ture",
+    }
+
+// 健身POI点
+jianshenpoiData_jianshenfang = {
+    "object_id" : "jianshen_jianshenfang", 
+    "object_name": "健身房",
+    "object_floor": "3",
+    "object_type": "gym",
+    "coord_type": "1",                                            
+    "object_coord" : "276176.3578,-138902. 4529",
+    "coord_z": '0',
+    "showtitle":"true",
+    "showtitlerange":"30, 500",
+    "monitormouseoverlap":"ture",
+    }
+jianshenpoiData_jianshen= {
+    "object_id" : "jianshen", 
+    "object_name": "步数",
+    "object_floor": "3",
+    "object_type": "step",
+    "coord_type": "1",                                            
+    "object_coord" : "294145.5555,-134071.3333",
+    "coord_z": '0',
+    "showtitle":"true",
+    "showtitlerange":"30, 500",
+    "monitormouseoverlap":"ture",
+    }
+// 健身POI点
+shuipoiData_shui = {
+    "object_id" : "shui_shui", 
+    "object_name": "水",
+    "object_floor": "3",
+    "object_type": "waterCleaner",
+    "coord_type": "1",                                            
+    "object_coord" : "276176.3578,-138902. 4529",
+    "coord_z": '0',
+    "showtitle":"true",
+    "showtitlerange":"30, 500",
+    "monitormouseoverlap":"ture",
+    }
+shuipoiData_water  = {
+    "object_id" : "zonghe_water", 
+    "object_name": "用水量检测",
+    "object_floor": "3",
+    "object_type": "water",
+    "coord_type": "1",                                            
+    "object_coord" : "280930.5555,-129875.3333",
+    "coord_z": '0',
+    "showtitle":"true",
+    "showtitlerange":"30, 500",
+    "monitormouseoverlap":"ture",
+    }
+
+
+
+
+zonghepoiData_dian = {
+    "object_id" : "zonghe_dian",   //POI点的ID
+    "object_name": "区域电量", //POI提示文本
+    "object_floor": "3",//用于建筑楼层, 1 一层 (非必填)
+    "object_type": "electric",//图标的类别 (图标的样式, 需双方沟通约定)//此项目中. 约定为：①cameraLine; ②buildingLine; ③portLine;
+    "coord_type": "1",  //(0: 经纬度gis, 1: cad坐标                                                                              )
+    "object_coord" : "276056.0975,-116522.8888",//POI点的坐标(坐标类型需与该POI点的object_type相同)
+    "coord_z": '0',//单位米, 坐标为GIS时决定POI图标高度; CAD时无效, 不用填
+    "showtitle":"true",//true 显示提示文本(默认), false 不显示提示文本
+    "showtitlerange":"30, 500",//此POI点显示title的镜头距离范围(单位米, 范围最小、最大距离; 在此范围内显示, 超出范围隐藏title, 注: showtitle属性为true时生效)
+    "monitormouseoverlap":"ture"//此POI是否允许监听鼠标划过事件
+    }
+
+zonghepoiData_water  = {
+    "object_id" : "zonghe_water", 
+    "object_name": "用水量检测",
+    "object_floor": "3",
+    "object_type": "water",
+    "coord_type": "1",                                            
+    "object_coord" : "280930.5555,-129875.3333",
+    "coord_z": '0',
+    "showtitle":"true",
+    "showtitlerange":"30, 500",
+    "monitormouseoverlap":"ture",
+    }
+
+zonghepoiData_camera  = {
+    "object_id" : "zonghe_camera", 
+    "object_name": "监控",
+    "object_floor": "3",
+    "object_type": "camera",
+    "coord_type": "1",                                            
+    "object_coord" : "294145.5555,-134071.3333",
+    "coord_z": '0',
+    "showtitle":"true",
+    "showtitlerange":"30, 500",
+    "monitormouseoverlap":"ture",
+    }
+
+zonghepoiData_entrance = {
+    "object_id" : "zonghe_entrance", 
+    "object_name": "门禁",
+    "object_floor": "3",
+    "object_type": "entrance",
+    "coord_type": "1",                                            
+    "object_coord" : "276176.3578,-138902. 4529",
+    "coord_z": '0',
+    "showtitle":"true",
+    "showtitlerange":"30, 500",
+    "monitormouseoverlap":"ture",
+    }
+    
+
+zonghepoiData_meetingRoom= {
+    "object_id" : "zonghe_meetingRoom", 
+    "object_name": "会议室",
+    "object_floor": "3",
+    "object_type": "meetingRoom",
+    "coord_type": "1",                                            
+    "object_coord" : "284555,-115757",
+    "coord_z": '0',
+    "showtitle":"true",
+    "showtitlerange":"30, 500",
+    "monitormouseoverlap":"ture",
+    }
+
+zonghepoiData_meetingRoom = {
+    "object_id" : "zonghe_checkingIn", 
+    "object_name": "考勤",
+    "object_floor": "3",
+    "object_type": "checkingIn",
+    "coord_type": "1",                                            
+    "object_coord" : "297077,-123624",
+    "coord_z": '0',
+    "showtitle":"true",
+    "showtitlerange":"30, 500",
+    "monitormouseoverlap":"ture",
+    }
+
