@@ -18960,6 +18960,17 @@ body {
   right: 0;
 }
 
+.allnav3d {
+  height: 165rem;
+  width: auto;
+  display: block;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  z-index: 11;
+}
+
 .boxfoot {
   position: absolute;
   bottom: 0;

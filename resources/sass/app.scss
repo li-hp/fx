@@ -250,6 +250,18 @@ body {
   right: 0;
 }
 
+.allnav3d {
+  height: 165rem; //容器高度
+  width: auto;
+  display: block;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  // margin-right: auto;
+  z-index:11;
+}
+
 // ------box的底部--------- //
 
 .boxfoot {
