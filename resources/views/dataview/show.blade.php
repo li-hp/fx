@@ -102,13 +102,7 @@
             </div>
 
             <div class="col-xs-12 col-sm-6">
-                <style type="text/css">#backImg{background: url("/img/owell2dd.png");}</style>
-                {{-- 此处height可以调整3d框图的高度 --}}
-                <div class="boxall_3d" id="backImg" style="width:100%; height:97.5%; background-size:100%; -moz-background-size:100%; background-repeat: no-repeat;">
-                    <div class="alltitle">全景地图</div>
-                    <div class="allnav3d" id="e555"></div>
-                    <div class="boxfoot"></div>
-                </div> 
+           
             </div>
 
             <div class="col-xs-12 col-sm-3" style="padding-left:0px; padding-right: 0px">

@@ -11,7 +11,7 @@ $(function () {
 e111();setInterval(function(){e111();}, 1500);
 e222();setInterval(function(){e222();},  5000);
 e444();setInterval(function(){e444();}, 4000);
-e555();
+
 e666();setInterval(function(){e666();},  3000);
 e777();
 e888();setInterval(function(){e888();}, 3500);

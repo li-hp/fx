@@ -219,98 +219,98 @@ specialChannel_airpoi.addEventListener('click', function() {
 
 //  这段有bug，我已注释
 
-    // let tiaozhuan_show = document.querySelector('.nav-lin0');    
-    //     tiaozhuan_show.addEventListener('click', function() {
-    //         cloudRender.SuperAPI('RemoveAllPOI');
-    //         cloudRender.SuperAPI('specialChannel', objData0); 
-    //     })
+    let tiaozhuan_show = document.querySelector('.nav-lin0');    
+        tiaozhuan_show.addEventListener('click', function() {
+            cloudRender.SuperAPI('RemoveAllPOI');
+            cloudRender.SuperAPI('specialChannel', objData0); 
+        })
 
-    // let tiaozhuan_kongqi = document.querySelector('.nav-lin1');     //跳转到空气页面，显示空气大类poi点
-    // tiaozhuan_kongqi.addEventListener('click', function() {
-    //     cloudRender.SuperAPI('RemoveAllPOI');
-    //     cloudRender.SuperAPI('specialChannel', objData1);
-    //     cloudRender.SuperAPI('AddPOI', airpoiData_kongtiao);
-    //     cloudRender.SuperAPI('AddPOI', airpoiData_fresh);
-    //     cloudRender.SuperAPI('AddPOI', airpoiData_kongqi);
-    //     cloudRender.SuperAPI('AddPOI', airpoiData_youhai);
-    //     cloudRender.SuperAPI('AddPOI', airpoiData_paifeng);
-    //     $(window).trigger('resize');
-    // })
+    let tiaozhuan_kongqi = document.querySelector('.nav-lin1');     //跳转到空气页面，显示空气大类poi点
+    tiaozhuan_kongqi.addEventListener('click', function() {
+        cloudRender.SuperAPI('RemoveAllPOI');
+        cloudRender.SuperAPI('specialChannel', objData1);
+        cloudRender.SuperAPI('AddPOI', airpoiData_kongtiao);
+        cloudRender.SuperAPI('AddPOI', airpoiData_fresh);
+        cloudRender.SuperAPI('AddPOI', airpoiData_kongqi);
+        cloudRender.SuperAPI('AddPOI', airpoiData_youhai);
+        cloudRender.SuperAPI('AddPOI', airpoiData_paifeng);
+        $(window).trigger('resize');
+    })
 
-    // let tiaozhuan_guangqiang = document.querySelector('.nav-lin2');    
-    // tiaozhuan_guangqiang.addEventListener('click', function() {
+    let tiaozhuan_guangqiang = document.querySelector('.nav-lin2');    
+    tiaozhuan_guangqiang.addEventListener('click', function() {
         
-    //     cloudRender.SuperAPI('RemoveAllPOI');
-    //     cloudRender.SuperAPI('specialChannel', objData1);
-    //     cloudRender.SuperAPI('AddPOI', ligpoiData_curtain);
-    //     cloudRender.SuperAPI('AddPOI', ligpoiData_kaiguan);
-    //     cloudRender.SuperAPI('AddPOI', ligpoiData_qiangdu);
-    //     cloudRender.SuperAPI('AddPOI', ligpoiData_guanggan);
+        cloudRender.SuperAPI('RemoveAllPOI');
+        cloudRender.SuperAPI('specialChannel', objData1);
+        cloudRender.SuperAPI('AddPOI', ligpoiData_curtain);
+        cloudRender.SuperAPI('AddPOI', ligpoiData_kaiguan);
+        cloudRender.SuperAPI('AddPOI', ligpoiData_qiangdu);
+        cloudRender.SuperAPI('AddPOI', ligpoiData_guanggan);
         
-    // })
+    })
 
-    // let tiaozhuan_shushi = document.querySelector('.nav-lin3');     
-    // tiaozhuan_shushi.addEventListener('click', function() {
+    let tiaozhuan_shushi = document.querySelector('.nav-lin3');     
+    tiaozhuan_shushi.addEventListener('click', function() {
         
-    //     cloudRender.SuperAPI('RemoveAllPOI');
-    //     cloudRender.SuperAPI('specialChannel', objData1);
-    //     cloudRender.SuperAPI('AddPOI', shushipoiData_body);
-    //     cloudRender.SuperAPI('AddPOI', shushipoiData_light);
-    //     cloudRender.SuperAPI('AddPOI', shushipoiData_noise);
-    //     cloudRender.SuperAPI('AddPOI', shushipoiData_air);
-    //     cloudRender.SuperAPI('AddPOI', shushipoiData_broad);
+        cloudRender.SuperAPI('RemoveAllPOI');
+        cloudRender.SuperAPI('specialChannel', objData1);
+        cloudRender.SuperAPI('AddPOI', shushipoiData_body);
+        cloudRender.SuperAPI('AddPOI', shushipoiData_light);
+        cloudRender.SuperAPI('AddPOI', shushipoiData_noise);
+        cloudRender.SuperAPI('AddPOI', shushipoiData_air);
+        cloudRender.SuperAPI('AddPOI', shushipoiData_broad);
     
 
-    //     // alert("已完成");
-    // })
+        // alert("已完成");
+    })
 
-    // let tiaozhuan_yingyang = document.querySelector('.nav-lin4');    
-    // tiaozhuan_yingyang.addEventListener('click', function() {
+    let tiaozhuan_yingyang = document.querySelector('.nav-lin4');    
+    tiaozhuan_yingyang.addEventListener('click', function() {
         
-    //     cloudRender.SuperAPI('RemoveAllPOI');
-    //     cloudRender.SuperAPI('specialChannel', objData1);
-    //     cloudRender.SuperAPI('AddPOI', yingyangpoiData_weibolu);
-    //     cloudRender.SuperAPI('AddPOI', yingyangpoiData_yingyang);
-    //     cloudRender.SuperAPI('AddPOI', yingyangpoiData_bingxiang);
-    //     // alert("已完成");
-    // })
+        cloudRender.SuperAPI('RemoveAllPOI');
+        cloudRender.SuperAPI('specialChannel', objData1);
+        cloudRender.SuperAPI('AddPOI', yingyangpoiData_weibolu);
+        cloudRender.SuperAPI('AddPOI', yingyangpoiData_yingyang);
+        cloudRender.SuperAPI('AddPOI', yingyangpoiData_bingxiang);
+        // alert("已完成");
+    })
 
-    // let tiaozhuan_jianshen = document.querySelector('.nav-lin5');    
-    // tiaozhuan_jianshen.addEventListener('click', function() {
+    let tiaozhuan_jianshen = document.querySelector('.nav-lin5');    
+    tiaozhuan_jianshen.addEventListener('click', function() {
         
-    //     cloudRender.SuperAPI('RemoveAllPOI');
-    //     cloudRender.SuperAPI('specialChannel', objData1);
-    //     cloudRender.SuperAPI('AddPOI', jianshenpoiData_jianshenfang );
-    //     cloudRender.SuperAPI('AddPOI', jianshenpoiData_jianshen);
+        cloudRender.SuperAPI('RemoveAllPOI');
+        cloudRender.SuperAPI('specialChannel', objData1);
+        cloudRender.SuperAPI('AddPOI', jianshenpoiData_jianshenfang );
+        cloudRender.SuperAPI('AddPOI', jianshenpoiData_jianshen);
 
-    //     // alert("已完成");
-    // })
-    // let tiaozhuan_shui = document.querySelector('.nav-lin6');    
-    // tiaozhuan_shui.addEventListener('click', function() {
+        // alert("已完成");
+    })
+    let tiaozhuan_shui = document.querySelector('.nav-lin6');    
+    tiaozhuan_shui.addEventListener('click', function() {
         
-    //     cloudRender.SuperAPI('RemoveAllPOI');
-    //     cloudRender.SuperAPI('specialChannel', objData1);
-    //     cloudRender.SuperAPI('AddPOI', shuipoiData_shui );
-    //     cloudRender.SuperAPI('AddPOI', shuipoiData_water );
+        cloudRender.SuperAPI('RemoveAllPOI');
+        cloudRender.SuperAPI('specialChannel', objData1);
+        cloudRender.SuperAPI('AddPOI', shuipoiData_shui );
+        cloudRender.SuperAPI('AddPOI', shuipoiData_water );
         
 
-    //     // alert("已完成");
-    // })
+        // alert("已完成");
+    })
 
-    // let tiaozhuan_zonghe= document.querySelector('.nav-lin7');  
-    // tiaozhuan_zonghe.addEventListener('click', function() {
+    let tiaozhuan_zonghe= document.querySelector('.nav-lin7');  
+    tiaozhuan_zonghe.addEventListener('click', function() {
         
-    //     cloudRender.SuperAPI('RemoveAllPOI');
-    //     cloudRender.SuperAPI('specialChannel', objData1);
-    //     cloudRender.SuperAPI('AddPOI', zonghepoiData_dian );
-    //     cloudRender.SuperAPI('AddPOI', zonghepoiData_water );
-    //     cloudRender.SuperAPI('AddPOI', zonghepoiData_camera );
-    //     cloudRender.SuperAPI('AddPOI', zonghepoiData_entrance);
-    //     cloudRender.SuperAPI('AddPOI', zonghepoiData_meetingRoom);
-    //     cloudRender.SuperAPI('AddPOI', zonghepoiData_kaoqin);
+        cloudRender.SuperAPI('RemoveAllPOI');
+        cloudRender.SuperAPI('specialChannel', objData1);
+        cloudRender.SuperAPI('AddPOI', zonghepoiData_dian );
+        cloudRender.SuperAPI('AddPOI', zonghepoiData_water );
+        cloudRender.SuperAPI('AddPOI', zonghepoiData_camera );
+        cloudRender.SuperAPI('AddPOI', zonghepoiData_entrance);
+        cloudRender.SuperAPI('AddPOI', zonghepoiData_meetingRoom);
+        cloudRender.SuperAPI('AddPOI', zonghepoiData_kaoqin);
 
-    //     // alert("已完成");
-    // })
+        // alert("已完成");
+    })
 
 
 
