@@ -17,7 +17,7 @@ $(function () {
     e888();setInterval(function(){e888();}, 3500);
     e999();setInterval(function(){e999();},  2500);
     
-    ec02();setInterval(function(){ec02();},  2500);
+  
     
     
     
@@ -31,7 +31,8 @@ $(function () {
         var myChart = echarts.init(document.getElementById('e111'));
     
       var data=kqdata;
-        var radius = '50%';
+        var radius = '45%';
+        
         
         var tem;
         if(data[0]<23)  tem='偏冷';
@@ -88,13 +89,17 @@ $(function () {
                    fontSize:35,
                    formatter: '{value}℃\n'+tem,
                },
+               axisLabel: {
+                show: false,
+            },
+           
                  axisTick: {            // 坐标轴小标记
                   show:'false',
                },
                title: { //标题
                 show: true,
                 textStyle: {
-                    color:'#F68624',
+                    color:'#FFFFFF',
                     fontSize: 35, //表盘上的标题文字大小
                     fontWeight: 400,
                     fontFamily: 'PingFangSC'
@@ -119,13 +124,15 @@ $(function () {
          length: '80%',
          width:5,
          },
-        splitLine: {
-         show: false,
-        
-         }, //分隔线样式
-          axisLabel: {
-           
-            show:false,
+       
+        axisTick: {
+            show: false
+        },
+        splitLine: { // 分隔线
+            show: false
+        },
+        axisLabel: {
+            show: false
         },
    
         data: [{
@@ -176,7 +183,7 @@ $(function () {
               title: { //标题
                     show: true,
                     textStyle: {
-                        color:'#D4F333',
+                        color:'#FFFFFF',
                         fontSize: 35, //表盘上的标题文字大小
                         fontWeight: 400,
                         fontFamily: 'PingFangSC'
@@ -186,6 +193,7 @@ $(function () {
                 show:false,
                 lineStyle: {
                     width: 10,
+
                   
                     color: [
                       
@@ -196,20 +204,23 @@ $(function () {
                     ]
                 }
             },
+            axisTick: {
+                show: false
+            },
+            splitLine: { // 分隔线
+                show: false
+            },
+            axisLabel: {
+                show: false
+            },
+          
             pointer: { // 表盘上的指针
              show: true,
              length: '80%',
              width:5,
              },
-            splitLine: {
-             show: false,
-            
-             }, //分隔线样式
-              axisLabel: {
-               
-                show:false,
-            },
-       
+         
+         
             data: [{
                  name: '湿 度',
                 value: data[1],
@@ -238,7 +249,7 @@ $(function () {
               title: { //标题
                     show: true,
                     textStyle: {
-                        color:'#9EE92C',
+                        color:'#FFFFFF',
                         fontSize: 35, //表盘上的标题文字大小
                         fontWeight: 400,
                         fontFamily: 'PingFangSC'
@@ -264,13 +275,14 @@ $(function () {
              length: '80%',
              width:5,
              },
-            splitLine: {
-             show: false,
-            
-             }, //分隔线样式
-              axisLabel: {
-               
-                show:false,
+             axisTick: {
+                show: false
+            },
+            splitLine: { // 分隔线
+                show: false
+            },
+            axisLabel: {
+                show: false
             },
        
             data: [{
@@ -305,7 +317,7 @@ $(function () {
               title: { //标题
                     show: true,
                     textStyle: {
-                        color:'#4AF3E1',
+                        color:'#FFFFFF',
                         fontSize: 35, //表盘上的标题文字大小
                         fontWeight: 400,
                         fontFamily: 'PingFangSC'
@@ -331,13 +343,14 @@ $(function () {
              length: '80%',
              width:5,
              },
-            splitLine: {
-             show: false,
-            
-             }, //分隔线样式
-              axisLabel: {
-               
-                show:false,
+             axisTick: {
+                show: false
+            },
+            splitLine: { // 分隔线
+                show: false
+            },
+            axisLabel: {
+                show: false
             },
        
             data: [{
@@ -370,7 +383,7 @@ $(function () {
               title: { //标题
                     show: true,
                     textStyle: {
-                        color:'#B51AE6',
+                        color:'#FFFFFF',
                         fontSize: 35, //表盘上的标题文字大小
                         fontWeight: 400,
                         fontFamily: 'PingFangSC'
@@ -396,15 +409,15 @@ $(function () {
              length: '80%',
              width:5,
              },
-            splitLine: {
-             show: false,
-            
-             }, //分隔线样式
-              axisLabel: {
-               
-                show:false,
+             axisTick: {
+                show: false
             },
-       
+            splitLine: { // 分隔线
+                show: false
+            },
+            axisLabel: {
+                show: false
+            },
             data: [{
                  name: 'PM2.5',
                 value: data[4],
@@ -431,7 +444,7 @@ $(function () {
               title: { //标题
                     show: true,
                     textStyle: {
-                        color:'#EB2EB6',
+                        color:'#FFFFFF',
                         fontSize: 35, //表盘上的标题文字大小
                         fontWeight: 400,
                         fontFamily: 'PingFangSC'
@@ -457,15 +470,15 @@ $(function () {
              length: '80%',
              width:5,
              },
-            splitLine: {
-             show: false,
-            
-             }, //分隔线样式
-              axisLabel: {
-               
-                show:false,
+             axisTick: {
+                show: false
             },
-       
+            splitLine: { // 分隔线
+                show: false
+            },
+            axisLabel: {
+                show: false
+            },
             data: [{
                  name: '二氧化碳',
                 value: data[5],
@@ -501,170 +514,244 @@ $(function () {
     
         var myChart = echarts.init(document.getElementById('e222'));
     
-        var randome81 = [randomNum(5,9),randomNum(5,9),randomNum(5,9),randomNum(5,9),randomNum(5,9),randomNum(5,9),randomNum(5,9)];
+    
+        wdata=[0.5,7.5,1000,0.40];
+        hzd='清澈'
+       
         option = {
-    
-            grid: {
-                left: '5%',
-                top: '13%',
-                right: '5%',
-                bottom: '7%',
-                containLabel: true
-            },
-    
             tooltip: {
-                trigger: 'axis'
+                show: false
             },
-    
-            xAxis: [{
-                // name:"分钟前",
-                nameLocation:'center',
-                nameGap:23,
-                nameTextStyle:{
-                    color: "#fff",
-                    fontSize:'24',
-                    fontWeight: 'bold',
-                },
-                type: 'category',
-                data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
-                axisLine: {
-                    show: true,
-                 lineStyle: {
-                        color: "rgba(255,255,255,.1)",
-                        width: 1,
-                        type: "solid"
-                    },
-                },
-                axisTick: {
-                    show: false,
-                },
-                axisLabel:  {
-                        interval: 0,
-                       // rotate:50,
-                        show: true,
-                        splitNumber: 15,
-                        textStyle: {
-                            color: "#fff",
-                            fontSize:'24',
-                            fontWeight: 'bold',
-                        },
-                    },
-            }],
-    
-            yAxis: {
-                name:"ph",
-                nameTextStyle:{
-                    color: "#fff",
-                    fontSize:'24',
-                    fontWeight: 'bold',
-                },
-                min:3,
-                max:10,
-                axisLabel: {
-                    //formatter: '{value} %'
-                     show:true,
-                      textStyle: {
-                        color: "#fff",
-                        fontSize:'24',
-                        fontWeight: 'bold',
-                         },
-                 },
-                 axisTick: {
-                    show: false,
-                },
-                axisLine: {
-                    lineStyle: {
-                        color: "rgba(255,255,255,.1)",
-                        width: 1,
-                        type: "solid"
-                    },
-                },
-                splitNumber:0,
-                splitLine: {
-                    show:false,
-                    lineStyle: {
-                        color: 'rgba(255,255,255,.1)',
-                    },
-                },
+            legend: {
+                x: "center",
+                data: ["", ""]
             },
-    
-            visualMap: {
-                show: false,
-                pieces: [{
-                    gt: 0,
-                    lte: 35,
-                    color: '#096'
-                }, {
-                    gt: 35,
-                    lte: 75,
-                    color: '#ffde33'
-                }, {
-                    gt: 75,
-                    lte: 115,
-                    // color: '#ff9933'
-                    color: '#cc0033'
-                }, {
-                    gt: 115,
-                    lte: 150,
-                    color: '#cc0033'
-                }, {
-                    gt: 150,
-                    lte: 250,
-                    color: '#7e0023'
-                }, {
-                    gt: 250,
-                    color: '#660099'
-                }],
-                outOfRange: {
-                    color: '#999'
-                }
-            },
-    
+            animation: false,
             series: [{
-                name: 'PM25',
-                type: 'line',
-                smooth: true,
-                data: randome81,
+                categories: [{
+                    name: '',
+                    itemStyle: {
+                        normal: {
+                            color: "#009800",
+                        }
+                    }
+                }, {
+                    name: '',
+                    itemStyle: {
+                        normal: {
+                            color: "#4592FF",
+                        }
+                    }
+                }],
+                type: 'graph',
+                layout: 'force',
+                symbol: "circle",
+                symbolSize: 120,
+               
+                roam: true, //禁止用鼠标滚轮缩小放大效果
+                edgeSymbol: ['circle', 'arrow'],
+                edgeSymbolSize: [0, 10],
+                // 连接线上的文字
+                focusNodeAdjacency: true, //划过只显示对应关系
+                edgeLabel: {
+                    normal: {
+                        show: true,
+                        textStyle: {
+                            fontSize: 20
+                        },
+                        formatter: "{c}"
+                    }
+                },
+                categories: [{
+                    name: '',
+                    itemStyle: {
+                        normal: {
+                            color: "#009800",
+                        }
+                    }
+                }, {
+                    name: '',
+                    itemStyle: {
+                        normal: {
+                            color: "#4592FF",
+                        }
+                    }
+                }],
                 lineStyle: {
                     normal: {
-                        barBorderRadius: 12,
-                        width:10
-                    },
+                        opacity: 1,
+                        width: 2,
+                        curveness: 0
+                    }
                 },
-    
-                markLine: {
-                    silent: false,
-                    symbol: 'none',
+                // 圆圈内的文字
+                label: {
+                    normal: {
+                        show: true,
+                        textStyle: {
+                            fontSize: 35
+                        },
+                    }
+                },
+                force: {
+                    repulsion: 4000
+                },
+                
+                data: [
+                    {
+                    name: '',
+                   symbol: 'image:// /img/water.png',
+                    itemStyle: {
+                        normal: {
+                           
+                            
+                         
+                        }
+                    },
+        
+                }, 
+                
+                {
+                    name: '浑浊度\n'+wdata[0]+'\n'+hzd,
+                    category: 1,
+                    itemStyle: {
+                        normal: {
+                            color: '#235',
+                             label: {
+                              
+                                textStyle: {
+                                    
+                                    color: '#f90'
+                                   
+                                },
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                fontSize:3500
+                             }
+                        },
+                        emphasis: {
+                            color: "rgba(255,25,255,0.2)"
+                            
+                        }
+                    }
+                }, 
+                {
+                    name: 'PH\n'+wdata[0]+'\n'+hzd,
+                    category: 1,
+                    itemStyle: {
+                        normal: {
+                            color: 'rgba(255,255,255,0.2)',
+                             label: {
+                              
+                                textStyle: {
+                                    fontSize:35,
+                                    color: '#f90'
+                                   
+                                }
+                             }
+                        },
+                        emphasis: {
+                            color: "#000"
+                        }
+                    }
+                }, 
+                {
+                    name: '余氯\n'+wdata[0]+'\n'+hzd,
+                    category: 1,
+                    itemStyle: {
+                        normal: {
+                            color: 'rgba(255,255,255,0.2)',
+                             label: {
+                              
+                                textStyle: {
+                                    fontSize:35,
+                                    color: '#f90'
+                                   
+                                }
+                             }
+                        },
+                        emphasis: {
+                            color: "#000"
+                        }
+                    }
+                }, 
+                {
+                    name: '电导率\n'+wdata[0]+'\n'+hzd,
+                    category: 1,
+                    itemStyle: {
+                        normal: {
+                            color: 'rgba(255,255,255,0.2)',
+                             label: {
+                              
+                                textStyle: {
+                                    fontSize:600
+                                   
+                                   
+                                }
+                             }
+                        },
+                        emphasis: {
+                            color: "#000"
+                        }
+                    }
+                }
+                
+                
+                
+                
+                
+                
+                
+                ],
+                
+                
+                links: [{
+                    source: 0,
+                    target: 5,
+                    value: "",
+                    lineStyle: {
+                        normal: {
+                            color: '#38f',
+                            curveness: 1// 线的弯曲度 0-1之间 越大则歪曲度更大
+                           
+                        }
+                    },
                     label: {
-                        show:true,
-                        position:'end', // 'start\middle\end'
-                        formatter: '{b}',
-                        color: "#fff",
-                        fontSize:'24',
-                        fontWeight: 'bold',
-                    },
-                    data: [{
-                        name: '重度污染',
-                        yAxis: 250
-                    }, {
-                        name: '中度污染',
-                        yAxis: 150
-    
-                    }, {
-                        name: '最佳',
-                        yAxis: 7.5
-                    }, {
-                        name: '良',
-                        yAxis: 8.5
-                    }, {
-                        name: '良',
-                        yAxis: 6.5
-                    }],
-                    lineStyle:{
-                        color:'#8E8E8E',
-                    },
-                },
-            }],
+                        normal: {
+                            textStyle: {
+                                color: '#07ac72'
+                            }
+                        }
+                    }
+                }, {
+                    source: 0,
+                    target: 1,
+                    value: ""
+                }, {
+                    source: 0,
+                    target: 2,
+                    value: ""
+                }, {
+                    source: 0,
+                    target: 3,
+                    value: ""
+                }, {
+                    source: 0,
+                    target: 4,
+                    value: ""
+                }, ]
+            }]
         };
     
         myChart.setOption(option);
@@ -677,146 +764,230 @@ $(function () {
       
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('e444'));
-        var randome81 = [randomNum(500,700),randomNum(490,700),randomNum(660,700),randomNum(550,700),randomNum(400,700),randomNum(500,700),randomNum(400,700),];
         option = {
+            // backgroundColor: "#404A59",
+            color: ['#ffd285', '#ff733f', '#ec4863'],
+        
+            title: [{
+                text: '每日光强变化曲线',
+                left: '1%',
+                top: '6%',
+                textStyle: {
+                    color: '#fff',
+                    fontSize:24
+                }
+            }, {
+                text: '实时光强（LUX）',
+                left: '83%',
+                top: '6%',
+                textAlign: 'center',
+                textStyle: {
+                    color: '#fff',
+                    fontSize:24
+                }
+            }],
             tooltip: {
-                trigger: 'axis',
-                axisPointer: {
-                    type: 'shadow'
-                }
+                trigger: 'axis'
             },
-    
             legend: {
-            top:'0%',
-                data:['VOC'],
-                        textStyle: {
-                color: 'rgba(255,255,255,.5)',
-                    fontSize:'12',
-                }
+                x: 300,
+                top: '7%',
+                textStyle: {
+                    color: '#ffd285',
+                    fontSize:'24',
+                    fontWeight: 'bold',
+                },
+                data: ['室内', '室外']
             },
-    
             grid: {
-                left: '0%',
-                top: '13%',
-                right: '15%',
-                bottom: '7%',
+                left: '1%',
+                right: '35%',
+                top: '16%',
+                bottom: '6%',
                 containLabel: true
             },
-    
-            xAxis: [{
-             //  name:"分钟前",
-                nameLocation:'center',
-                nameGap:23,
-                nameTextStyle:{
-                    color: "#fff",
-                    fontSize:'24',
-                    fontWeight: 'bold',
-                },
+            toolbox: {
+                "show": false,
+                feature: {
+                    saveAsImage: {}
+                }
+            },
+            xAxis: {
                 type: 'category',
-                data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
-                axisLine: {
-                    show: true,
-                 lineStyle: {
-                        color: "rgba(255,255,255,.1)",
-                        width: 1,
-                        type: "solid"
-                    },
-                },
-                axisTick: {
-                    show: false,
-                },
-                axisLabel:  {
-                        interval: 0,
-                       // rotate:50,
-                        show: true,
-                        splitNumber: 15,
-                        textStyle: {
-                            color: "#fff",
-                            fontSize:'24',
-                            fontWeight: 'bold',
-    
-                        },
-                    },
-            }],
-    
-            yAxis: [{
-                name:"浓度:PPB",
-                nameTextStyle:{
-                    color: "#fff",
-                    fontSize:'24',
-                    fontWeight: 'bold',
-                },
-                type: 'value',
-                max:750,
-                axisTick: {show: false},
-                axisLine: {
+                "axisLine": {
                     lineStyle: {
-                        color: 'rgba(255,255,255,.1)'
+                        color: '#FF4500'
                     }
                 },
-               axisLabel:  {
+                "axisTick": {
+                    "show": false
+                },
+                axisLabel: {
                     textStyle: {
                         color: "#fff",
                         fontSize:'24',
                         fontWeight: 'bold',
-                    },
+                    }
                 },
-                splitArea:{
-                    show:false,
-                    interval:(15-25),
-                },
-                splitNumber: 6,
-                splitLine: {
-                    interval:2,
+                boundaryGap: false,
+                data: ['9:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00']
+            },
+            yAxis: {
+                "axisLine": {
                     lineStyle: {
-                         color: 'rgba(255,255,255,.1)',
+                        color: '#fff'
                     }
                 },
-            }],
-    
-            series: [{
-                name: '可挥发化合物VOC',
-                type: 'bar',
-                data: randome81 ,
-                barWidth:'30px', //柱子宽度
-                itemStyle: {
-                    normal: {
-                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                            offset: 0,
-                            color: '#04B486'// 0% 处的颜色
-                        }, {
-                            offset: 1,
-                            color: '#01DFD7' // 100% 处的颜色
-                        }], false),
-                        barBorderRadius: [30, 30, 0, 0],
-                        shadowColor: 'rgba(0,255,225,1)',
-                        shadowBlur: 4,
+                splitLine: {
+                    show: true,
+                    lineStyle: {
+                        color: '#fff'
                     }
                 },
-                markLine:{
-                    silent: false,
-                    symbol: 'none',
-                    label: {
-                        show:true,
-                        position:'end', // 'start\middle\end'
-                        formatter: '{b}',
-                        color: "#fff",
+                "axisTick": {
+                    "show": false
+                },
+                axisLabel: {
+                    textStyle: {
+                        color: '#fff',
                         fontSize:'24',
                         fontWeight: 'bold',
-                    },
-                    data: [{
-                        name: '中',
-                        yAxis: 700
-                    }, {
-                        name: '优',
-                        yAxis: 600
-                    }],
-                    lineStyle:{
-                        color:'#8E8E8E',
+                    }
+                },
+                type: 'value'
+            },
+            series: [{
+                name: '室内',
+                smooth: true,
+                type: 'line',
+                symbolSize: 8,
+                  symbol: 'circle',
+                data: [90, 50, 39, 50, 120, 82, 80,100,150],
+                lineStyle: {
+                    normal: {
+                        barBorderRadius: 12,
+                        width:10
                     },
                 },
+
+            }, {
+                name: '室外',
+                smooth: true,
+                type: 'line',
+                symbolSize: 8,
+                  symbol: 'circle',
+                data: [70, 50, 50, 87, 90, 80, 70,100,80],
+                lineStyle: {
+                    normal: {
+                        barBorderRadius: 12,
+                        width:10
+                    },
+                },
+            }, 
+            {
+                type: 'pie',
+                center: ['83%', '33%'],
+                radius: ['25%', '30%'],
+                label: {
+                    normal: {
+                        position: 'center'
+                    }
+                },
+                data: [{
+                    value: 335,
+                    name: '满足要求的部分',
+                    itemStyle: {
+                        normal: {
+                            color: '#ffd285'
+                        }
+                    },
+                    label: {
+                        normal: {
+                            formatter: '{d}',
+                            textStyle: {
+                                color: '#ffd285',
+                                fontSize:'24',
+                                fontWeight: 'bold',
+                            }
+                        }
+                    }
+                }, {
+                    value: 180,
+                    name: '未满足要求的部分',
+                    tooltip: {
+                        show: false
+                    },
+                    itemStyle: {
+                        normal: {
+                            color: '#87CEFA'
+                        }
+                    },
+                    label: {
+                        normal: {
+                            textStyle: {
+                                color: '#ffd285',
+                                fontSize:'24',
+                                fontWeight: 'bold',
+                            },
+                            formatter: '\n室内光强'
+                        }
+                    }
+                }]
+            },
+            {
+                type: 'pie',
+                center: ['83%', '72%'],
+                radius: ['25%', '30%'],
+                label: {
+                    normal: {
+                        position: 'center'
+                    }
+                },
+                data: [{
+                    value: 435,
+                    name: '用户来源分析',
+                    itemStyle: {
+                        normal: {
+                            color: '#ff733f'
+                        }
+                    },
+                    label: {
+                        normal: {
+                            formatter: '{d} %',
+                            textStyle: {
+                                color: '#ff733f',
+                                fontSize:'24',
+                                fontWeight: 'bold',
+        
+                            }
+                        }
+                    }
+                }, {
+                    value: 100,
+                    name: '占位',
+                    tooltip: {
+                        show: false
+                    },
+                    itemStyle: {
+                        normal: {
+                            color: '#87CEFA'
+        
+        
+                        }
+                    },
+                    label: {
+                        normal: {
+                            textStyle: {
+                                color: '#FF4500',
+                                fontSize:'24',
+                                fontWeight: 'bold',
+                            },
+                            formatter: '\n室外光强'
+                        }
+                    }
+                }]
             }]
-        };
+        }
         // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);
         window.addEventListener("resize",function(){
@@ -1921,177 +2092,6 @@ $(function () {
             ]
         };
     
-        myChart.setOption(option);
-        window.addEventListener("resize",function(){
-            myChart.resize();
-        });
-    }
-    function ec02() {
-    
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('ec02'));
-        var randome81 = [randomNum(600,2000), 
-            randomNum(600,2000), randomNum(600,2000), 
-            randomNum(600,2000), randomNum(600,2000), 
-            randomNum(600,2000), randomNum(600,2000)];
-    
-        option = {
-            tooltip: {
-            trigger: 'axis',
-            axisPointer: {
-                lineStyle: {
-                    color: '#00B2EE'
-                    }
-                }
-            },
-    
-            legend: {
-            top:'0%',
-                data:['CO2指标'],
-                        textStyle: {
-                            color: "#fff",
-                            fontSize:'24',
-                            fontWeight: 'bold',
-                }
-            },
-    
-            grid: {
-                left: '0%',
-                top: '13%',
-                right: '15%',
-                bottom: '7%',
-                containLabel: true
-            },
-    
-            xAxis: [{
-                // name:"分钟前",
-                nameLocation:'center',
-                nameGap:40,
-                nameTextStyle:{
-                    color: "#fff",
-                    fontSize:'24',
-                    fontWeight: 'bold',
-                },
-                type: 'category',
-                data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
-                axisLine: {
-                    show: true,
-                 lineStyle: {
-                        color: "rgba(255,255,255,.1)",
-                        width: 1,
-                        type: "solid"
-                    },
-                },
-                axisTick: {
-                    show: false,
-                },
-                axisLabel:  {
-                        interval: 0,
-                       // rotate:50,
-                        show: true,
-                        splitNumber: 15,
-                        textStyle: {
-                            color: "#fff",
-                            fontSize:'24',
-                            fontWeight: 'bold',
-                        },
-                    },
-            }],
-    
-            yAxis: [{
-                name:"浓度:PPM",
-                nameTextStyle:{
-                    color: "#fff",
-                    fontSize:'24',
-                    fontWeight: 'bold',
-                },
-                type: 'value',
-                axisTick: {show: false},
-                min:600,
-                max:2000,
-                axisLine: {
-                    lineStyle: {
-                        color: 'rgba(255,255,255,.1)'
-                    }
-                },
-            axisLabel:  {
-                    textStyle: {
-                        color: "#fff",
-                        fontSize:'24',
-                        fontWeight: 'bold',
-                    },
-                },
-                splitArea:{
-                    show:false,
-                    interval:(15-25),
-                },
-                splitNumber: 5,
-                splitLine: {
-                    interval:2,
-                    lineStyle: {
-                        color: 'rgba(255,255,255,.1)',
-                    }
-                },
-            }],
-    
-            series: [{
-                    name: 'CO2指标',
-                    type: 'line',
-                    smooth: true,
-                    symbol: 'circle',
-                    showAllSymbol: true,
-                    // symbol: 'image://./static/images/guang-circle.png',
-                    symbolSize: 20,
-                    lineStyle: {
-                        normal: {
-                            // color: "#53fdfe", // 线条颜色
-                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                                offset: 0,
-                                color: '#0080FF'
-                            }, {
-                                offset: 1,
-                                color: '#00FFFF'
-                            }]),
-                            barBorderRadius: 12,
-                            width:10
-                        },
-    
-                        borderColor: '#f0f',
-                    },
-                    itemStyle: {
-                        normal: {
-                            color: '#00FFFF',
-                            borderColor: 'rgba(221, 220, 107, .1)',
-                            borderWidth: 30
-                        }
-                    },
-                    data: randome81,
-                    markLine:{
-                        silent: false,
-                        symbol: 'none',
-                        label: {
-                            show:true,
-                            position:'end', // 'start\middle\end'
-                            formatter: '{b}',
-                            color: "#fff",
-                            fontSize:'24',
-                            fontWeight: 'bold',
-                        },
-                        data: [{
-                            name: '中',
-                            yAxis: 2000
-                        }, {
-                            name: '优',
-                            yAxis: 1000
-                        }],
-                        lineStyle:{
-                            color:'#8E8E8E',
-                        },
-                    },
-            }]
-        };
-    
-        // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);
         window.addEventListener("resize",function(){
             myChart.resize();

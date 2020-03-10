@@ -11,11 +11,7 @@
 <div class="all" style="padding-right: 0px; padding-left:0px; margin-left:0px; margin-right:0px;z-index: 10;">
 
 
-    {{--coxno   用来加载51vr --}}
-    <div class="boxno">
-        <div class="allnav" id="player"></div>
-    </div>
-
+   
 
     {{--maincontain 用于加载echart--}}
     <div class="maincontain maincontain_zhuye">
@@ -39,7 +35,7 @@
                 </div>
 
                 <div class="boxall">
-                    <div class="alltitle">营养</div>
+                    <div class="alltitle">光</div>
                     <div class="allnav" id="e444"></div>
                     <div class="boxfoot"></div>
                 </div>
