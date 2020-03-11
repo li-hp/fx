@@ -86,7 +86,7 @@ $(function () {
                  min: 20,
                   max: 30,
                detail: {
-                   fontSize:35,
+                   fontSize:30,
                    formatter: '{value}℃\n'+tem,
                },
                axisLabel: {
@@ -100,7 +100,7 @@ $(function () {
                 show: true,
                 textStyle: {
                     color:'#FFFFFF',
-                    fontSize: 35, //表盘上的标题文字大小
+                    fontSize: 30, //表盘上的标题文字大小
                     fontWeight: 400,
                     fontFamily: 'PingFangSC'
                 }
@@ -111,11 +111,10 @@ $(function () {
                 width: 10,
               
                 color: [
-                    [0.3, '#67B2F6'],
-                    [0.4, '#43EAEF'],
-                    [0.6, '#AEF83E'],
-                    [0.7, '#F68624'],
-                    [1.0, '#F63824']
+                  
+                    [0.3, '#6bdde2'],
+                    [0.6, '#eddd2a'],
+                    [1.0, '#ef5728']
                 ]
             }
         },
@@ -174,7 +173,7 @@ $(function () {
               min: 0,
                max: 100,
             detail: {
-                fontSize:35,
+                fontSize:30,
                 formatter: '{value}%\n'+shi,
             },
               axisTick: {            // 坐标轴小标记
@@ -184,7 +183,7 @@ $(function () {
                     show: true,
                     textStyle: {
                         color:'#FFFFFF',
-                        fontSize: 35, //表盘上的标题文字大小
+                        fontSize: 30, //表盘上的标题文字大小
                         fontWeight: 400,
                         fontFamily: 'PingFangSC'
                     }
@@ -197,9 +196,10 @@ $(function () {
                   
                     color: [
                       
-                        [0.4, '#43EAEF'],
-                        [0.7, '#AEF83E'],
-                        [1.0, '#F68624']
+                         
+                    [0.4, '#6bdde2'],
+                    [0.7, '#eddd2a'],
+                    [1.0, '#ef5728']
                        
                     ]
                 }
@@ -240,7 +240,7 @@ $(function () {
               min: 0,
                max: 100,
             detail: {
-                fontSize:35,
+                fontSize:30,
                 formatter: '{value}ppb\n'+choh,
             },
               axisTick: {            // 坐标轴小标记
@@ -250,7 +250,7 @@ $(function () {
                     show: true,
                     textStyle: {
                         color:'#FFFFFF',
-                        fontSize: 35, //表盘上的标题文字大小
+                        fontSize: 30, //表盘上的标题文字大小
                         fontWeight: 400,
                         fontFamily: 'PingFangSC'
                     }
@@ -263,9 +263,9 @@ $(function () {
                     color: [
                       
                       
-                        [0.3, '#AEF83E'],
-                        [0.6,'#F68624'],
-                        [1.0, '#F63824']
+                     
+                        [0.3,'#eddd2a'],
+                        [1.0, '#ef5728']
                        
                     ]
                 }
@@ -308,7 +308,7 @@ $(function () {
               min: 0,
                max: 1000,
             detail: {
-                fontSize:35,
+                fontSize:30,
                 formatter: '{value}μg/m³\n'+voc,
             },
               axisTick: {            // 坐标轴小标记
@@ -318,7 +318,7 @@ $(function () {
                     show: true,
                     textStyle: {
                         color:'#FFFFFF',
-                        fontSize: 35, //表盘上的标题文字大小
+                        fontSize: 30, //表盘上的标题文字大小
                         fontWeight: 400,
                         fontFamily: 'PingFangSC'
                     }
@@ -331,9 +331,9 @@ $(function () {
                     color: [
                       
                       
-                        [0.5, '#AEF83E'],
-                        [0.6,'#F68624'],
-                        [1.0, '#F63824']
+                        [0.5, '#eddd2a'],
+                     
+                        [1.0, '#ef5728']
                        
                     ]
                 }
@@ -374,7 +374,7 @@ $(function () {
               min: 0,
                max: 100,
             detail: {
-                fontSize:35,
+                fontSize:30,
                 formatter: '{value}μg/m³'+pm25,
             },
               axisTick: {            // 坐标轴小标记
@@ -384,7 +384,7 @@ $(function () {
                     show: true,
                     textStyle: {
                         color:'#FFFFFF',
-                        fontSize: 35, //表盘上的标题文字大小
+                        fontSize: 30, //表盘上的标题文字大小
                         fontWeight: 400,
                         fontFamily: 'PingFangSC'
                     }
@@ -397,9 +397,9 @@ $(function () {
                     color: [
                       
                       
-                        [0.15, '#AEF83E'],
-                        [0.35,'#EAF34A'],
-                        [1.0, '#F63824']
+                      
+                        [0.15,'#eddd2a'],
+                        [1.0, '#ef5728']
                        
                     ]
                 }
@@ -435,7 +435,7 @@ $(function () {
               min: 0,
                max: 3000,
             detail: {
-                fontSize:35,
+                fontSize:30,
                 formatter: '{value}ppm\n'+co2,
             },
               axisTick: {            // 坐标轴小标记
@@ -445,7 +445,7 @@ $(function () {
                     show: true,
                     textStyle: {
                         color:'#FFFFFF',
-                        fontSize: 35, //表盘上的标题文字大小
+                        fontSize: 30, //表盘上的标题文字大小
                         fontWeight: 400,
                         fontFamily: 'PingFangSC'
                     }
@@ -458,9 +458,9 @@ $(function () {
                     color: [
                       
                       
-                        [0.3, '#AEF83E'],
-                        [0.6,'#EAF34A'],
-                        [1.0, '#F63824']
+                        [0.3, '#eddd2a'],
+                    
+                        [1.0, '#ef5728']
                        
                     ]
                 }
@@ -514,9 +514,69 @@ $(function () {
     
         var myChart = echarts.init(document.getElementById('e222'));
     
-    
-        wdata=[0.5,7.5,1000,0.40];
-        hzd='清澈'
+       var wdata=waterdata;
+          var ph;
+        var hzd;
+        var ddl;
+         var yl;
+
+            if (wdata[0]<=1.0) 
+            { hzd='达标';}
+
+            else
+            {    hzd='不达标';}
+
+        
+
+
+            if (6.5<=wdata[1]&&wdata[1]<=8.5) 
+
+            { ph='达标';
+            }
+
+            else
+            {
+            ph='不达标';
+            }
+            
+
+
+            if(wdata[2]<2000)  
+            {
+            ddl='达标';
+            }
+
+            else
+            {
+            ddl='不达标';
+            }
+
+        
+
+
+            if(0.3<=wdata[3]&&wdata[3]<=0.5) 
+            {
+            yl='达标';
+            }
+
+            else {
+            yl='不达标';
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
        
         option = {
             tooltip: {
@@ -526,6 +586,65 @@ $(function () {
                 x: "center",
                 data: ["", ""]
             },
+            graphic: [
+                {
+                   type: 'group',
+                   left: 50,
+                   bottom: 0,
+                   children: [
+              
+
+
+                       {
+                         
+                        type: 'text',
+                        z: 100,
+                        left: 'center',
+                        top: 'middle',
+                        style: {
+                            fill: '#fff',
+                            text: [
+                                '浑浊度: '+wdata[0],
+                                'PH值: '+wdata[1],
+                                '电导率: '+wdata[2],
+                                '余氯: '+wdata[3],
+                                
+                            ].join('\n'),
+                            font: '30px Microsoft YaHei'
+    
+                           }
+                       }
+                   ]
+               }
+           ],
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             animation: false,
             series: [{
                 categories: [{
@@ -548,7 +667,7 @@ $(function () {
                 symbol: "circle",
                 symbolSize: 120,
                
-                roam: true, //禁止用鼠标滚轮缩小放大效果
+                roam: false, //禁止用鼠标滚轮缩小放大效果
                 edgeSymbol: ['circle', 'arrow'],
                 edgeSymbolSize: [0, 10],
                 // 连接线上的文字
@@ -601,6 +720,7 @@ $(function () {
                     {
                     name: '',
                    symbol: 'image:// /img/water.png',
+                   "symbolSize": 200,
                     itemStyle: {
                         normal: {
                            
@@ -625,19 +745,6 @@ $(function () {
                                    
                                 },
 
-
-
-
-
-
-
-
-
-
-
-
-
-                                fontSize:3500
                              }
                         },
                         emphasis: {
@@ -647,7 +754,7 @@ $(function () {
                     }
                 }, 
                 {
-                    name: 'PH\n'+wdata[0]+'\n'+hzd,
+                    name: 'PH\n'+wdata[1]+'\n'+ddl,
                     category: 1,
                     itemStyle: {
                         normal: {
@@ -667,7 +774,7 @@ $(function () {
                     }
                 }, 
                 {
-                    name: '余氯\n'+wdata[0]+'\n'+hzd,
+                    name: '余氯\n'+wdata[3]+'\n'+yl,
                     category: 1,
                     itemStyle: {
                         normal: {
@@ -687,7 +794,7 @@ $(function () {
                     }
                 }, 
                 {
-                    name: '电导率\n'+wdata[0]+'\n'+hzd,
+                    name: '电导率\n'+wdata[2]+'\n'+ddl,
                     category: 1,
                     itemStyle: {
                         normal: {
@@ -764,13 +871,15 @@ $(function () {
       
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('e444'));
+        var inlight=gdata1;
+        var outlight=gdata2;
         option = {
             // backgroundColor: "#404A59",
             color: ['#ffd285', '#ff733f', '#ec4863'],
         
             title: [{
                 text: '每日光强变化曲线',
-                left: '1%',
+                left: '3%',
                 top: '6%',
                 textStyle: {
                     color: '#fff',
@@ -800,7 +909,7 @@ $(function () {
                 data: ['室内', '室外']
             },
             grid: {
-                left: '1%',
+                left: '3%',
                 right: '35%',
                 top: '16%',
                 bottom: '6%',
@@ -838,6 +947,7 @@ $(function () {
                         color: '#fff'
                     }
                 },
+               
                 splitLine: {
                     show: true,
                     lineStyle: {
@@ -853,37 +963,90 @@ $(function () {
                         fontSize:'24',
                         fontWeight: 'bold',
                     }
+                    
                 },
+              
+               min: 0,
+               max: 800,
                 type: 'value'
             },
-            series: [{
+            
+
+
+
+
+            series: [
+                {
+                   
+                    type: 'line',
+                   
+                   
+                   
+        
+                    markLine: {
+                        silent: false,
+                        symbol: 'none',
+                        label: {
+                            show:true,
+                            position:'end', // 'start\middle\end'
+                            formatter: '{b}',
+                            color: "#fff",
+                            fontSize:'24',
+                            fontWeight: 'bold',
+                        },
+                        data: [
+                             {
+                            name: '强',
+                            yAxis: 500
+                        },  {
+                            name: '弱',
+                            yAxis: 300
+                        }],
+
+                        lineStyle:{
+                            color:'#FF4500',
+                            width:3
+                        },
+                    },
+                },
+        
+                
+                
+                
+                {
+
                 name: '室内',
                 smooth: true,
                 type: 'line',
                 symbolSize: 8,
                   symbol: 'circle',
-                data: [90, 50, 39, 50, 120, 82, 80,100,150],
+                data: inlight,
                 lineStyle: {
                     normal: {
                         barBorderRadius: 12,
-                        width:10
+                        width:5
                     },
                 },
 
-            }, {
+            }, 
+            
+            {
                 name: '室外',
                 smooth: true,
                 type: 'line',
                 symbolSize: 8,
                   symbol: 'circle',
-                data: [70, 50, 50, 87, 90, 80, 70,100,80],
+                data: outlight,
                 lineStyle: {
                     normal: {
                         barBorderRadius: 12,
-                        width:10
+                        width:5
                     },
                 },
             }, 
+            
+
+
             {
                 type: 'pie',
                 center: ['83%', '33%'],
@@ -894,8 +1057,8 @@ $(function () {
                     }
                 },
                 data: [{
-                    value: 335,
-                    name: '满足要求的部分',
+                    value: gdata3,
+                    name: gdata3,
                     itemStyle: {
                         normal: {
                             color: '#ffd285'
@@ -903,7 +1066,7 @@ $(function () {
                     },
                     label: {
                         normal: {
-                            formatter: '{d}',
+                            formatter: gdata3+'\n\n室内光强',
                             textStyle: {
                                 color: '#ffd285',
                                 fontSize:'24',
@@ -911,28 +1074,9 @@ $(function () {
                             }
                         }
                     }
-                }, {
-                    value: 180,
-                    name: '未满足要求的部分',
-                    tooltip: {
-                        show: false
-                    },
-                    itemStyle: {
-                        normal: {
-                            color: '#87CEFA'
-                        }
-                    },
-                    label: {
-                        normal: {
-                            textStyle: {
-                                color: '#ffd285',
-                                fontSize:'24',
-                                fontWeight: 'bold',
-                            },
-                            formatter: '\n室内光强'
-                        }
-                    }
-                }]
+                }
+
+               ]
             },
             {
                 type: 'pie',
@@ -944,8 +1088,8 @@ $(function () {
                     }
                 },
                 data: [{
-                    value: 435,
-                    name: '用户来源分析',
+                    value: gdata4,
+                    name: gdata4,
                     itemStyle: {
                         normal: {
                             color: '#ff733f'
@@ -953,7 +1097,7 @@ $(function () {
                     },
                     label: {
                         normal: {
-                            formatter: '{d} %',
+                            formatter: gdata4+"\n\n室外光强",
                             textStyle: {
                                 color: '#ff733f',
                                 fontSize:'24',
@@ -962,29 +1106,7 @@ $(function () {
                             }
                         }
                     }
-                }, {
-                    value: 100,
-                    name: '占位',
-                    tooltip: {
-                        show: false
-                    },
-                    itemStyle: {
-                        normal: {
-                            color: '#87CEFA'
-        
-        
-                        }
-                    },
-                    label: {
-                        normal: {
-                            textStyle: {
-                                color: '#FF4500',
-                                fontSize:'24',
-                                fontWeight: 'bold',
-                            },
-                            formatter: '\n室外光强'
-                        }
-                    }
+                
                 }]
             }]
         }
