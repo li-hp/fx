@@ -13,7 +13,8 @@
           <li id="nav-header-hr" class="top-cat nav-lin4"><i class="fa fa-sun" ></i><h2>&nbsp;&nbsp;营养&nbsp;&nbsp;</h2></li>
           <li id="nav-header-hr" class="top-cat nav-lin5"><i class="fa fa-futbol"></i><h2>&nbsp;&nbsp;健身&nbsp;&nbsp;</h2></li>
           <li id="nav-header-hr" class="top-cat nav-lin6"><i class="fa fa-fire" ></i><h2>&nbsp;&nbsp;水质&nbsp;&nbsp;</h2></li>
-          <li id="nav-header-hr" class="top-cat nav-lin7"><i class="fa fa-camera"></i><h2>&nbsp;&nbsp;综合&nbsp;&nbsp;</h2></li>
+          <li id="nav-header-hr" class="top-cat nav-lin7"><i class="fa fa-camera"></i><h2>&nbsp;&nbsp;防疫&nbsp;&nbsp;</h2></li>
+          <li id="nav-header-hr" class="top-cat nav-lin8"><i class="fa fa-camera"></i><h2>&nbsp;&nbsp;人员&nbsp;&nbsp;</h2></li>
         </ul>
         <i class="jmod-nav-slider slider hidden" style="transform: translateX(0px);"></i>
       </div>

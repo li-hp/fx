@@ -13,8 +13,7 @@
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/echarts.min.js"></script>
   <script type="text/javascript" src="js/echarts-liquidfill.min.js"></script>
-  <script type="text/javascript" src="js/echarts-wordcloud.min.js"></script>  
-  <script type="text/javascript" src="js/superAPI-2.6.0-owell.min.js"></script>
+
  
   <script language="Javascript" src="js/uiduck.js"></script>
   <script language="Javascript" src="js/json2.js"></script>
@@ -64,12 +63,12 @@
   <script src="js/ai.js"></script>
 
 
-
+ <script type="text/javascript" src="js/charts/kongqi.js"></script>
 
   <script src="js/bg.js" type="text/javascript"></script>
   <script type="text/javascript" src="js/charts/show.js"></script>
   <script type="text/javascript" src="js/charts/guangqiang.js"></script>
-  <script type="text/javascript" src="js/charts/kongqi.js"></script>
+ 
   <script type="text/javascript" src="js/charts/shushi.js"></script>
   <script type="text/javascript" src="js/charts/szyy.js"></script>
   <script type="text/javascript" src="js/charts/kangyi.js"></script>

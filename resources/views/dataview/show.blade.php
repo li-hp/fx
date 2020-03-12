@@ -29,72 +29,35 @@
                 </div>
 
                 <div class="boxall">
-                    <div class="alltitle">水</div>
+                    <div class="alltitle">水质</div>
                     <div class="allnav" id="e222"></div>
                     <div class="boxfoot"></div>
                 </div>
 
                 <div class="boxall">
-                    <div class="alltitle">光</div>
-                    <div class="allnav" id="e444"></div>
+                    <div class="alltitle">光强</div>
+                    <div class="allnav" id="e333"></div>
                     <div class="boxfoot"></div>
                 </div>
-
-
-
                 <div class="boxall">
-                    <div class="alltitle">交互指令</div>
-                    <div class="sysw">
-                        <button
-                        class="changjingqiehuan btn-success center-block btn-sm ">
-                        <p style="font-size:5rem;">场景</p>
-                        </button>
-                    </div>
-                    <div class="sysw">
-                        <button
-                        class="light button-3d button-primary center-block btn-sm ">
-                        <p style="font-size:5rem;">灯光</p>
-                        </button>
-                    </div>
-                    <div class="sysw">
-                        <button
-                        class="heatmap btn-success center-block btn-sm ">
-                        <p style="font-size:5rem;">热力</p>
-                        </button>
-                    </div>
-                    <div class="sysw">
-                        <button
-                        class="curtains btn-primary center-block btn-sm ">
-                        <p style="font-size:5rem;">窗帘</p>
-                        </button>
-                    </div>
-                    <div class="sysw">
-                        <button
-                        class="roam btn-primary center-block btn-sm ">
-                        <p style="font-size:5rem;">漫游</p>
-                        </button>
-                    </div>
-                    <div class="sysw">
-                        <button
-                        class="freshair btn-primary center-block btn-sm ">
-                        <p style="font-size:5rem;">新风</p>
-                        </button>
-                    </div>
-                    <div class="sysw">
-                        <button
-                        class="airpoi btn-primary center-block btn-sm ">
-                        <p style="font-size:5rem;">空气</p>
-                        </button>
-                    </div>
-                    <div class="sysw">
-                        <button
-                        class="dianji btn-primary center-block btn-sm ">
-                        <p style="font-size:5rem;">测试</p>
-                        </button>
-                    </div>
-                    <div class="boxfoot"></div>
+                <style type="text/css">#shushiimg{background:url("/img/shushirenti.png") 5% center no-repeat ;}</style>
 
+                    <div class="alltitle">舒适</div>   
+                    <div id="shushiimg" style="padding-right: 0px; padding-left:0px; margin-left:0px; margin-right:0px;position:relative;z-index: 1000;">
+                  
+                    <div class="allnav" id="e444">
+                 </div>
+                 
+                    
+                    </div>
+                 
+                    <div class="boxfoot"></div>
                 </div>
+
+
+
+
+              
             </div>
 
             <div class="col-xs-12 col-sm-6">
@@ -112,7 +75,7 @@
 
 
                 <div class="boxallright">
-                    <div class="alltitle">光强</div>
+                    <div class="alltitle">营养</div>
                     <div class="allnav" id="e666"></div>
                     <div class="boxfoot"></div>
                 </div>
@@ -124,13 +87,13 @@
                 </div>
 
                 <div class="boxallright">
-                    <div class="alltitle">舒适</div>
+                    <div class="alltitle">防疫</div>
                     <div class="allnav" id="e888"></div>
                     <div class="boxfoot"></div>
                 </div>
 
                 <div class="boxallright">
-                    <div class="alltitle">综合</div>
+                    <div class="alltitle">人员占地密度</div>
                     <div class="allnav" id="e999"></div>
                     <div class="boxfoot"></div>
                 </div>
