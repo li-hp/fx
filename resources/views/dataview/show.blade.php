@@ -185,7 +185,42 @@
                     </div>  
                      <div class="shubox2">
 
-                    
+
+<div class='henbox'></div>
+                        <div class='henbox'>               <label class="kaiguan">
+  <input type="checkbox">
+  <span></span>
+  <span></span>
+  <span></span>
+</label>
+
+                        </div>
+                        <div class='henbox'>               <label class="kaiguan">
+  <input type="checkbox">
+  <span></span>
+  <span></span>
+  <span></span>
+</label></div>
+                        <div class='henbox'>               <label class="kaiguan">
+  <input type="checkbox">
+  <span></span>
+  <span></span>
+  <span></span>
+</label></div>
+                        <div class='henbox'>               <label class="kaiguan">
+  <input type="checkbox">
+  <span></span>
+  <span></span>
+  <span></span>
+</label></div>
+                        <div class='henbox'>               <label class="kaiguan">
+  <input type="checkbox">
+  <span></span>
+  <span></span>
+  <span></span>
+</label></div>
+
+         
 
 
                      </div>
