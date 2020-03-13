@@ -13,6 +13,7 @@
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/echarts.min.js"></script>
   <script type="text/javascript" src="js/echarts-liquidfill.min.js"></script>
+  
 
  
   <script language="Javascript" src="js/uiduck.js"></script>
@@ -23,6 +24,7 @@
   <link rel="stylesheet" href="./css/ai.css">
   <link href="css/uiduck.css" type="text/css" rel="stylesheet">
   <link href="css/table.css" type="text/css" rel="stylesheet">
+
 
 
   @yield('styles')

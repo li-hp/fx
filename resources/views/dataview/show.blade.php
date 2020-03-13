@@ -161,31 +161,41 @@
                 </div>
 
                 <div class="boxall">
-                    <div class="alltitle">新风控制</div>
-                    <div class="sysw">
-                        <button
-                        class="kq_kongtiao btn-success center-block btn-sm ">
-                        <p style="font-size:5rem;">空调</p>
-                        </button>
-                    </div>
-                    <div class="sysw">
-                        <button
-                        class="kq_xinfeng button-3d button-primary center-block btn-sm ">
-                        <p style="font-size:5rem;">新风</p>
-                        </button>
-                    </div>
-                    <div class="sysw">
-                        <button
-                        class="kq_airpoi btn-primary center-block btn-sm">
-                        <p style="font-size:5rem;">poi</p>
-                        </button>
-                    </div>
-                    <div class="sysw">
-                        <button
-                        class="kq_reli btn-primary center-block btn-sm ">
-                        <p style="font-size:5rem;">热力</p>
-                        </button>
-                    </div>
+                    <div class="alltitle">控制</div>
+
+                    
+                    <div class="shubox1"> 
+                        <div class='henbox'></div>
+                        <div class='henbox'>办公区</div>
+                        <div class='henbox'>会议室</div>
+                        <div class='henbox'>办公区</div>
+                        <div class='henbox'>会议室</div>
+                        <div class='henbox'>办公区</div>
+
+                    </div>   
+                     <div class="shubox2">
+                        <div class='henbox'></div>
+                        <div class='henbox'>空调</div>
+                        <div class='henbox'>空调</div>
+                        <div class='henbox'>新风</div>
+                        <div class='henbox'>新风</div>
+                        <div class='henbox'>门窗</div>
+
+
+                    </div>  
+                     <div class="shubox2">
+
+                    
+
+
+                     </div>
+
+                       
+              
+
+                 
+ 
+
                     <div class="boxfoot"></div>
                 </div>
             </div>

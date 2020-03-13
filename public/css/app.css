@@ -18830,6 +18830,43 @@ body {
   text-align: center;
   line-height: 4rem;
 }
+.shubox1 {
+  
+  font-size: 2.25rem;
+  color: #fff;
+  float: left;
+  margin-left:8%;
+  margin-right:15%;
+ height:100%;
+ width:20%;
+
+  
+  position: relative;
+  z-index: 15;
+}
+.shubox2 {
+ 
+  font-size: 2.25rem;
+  color: #fff;
+  float: left;
+  margin-left:3%;
+ height:100%;
+ width:20%;
+
+  
+  position: relative;
+  z-index: 15;
+}
+.henbox {
+  height:6rem;
+  font-size:2.25rem;
+  color:#fff
+
+}
+
+
+
+
 
 .sysw {
   float: left;
@@ -18844,6 +18881,7 @@ body {
   height: 498px;
   width: 1200px;
   display: block;
+  position:absolute;
   margin-left: auto;
   margin-right: auto;
 }
