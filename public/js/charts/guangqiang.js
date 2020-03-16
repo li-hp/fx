@@ -221,13 +221,15 @@ $(function () {
     function gecharts_2() {
         var myChart = echarts.init(document.getElementById('gechart2'));
 
+        var inlight=gdata1;
+        var outlight=gdata2;
         option = {
             // backgroundColor: "#404A59",
             color: ['#ffd285', '#ff733f', '#ec4863'],
         
             title: [{
                 text: '每日光强变化曲线',
-                left: '1%',
+                left: '3%',
                 top: '6%',
                 textStyle: {
                     color: '#fff',
@@ -257,7 +259,7 @@ $(function () {
                 data: ['室内', '室外']
             },
             grid: {
-                left: '1%',
+                left: '3%',
                 right: '35%',
                 top: '16%',
                 bottom: '6%',
@@ -287,7 +289,7 @@ $(function () {
                     }
                 },
                 boundaryGap: false,
-                data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+                data: ['9:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00']
             },
             yAxis: {
                 "axisLine": {
@@ -295,6 +297,7 @@ $(function () {
                         color: '#fff'
                     }
                 },
+               
                 splitLine: {
                     show: true,
                     lineStyle: {
@@ -310,37 +313,92 @@ $(function () {
                         fontSize:'24',
                         fontWeight: 'bold',
                     }
+                    
                 },
+              
+               min: 0,
+               max: 800,
                 type: 'value'
             },
-            series: [{
+               
+           
+            
+
+
+
+
+            series: [
+                {
+                   
+                    type: 'line',
+                   
+                   
+                   
+        
+                    markLine: {
+                        silent: false,
+                        symbol: 'none',
+                        label: {
+                            show:true,
+                            position:'end', // 'start\middle\end'
+                            formatter: '{b}',
+                            color: "#fff",
+                            fontSize:'24',
+                            fontWeight: 'bold',
+                        },
+                        data: [
+                             {
+                            name: '强',
+                            yAxis: 500
+                        },  {
+                            name: '弱',
+                            yAxis: 300
+                        }],
+
+                        lineStyle:{
+                            color:'#FF4500',
+                            width:3
+                        },
+                    },
+                },
+        
+                
+                
+                
+                {
+
                 name: '室内',
                 smooth: true,
                 type: 'line',
                 symbolSize: 8,
                   symbol: 'circle',
-                data: [90, 50, 39, 50, 120, 82, 80],
+                data: inlight,
                 lineStyle: {
                     normal: {
                         barBorderRadius: 12,
-                        width:10
+                        width:5
                     },
                 },
 
-            }, {
+            }, 
+            
+            {
                 name: '室外',
                 smooth: true,
                 type: 'line',
                 symbolSize: 8,
                   symbol: 'circle',
-                data: [70, 50, 50, 87, 90, 80, 70],
+                data: outlight,
                 lineStyle: {
                     normal: {
                         barBorderRadius: 12,
-                        width:10
+                        width:5
                     },
                 },
             }, 
+            
+
+
             {
                 type: 'pie',
                 center: ['83%', '33%'],
@@ -351,8 +409,8 @@ $(function () {
                     }
                 },
                 data: [{
-                    value: 335,
-                    name: '满足要求的部分',
+                    value: gdata3,
+                    name: gdata3,
                     itemStyle: {
                         normal: {
                             color: '#ffd285'
@@ -360,7 +418,7 @@ $(function () {
                     },
                     label: {
                         normal: {
-                            formatter: '{d}',
+                            formatter: gdata3+'\n\n室内光强',
                             textStyle: {
                                 color: '#ffd285',
                                 fontSize:'24',
@@ -368,28 +426,9 @@ $(function () {
                             }
                         }
                     }
-                }, {
-                    value: 180,
-                    name: '未满足要求的部分',
-                    tooltip: {
-                        show: false
-                    },
-                    itemStyle: {
-                        normal: {
-                            color: '#87CEFA'
-                        }
-                    },
-                    label: {
-                        normal: {
-                            textStyle: {
-                                color: '#ffd285',
-                                fontSize:'24',
-                                fontWeight: 'bold',
-                            },
-                            formatter: '\n室内光强'
-                        }
-                    }
-                }]
+                }
+
+               ]
             },
             {
                 type: 'pie',
@@ -401,8 +440,8 @@ $(function () {
                     }
                 },
                 data: [{
-                    value: 435,
-                    name: '用户来源分析',
+                    value: gdata4,
+                    name: gdata4,
                     itemStyle: {
                         normal: {
                             color: '#ff733f'
@@ -410,7 +449,7 @@ $(function () {
                     },
                     label: {
                         normal: {
-                            formatter: '{d} %',
+                            formatter: gdata4+"\n\n室外光强",
                             textStyle: {
                                 color: '#ff733f',
                                 fontSize:'24',
@@ -419,29 +458,7 @@ $(function () {
                             }
                         }
                     }
-                }, {
-                    value: 100,
-                    name: '占位',
-                    tooltip: {
-                        show: false
-                    },
-                    itemStyle: {
-                        normal: {
-                            color: '#87CEFA'
-        
-        
-                        }
-                    },
-                    label: {
-                        normal: {
-                            textStyle: {
-                                color: '#FF4500',
-                                fontSize:'24',
-                                fontWeight: 'bold',
-                            },
-                            formatter: '\n室外光强'
-                        }
-                    }
+                
                 }]
             }]
         }

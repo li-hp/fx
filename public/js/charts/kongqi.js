@@ -34,418 +34,454 @@ $(function () {
     
         var myChart = echarts.init(document.getElementById('kechart0'));
     
-        var randomdata = [randomNum(25,29), randomNum(40,70), randomNum(0,.0), randomNum(0,.0), randomNum(0,15), randomNum(1,5)];
-        // var randomdata = data;
-    
-        var radius = ['45%', '40%'];
-    
-        option = {
-    
-            series: [
-                {
-                    name: '温度',
-                    type: 'pie',
-                    radius: radius,
-                    center: ['15%', '25%'],
-                    startAngle: 225,
-                    color: [new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                        offset: 0,
-                        color: '#FDFF5C'
-                    }, {
-                        offset: 1,
-                        color: '#F2F5A9'
-                    }]), "transparent"],
-                    labelLine: {
-                        normal: {
-                            show: false
-                        }
-                    },
-                    label: {
-                            normal: {
-                                position: 'center'
-                            }
-                        },
-                    data: [{
-                        value: 75,
-                         name: '温度',
-                            label: {
-                                normal: {
-                                    formatter: '温度',
-                                    textStyle: {
-                                        color: '#EFFBFB',
-                                        fontSize: 24,
-                                    }
-                                }
-                            }
-                    },
-                    {
-                        value: randomdata[0],
-                        name: '%',
-                            label: {
-                                normal: {
-                                    formatter: '\n\n{c0}',
-                                    textStyle: {
-                                        color: '#FDFF5C',
-                                        fontSize: 24,
-                                    }
-                                }
-                            }
-                    },
-                    {
-                        value: 0,
-                        name: '%',
-                            label: {
-                                normal: {
-                                    formatter: '',
-                                    textStyle: {
-                                        color: '#EFFBFB',
-                                        fontSize: 24,
-    
-                                    }
-                                }
-                            }
-                    }],
-                },
-    
-                {
-                    name: '湿度',
-                    type: 'pie',
-                    radius: radius,
-                    center: ['50%', '25%'],
-                    startAngle: 225,
-                    color: [new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                        offset: 0,
-                        color: '#9FE6B8'
-                    }, {
-                        offset: 1,
-                        color: '#32C5E9'
-                    }]), "transparent"],
-                    labelLine: {
-                        normal: {
-                            show: false
-                        }
-                    },
-                    label: {
-                            normal: {
-                                position: 'center'
-                            }
-                        },
-                    data: [{
-                        value: 75,
-                         name: '湿度',
-                            label: {
-                                normal: {
-                                    formatter: '湿度',
-                                    textStyle: {
-                                        color: '#FFFFFF',
-                                        fontSize: 24,
-                                    }
-                                }
-                            }
-                    },
-                    {
-                        value: randomdata[1],
-                        name: '%',
-                            label: {
-                                normal: {
-                                    formatter: '\n\n{c0}',
-                                    textStyle: {
-                                        color: '#9FE6B8',
-                                        fontSize: 24,
-    
-                                    }
-                                }
-                            }
-                    },
-                    {
-                        value: 0,
-                        name: '%',
-                            label: {
-                                normal: {
-                                    formatter: '',
-                                    textStyle: {
-                                        color: '#FFFFFF',
-                                        fontSize: 24,
-    
-                                    }
-                                }
-                            }
-                    }]
-                },
-    
-                {
-                    name: '甲醛',
-                    type: 'pie',
-                    radius: radius,
-                    center: ['85%', '25%'],
-                    startAngle: 225,
-                    labelLine: {
-                        normal: {
-                            show: false
-                        }
-                    },
-                    label: {
-                            normal: {
-                                position: 'center'
-                            }
-                        },
-                    data: [{
-                        value: 75,
-                        "itemStyle": {
-                            "normal": {
-                                "color": new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                                    "offset": 0,
-                                    "color": '#FF9F7F'
-                                }, {
-                                    "offset": 1,
-                                    "color": '#FB7293'
-                                }]),
-                            }
-                        },
-                         name: '甲醛',
-                            label: {
-                                normal: {
-                                    formatter: '甲醛',
-                                    textStyle: {
-                                        color: '#ffff',
-                                        fontSize: 24
-    
-                                    }
-                                }
-                            }
-                    }, {
-                        value: randomdata[2],
-                        name: '%',
-                            label: {
-                                normal: {
-                                    formatter: '\n\n{c0}',
-                                    textStyle: {
-                                        color: '#FF9F7F',
-                                        fontSize: 24,
-    
-                                    }
-                                }
-                            }
-                    },
-                    {
-                        value: 0,
-                        name: '%',
-                            label: {
-                                normal: {
-                                    formatter: '',
-                                    textStyle: {
-                                        color: '#fff',
-                                        fontSize: 24,
-    
-                                    }
-                                }
-                            }
-                    }]
-                },
-                // 下一行3个
-                {
-                    name: 'PM2.5',
-                    type: 'pie',
-                    radius: radius,
-                    center: ['15%', '75%'],
-                    startAngle: 225,
-                    labelLine: {
-                        normal: {
-                            show: false
-                        }
-                    },
-                    label: {
-                            normal: {
-                                position: 'center',
-                                formatter: 'PM2.5',
-                                textStyle: {
-                                    color: '#ffff',
-                                    fontSize: 24
-                                }
-                            }
-                        },
-                    data: [
-                        {
-                        value: 75,
-                        "itemStyle": {
-                            "normal": {
-                                "color": new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                                    "offset": 0,
-                                    "color": '#A9A9F5'
-                                }, {
-                                    "offset": 1,
-                                    "color": '#8258FA'
-                                }]),
-                            }
-                        },
-                        name: 'PM2.5'
-                    },
-                    {
-                        value: randomdata[3],
-                        name: '%',
-                        label: {
-                            formatter: '\n\n{c0}',
-                            textStyle: {
-                                color: '#A9A9F5',
-                                fontSize: 24,
-                                },
-                        }
-                    },
-                    {
-                        value: 0,
-                        name: '%',
-                            label: {
-                                normal: {
-                                    formatter: '',
-                                    textStyle: {
-                                        color: '#FAFAFA',
-                                        fontSize: 24,
-    
-                                    }
-                                }
-                            }
-                    }
-                ]
-                },
-    
-                {
-                    name: 'CO2 浓度',
-                    type: 'pie',
-                    radius: radius,
-                    center: ['50%', '75%'],
-                    startAngle: 225,
-                    labelLine: {
-                        normal: {
-                            show: false
-                        }
-                    },
-                    label: {
-                            normal: {
-                                position: 'center'
-                            }
-                        },
-                    data: [{
-                        value: 75,
-                        "itemStyle": {
-                            "normal": {
-                                "color": new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                                    "offset": 0,
-                                    "color": '#0080FF'
-                                }, {
-                                    "offset": 1,
-                                    "color": '#00FFFF'
-                                }]),
-                            }
-                        },
-                         name: 'CO2 浓度',
-                            label: {
-                                normal: {
-                                    formatter: 'CO2 浓度',
-                                    textStyle: {
-                                        color: '#ffff',
-                                        fontSize: 24
-    
-                                    }
-                                }
-                            }
-                    }, {
-                        value: randomdata[4],
-                        name: '%',
-                            label: {
-                                normal: {
-                                    formatter: '\n\n{c0}',
-                                    textStyle: {
-                                        color: '#00FFFF',
-                                        fontSize: 24
-    
-                                    }
-                                }
-                            }
-                    },
-                    {
-                        value: 0,
-                        name: '%',
-                            label: {
-                                normal: {
-                                    formatter: '',
-                                    textStyle: {
-                                        color: '#ffff',
-                                        fontSize: 24
-    
-                                    }
-                                }
-                            }
-                    }]
-                },
-    
-                {
-                    name: 'VOC',
-                    type: 'pie',
-                    radius: radius,
-                    center: ['85%', '75%'],
-                    startAngle: 225,
-                    labelLine: {
-                        normal: {
-                            show: false
-                        }
-                    },
-                    label: {
-                            normal: {
-                                position: 'center'
-                            }
-                        },
-                    data: [
-                        {
-                        value: 75,
-                        "itemStyle": {
-                            "normal": {
-                                "color": new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                                    "offset": 0,
-                                    "color": '#04B486'
-                                }, {
-                                    "offset": 1,
-                                    "color": '#01DFD7'
-                                }]),
-                            }
-                        },
-    
-                        label: {
-                            normal: {
-                                formatter: '可挥发化合物',
-                                textStyle: {
-                                    color: '#04B486',
-                                    fontSize: 24,
-                                    }
-                            }
-                        }
-                    }, 
-                    {
-                        value: randomdata[5],
-                        name: '%',
-                        label: {
-                            formatter: '\n\n{c0}',
-                            textStyle: {
-                                color: '#00BFFF',
-                                fontSize: 24,
-                                },
-                        }
-                    },
-                    {
-                        value: 0,
-                        name: '%',
-                            label: {
-                                normal: {
-                                    formatter: '',
-                                    textStyle: {
-                                        color: '#fff',
-                                        fontSize: 24,
-                                    }
-                                }
-                            }
-                    }]
-                },
-            ]
-        };
+        var data=kqdata;
+          var radius = '45%';
+          
+          
+          var tem;
+          if(data[0]<23)  tem='偏冷';
+          if(23<=data[0]&&data[0]<24)  tem='凉爽';
+          if(24<=data[0]&&data[0]<26)  tem='舒适';
+          if(26<=data[0]&&data[0]<27)  tem='偏热';
+           if(data[0]>27)         tem='热';
+           var shi;
+           if(data[1]<40)  shi='干燥';
+           if(40<=data[1]&&data[1]<70)  shi='适宜';
+         
+            if(data[1]>70)         shi='湿润';
+            var choh;
+            if(data[2]<27)  choh='正常';
+            if(27<=data[2]&&data[2]<40)  choh='偏高';
+          
+             if(data[2]>40)         choh='高';
+             var voc;
+  
+             if(data[3]<500)  voc='正常';
+             if(500<=data[3]&&data[3]<600)  voc='偏高';
+           
+              if(data[2]>600)         voc='高';
+  
+              var pm25;
+              if(data[4]<15)  pm25='正常';
+              if(15<=data[4]&&data[4]<35)  pm25='轻微';
+            
+               if(data[4]>25)         pm25='高';
+  
+               var co2;
+               if(data[5]<1000)  co2='正常';
+               if(1000<=data[5]&&data[5]<2000)  co2='轻微';
+             
+                if(data[4]>2000)         co2='高';
+           
+           
+           
+         option = {
+         
+             series: [
+                 
+                 
+                 
+                 
+                 {
+                 name: '温度',
+                 type: 'gauge',
+                 radius: radius,
+                  center: ['15%', '30%'],
+                   min: 20,
+                    max: 30,
+                 detail: {
+                     fontSize:30,
+                     formatter: '{value}℃\n'+tem,
+                 },
+                 
+                 axisLabel: {
+                  show: false,
+              },
+             
+                   axisTick: {            // 坐标轴小标记
+                    show:false,
+                 },
+                 title: { //标题
+                  show: true,
+                  textStyle: {
+                      color:'#FFFFFF',
+                      fontSize: 30, //表盘上的标题文字大小
+                      fontWeight: 400,
+                      fontFamily: 'PingFangSC'
+                  }
+              },
+          axisLine: {
+              show:false,
+              lineStyle: {
+                  width: 10,
+                
+                  color: [
+                    
+                      [0.3, '#6bdde2'],
+                      [0.6, '#eddd2a'],
+                      [1.0, '#ef5728']
+                  ]
+              }
+          },
+          pointer: { // 表盘上的指针
+           show: true,
+           length: '80%',
+           width:5,
+           },
+         
+        
+          splitLine: { // 分隔线
+              show: false
+          },
+       
+     
+          data: [{
+               name: '温 度',
+              value: data[0],
+             
+          }]
+  
+      },
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             {
+              name: '湿度',
+              type: 'gauge',
+              radius: radius,
+               center: ['50%', '30%'],
+                min: 0,
+                 max: 100,
+              detail: {
+                  fontSize:30,
+                  formatter: '{value}%\n'+shi,
+              },
+                axisTick: {            // 坐标轴小标记
+                 show:false,
+              },
+                title: { //标题
+                      show: true,
+                      textStyle: {
+                          color:'#FFFFFF',
+                          fontSize: 30, //表盘上的标题文字大小
+                          fontWeight: 400,
+                          fontFamily: 'PingFangSC'
+                      }
+                  },
+              axisLine: {
+                  show:false,
+                  lineStyle: {
+                      width: 10,
+  
+                    
+                      color: [
+                        
+                           
+                      [0.4, '#6bdde2'],
+                      [0.7, '#eddd2a'],
+                      [1.0, '#ef5728']
+                         
+                      ]
+                  }
+              },
+              axisTick: {
+                  show:false
+              },
+              splitLine: { // 分隔线
+                  show: false
+              },
+              axisLabel: {
+                  show: false
+              },
+            
+              pointer: { // 表盘上的指针
+               show: true,
+               length: '80%',
+               width:5,
+               },
+           
+           
+              data: [{
+                   name: '湿 度',
+                  value: data[1],
+                 
+              }]
+      
+          },
+  
+  
+  
+  
+          {
+              name: '甲醛',
+              type: 'gauge',
+              radius: radius,
+               center: ['85%', '30%'],
+                min: 0,
+                 max: 100,
+              detail: {
+                  fontSize:30,
+                  formatter: '{value}ppb\n'+choh,
+              },
+                axisTick: {            // 坐标轴小标记
+                 show:false,
+              },
+                title: { //标题
+                      show: true,
+                      textStyle: {
+                          color:'#FFFFFF',
+                          fontSize: 30, //表盘上的标题文字大小
+                          fontWeight: 400,
+                          fontFamily: 'PingFangSC'
+                      }
+                  },
+              axisLine: {
+                  show:false,
+                  lineStyle: {
+                      width: 10,
+                    
+                      color: [
+                        
+                        
+                       
+                          [0.3,'#eddd2a'],
+                          [1.0, '#ef5728']
+                         
+                      ]
+                  }
+              },
+              pointer: { // 表盘上的指针
+               show: true,
+               length: '80%',
+               width:5,
+               },
+            
+              splitLine: { // 分隔线
+                  show: false
+              },
+              axisLabel: {
+                  show: false
+              },
+         
+              data: [{
+                   name: '甲 醛',
+                  value: data[2],
+                 
+              }]
+      
+          },
+  
+  
+  
+  
+  
+  
+                
+  
+          {
+              name: '挥发物',
+              type: 'gauge',
+              radius: radius,
+               center: ['15%', '80%'],
+                min: 0,
+                 max: 1000,
+              detail: {
+                  fontSize:30,
+                  formatter: '{value}μg/m³\n'+voc,
+              },
+                axisTick: {            // 坐标轴小标记
+                 show:false,
+              },
+                title: { //标题
+                      show: true,
+                      textStyle: {
+                          color:'#FFFFFF',
+                          fontSize: 30, //表盘上的标题文字大小
+                          fontWeight: 400,
+                          fontFamily: 'PingFangSC'
+                      }
+                  },
+              axisLine: {
+                  show:false,
+                  lineStyle: {
+                      width: 10,
+                    
+                      color: [
+                        
+                        
+                          [0.5, '#eddd2a'],
+                       
+                          [1.0, '#ef5728']
+                         
+                      ]
+                  }
+              },
+              pointer: { // 表盘上的指针
+               show: true,
+               length: '80%',
+               width:5,
+               },
+             
+              splitLine: { // 分隔线
+                  show: false
+              },
+              axisLabel: {
+                  show: false
+              },
+         
+              data: [{
+                   name: '挥发有机物',
+                  value: data[3],
+                 
+              }]
+      
+          },
+  
+  
+  
+  
+                     
+  
+          {
+              name: 'PM2.5',
+              type: 'gauge',
+              radius: radius,
+               center: ['50%', '80%'],
+                min: 0,
+                 max: 100,
+              detail: {
+                  fontSize:30,
+                  formatter: '{value}μg/m³'+pm25,
+              },
+                axisTick: {            // 坐标轴小标记
+                 show:false,
+              },
+                title: { //标题
+                      show: true,
+                      textStyle: {
+                          color:'#FFFFFF',
+                          fontSize: 30, //表盘上的标题文字大小
+                          fontWeight: 400,
+                          fontFamily: 'PingFangSC'
+                      }
+                  },
+              axisLine: {
+                  show:false,
+                  lineStyle: {
+                      width: 10,
+                    
+                      color: [
+                        
+                        
+                        
+                          [0.15,'#eddd2a'],
+                          [1.0, '#ef5728']
+                         
+                      ]
+                  }
+              },
+              pointer: { // 表盘上的指针
+               show: true,
+               length: '80%',
+               width:5,
+               },
+           
+              splitLine: { // 分隔线
+                  show: false
+              },
+              axisLabel: {
+                  show: false
+              },
+              data: [{
+                   name: 'PM2.5',
+                  value: data[4],
+                 
+              }]
+      
+          },
+  
+          
+          {
+              name: 'CO2',
+              type: 'gauge',
+              radius: radius,
+               center: ['85%', '80%'],
+                min: 0,
+                 max: 3000,
+              detail: {
+                  fontSize:30,
+                  formatter: '{value}ppm\n'+co2,
+              },
+                axisTick: {            // 坐标轴小标记
+                 show:false,
+              },
+                title: { //标题
+                      show: true,
+                      textStyle: {
+                          color:'#FFFFFF',
+                          fontSize: 30, //表盘上的标题文字大小
+                          fontWeight: 400,
+                          fontFamily: 'PingFangSC'
+                      }
+                  },
+              axisLine: {
+                  show:false,
+                  lineStyle: {
+                      width: 10,
+                    
+                      color: [
+                        
+                        
+                          [0.3, '#eddd2a'],
+                      
+                          [1.0, '#ef5728']
+                         
+                      ]
+                  }
+              },
+              pointer: { // 表盘上的指针
+               show: true,
+               length: '80%',
+               width:5,
+               },
+           
+              splitLine: { // 分隔线
+                  show: false
+              },
+              axisLabel: {
+                  show: false
+              },
+              data: [{
+                   name: '二氧化碳',
+                  value: data[5],
+                 
+              }]
+      
+          }
+  
+  
+  
+  
+                
+  
+  
+  
+          ]
+             
+             
+         };
+         
+       
         myChart.setOption(option);
         window.addEventListener("resize",function(){
             myChart.resize();

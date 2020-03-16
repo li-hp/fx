@@ -1108,6 +1108,45 @@ $(function () {
         var myChart = echarts.init(document.getElementById('e444'));
    
             var data=shushidata;
+
+            var voicedata=data[0].value;
+            if (voicedata<60) data[0].name="舒适";
+            else  data[0].name="不适";
+
+            
+            var airdata=data[1].value;
+            if (airdata<60) data[1].name="舒适";
+            else  data[1].name="不适";
+
+                
+            var humdata=data[2].value;
+            if (humdata>40&&humdata<60) data[1].name="优秀";
+            else  data[2].name="一般";
+
+            var temdata=data[3].value;
+            if (temdata>23&&temdata<26) data[3].name="优秀";
+            else  data[3].name="一般";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         var titleArr= [], seriesArr=[];
         colors=[['#af4', '#dfeaff'],['#ff8c37', '#ffdcc3'],['#fd6f97', '#fed4e0'],['#ffc257', '#ffedcc'], ['#a181fc', '#e3d9fe']]
         data.forEach(function(item, index){
@@ -1890,13 +1929,13 @@ $(function () {
                 },
                 
                 data: [
-                    {value: 0.6, name: '办公室'},
-                    {value: 0.6, name: '茶水间'},
-                    {value: 0.6, name: '会议室'},
-                    {value: 0.6, name: '走廊'},
-                    {value: 0.6, name: '洗手间'},
-                    {value: 0.6, name: '洽谈室'},
-                    {value: 0.6, name: '电梯间'},
+                    {value: 0.6, name: quyu[0]},
+                    {value: 0.6, name: quyu[1]},
+                    {value: 0.6, name: quyu[2]},
+                    {value: 0.6, name: quyu[3]},
+                    {value: 0.6, name: quyu[4]},
+                    {value: 0.6, name: quyu[5]},
+                    {value: 0.6, name: quyu[6]},
                  
                 ]
             },  {
@@ -1915,13 +1954,13 @@ $(function () {
                 },
                 
                 data: [
-                    {value: 0.2, name: '已消毒'},
-                    {value: 0.2, name: '已消毒'},
-                    {value: 0.2, name: '已消毒'},
-                    {value: 0.2, name: '已消毒'},
-                    {value: 0.2, name: '已消毒'},
-                    {value: 0.2, name: '已消毒'},
-                    {value: 0.2, name: '已消毒'},
+                    {value: 0.2, name: xiaodudata[0]},
+                    {value: 0.2, name: xiaodudata[1]},
+                    {value: 0.2, name: xiaodudata[2]},
+                    {value: 0.2, name: xiaodudata[3]},
+                    {value: 0.2, name: xiaodudata[4]},
+                    {value: 0.2, name: xiaodudata[5]},
+                    {value: 0.2, name: xiaodudata[6]},
                  
                 ]
             },{
@@ -1939,13 +1978,13 @@ $(function () {
                     }
                 },
                 data: [
-                    {value: .4, name: '3.1      18:00'},
-                    {value: .4, name: '2.29     18:00'},
-                    {value: .4, name: '2.28     18:00'},
-                    {value: .4, name: '2.27     18:00'},
-                    {value: .4, name: '2.26     18:00'},
-                    {value: .4, name: '2.25     18:00'},
-                    {value: .4, name: '2.24     18:00'},
+                    {value: .4, name: xiaodutime[0]},
+                    {value: .4, name: xiaodutime[1]},
+                    {value: .4, name: xiaodutime[2]},
+                    {value: .4, name: xiaodutime[3]},
+                    {value: .4, name: xiaodutime[4]},
+                    {value: .4, name: xiaodutime[5]},
+                    {value: .4, name: xiaodutime[6]},
                   
                 ]
             }
@@ -1963,7 +2002,7 @@ $(function () {
 
         var myChart = echarts.init(document.getElementById('e999'));
     
-        var randomdata = [randomNum(10,100), randomNum(0,20), randomNum(0,10), randomNum(0,5), randomNum(0,15)];
+        var randomdata = renyuandata;
     
         var radius = ['40%', '45%'];
     
@@ -2348,11 +2387,11 @@ $(function () {
                                 }
                             }
                     }, {
-                        value: 0,
+                        value: randomdata[5],
                         name: '%',
                             label: {
                                 normal: {
-                                    formatter: '\n\n正常',
+                                    formatter: '\n\n{c0}',
                                     textStyle: {
                                         color: '#BDBDBD',
                                         fontSize: 24,

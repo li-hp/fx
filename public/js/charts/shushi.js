@@ -2,7 +2,7 @@ $(function(){
 
     shushi_echarts_1();setInterval(function(){shushi_echarts_1();}, 2000);
     shushi_echarts_2();setInterval(function(){shushi_echarts_2();}, 2000);
-    shushi_echarts_3();setInterval(function(){shushi_echarts_3();}, 10000);
+ 
 
     function shushi_echarts_1() {
 

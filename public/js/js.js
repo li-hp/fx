@@ -28,8 +28,6 @@
 
 
 
-
-
 test1(ziyemiandata);
 test2(ziyemiandata);
 
