@@ -309,13 +309,36 @@
 
                 <div class="boxallright">
                     <div class="alltitle">建议</div>
-                    <div class="allnav" id="sz777"></div>
+                    <div class="allnav" id="sz888"></div>
                     <div class="boxfoot"></div>
                 </div>
 
                 <div class="boxallright">
                     <div class="alltitle">区域</div>
-                    <div class="allnav" id="sz888"></div>
+                    <div class="allnav" id="sz999">
+
+                    <div class="sysw">
+ 
+                       <a href="#" class="button white bigrounded">茶水间1</a> 
+                   </div>
+                    <div class="sysw">
+
+                        <a href="#" class="button white bigrounded">茶水间2</a> 
+                    </div>
+                    <div class="sysw">
+
+                    <a href="#" class="button white bigrounded">茶水间3</a> 
+                    </div>
+                    <div class="sysw">
+
+                    <a href="#" class="button white bigrounded">办公室</a> 
+                    </div>
+                        
+
+                    </div>
+         
+
+
                     <div class="boxfoot"></div>
                 </div>
 
@@ -344,7 +367,7 @@
                 </div>
 
                 <div class="boxall">
-                    <div class="alltitle">实时光强</div>
+                    <div class="alltitle">室外光强</div>
                     <div class="allnav" id="gechart2">
 
 
@@ -372,42 +395,18 @@
                 </div>
 
                 <div class="boxall">
-                    <div class="alltitle">光强曲线</div>
+                    <div class="alltitle">办公区1</div>
                     <div class="allnav" id="gechart3"></div>
                     <div class="boxfoot"></div>
                 </div>
-
-
                 <div class="boxall">
-                    <div class="alltitle">光照控制</div>
-                    <div class="sysw">
-                        <button
-                        class="gq_kaiguan btn-success center-block btn-sm ">
-                        <p style="font-size:5rem;">开关</p>
-                        </button>
-                    </div>
-                    <div class="sysw">
-                        <button
-                        class="ligpoi button-3d button-primary center-block btn-sm ">
-                        <p style="font-size:5rem;">光强</p>
-                        </button>
-                    </div>
-                    <div class="sysw">
-                        <button
-                        class="heatmap btn-success center-block btn-sm ">
-                        <p style="font-size:5rem;">窗帘</p>
-                        </button>
-                    </div>
-                    <div class="sysw">
-                        <button
-                        class="curtains btn-primary center-block btn-sm ">
-                        <p style="font-size:5rem;">区域</p>
-                        </button>
-                    </div>
-
-
+                    <div class="alltitle">办公区1</div>
+                    <div class="allnav" id="gechart4"></div>
                     <div class="boxfoot"></div>
                 </div>
+
+
+      
 
 
             </div>
@@ -429,35 +428,100 @@
 
 
             <div class="boxallright">
-                <div class="alltitle">舒适度</div>
+                <div class="alltitle">会议室</div>
                 <div class="allnav" id="gechart6"></div>
                 <div class="boxfoot"></div>
             </div>
 
             <div class="boxallright">
-                <div class="alltitle">消毒记录</div>
-                <div class="allnav" id="gechart6"></div>
+                <div class="alltitle">办公区2</div>
+                <div class="allnav" id="gechart7"></div>
                 <div class="boxfoot"></div>
             </div>
 
             <div class="boxallright">
-                <div class="alltitle">声音强度</div>
-                <div class="allnav" id="gechart6"></div>
+                <div class="alltitle">办公区2</div>
+                <div class="allnav" id="gechart8"></div>
                 <div class="boxfoot"></div>
             </div>
 
             <div class="boxallright">
-                <div class="alltitle">综合</div>
-                <div class="allnav" id="gechart9"></div>
-                <div class="boxfoot"></div>
+                    <div class="alltitle">控制</div>
+
+                    
+                    <div class="shubox1"> 
+                        <div class='henbox'></div>
+                        <div class='henbox'>办公区</div>
+                        <div class='henbox'>会议室</div>
+                        <div class='henbox'>办公区</div>
+                        <div class='henbox'>会议室</div>
+                        <div class='henbox'>办公区</div>
+
+                    </div>   
+                     <div class="shubox2">
+                        <div class='henbox'></div>
+                        <div class='henbox'>空调</div>
+                        <div class='henbox'>空调</div>
+                        <div class='henbox'>新风</div>
+                        <div class='henbox'>新风</div>
+                        <div class='henbox'>门窗</div>
+
+
+                    </div>  
+                     <div class="shubox2">
+
+
+                                <div class='henbox'></div>
+                                                        <div class='henbox'>               <label class="kaiguan">
+                                <input type="checkbox">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                </label>
+
+                                                        </div>
+                                                        <div class='henbox'>               <label class="kaiguan">
+                                <input type="checkbox">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                </label></div>
+                                                        <div class='henbox'>               <label class="kaiguan">
+                                <input type="checkbox">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                </label></div>
+                                                        <div class='henbox'>               <label class="kaiguan">
+                                <input type="checkbox">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                </label></div>
+                                                        <div class='henbox'>               <label class="kaiguan">
+                                <input type="checkbox">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                </label></div>
+
+         
+
+
+                     </div>
+
+                       
+              
+
+                 
+ 
+
+                    <div class="boxfoot"></div>
+                </div>
             </div>
 
-            </div>
-
-
-            </div>
+        </div>
     </div>
-
 
     <div class="maincontain maincontain_shushi">
 

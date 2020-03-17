@@ -5,7 +5,8 @@ $(function(){
   sz333();
   sz444();
   sz666();
- 
+  sz777();
+  sz888();
 
     function sz111() {
 
@@ -1075,8 +1076,285 @@ $(function(){
             myChart.resize();
         });
     }
-    
 
+    
+  
+    function sz777() {
+
+        var myChart = echarts.init(document.getElementById('sz777'));
+
+     
+    
+        option = {
+            title: {
+                text: '上一次更换时间',
+                left:'72%',
+                textStyle: {
+                    color: "#fff",
+                    fontSize:30
+                },
+                
+                
+                
+            },
+        
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                },
+                formatter: function(params){
+                    let result = params[0].name + '<br />' + 
+                                  params[1].data.name;
+                    return result;
+                }
+            },
+            grid: [{
+                left: '5%',
+                right: '3%',
+                bottom: '3%',
+                containLabel: true,
+            }],
+            xAxis: [{
+                type: 'value',
+                min: 0.1,
+                max: 1.0,
+                axisLabel: {show: false},
+                axisLine: {show: false},
+                axisTick: {show: false},
+                splitLine: {show: false},
+            }],
+            yAxis: [{
+                name:' 滤芯状态',
+              
+                nameTextStyle:{
+                    color: "#fff",
+                    fontSize:'30',
+                    fontWeight: 'bold',
+                },
+                type: 'category',
+               // inverse: true,
+                axisLine: {show: false},
+                axisTick: {show: true},
+                data: [1, 2, 3, 4]
+            }],
+            series: [
+                {
+                    name: '告警',
+                    stack: '1',
+                    type: 'bar',
+                    color:'block',
+                    label: {
+                        show: true,
+                        position: 'insideLeft',
+                        fontSize:30,
+                        
+                        formatter: function(params){
+                            return params.data.name
+                        }
+                    },
+                    
+                    data: [
+                        {value: 0.6, name: squyu[0]},
+                        {value: 0.6, name: squyu[1]},
+                        {value: 0.6, name: squyu[2]},
+                        {value: 0.6, name: squyu[3]},
+                      
+                     
+                    ]
+                },  {
+                    name: '告警',
+                    stack: '1',
+                    type: 'bar',
+                    color:'block',
+                    label: {
+                        show: true,
+                        position: 'insideLeft',
+                        fontSize:30,
+                        
+                        formatter: function(params){
+                            return params.data.name
+                        }
+                    },
+                    
+                    data: [
+                        {value: 0.2, name: sxiaodudata[0]},
+                        {value: 0.2, name: sxiaodudata[1]},
+                        {value: 0.2, name: sxiaodudata[2]},
+                        {value: 0.2, name: sxiaodudata[3]},
+                      
+                     
+                    ]
+                },{
+                    name: '已拖延时间',
+                    stack: '1',
+                    type: 'bar',
+                    color:"#333",
+                    label: {
+                        show: true,
+                        position: 'inside',
+                        fontSize:30,
+                
+                        formatter: function(params){
+                            return params.data.name
+                        }
+                    },
+                    data: [
+                        {value: .4, name: sxiaodutime[0]},
+                        {value: .4, name: sxiaodutime[1]},
+                        {value: .4, name: sxiaodutime[2]},
+                        {value: .4, name: sxiaodutime[3]},
+                   
+                      
+                    ]
+                }
+            ]
+        };
+
+        myChart.setOption(option);
+        window.addEventListener("resize",function(){
+            myChart.resize();
+        });
+    }
+    function sz888() {
+
+        var myChart = echarts.init(document.getElementById('sz888'));
+
+     
+    
+        option = {
+            title: {
+                text: '饮水建议',
+                left:'5%',
+                textStyle: {
+                    color: "#fff",
+                    fontSize:30
+                },
+                
+                
+                
+            },
+        
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                },
+                formatter: function(params){
+                    let result = params[0].name + '<br />' + 
+                                  params[1].data.name;
+                    return result;
+                }
+            },
+            grid: [{
+                left: '10%',
+                right: '3%',
+                bottom: '3%',
+                containLabel: true,
+            }],
+            xAxis: [{
+                type: 'value',
+                min: 0.1,
+                max: 1.0,
+                axisLabel: {show: false},
+                axisLine: {show: false},
+                axisTick: {show: false},
+                splitLine: {show: false},
+            }],
+            yAxis: [{
+               
+                type: 'category',
+                inverse: true,
+                axisLine: {show: false},
+                axisTick: {show: false},
+                data: [1, 2, 3, 4]
+            }],
+            series: [
+                {
+                    name: '告警',
+                    stack: '1',
+                    type: 'bar',
+                    color:"rgba(128, 128, 128, 0 ",
+                    label: {
+                        show: true,
+                        position: 'insideLeft',
+                        fontSize:32,
+                        
+                        formatter: function(params){
+                            return params.data.name
+                        }
+                    },
+                    
+                    data: [
+                        {value: 0.6, name:' 7:30            促进代谢'},
+                        {value: 0.6, name:' 9:00            提神醒脑'},
+                        {value: 0.6, name:'11:00           放松情绪'},
+                        {value: 0.6, name:'13:00           加强消化'}
+                      
+                     
+                    ]
+                },  {
+                    name: '告警',
+                    stack: '1',
+                    type: 'bar',
+                    color:"rgba(128, 128, 128, 0",
+                    label: {
+                        show: true,
+                        position: 'insideLeft',
+                        fontSize:32,
+                        
+                        formatter: function(params){
+                            return params.data.name
+                        }
+                    },
+                    
+                    data: [
+                        {value: 0.2, name: '15:00'},
+                        {value: 0.2, name: '17:30'},
+                        {value: 0.2, name: '20:00'},
+                        {value: 0.2, name: '22:00'},
+                      
+                     
+                    ]
+                },{
+                    name: '已拖延时间',
+                    stack: '1',
+                    type: 'bar',
+                    color:"rgba(128, 128, 128, 0 ",
+                    label: {
+                        show: true,
+                        position: 'inside',
+                        fontSize:32,
+                
+                        formatter: function(params){
+                            return params.data.name
+                        }
+                    },
+                    data: [
+                        {value: .35, name: '补充水分'},
+                        {value: .35, name: '缓解疲劳'},
+                        {value: .35, name: '帮助消化'},
+                        {value: .35, name: '改善睡眠'}
+                   
+                      
+                    ]
+                }
+            ]
+        };
+
+        myChart.setOption(option);
+        window.addEventListener("resize",function(){
+            myChart.resize();
+        });
+    }
+
+
+
+
+
+
+
+   
 
 
 
