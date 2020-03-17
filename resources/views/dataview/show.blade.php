@@ -367,7 +367,7 @@
                 </div>
 
                 <div class="boxall">
-                    <div class="alltitle">室外光强</div>
+                    <div class="alltitle">室外光强（周）</div>
                     <div class="allnav" id="gechart2">
 
 
@@ -395,12 +395,12 @@
                 </div>
 
                 <div class="boxall">
-                    <div class="alltitle">办公区1</div>
+                    <div class="alltitle">办公区1（周）</div>
                     <div class="allnav" id="gechart3"></div>
                     <div class="boxfoot"></div>
                 </div>
                 <div class="boxall">
-                    <div class="alltitle">办公区1</div>
+                    <div class="alltitle">办公区1（日）</div>
                     <div class="allnav" id="gechart4"></div>
                     <div class="boxfoot"></div>
                 </div>
@@ -428,19 +428,19 @@
 
 
             <div class="boxallright">
-                <div class="alltitle">会议室</div>
+                <div class="alltitle">会议室（日）</div>
                 <div class="allnav" id="gechart6"></div>
                 <div class="boxfoot"></div>
             </div>
 
             <div class="boxallright">
-                <div class="alltitle">办公区2</div>
+                <div class="alltitle">办公区2（周）</div>
                 <div class="allnav" id="gechart7"></div>
                 <div class="boxfoot"></div>
             </div>
 
             <div class="boxallright">
-                <div class="alltitle">办公区2</div>
+                <div class="alltitle">办公区2（日）</div>
                 <div class="allnav" id="gechart8"></div>
                 <div class="boxfoot"></div>
             </div>
@@ -460,11 +460,11 @@
                     </div>   
                      <div class="shubox2">
                         <div class='henbox'></div>
-                        <div class='henbox'>空调</div>
-                        <div class='henbox'>空调</div>
-                        <div class='henbox'>新风</div>
-                        <div class='henbox'>新风</div>
-                        <div class='henbox'>门窗</div>
+                        <div class='henbox'>开关</div>
+                        <div class='henbox'>开关</div>
+                        <div class='henbox'>开关</div>
+                        <div class='henbox'>开关</div>
+                        <div class='henbox'>开关</div>
 
 
                     </div>  
@@ -472,14 +472,14 @@
 
 
                                 <div class='henbox'></div>
-                                                        <div class='henbox'>              <input type="checkbox" class="jtoggler" data-jtmulti-state></div>
+                                <div class='henbox'>              <input type="checkbox" class="jtoggler" data-jtmulti-state></div>
 
-                                                      
-                                                        <div class='henbox'>                <input type="checkbox" class="jtoggler" data-jtmulti-state></div>
-                                                        <div class='henbox'>               <input type="checkbox" class="jtoggler" data-jtmulti-state></div>
-                                                     
-                                                        <div class='henbox'>           <input type="checkbox" class="jtoggler" data-jtmulti-state></div>
-                                                        <div class='henbox'>             <input type="checkbox" class="jtoggler" data-jtmulti-state></div>
+                                
+                                <div class='henbox'>                <input type="checkbox" class="jtoggler" data-jtmulti-state></div>
+                                <div class='henbox'>               <input type="checkbox" class="jtoggler" data-jtmulti-state></div>
+                                
+                                <div class='henbox'>           <input type="checkbox" class="jtoggler" data-jtmulti-state></div>
+                                <div class='henbox'>             <input type="checkbox" class="jtoggler" data-jtmulti-state></div>
 
          
 
@@ -490,7 +490,7 @@
               
 
                  
- 
+                    </div>
 
                     <div class="boxfoot"></div>
                 </div>
