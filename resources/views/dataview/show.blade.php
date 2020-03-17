@@ -451,10 +451,10 @@
                     
                     <div class="shubox1"> 
                         <div class='henbox'></div>
-                        <div class='henbox'>办公区</div>
-                        <div class='henbox'>会议室</div>
-                        <div class='henbox'>办公区</div>
-                        <div class='henbox'>会议室</div>
+                        <div class='henbox'>灯光1区</div>
+                        <div class='henbox'>灯光2区</div>
+                        <div class='henbox'>窗帘1区</div>
+                        <div class='henbox'>窗帘2区</div>
                         <div class='henbox'>办公区</div>
 
                     </div>   
@@ -472,43 +472,19 @@
 
 
                                 <div class='henbox'></div>
-                                                        <div class='henbox'>               <label class="kaiguan">
-                                <input type="checkbox">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                </label>
+                                                        <div class='henbox'>              <input type="checkbox" class="jtoggler" data-jtmulti-state></div>
 
-                                                        </div>
-                                                        <div class='henbox'>               <label class="kaiguan">
-                                <input type="checkbox">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                </label></div>
-                                                        <div class='henbox'>               <label class="kaiguan">
-                                <input type="checkbox">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                </label></div>
-                                                        <div class='henbox'>               <label class="kaiguan">
-                                <input type="checkbox">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                </label></div>
-                                                        <div class='henbox'>               <label class="kaiguan">
-                                <input type="checkbox">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                </label></div>
+                                                      
+                                                        <div class='henbox'>                <input type="checkbox" class="jtoggler" data-jtmulti-state></div>
+                                                        <div class='henbox'>               <input type="checkbox" class="jtoggler" data-jtmulti-state></div>
+                                                     
+                                                        <div class='henbox'>           <input type="checkbox" class="jtoggler" data-jtmulti-state></div>
+                                                        <div class='henbox'>             <input type="checkbox" class="jtoggler" data-jtmulti-state></div>
 
          
 
 
-                     </div>
+                    
 
                        
               
