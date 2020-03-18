@@ -345,10 +345,10 @@ $(function () {
                             // color: "#53fdfe", // 线条颜色
                             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
                                 offset: 0,
-                                color: '#0080FF'
+                                color: '#FFEC8B'
                             }, {
                                 offset: 1,
-                                color: '#00FFFF'
+                                color: '#FFFF00'
                             }]),
                             barBorderRadius: 12,
                             width:10
@@ -358,7 +358,7 @@ $(function () {
                     },
                     itemStyle: {
                         normal: {
-                            color: '#00FFFF',
+                            color: '#EEAD0E',
                             borderColor: 'rgba(221, 220, 107, .1)',
                             borderWidth: 30
                         }
@@ -516,10 +516,10 @@ $(function () {
                             // color: "#53fdfe", // 线条颜色
                             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
                                 offset: 0,
-                                color: '#0080FF'
+                                color: '#FFEC8B'
                             }, {
                                 offset: 1,
-                                color: '#00FFFF'
+                                color: '#FFFF00'
                             }]),
                             barBorderRadius: 12,
                             width:10
@@ -529,7 +529,7 @@ $(function () {
                     },
                     itemStyle: {
                         normal: {
-                            color: '#00FFFF',
+                            color: '#EEAD0E',
                             borderColor: 'rgba(221, 220, 107, .1)',
                             borderWidth: 30
                         }
@@ -689,10 +689,10 @@ $(function () {
                             // color: "#53fdfe", // 线条颜色
                             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
                                 offset: 0,
-                                color: '#0080FF'
+                                color: '#FFEC8B'
                             }, {
                                 offset: 1,
-                                color: '#00FFFF'
+                                color: '#FFFF00'
                             }]),
                             barBorderRadius: 12,
                             width:10
@@ -702,7 +702,7 @@ $(function () {
                     },
                     itemStyle: {
                         normal: {
-                            color: '#00FFFF',
+                            color: '#EEAD0E',
                             borderColor: 'rgba(221, 220, 107, .1)',
                             borderWidth: 30
                         }
@@ -1044,10 +1044,10 @@ $(function () {
                             // color: "#53fdfe", // 线条颜色
                             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
                                 offset: 0,
-                                color: '#0080FF'
+                                color: '#FFEC8B'
                             }, {
                                 offset: 1,
-                                color: '#00FFFF'
+                                color: '#FFFF00'
                             }]),
                             barBorderRadius: 12,
                             width:10
@@ -1057,7 +1057,7 @@ $(function () {
                     },
                     itemStyle: {
                         normal: {
-                            color: '#00FFFF',
+                            color: '#EEAD0E',
                             borderColor: 'rgba(221, 220, 107, .1)',
                             borderWidth: 30
                         }
@@ -1216,10 +1216,10 @@ $(function () {
                             // color: "#53fdfe", // 线条颜色
                             color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
                                 offset: 0,
-                                color: '#0080FF'
+                                color: '#FFEC8B'
                             }, {
                                 offset: 1,
-                                color: '#00FFFF'
+                                color: '#FFFF00'
                             }]),
                             barBorderRadius: 12,
                             width:10
@@ -1229,7 +1229,7 @@ $(function () {
                     },
                     itemStyle: {
                         normal: {
-                            color: '#00FFFF',
+                            color: '#EEAD0E',
                             borderColor: 'rgba(221, 220, 107, .1)',
                             borderWidth: 30
                         }

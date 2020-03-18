@@ -492,10 +492,7 @@ $(function () {
     
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('kechart1'));
-        var randome81 = [randomNum(600,1500), 
-            randomNum(600,1000), randomNum(600,1000), 
-            randomNum(600,1000), randomNum(600,2000), 
-            randomNum(600,1000), randomNum(600,1000)];
+        var randome81 = airco2data;
     
         option = {
             tooltip: {
@@ -663,7 +660,7 @@ $(function () {
     function kecharts_2() {
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('kechart2'));
-        var randome81 = [randomNum(500,700),randomNum(490,700),randomNum(660,700),randomNum(550,700),randomNum(400,700),randomNum(500,700),randomNum(400,700),];
+        var randome81 = airvocdata;
         option = {
             tooltip: {
                 trigger: 'axis',
@@ -812,7 +809,8 @@ $(function () {
     
     function kecharts_3() {
         // 基于准备好的dom，初始化echarts实例
-        var value = randomNum(1,9) / 10;
+        var value = kqdata[1];
+
         var data = [value,value];
         var dom = document.getElementById("kechart3");
         // dom.style.height=window.innerHeight+'px';
@@ -828,7 +826,7 @@ $(function () {
             //     color: '#471bba'
             // }]),
              title: {
-                 text: (value * 100).toFixed(0) + '{a|%}',
+                 text: (value ).toFixed(0) + '{a|%}',
                  textStyle: {
                      fontSize: 50,
                      fontFamily: 'Microsoft Yahei',
@@ -948,7 +946,7 @@ $(function () {
     function kecharts_4() {
         // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('kechart4'));
-    var randome81 = [randomNum(22,25),randomNum(22,25),randomNum(22,25),randomNum(22,25),randomNum(22,25),randomNum(22,29),randomNum(22,29),randomNum(22,29)];
+    var randome81 = airtemdata;
     option = {
         // backgroundColor: "#05224d",
         tooltip: {},
@@ -1178,7 +1176,7 @@ $(function () {
     function kecharts_5() {
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('kechart5'));
-        var randome81 = [randomNum(0,29),randomNum(0,29),randomNum(0,29),randomNum(0,29),randomNum(0,29),randomNum(0,29),randomNum(0,29),randomNum(0,29)];
+        var randome81 = airpm25data;
         option = {
     
             grid: {
@@ -1359,7 +1357,7 @@ $(function () {
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('kechart6'));
         var randome81 = [randomNum(100,700),randomNum(100,700),randomNum(100,700),randomNum(100,700),randomNum(100,700)];
-        var data = [10, 20,15 , 10, 20];
+        var data = airchohdata;
     
     
     
