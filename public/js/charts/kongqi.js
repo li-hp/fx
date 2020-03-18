@@ -515,10 +515,10 @@ $(function () {
             },
     
             grid: {
-                left: '0%',
-                top: '13%',
-                right: '15%',
-                bottom: '7%',
+                left: '8%',
+                top: '8%',
+                right: '8%',
+                bottom: '5%',
                 containLabel: true
             },
     
@@ -679,10 +679,10 @@ $(function () {
             },
     
             grid: {
-                left: '0%',
-                top: '13%',
-                right: '15%',
-                bottom: '7%',
+                left: '8%',
+                top: '5%',
+                right: '8%',
+                bottom: '5%',
                 containLabel: true
             },
     

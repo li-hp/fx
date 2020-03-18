@@ -39,27 +39,19 @@
                     <div class="allnav" id="e333"></div>
                     <div class="boxfoot"></div>
                 </div>
+
                 <div class="boxall">
                 <style type="text/css">#shushiimg{background:url("/img/xiaoren.png") 5%  center  no-repeat ;}</style>
-           <div id="shushiimg" style=" width:100%; height:100%; ">
+                    <div id="shushiimg" style=" width:100%; height:100%; ">
                     <div class="alltitle">舒适</div>   
-                    
-                    
-                
-                  
-                    <div class="allnav" id="e444">
-                 </div>
-                  
-                    <div class="boxfoot"></div>
-                    
-                    </div>
-                
+                    <div class="allnav" id="e444"> </div>
+                    <div class="boxfoot"></div>  
                 </div>
 
 
+                
+            </div>
 
-
-              
             </div>
 
             <div class="col-xs-12 col-sm-6">
@@ -499,60 +491,116 @@
         </div>
     </div>
 
+
     <div class="maincontain maincontain_shushi">
+        
+        <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:0.5px; margin-right:0.5px;">
 
-            <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:9.5px; margin-right:9.5px;">
-                <div class="col-xs-12 col-sm-3">
 
-                    <div class="boxall">
-                        <div class="alltitle">实时舒适度</div>
-                        <div class="allnav" id="shushi_echart_1"></div>
-                        <div class="boxfoot"></div>
+
+            <div class="col-xs-12 col-sm-3" style="padding-left:0px; padding-right: 0px">
+
+                <div class="boxall">
+                    <div class="alltitle">舒适</div>
+                    <style type="text/css">#shushiimg{background:url("/img/xiaoren.png") 5%  center  no-repeat ;}</style>
+                    <div id="shushiimg" style=" width:100%; height:100%; ">
+                    <div class="allnav" id="ss111"></div>
                     </div>
-
-                    <div class="boxall">
-                        <div class="alltitle">舒适度变化趋势</div>
-                            <div class="allnav" id="shushi_echart_2">    
-                        </div>
-                        <div class="boxfoot"></div>
-                    </div>
-
-                    <div class="boxall">
-                        <div class="alltitle">舒适度热词分析</div>
-                        <div class="allnav" id="shushi_echart_3"></div>
-                        <div class="boxfoot"></div>
-                    </div>
-
-
-                    <div class="boxall">
-                        <div class="alltitle">舒适交互</div>
-                        <div class="sysw">
-                            <a type="button"
-                            class="btn btn-primary center-block btn-sm" >
-                            <p style="font-size:5rem;">总开关</p>
-                            </a>
-                        </div>
-                        <div class="sysw">
-                            <a type="button"
-                            class="btn btn-primary center-block btn-sm"
-                            aria-label="Right Align">
-                            <p style="font-size:5rem;">AUTO</p>
-                            </a>
-                        </div>
-
-
-                        <div class="boxfoot"></div>
-                    </div>
-
-
+                    <div class="boxfoot"></div>
                 </div>
 
-                <div class="col-xs-12 col-sm-9">
+
+                
+
+                <div class="boxall">
+                    <div class="alltitle">噪声（日）</div>
+                    <div class="allnav" id="ss222"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxall">
+                    <div class="alltitle">温度（周）</div>
+                    <div class="allnav" id="ss333"></div>
+                    <div class="boxfoot"></div>
+                </div>
+                <div class="boxall">
+          
+                    <div class="alltitle">温度（日）</div>   
+                    
+                    
+                
+                  
+                    <div class="allnav" id="ss444">
+               
+                  
+                    <div class="boxfoot"></div>
+                    
+                    </div>
+                
+                </div>
+
+
+
+
+              
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+            <style type="text/css">#backImg{background: url("/img/owell2dd.png");}</style>
+                {{-- 此处height可以调整3d框图的高度 --}}
+                <div class="boxall_3d" id="backImg" style="width:100%; height:97.5%; background-size:100%; -moz-background-size:100%; background-repeat: no-repeat;">
+                    <div class="alltitle">全景地图</div>
+                    <div class="allnav3d" id="gechart5"></div>
+                    <div class="boxfoot"></div>
+                </div> 
+            </div>
+
+
+            <div class="col-xs-12 col-sm-3" style="padding-left:0px; padding-right: 0px">
+
+
+                <div class="boxallright">
+                    <div class="alltitle">空气质量</div>
+                    <div class="allnav" id="ss666"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxallright">
+                    <div class="alltitle">湿度（周）</div>
+                    <div class="allnav" id="ss777"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxallright">
+                    <div class="alltitle">湿度（日）</div>
+                    <div class="allnav" id="ss888"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxallright">
+                    <div class="alltitle">提醒</div>
+                    <div class="allnav" id="ss999"></div>
+                    <div class="boxfoot"></div>
                 </div>
 
             </div>
 
-     </div>
+        
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         <div class="maincontain maincontain_kangyi">

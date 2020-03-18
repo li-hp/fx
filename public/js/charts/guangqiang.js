@@ -21,7 +21,7 @@ $(function () {
         var data1 = [290,330,350,360,355,335,315,300,290];
         // var Line = ["光照强度节律图"];
 
-        var randome81 = [randomNum(280,360),
+        var randome81 = [
             randomNum(280,360),randomNum(280,360),
             randomNum(280,360),randomNum(280,360),
             randomNum(280,360),randomNum(280,360),
@@ -75,7 +75,7 @@ $(function () {
                 axisTick: {
                     show: false,
                 },
-                data: ["0:00","3：00","6:00","9:00","12：00","15:00","18:00","21:00","0:00"],
+                data: ["0:00","3：00","6:00","9:00","12：00","15:00","18:00","21:00"],
             }],
             yAxis: [{
                 type: 'value',
@@ -599,7 +599,7 @@ $(function () {
     
             grid: {
                 left: '8%',
-                top: '5%',
+                top: '10%',
                 right: '5%',
                 bottom: '8%',
                 containLabel: true
@@ -750,7 +750,7 @@ $(function () {
         var data1 = [290,330,350,360,355,335,315,300,290];
         // var Line = ["光照强度节律图"];
 
-        var randome81 = [randomNum(280,360),
+        var randome81 = [
             randomNum(280,360),randomNum(280,360),
             randomNum(280,360),randomNum(280,360),
             randomNum(280,360),randomNum(280,360),
@@ -804,7 +804,7 @@ $(function () {
                 axisTick: {
                     show: false,
                 },
-                data: ["0:00","3：00","6:00","9:00","12：00","15:00","18:00","21:00","0:00"],
+                data: ["0:00","3：00","6:00","9:00","12：00","15:00","18:00","21:00"],
             }],
             yAxis: [{
                 type: 'value',

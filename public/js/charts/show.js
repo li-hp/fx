@@ -1270,6 +1270,180 @@ $(function () {
     }
 
 
+    
+    function ss444() {
+        var myChart = echarts.init(document.getElementById('ss444'));
+
+        var randome81 = [randomNum(20,25), randomNum(30,50), 
+            randomNum(30,50), randomNum(30,50), 
+            randomNum(30,50), randomNum(30,50), 
+            randomNum(30,50), randomNum(30,50)];
+    
+        option = {
+            tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                lineStyle: {
+                    color: '#00B2EE'
+                    }
+                }
+            },
+    
+            legend: {
+            top:'0%',
+                data:['办公区1'],
+                        textStyle: {
+                            color: "#fff",
+                            fontSize:'24',
+                            fontWeight: 'bold',
+                }
+            },
+    
+            grid: {
+                left: '8%',
+                top: '10%',
+                right: '5%',
+                bottom: '8%',
+                containLabel: true
+            },
+    
+            xAxis: [{
+                // name:"分钟前",
+                nameLocation:'center',
+                nameGap:40,
+                nameTextStyle:{
+                    color: "#fff",
+                    fontSize:'24',
+                    fontWeight: 'bold',
+                },
+                type: 'category',
+                data: ['0:00', '3:00', '6:00', '9:00', '12:00', '15:00', '18:00','21:00'],
+                axisLine: {
+                    show: true,
+                 lineStyle: {
+                        color: "rgba(255,255,255,.1)",
+                        width: 1,
+                        type: "solid"
+                    },
+                },
+                axisTick: {
+                    show: false,
+                },
+                axisLabel:  {
+                        interval: 0,
+                       // rotate:50,
+                        show: true,
+                        splitNumber: 15,
+                        textStyle: {
+                            color: "#fff",
+                            fontSize:'24',
+                            fontWeight: 'bold',
+                        },
+                    },
+            }],
+    
+            yAxis: [{
+                name:"光强（LUX）",
+                nameTextStyle:{
+                    color: "#fff",
+                    fontSize:'24',
+                    fontWeight: 'bold',
+                },
+                type: 'value',
+                axisTick: {show: false},
+                min:0,
+                max:600,
+                axisLine: {
+                    lineStyle: {
+                        color: 'rgba(255,255,255,.1)'
+                    }
+                },
+            axisLabel:  {
+                    textStyle: {
+                        color: "#fff",
+                        fontSize:'24',
+                        fontWeight: 'bold',
+                    },
+                },
+                splitArea:{
+                    show:false,
+                    interval:(15-25),
+                },
+                splitNumber: 5,
+                splitLine: {
+                    interval:2,
+                    lineStyle: {
+                        color: 'rgba(255,255,255,.1)',
+                    }
+                },
+            }],
+    
+            series: [{
+                    name: '光强指标',
+                    type: 'line',
+                    smooth: true,
+                    symbol: 'circle',
+                    showAllSymbol: true,
+                    // symbol: 'image://./static/images/guang-circle.png',
+                    symbolSize: 20,
+                    lineStyle: {
+                        normal: {
+                            // color: "#53fdfe", // 线条颜色
+                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                                offset: 0,
+                                color: '#FFEC8B'
+                            }, {
+                                offset: 1,
+                                color: '#FFFF00'
+                            }]),
+                            barBorderRadius: 12,
+                            width:10
+                        },
+    
+                        borderColor: '#f0f',
+                    },
+                    itemStyle: {
+                        normal: {
+                            color: '#EEAD0E',
+                            borderColor: 'rgba(221, 220, 107, .1)',
+                            borderWidth: 30
+                        }
+                    },
+                    data: randome81,
+                    markLine:{
+                        silent: false,
+                        symbol: 'none',
+                        label: {
+                            show:true,
+                            position:'end', // 'start\middle\end'
+                            formatter: '{b}',
+                            color: "#fff",
+                            fontSize:'24',
+                            fontWeight: 'bold',
+                        },
+                        data: [{
+                            name: '中',
+                            yAxis: 2000
+                        }, {
+                            name: '优',
+                            yAxis: 1000
+                        }],
+                        lineStyle:{
+                            color:'#8E8E8E',
+                        },
+                    },
+            }]
+        };
+
+        myChart.setOption(option);
+        window.addEventListener("resize",function(){
+            myChart.resize();
+        });
+
+    }
+
+
+
 
 
 
