@@ -532,7 +532,7 @@ $(function () {
                     fontWeight: 'bold',
                 },
                 type: 'category',
-                data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
+                data: timeweek,
                 axisLine: {
                     show: true,
                  lineStyle: {
@@ -696,7 +696,7 @@ $(function () {
                     fontWeight: 'bold',
                 },
                 type: 'category',
-                data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
+                data: timeweek,
                 axisLine: {
                     show: true,
                  lineStyle: {
@@ -986,7 +986,7 @@ $(function () {
             axisTick: {
                 show: false,
             },
-            data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
+            data: timeweek,
         }],
         yAxis: [{
             type: 'value',
@@ -1202,7 +1202,7 @@ $(function () {
                     fontWeight: 'bold',
                 },
                 type: 'category',
-                data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
+                data: timeweek,
                 axisLine: {
                     show: true,
                  lineStyle: {

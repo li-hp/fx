@@ -209,7 +209,7 @@ $(function(){
                     fontWeight: 'bold',
                 },
                 type: 'category',
-                data: ['0:00', '3:00', '6:00', '9:00', '12:00', '15:00', '18:00','21:00'],
+                data: timeday,
                 axisLine: {
                     show: true,
                  lineStyle: {
@@ -381,7 +381,7 @@ $(function(){
                     fontWeight: 'bold',
                 },
                 type: 'category',
-                data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
+                data: timeweek,
                 axisLine: {
                     show: true,
                  lineStyle: {
@@ -554,7 +554,7 @@ $(function(){
                     fontWeight: 'bold',
                 },
                 type: 'category',
-                data: ['0:00', '3:00', '6:00', '9:00', '12:00', '15:00', '18:00','21:00'],
+                data: timeday,
                 axisLine: {
                     show: true,
                  lineStyle: {
@@ -723,7 +723,7 @@ $(function(){
                     fontWeight: 'bold',
                 },
                 type: 'category',
-                data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
+                data: timeweek,
                 axisLine: {
                     show: true,
                  lineStyle: {
@@ -894,7 +894,7 @@ $(function(){
                     fontWeight: 'bold',
                 },
                 type: 'category',
-                data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
+                data: timeweek,
                 axisLine: {
                     show: true,
                  lineStyle: {
@@ -1024,7 +1024,7 @@ $(function(){
     
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('ss888'));
-        var randome81 = airhumdatadate;
+        var randome81 = airhumdata;
     
         option = {
             tooltip: {
@@ -1064,7 +1064,7 @@ $(function(){
                     fontWeight: 'bold',
                 },
                 type: 'category',
-                data: ["0:00","3：00","6:00","9:00","12：00","15:00","18:00","21:00"],
+                data: timeday,
                 axisLine: {
                     show: true,
                  lineStyle: {

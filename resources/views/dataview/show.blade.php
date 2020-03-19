@@ -133,8 +133,15 @@
             </div>
 
             <div class="col-xs-12 col-sm-6">
-            </div>
+                <style type="text/css">#backImg{background: url("/img/oweld2dd.png");}</style>
+                {{-- 此处height可以调整3d框图的高度 --}}
+                <div class="boxall_3d" id="backImg" style="width:100%; height:97.5%; background-size:100%; -moz-background-size:100%; background-repeat: no-repeat;">
 
+                    <div class="alltitle">全景地图</div>
+                    <div class="allnav3d" id="kechart555"></div>
+                    <div class="boxfoot"></div>
+                </div> 
+            </div>
 
             <div class="col-xs-12 col-sm-3">
                 <div class="boxall">
@@ -359,7 +366,7 @@
                 </div>
 
                 <div class="boxall">
-                    <div class="alltitle">室外光强（周）</div>
+                    <div class="alltitle">会议室（日）</div>
                     <div class="allnav" id="gechart2">
 
 
@@ -387,12 +394,12 @@
                 </div>
 
                 <div class="boxall">
-                    <div class="alltitle">办公区1（周）</div>
+                    <div class="alltitle">办公区1（日）</div>
                     <div class="allnav" id="gechart3"></div>
                     <div class="boxfoot"></div>
                 </div>
                 <div class="boxall">
-                    <div class="alltitle">办公区1（日）</div>
+                    <div class="alltitle">办公区2（日）</div>
                     <div class="allnav" id="gechart4"></div>
                     <div class="boxfoot"></div>
                 </div>
@@ -420,19 +427,19 @@
 
 
             <div class="boxallright">
-                <div class="alltitle">会议室（日）</div>
+                <div class="alltitle">室外光强（周）</div>
                 <div class="allnav" id="gechart6"></div>
                 <div class="boxfoot"></div>
             </div>
 
             <div class="boxallright">
-                <div class="alltitle">办公区2（周）</div>
+                <div class="alltitle">办公区1（周）</div>
                 <div class="allnav" id="gechart7"></div>
                 <div class="boxfoot"></div>
             </div>
 
             <div class="boxallright">
-                <div class="alltitle">办公区2（日）</div>
+                <div class="alltitle">办公区2（周）</div>
                 <div class="allnav" id="gechart8"></div>
                 <div class="boxfoot"></div>
             </div>

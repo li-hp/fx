@@ -852,8 +852,8 @@ $(function () {
       
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('e333'));
-        var inlight=gdata1;
-        var outlight=gdata2;
+        var inlight=inlightdata1;
+        var outlight=outlightdata;
         option = {
             // backgroundColor: "#404A59",
             color: ['#ffd285', '#ff733f', '#ec4863'],
@@ -920,7 +920,7 @@ $(function () {
                     }
                 },
                 boundaryGap: false,
-                data: ['9:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00']
+                data:timeday,
             },
             yAxis: {
                 "axisLine": {
@@ -2215,7 +2215,7 @@ $(function () {
                                     formatter: '办公区人数',
                                     textStyle: {
                                         color: '#EFFBFB',
-                                        fontSize: 32,
+                                        fontSize: 24,
                                     }
                                 }
                             }
@@ -2228,7 +2228,7 @@ $(function () {
                                     formatter: '\n{c0}',
                                     textStyle: {
                                         color: '#FDFF5C',
-                                        fontSize: 38,
+                                        fontSize: 24,
                                     }
                                 }
                             }

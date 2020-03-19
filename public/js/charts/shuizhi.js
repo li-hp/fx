@@ -1,7 +1,7 @@
 $(function(){
 
   sz111();
-  sz222();
+   sz222();
   sz333();
   sz444();
   sz666();
@@ -373,7 +373,7 @@ $(function(){
         var myChart = echarts.init(document.getElementById('sz222'));
 
      
-    var randome81 = [randomNum(5,9),randomNum(5,9),randomNum(5,9),randomNum(5,9),randomNum(5,9),randomNum(5,9),randomNum(5,9)];
+    var randome81 = waterphdata,
     option = {
 
         grid: {
@@ -398,7 +398,7 @@ $(function(){
                 fontWeight: 'bold',
             },
             type: 'category',
-            data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
+            data: timeweek,
             axisLine: {
                 show: true,
              lineStyle: {
@@ -589,7 +589,7 @@ $(function(){
             axisTick: {
                 show: false,
             },
-            data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
+            data: timeweek,
         }],
         yAxis: [{
             name:'浑浊度（NTU)',
@@ -726,8 +726,7 @@ $(function(){
       
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('sz444'));
-        var inlight=gdata1;
-        var outlight=gdata2;
+      
         option = {
             // backgroundColor: "#404A59",
             color: ['#ffd285', '#ff733f', '#ec4863'],
@@ -796,7 +795,7 @@ $(function(){
                     }
                 },
                 boundaryGap: false,
-                data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
+                data: timeweek,
             },
             yAxis: {
                
@@ -979,7 +978,7 @@ $(function(){
             axisTick: {
                 show: false,
             },
-            data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
+            data: timeweek,
         }],
         yAxis: [{
             name:'电导率（ps/cm³)',
