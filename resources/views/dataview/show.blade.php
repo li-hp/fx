@@ -8,6 +8,7 @@
 {{-- 全局css all  除了头尾意外的部分 --}}
 
 
+
 <div class="all" style="padding-right: 0px; padding-left:0px; margin-left:0px; margin-right:0px;z-index: 10;">
 
 
@@ -526,13 +527,13 @@
                 </div>
 
                 <div class="boxall">
-                    <div class="alltitle">温度（周）</div>
+                    <div class="alltitle">温度（日）</div>
                     <div class="allnav" id="ss333"></div>
                     <div class="boxfoot"></div>
                 </div>
                 <div class="boxall">
           
-                    <div class="alltitle">温度（日）</div>   
+                    <div class="alltitle">湿度（日）</div>   
                     
                     
                 
@@ -567,7 +568,7 @@
 
 
                 <div class="boxallright">
-                    <div class="alltitle">空气质量</div>
+                    <div class="alltitle">温度（周）</div>
                     <div class="allnav" id="ss666"></div>
                     <div class="boxfoot"></div>
                 </div>
@@ -579,14 +580,179 @@
                 </div>
 
                 <div class="boxallright">
-                    <div class="alltitle">湿度（日）</div>
-                    <div class="allnav" id="ss888"></div>
+                    <div class="alltitle">烟感</div>
+                    <div class="allnav" id="ss888">
+                    
+                    <div class="sysw">
+ 
+                       <a href="#" class="button white bigrounded">烟感1</a> 
+                   </div>
+                    <div class="sysw">
+
+                        <a href="#" class="button white bigrounded">烟感2</a> 
+                    </div>
+                    <div class="sysw">
+
+                    <a href="#" class="button white bigrounded">烟感3</a> 
+                    </div>
+                    <div class="sysw">
+
+                    <a href="#" class="button white bigrounded">烟感4</a> 
+                    </div>
+                    <div class="sysw2">
+                      <div style="color:#fff;font-size:2.5rem; "> 正常</div>
+
+                    </div>
+                    <div class="sysw2">
+                      <div style="color:#fff;font-size:2.5rem; "> 正常</div>
+
+                    </div>
+                    <div class="sysw2">
+                      <div style="color:#fff;font-size:2.5rem; "> 正常</div>
+
+                    </div>
+                    <div class="sysw2">
+                      <div style="color:#fff;font-size:2.5rem; "> 正常</div>
+
+                    </div>
+                        
+                    
+                    </div>
                     <div class="boxfoot"></div>
                 </div>
 
                 <div class="boxallright">
-                    <div class="alltitle">提醒</div>
+                    <div class="alltitle">控制</div>
                     <div class="allnav" id="ss999"></div>
+
+                     
+                    <div class="shubox3"> 
+                        <div class='henbox'></div>    
+                         <div class='henbox'></div>
+                        <div class='henbox'>新风</div>
+                        <div class='henbox'>空调</div>
+                   
+                        <div class='henbox'></div>
+                        <div class='henbox'></div>
+
+                    </div>   
+                     <div class="shubox3">   
+                          <div class='henbox'></div>
+                        <div class='henbox'></div>
+                        <div class='henbox'>模式</div>
+                        <div class='henbox'>温度</div>
+                    
+                        <div class='henbox'></div>
+                        <div class='henbox'></div>
+
+
+                    </div>  
+                     <div class="shubox4">
+                     <div class='henbox'></div>
+                     <div class='henbox'></div>
+
+                    <div class='henbox'>                <div class="js-demo-1">
+
+                    <label><input style="height:30px;width:30px"type="radio" name="radio" value="0" checked /> 低</label>
+                    <label><input style="height:30px;width:30px"type="radio" name="radio" value="1" /> 中</label>
+                    <label><input style="height:30px;width:30px"type="radio" name="radio" value="2" /> 高</label>
+                    </div>
+                    </div>
+                    <div class='henbox'>                <div class="js-demo-2">
+
+<label><input style="height:30px;width:30px"type="radio" name="radio2" value="0" checked /> 低</label>
+<label><input style="height:30px;width:30px"type="radio" name="radio2" value="1" /> 中</label>
+<label><input style="height:30px;width:30px"type="radio" name="radio2" value="2" /> 高</label>
+</div>
+</div>
+
+                 
+     
+
+
+                       
+              
+
+                 
+                    </div>
+
+                    <div class="boxfoot"></div>
+                </div>
+
+            </div>
+
+        
+        </div>
+    </div>
+
+    
+    <div class="maincontain maincontain_yingyang">
+        
+        <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:0.5px; margin-right:0.5px;">
+
+
+
+            <div class="col-xs-12 col-sm-3" style="padding-left:0px; padding-right: 0px">
+
+                <div class="boxall">
+                    <div class="alltitle">营养</div>
+                    <div class="allnav" id="yy111"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxall">
+                    <div class="alltitle">综合评分</div>
+                    <div class="allnav" id="yy222"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxall">
+                    <div class="alltitle">用餐情况（日）</div>
+                    <div class="allnav" id="yy333"></div>
+                    <div class="boxfoot"></div>
+                </div>
+                <div class="boxall">
+                    <div class="alltitle">营养摄入</div>
+                    <div class="allnav" id="yy444"></div>
+                    <div class="boxfoot"></div>
+        
+            </div></div>
+                    <div class="col-xs-12 col-sm-6">
+                <style type="text/css">#backImgyy{background: url("/img/oweld2dd.png");}</style>
+                {{-- 此处height可以调整3d框图的高度 --}}
+                <div class="boxall_3d" id="backImgyy" style="width:100%; height:97.5%; background-size:100%; -moz-background-size:100%; background-repeat: no-repeat;">
+
+                    <div class="alltitle">全景地图</div>
+                    <div class="allnav3d" id="yy555"></div>
+                    <div class="boxfoot"></div>
+                </div> 
+            </div>
+
+
+            <div class="col-xs-12 col-sm-3" style="padding-left:0px; padding-right: 0px">
+
+
+                <div class="boxallright">
+                    <div class="alltitle">每日菜单</div>
+                    <div class="allnav" id="yy666"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxallright">
+                    <div class="alltitle">果蔬推广</div>
+                    <div class="allnav" id="yy777"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxallright">
+                    <div class="alltitle">用餐情况（周）</div>
+                    <div class="allnav" id="yy888"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxallright">
+                    <div class="alltitle">充值查询</div>
+                    <div class="allnav" id="yy999"></div>
                     <div class="boxfoot"></div>
                 </div>
 
@@ -693,51 +859,8 @@
 
         </div>
 
-<script>
-uiduck.setOptions({
-    templateId: "table",
-    url: { url: "http://data.live.126.net/livechannel/sub/3.json", type: "POST", key: "sublives" },
-    loading: { icon: "uiduck-loading-6", time: 1000 },
-    style: { tbClass: "uiduck-dark" },
-    page: true,
-    pageOptions: { layout: ["total", , "prev", "next", "last"] },
-    fieldOptions: [
-        {
-            index: true,
-            title: "序号"
-        },
-        {
-            key: "cid",
-            title: "ID"
-        }, {
-            key: "cname",
-            title: "类型"
-        }, {
-            key: "collectionId",
-            title: "测试",
-            type: "map",
-            computed: {
-                "0": "李白",
-                "1": "杜甫",
-                "2": "白居易",
-                "3": "王安石"
-            }
-        }, {
-            key: "ename",
-            title: "名称"
-        }, {
-            key: "icon",
-            title: "图标",
-            type: "image",
-            width: "30px",
-            height: "30px"
-        }, {
-            key: "tname",
-            title: "节目名称"
-        }]
-});
-</script>
 
+</div>
 
 
 

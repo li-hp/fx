@@ -10,9 +10,9 @@
 */
 
 
-// --------------------------全局  主页数据----------------------------------- //
+// --------------------------全局  主页数据----------------------------------- // 
 
-ziyemiandata =["zhuye","kongqi","shuizhi","guangqiang", "shushi", "yinyang","jianshen", "kangyi", "renyuan"]
+ziyemiandata =["zhuye","kongqi","shuizhi","guangqiang", "shushi", "yingyang","jianshen", "kangyi", "renyuan"]
 
 
 //首 页 数 据

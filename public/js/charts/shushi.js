@@ -1,12 +1,15 @@
 $(function(){
     ss111();
     ss222();
-    ss333();
-    ss444();
+     ss333();  
+  ss444();
     ss666();
+
+
+   
    
     ss777();
-    ss888();
+ 
 
 
 
@@ -333,10 +336,351 @@ $(function(){
         });
 
     }
-
-  
+    
     function ss333() {
         var myChart = echarts.init(document.getElementById('ss333'));
+
+        var randome81 = [randomNum(3,30), randomNum(3,30), 
+            randomNum(3,30), randomNum(3,30), 
+            randomNum(3,30), randomNum(3,30), 
+            randomNum(3,30), randomNum(3,30)];
+    
+        option = {
+            tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                lineStyle: {
+                    color: '#00B2EE'
+                    }
+                }
+            },
+    
+            legend: {
+            top:'0%',
+                data:['办公区1'],
+                        textStyle: {
+                            color: "#fff",
+                            fontSize:'24',
+                            fontWeight: 'bold',
+                }
+            },
+    
+            grid: {
+                left: '8%',
+                top: '10%',
+                right: '5%',
+                bottom: '8%',
+                containLabel: true
+            },
+    
+            xAxis: [{
+                // name:"分钟前",
+                nameLocation:'center',
+                nameGap:40,
+                nameTextStyle:{
+                    color: "#fff",
+                    fontSize:'24',
+                    fontWeight: 'bold',
+                },
+                type: 'category',
+                data: timeday,
+                axisLine: {
+                    show: true,
+                 lineStyle: {
+                        color: "rgba(255,255,255,.1)",
+                        width: 1,
+                        type: "solid"
+                    },
+                },
+                axisTick: {
+                    show: false,
+                },
+                axisLabel:  {
+                        interval: 0,
+                       // rotate:50,
+                        show: true,
+                        splitNumber: 15,
+                        textStyle: {
+                            color: "#fff",
+                            fontSize:'24',
+                            fontWeight: 'bold',
+                        },
+                    },
+            }],
+    
+            yAxis: [{
+                name:"温度（℃）",
+                nameTextStyle:{
+                    color: "#fff",
+                    fontSize:'24',
+                    fontWeight: 'bold',
+                },
+                type: 'value',
+                axisTick: {show: false},
+                min:0,
+                max:30,
+                axisLine: {
+                    lineStyle: {
+                        color: 'rgba(255,255,255,.1)'
+                    }
+                },
+            axisLabel:  {
+                    textStyle: {
+                        color: "#fff",
+                        fontSize:'24',
+                        fontWeight: 'bold',
+                    },
+                },
+                splitArea:{
+                    show:false,
+                    interval:(15-25),
+                },
+                splitNumber: 5,
+                splitLine: {
+                    interval:2,
+                    lineStyle: {
+                        color: 'rgba(255,255,255,.1)',
+                    }
+                },
+            }],
+    
+            series: [{
+                    name: '温度指标',
+                    type: 'line',
+                    smooth: true,
+                    symbol: 'circle',
+                    showAllSymbol: true,
+                    // symbol: 'image://./static/images/guang-circle.png',
+                    symbolSize: 20,
+                    lineStyle: {
+                        normal: {
+                            // color: "#53fdfe", // 线条颜色
+                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                                offset: 0,
+                                color: '#FFEC8B'
+                            }, {
+                                offset: 1,
+                                color: '#FFFF00'
+                            }]),
+                            barBorderRadius: 12,
+                            width:10
+                        },
+    
+                        borderColor: '#f0f',
+                    },
+                    itemStyle: {
+                        normal: {
+                            color: '#EEAD0E',
+                            borderColor: 'rgba(221, 220, 107, .1)',
+                            borderWidth: 30
+                        }
+                    },
+                    data: randome81,
+                    markLine:{
+                        silent: false,
+                        symbol: 'none',
+                        label: {
+                            show:true,
+                            position:'end', // 'start\middle\end'
+                            formatter: '{b}',
+                            color: "#fff",
+                            fontSize:'24',
+                            fontWeight: 'bold',
+                        },
+                        data: [{
+                            name: '高',
+                            yAxis: 26
+                        }, {
+                            name: '低',
+                            yAxis: 23
+                        }],
+                        lineStyle:{
+                            color:'#8E8E8E',
+                        },
+                    },
+            }]
+        };
+
+        myChart.setOption(option);
+        window.addEventListener("resize",function(){
+            myChart.resize();
+        });
+
+    }
+ 
+    function ss444() {
+    
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('ss444'));
+        var randome81 = airhumdata;
+    
+        option = {
+            tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                lineStyle: {
+                    color: '#00B2EE'
+                    }
+                }
+            },
+    
+            legend: {
+            top:'0%',
+                data:['湿度指标'],
+                        textStyle: {
+                            color: "#fff",
+                            fontSize:'24',
+                            fontWeight: 'bold',
+                }
+            },
+    
+            grid: {
+                left: '8%',
+                top: '8%',
+                right: '8%',
+                bottom: '7%',
+                containLabel: true
+            },
+    
+            xAxis: [{
+                // name:"分钟前",
+                nameLocation:'center',
+                nameGap:40,
+                nameTextStyle:{
+                    color: "#fff",
+                    fontSize:'24',
+                    fontWeight: 'bold',
+                },
+                type: 'category',
+                data: timeday,
+                axisLine: {
+                    show: true,
+                 lineStyle: {
+                        color: "rgba(255,255,255,.1)",
+                        width: 1,
+                        type: "solid"
+                    },
+                },
+                axisTick: {
+                    show: false,
+                },
+                axisLabel:  {
+                        interval: 0,
+                       // rotate:50,
+                        show: true,
+                        splitNumber: 15,
+                        textStyle: {
+                            color: "#fff",
+                            fontSize:'24',
+                            fontWeight: 'bold',
+                        },
+                    },
+            }],
+    
+            yAxis: [{
+                name:"湿度:%",
+                nameTextStyle:{
+                    color: "#fff",
+                    fontSize:'24',
+                    fontWeight: 'bold',
+                },
+                type: 'value',
+                axisTick: {show: false},
+                min:0,
+                max:90,
+                axisLine: {
+                    lineStyle: {
+                        color: 'rgba(255,255,255,.1)'
+                    }
+                },
+            axisLabel:  {
+                    textStyle: {
+                        color: "#fff",
+                        fontSize:'24',
+                        fontWeight: 'bold',
+                    },
+                },
+                splitArea:{
+                    show:false,
+                    interval:(15-25),
+                },
+                splitNumber: 5,
+                splitLine: {
+                    interval:2,
+                    lineStyle: {
+                        color: 'rgba(255,255,255,.1)',
+                    }
+                },
+            }],
+    
+            series: [{
+                    name: '湿度指标',
+                    type: 'line',
+                    smooth: true,
+                    symbol: 'circle',
+                    showAllSymbol: true,
+                    // symbol: 'image://./static/images/guang-circle.png',
+                    symbolSize: 20,
+                    lineStyle: {
+                        normal: {
+                            // color: "#53fdfe", // 线条颜色
+                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                                offset: 0,
+                                color: '#0080FF'
+                            }, {
+                                offset: 1,
+                                color: '#00FFFF'
+                            }]),
+                            barBorderRadius: 12,
+                            width:10
+                        },
+    
+                        borderColor: '#f0f',
+                    },
+                    itemStyle: {
+                        normal: {
+                            color: '#00FFFF',
+                            borderColor: 'rgba(221, 220, 107, .1)',
+                            borderWidth: 30
+                        }
+                    },
+                    data: randome81,
+                    markLine:{
+                        silent: false,
+                        symbol: 'none',
+                        label: {
+                            show:true,
+                            position:'end', // 'start\middle\end'
+                            formatter: '{b}',
+                            color: "#fff",
+                            fontSize:'24',
+                            fontWeight: 'bold',
+                        },
+                        data: [{
+                            name: '低',
+                            yAxis: 40
+                        }, {
+                            name: '高',
+                            yAxis: 70
+                        }],
+                        lineStyle:{
+                            color:'#8E8E8E',
+                        },
+                    },
+            }]
+        };
+    
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+        window.addEventListener("resize",function(){
+            myChart.resize();
+        });
+    }
+
+
+  
+    function ss666() {
+        var myChart = echarts.init(document.getElementById('ss666'));
 
         var randome81 = [randomNum(3,30), randomNum(3,30), 
             randomNum(3,30), randomNum(3,30), 
@@ -507,346 +851,6 @@ $(function(){
     }
 
 
-    
-    function ss444() {
-        var myChart = echarts.init(document.getElementById('ss444'));
-
-        var randome81 = [randomNum(3,30), randomNum(3,30), 
-            randomNum(3,30), randomNum(3,30), 
-            randomNum(3,30), randomNum(3,30), 
-            randomNum(3,30), randomNum(3,30)];
-    
-        option = {
-            tooltip: {
-            trigger: 'axis',
-            axisPointer: {
-                lineStyle: {
-                    color: '#00B2EE'
-                    }
-                }
-            },
-    
-            legend: {
-            top:'0%',
-                data:['办公区1'],
-                        textStyle: {
-                            color: "#fff",
-                            fontSize:'24',
-                            fontWeight: 'bold',
-                }
-            },
-    
-            grid: {
-                left: '8%',
-                top: '10%',
-                right: '5%',
-                bottom: '8%',
-                containLabel: true
-            },
-    
-            xAxis: [{
-                // name:"分钟前",
-                nameLocation:'center',
-                nameGap:40,
-                nameTextStyle:{
-                    color: "#fff",
-                    fontSize:'24',
-                    fontWeight: 'bold',
-                },
-                type: 'category',
-                data: timeday,
-                axisLine: {
-                    show: true,
-                 lineStyle: {
-                        color: "rgba(255,255,255,.1)",
-                        width: 1,
-                        type: "solid"
-                    },
-                },
-                axisTick: {
-                    show: false,
-                },
-                axisLabel:  {
-                        interval: 0,
-                       // rotate:50,
-                        show: true,
-                        splitNumber: 15,
-                        textStyle: {
-                            color: "#fff",
-                            fontSize:'24',
-                            fontWeight: 'bold',
-                        },
-                    },
-            }],
-    
-            yAxis: [{
-                name:"温度（℃）",
-                nameTextStyle:{
-                    color: "#fff",
-                    fontSize:'24',
-                    fontWeight: 'bold',
-                },
-                type: 'value',
-                axisTick: {show: false},
-                min:0,
-                max:30,
-                axisLine: {
-                    lineStyle: {
-                        color: 'rgba(255,255,255,.1)'
-                    }
-                },
-            axisLabel:  {
-                    textStyle: {
-                        color: "#fff",
-                        fontSize:'24',
-                        fontWeight: 'bold',
-                    },
-                },
-                splitArea:{
-                    show:false,
-                    interval:(15-25),
-                },
-                splitNumber: 5,
-                splitLine: {
-                    interval:2,
-                    lineStyle: {
-                        color: 'rgba(255,255,255,.1)',
-                    }
-                },
-            }],
-    
-            series: [{
-                    name: '温度指标',
-                    type: 'line',
-                    smooth: true,
-                    symbol: 'circle',
-                    showAllSymbol: true,
-                    // symbol: 'image://./static/images/guang-circle.png',
-                    symbolSize: 20,
-                    lineStyle: {
-                        normal: {
-                            // color: "#53fdfe", // 线条颜色
-                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                                offset: 0,
-                                color: '#FFEC8B'
-                            }, {
-                                offset: 1,
-                                color: '#FFFF00'
-                            }]),
-                            barBorderRadius: 12,
-                            width:10
-                        },
-    
-                        borderColor: '#f0f',
-                    },
-                    itemStyle: {
-                        normal: {
-                            color: '#EEAD0E',
-                            borderColor: 'rgba(221, 220, 107, .1)',
-                            borderWidth: 30
-                        }
-                    },
-                    data: randome81,
-                    markLine:{
-                        silent: false,
-                        symbol: 'none',
-                        label: {
-                            show:true,
-                            position:'end', // 'start\middle\end'
-                            formatter: '{b}',
-                            color: "#fff",
-                            fontSize:'24',
-                            fontWeight: 'bold',
-                        },
-                        data: [{
-                            name: '高',
-                            yAxis: 26
-                        }, {
-                            name: '低',
-                            yAxis: 23
-                        }],
-                        lineStyle:{
-                            color:'#8E8E8E',
-                        },
-                    },
-            }]
-        };
-
-        myChart.setOption(option);
-        window.addEventListener("resize",function(){
-            myChart.resize();
-        });
-
-    }
-    
-    function ss666() {
-    
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('ss666'));
-        var randome81 = airhumdata;
-    
-        option = {
-            tooltip: {
-            trigger: 'axis',
-            axisPointer: {
-                lineStyle: {
-                    color: '#00B2EE'
-                    }
-                }
-            },
-    
-            legend: {
-            top:'0%',
-                data:['湿度指标'],
-                        textStyle: {
-                            color: "#fff",
-                            fontSize:'24',
-                            fontWeight: 'bold',
-                }
-            },
-    
-            grid: {
-                left: '8%',
-                top: '5%',
-                right: '8%',
-                bottom: '7%',
-                containLabel: true
-            },
-    
-            xAxis: [{
-                // name:"分钟前",
-                nameLocation:'center',
-                nameGap:40,
-                nameTextStyle:{
-                    color: "#fff",
-                    fontSize:'24',
-                    fontWeight: 'bold',
-                },
-                type: 'category',
-                data: timeweek,
-                axisLine: {
-                    show: true,
-                 lineStyle: {
-                        color: "rgba(255,255,255,.1)",
-                        width: 1,
-                        type: "solid"
-                    },
-                },
-                axisTick: {
-                    show: false,
-                },
-                axisLabel:  {
-                        interval: 0,
-                       // rotate:50,
-                        show: true,
-                        splitNumber: 15,
-                        textStyle: {
-                            color: "#fff",
-                            fontSize:'24',
-                            fontWeight: 'bold',
-                        },
-                    },
-            }],
-    
-            yAxis: [{
-                name:"湿度:%",
-                nameTextStyle:{
-                    color: "#fff",
-                    fontSize:'24',
-                    fontWeight: 'bold',
-                },
-                type: 'value',
-                axisTick: {show: false},
-                min:0,
-                max:90,
-                axisLine: {
-                    lineStyle: {
-                        color: 'rgba(255,255,255,.1)'
-                    }
-                },
-            axisLabel:  {
-                    textStyle: {
-                        color: "#fff",
-                        fontSize:'24',
-                        fontWeight: 'bold',
-                    },
-                },
-                splitArea:{
-                    show:false,
-                    interval:(15-25),
-                },
-                splitNumber: 5,
-                splitLine: {
-                    interval:2,
-                    lineStyle: {
-                        color: 'rgba(255,255,255,.1)',
-                    }
-                },
-            }],
-    
-            series: [{
-                    name: '湿度指标',
-                    type: 'line',
-                    smooth: true,
-                    symbol: 'circle',
-                    showAllSymbol: true,
-                    // symbol: 'image://./static/images/guang-circle.png',
-                    symbolSize: 20,
-                    lineStyle: {
-                        normal: {
-                            // color: "#53fdfe", // 线条颜色
-                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                                offset: 0,
-                                color: '#0080FF'
-                            }, {
-                                offset: 1,
-                                color: '#00FFFF'
-                            }]),
-                            barBorderRadius: 12,
-                            width:10
-                        },
-    
-                        borderColor: '#f0f',
-                    },
-                    itemStyle: {
-                        normal: {
-                            color: '#00FFFF',
-                            borderColor: 'rgba(221, 220, 107, .1)',
-                            borderWidth: 30
-                        }
-                    },
-                    data: randome81,
-                    markLine:{
-                        silent: false,
-                        symbol: 'none',
-                        label: {
-                            show:true,
-                            position:'end', // 'start\middle\end'
-                            formatter: '{b}',
-                            color: "#fff",
-                            fontSize:'24',
-                            fontWeight: 'bold',
-                        },
-                        data: [{
-                            name: '低',
-                            yAxis: 40
-                        }, {
-                            name: '高',
-                            yAxis: 70
-                        }],
-                        lineStyle:{
-                            color:'#8E8E8E',
-                        },
-                    },
-            }]
-        };
-    
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-        window.addEventListener("resize",function(){
-            myChart.resize();
-        });
-    }
 
 
      
@@ -878,7 +882,7 @@ $(function(){
     
             grid: {
                 left: '8%',
-                top: '5%',
+                top: '8%',
                 right: '8%',
                 bottom: '7%',
                 containLabel: true
@@ -1020,175 +1024,6 @@ $(function(){
     }
 
       
-    function ss888() {
-    
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('ss888'));
-        var randome81 = airhumdata;
-    
-        option = {
-            tooltip: {
-            trigger: 'axis',
-            axisPointer: {
-                lineStyle: {
-                    color: '#00B2EE'
-                    }
-                }
-            },
-    
-            legend: {
-            top:'0%',
-                data:['湿度指标'],
-                        textStyle: {
-                            color: "#fff",
-                            fontSize:'24',
-                            fontWeight: 'bold',
-                }
-            },
-    
-            grid: {
-                left: '8%',
-                top: '5%',
-                right: '8%',
-                bottom: '7%',
-                containLabel: true
-            },
-    
-            xAxis: [{
-                // name:"分钟前",
-                nameLocation:'center',
-                nameGap:40,
-                nameTextStyle:{
-                    color: "#fff",
-                    fontSize:'24',
-                    fontWeight: 'bold',
-                },
-                type: 'category',
-                data: timeday,
-                axisLine: {
-                    show: true,
-                 lineStyle: {
-                        color: "rgba(255,255,255,.1)",
-                        width: 1,
-                        type: "solid"
-                    },
-                },
-                axisTick: {
-                    show: false,
-                },
-                axisLabel:  {
-                        interval: 0,
-                       // rotate:50,
-                        show: true,
-                        splitNumber: 15,
-                        textStyle: {
-                            color: "#fff",
-                            fontSize:'24',
-                            fontWeight: 'bold',
-                        },
-                    },
-            }],
-    
-            yAxis: [{
-                name:"湿度:%",
-                nameTextStyle:{
-                    color: "#fff",
-                    fontSize:'24',
-                    fontWeight: 'bold',
-                },
-                type: 'value',
-                axisTick: {show: false},
-                min:0,
-                max:90,
-                axisLine: {
-                    lineStyle: {
-                        color: 'rgba(255,255,255,.1)'
-                    }
-                },
-            axisLabel:  {
-                    textStyle: {
-                        color: "#fff",
-                        fontSize:'24',
-                        fontWeight: 'bold',
-                    },
-                },
-                splitArea:{
-                    show:false,
-                    interval:(15-25),
-                },
-                splitNumber: 5,
-                splitLine: {
-                    interval:2,
-                    lineStyle: {
-                        color: 'rgba(255,255,255,.1)',
-                    }
-                },
-            }],
-    
-            series: [{
-                    name: '湿度指标',
-                    type: 'line',
-                    smooth: true,
-                    symbol: 'circle',
-                    showAllSymbol: true,
-                    // symbol: 'image://./static/images/guang-circle.png',
-                    symbolSize: 20,
-                    lineStyle: {
-                        normal: {
-                            // color: "#53fdfe", // 线条颜色
-                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                                offset: 0,
-                                color: '#0080FF'
-                            }, {
-                                offset: 1,
-                                color: '#00FFFF'
-                            }]),
-                            barBorderRadius: 12,
-                            width:10
-                        },
-    
-                        borderColor: '#f0f',
-                    },
-                    itemStyle: {
-                        normal: {
-                            color: '#00FFFF',
-                            borderColor: 'rgba(221, 220, 107, .1)',
-                            borderWidth: 30
-                        }
-                    },
-                    data: randome81,
-                    markLine:{
-                        silent: false,
-                        symbol: 'none',
-                        label: {
-                            show:true,
-                            position:'end', // 'start\middle\end'
-                            formatter: '{b}',
-                            color: "#fff",
-                            fontSize:'24',
-                            fontWeight: 'bold',
-                        },
-                        data: [{
-                            name: '低',
-                            yAxis: 40
-                        }, {
-                            name: '高',
-                            yAxis: 70
-                        }],
-                        lineStyle:{
-                            color:'#8E8E8E',
-                        },
-                    },
-            }]
-        };
-    
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-        window.addEventListener("resize",function(){
-            myChart.resize();
-        });
-    }
-
       
     
 

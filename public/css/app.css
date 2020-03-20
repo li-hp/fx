@@ -17717,6 +17717,37 @@ body {
   margin-left:3%;
  height:100%;
  width:20%;
+ 
+
+  
+  position: relative;
+  z-index: 15;
+}
+
+.shubox3 {
+ 
+  font-size: 4rem;
+  color: #fff;
+  float: left;
+  margin-left:10%;
+ height:100%;
+ width:10%;
+ 
+
+  
+  position: relative;
+  z-index: 15;
+}
+
+.shubox4 {
+ 
+  font-size: 4rem;
+  color: #fff;
+  float: left;
+  margin-left:20%;
+ height:100%;
+ width:30%;
+ 
 
   
   position: relative;
@@ -17728,6 +17759,12 @@ body {
   color:#fff
 
 }
+.henbox2 {
+  height:6rem;
+  font-size:4rem;
+  color:#fff
+
+}
 
 
 
@@ -17736,10 +17773,20 @@ body {
 .sysw {
   float: left;
   width: 20%;
-  height: 48%;
-  margin-top: 5rem;
+  height: 35%;
+  margin-top: 6rem;
   
   margin-left: 5%;
+}
+
+.sysw2 {
+  float: left;
+  width: 20%;
+  height: 48%;
+  margin-top: 0.1rem;
+  
+  margin-left: 5%;
+  padding-left: 5%;
 }
 
 .allnav {
@@ -18172,3 +18219,5 @@ canvas {
 .jtoggler-btn-wrapper:nth-child(3).is-active ~ .jtoggler-handle {
   left: 62px;
 }
+/* 三选一按钮 */
+

@@ -591,7 +591,8 @@ $(function () {
                                 '余氯: '+wdata[3],
                                 
                             ].join('\n'),
-                            font: '30px Microsoft YaHei'
+                            font: '30px Microsoft YaHei',
+                            lineHeight: 24,
     
                            }
                        }
