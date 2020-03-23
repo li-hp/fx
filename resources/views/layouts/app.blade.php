@@ -75,7 +75,7 @@
   <script type="text/javascript" src="js/charts/shushi.js"></script>
   <script type="text/javascript" src="js/charts/shuizhi.js"></script>
   <script type="text/javascript" src="js/charts/yingyang.js"></script>
-
+  <script type="text/javascript" src="js/charts/jianshen.js"></script>
   <script type="text/javascript" src="js/charts/kangyi.js"></script>
 
   @yield('scripts')

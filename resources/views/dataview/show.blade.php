@@ -724,6 +724,7 @@
 
                     <div class="alltitle">全景地图</div>
                     <div class="allnav3d" id="yy555"></div>
+
                     <div class="boxfoot"></div>
                 </div> 
             </div>
@@ -777,6 +778,160 @@
                     </div>
                     <div class="boxfoot"></div>
                 </div>
+                    <div class="boxfoot"></div>
+                </div>
+
+            </div>
+
+        
+        </div>
+    </div>
+
+
+
+    
+    {{--maincontain 用于加载echart--}}
+    <div class="maincontain maincontain_jianshen">
+        
+        <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:0.5px; margin-right:0.5px;">
+
+
+
+            <div class="col-xs-12 col-sm-3" style="padding-left:0px; padding-right: 0px">
+
+                <div class="boxall">
+                    <div class="alltitle">健身情况</div>
+                    <div class="allnav" id="js111"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxall">
+                    <div class="alltitle">健身排名</div>
+                    <div class="allnav" id="js222"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxall">
+                    <div class="alltitle">健身活动</div>
+                    <div class="allnav" id="js333"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxall">
+                <style type="text/css">#shushiimg{background:url("/img/xiaoren.png") 5%  center  no-repeat ;}</style>
+                    <div id="shushiimg" style=" width:100%; height:100%; ">
+                    <div class="alltitle"></div>   
+                    <div class="allnav" id="js444"> </div>
+
+                    <div class="boxfoot"></div>  
+                </div>
+
+
+                
+            </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+                <style type="text/css">#backImgshow{background: url("/img/owell2dd.png");}</style>
+                {{-- 此处height可以调整3d框图的高度 --}}
+                <div class="boxall_3d" id="backImgshow" style="width:100%; height:97.5%; background-size:100%; -moz-background-size:100%; background-repeat: no-repeat;">
+
+                    <div class="alltitle">全景地图</div>
+                    <div class="allnav3d" id="js555"></div>
+
+                    <div class="boxfoot"></div>
+                </div> 
+            </div>
+
+
+            <div class="col-xs-12 col-sm-3" style="padding-left:0px; padding-right: 0px">
+
+
+                <div class="boxallright">
+                    <div class="alltitle">培训课程</div>
+
+                    <style type="text/css">#backImgkechen{background: url("/img/kechen.png");}</style>
+                {{-- 此处height可以调整3d框图的高度 --}}
+                <div class="caidanimg" id="backImgkechen"  style="width:100%; height:100%; background-size:100%;background-repeat: no-repeat;">
+
+                 
+                 
+                   <div class="allnav" id="js666"></div>
+                    </div>
+
+
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxallright">
+                    <div class="alltitle">没想好</div>
+                    <div class="allnav" id="js777"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+
+
+                <div class="boxallright">
+                    <div class="alltitle">新风控制</div>
+                    <div class="allnav" id="js888"></div>
+                       
+                    <div class="shubox3"> 
+                        <div class='henbox'></div>    
+                         <div class='henbox'></div>
+                        <div class='henbox'>新风</div>
+                        <div class='henbox'>空调</div>
+                   
+                        <div class='henbox'></div>
+                        <div class='henbox'></div>
+
+                    </div>   
+                     <div class="shubox3">   
+                          <div class='henbox'></div>
+                        <div class='henbox'></div>
+                        <div class='henbox'>模式</div>
+                        <div class='henbox'>温度</div>
+                    
+                        <div class='henbox'></div>
+                        <div class='henbox'></div>
+
+
+                    </div>  
+                     <div class="shubox4">
+                     <div class='henbox'></div>
+                     <div class='henbox'></div>
+
+                    <div class='henbox'>                <div class="js-demo-1">
+
+                    <label><input style="height:30px;width:30px"type="radio" name="radio" value="0" checked /> 低</label>
+                    <label><input style="height:30px;width:30px"type="radio" name="radio" value="1" /> 中</label>
+                    <label><input style="height:30px;width:30px"type="radio" name="radio" value="2" /> 高</label>
+                    </div>
+                    </div>
+                    <div class='henbox'>                <div class="js-demo-2">
+
+<label><input style="height:30px;width:30px"type="radio" name="radio2" value="0" checked /> 低</label>
+<label><input style="height:30px;width:30px"type="radio" name="radio2" value="1" /> 中</label>
+<label><input style="height:30px;width:30px"type="radio" name="radio2" value="2" /> 高</label>
+</div>
+</div>
+
+                 
+     
+
+
+                       
+              
+
+                 
+                    </div>
+                    <div class="boxfoot"></div>
+                </div>
+
+
+                <div class="boxallright">
+                    <div class="alltitle">历史记录</div>
+                    <div class="allnav" id="js999"></div>
                     <div class="boxfoot"></div>
                 </div>
 
