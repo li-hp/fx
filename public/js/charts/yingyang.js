@@ -5,6 +5,9 @@ yy111();
 yy222();
 yy333();
 yy444();
+//yy666();
+//yy777();
+yy888();
 
     function yy111() {
     
@@ -833,12 +836,488 @@ yy444();
         });
     }
 
+    
+    function yy666() {
+
+        var myChart = echarts.init(document.getElementById('yy666'));
+
+     
+    
+        option = {
+            title: 
+            [{
+                text: '早餐',
+                top: '1%',
+                left:'10%',
+                textStyle:{
+                    color:'#fff',
+                    fontStyle:'normal',
+                    fontWeight:'600',
+                    fontFamily:'sans-serif',
+            　　　　fontSize:30
+                }
+            },{
+                text: "午餐",
+                left:'40%',
+                top: '1%',
+                textStyle:{
+                    color:'#fff',
+                    fontStyle:'normal',
+                    fontWeight:'400',
+                    fontFamily:'sans-serif',
+            　　　　 fontSize:30
+                }
+            },
+            {
+                text: "晚餐",
+                right: '18%',
+                top: '1%',
+                textStyle:{
+                    color:'#fff',
+                    fontStyle:'normal',
+                    fontWeight:'400',
+                    fontFamily:'sans-serif',
+            　　　　 fontSize:30
+                }
+            }],
+          
+        
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                },
+                formatter: function(params){
+                    let result = params[0].name + '<br />' + 
+                                  params[1].data.name;
+                    return result;
+                }
+            },
+            grid: [{
+                left: '10%',
+                right: '3%',
+                bottom: '3%',
+                containLabel: true,
+            }],
+            xAxis: [{
+                type: 'value',
+                min: 0.1,
+                max: 1.0,
+                axisLabel: {show: false},
+                axisLine: {show: false},
+                axisTick: {show: false},
+                splitLine: {show: false},
+            }],
+            yAxis: [{
+               
+                type: 'category',
+                inverse: true,
+                axisLine: {show: false},
+                axisTick: {show: false},
+                data: [1, 2, 3, 4]
+            }],
+            series: [
+                {
+                    name: '告警',
+                    stack: '1',
+                    type: 'bar',
+                    color:"rgba(128, 128, 128, 0 ",
+                    label: {
+                        show: true,
+                        position: 'insideLeft',
+                        fontSize:32,
+                        
+                        formatter: function(params){
+                            return params.data.name
+                        }
+                    },
+                    
+                    data: [
+                        {value: 0.4, name:'蛋炒饭'},
+                        {value: 0.4, name:'白粥'},
+                        {value: 0.4, name:'油条'},
+                        {value: 0.4, name:'肉包'}
+                      
+                     
+                    ]
+                },  {
+                    name: '告警',
+                    stack: '1',
+                    type: 'bar',
+                    color:"rgba(128, 128, 128, 0",
+                    label: {
+                        show: true,
+                        position: 'insideLeft',
+                        fontSize:32,
+                        
+                        formatter: function(params){
+                            return params.data.name
+                        }
+                    },
+                    
+                    data: [
+                        {value: 0.4, name: '红烧排骨'},
+                        {value: 0.4, name: '番茄鸡蛋'},
+                        {value: 0.4, name: '蒜蓉生菜'},
+                        {value: 0.4, name: '炒空心菜'},
+                      
+                     
+                    ]
+                },{
+                    name: '已拖延时间',
+                    stack: '1',
+                    type: 'bar',
+                    color:"rgba(128, 128, 128, 0 ",
+                    label: {
+                        show: true,
+                        position: 'inside',
+                        fontSize:32,
+                
+                        formatter: function(params){
+                            return params.data.name
+                        }
+                    },
+                    data: [
+                        {value: 0.4, name: '鱼香茄子'},
+                        {value: .4, name: '冬菇炖鸡'},
+                        {value: .4, name: '炒土豆丝'},
+                        {value: .4, name: '梅菜扣肉'}
+                   
+                      
+                    ]
+                }
+            ]
+        };
+
+        myChart.setOption(option);
+        window.addEventListener("resize",function(){
+            myChart.resize();
+        });
+    }
 
 
 
 
 
 
+
+   
+    
+    function yy777() {
+
+        var myChart = echarts.init(document.getElementById('yy777'));
+
+     
+    
+        option = {
+          
+          
+        
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {
+                    type: 'shadow'
+                },
+                formatter: function(params){
+                    let result = params[0].name + '<br />' + 
+                                  params[1].data.name;
+                    return result;
+                }
+            },
+            grid: [{
+                left: '10%',
+                right: '3%',
+                bottom: '3%',
+                containLabel: true,
+            }],
+            xAxis: [{
+                type: 'value',
+                min: 0.1,
+                max: 1.0,
+                axisLabel: {show: false},
+                axisLine: {show: false},
+                axisTick: {show: false},
+                splitLine: {show: false},
+            }],
+            yAxis: [{
+               
+                type: 'category',
+                inverse: true,
+                axisLine: {show: false},
+                axisTick: {show: false},
+                data: [1, 2, 3, 4]
+            }],
+            series: [
+                {
+                    name: '告警',
+                    stack: '1',
+                    type: 'bar',
+                    color:"rgba(128, 128, 128, 0 ",
+                    label: {
+                        show: true,
+                        position: 'insideLeft',
+                        fontSize:32,
+                        
+                        formatter: function(params){
+                            return params.data.name
+                        }
+                    },
+                    
+                    data: [
+                        {value: 0.4, name:'苹果'},
+                        {value: 0.4, name:'梨'},
+                        {value: 0.4, name:'菠萝'},
+                        {value: 0.4, name:'草莓'}
+                      
+                     
+                    ]
+                },  {
+                    name: '告警',
+                    stack: '1',
+                    type: 'bar',
+                    color:"rgba(128, 128, 128, 0",
+                    label: {
+                        show: true,
+                        position: 'insideLeft',
+                        fontSize:32,
+                        
+                        formatter: function(params){
+                            return params.data.name
+                        }
+                    },
+                    
+                    data: [
+                        {value: 0.4, name: '桃子'},
+                        {value: 0.4, name: '柠檬'},
+                        {value: 0.4, name: '香蕉'},
+                        {value: 0.4, name: '葡萄'},
+                      
+                     
+                    ]
+                },{
+                    name: '已拖延时间',
+                    stack: '1',
+                    type: 'bar',
+                    color:"rgba(128, 128, 128, 0 ",
+                    label: {
+                        show: true,
+                        position: 'inside',
+                        fontSize:32,
+                
+                        formatter: function(params){
+                            return params.data.name
+                        }
+                    },
+                    data: [
+                        {value: 0.4, name: '柚子'},
+                        {value: .4, name: '芒果'},
+                        {value: .4, name: '橘子'},
+                        {value: .4, name: '樱桃'}
+                   
+                      
+                    ]
+                }
+            ]
+        };
+
+        myChart.setOption(option);
+        window.addEventListener("resize",function(){
+            myChart.resize();
+        });
+    }
+
+    
+    
+
+
+    
+
+
+    function yy888() {
+    
+    
+    
+        var myChart = echarts.init(document.getElementById('yy888'));
+        var data1=jsdata1
+        var data2=jsdata2
+        var data3=jsdata3
+
+        var option = {
+          
+               tooltip: {
+                 trigger: 'axis',
+                 axisPointer: { // 坐标轴指示器，坐标轴触发有效
+                   type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+                 }
+               },
+               title: 
+                {
+                    show:false,
+                    text: '健身人数：'+data3,
+                    top:'12%',
+                    left:'68%',
+                    textStyle: {
+                        color: '#fff',
+                        fontSize: 30,
+                    }
+                },
+               grid: {
+                 left: '2%',
+                 right: '4%',
+                 bottom: '5%',
+                 top:'20%',
+                 containLabel: true
+               },
+                legend: {
+               data: ['早餐', '午餐','晚餐'],
+               right: 10,
+               top:5,
+               textStyle: {
+                   color: "#fff",
+                   fontSize:30
+               },
+               itemWidth: 40,
+               itemHeight: 30,
+               // itemGap: 35
+           },
+               xAxis: {
+                 type: 'category',
+                 data: ['周一','周二','周三','周四','周五','周六','周日' ],
+                 axisLine: {
+                   lineStyle: {
+                     color: 'white'
+       
+                   }
+                 },
+                 axisLabel: {
+                   // interval: 0,
+                   // rotate: 40,
+                    textStyle: {
+                   color: "#fff",
+                   fontSize:30
+               },
+                 },
+               },
+               
+               
+               
+               
+               
+               
+       
+               yAxis: {
+                 type: 'value',
+                 max:'100',
+               
+                 axisLine: {
+                   show: false,
+                   lineStyle: {
+                     color: 'white'
+                   }
+                 },
+                
+                 splitLine: {
+                   show: true,
+                   lineStyle: {
+                     color: 'rgba(255,255,255,0.3)'
+                   }
+                 },
+                 axisLabel: {
+                       textStyle: {
+                   color: "#fff",
+                   fontSize:30
+               },
+                     
+                 }
+               },
+               
+               "dataZoom": [{
+                 "show": false,
+                 "height": 12,
+                 "xAxisIndex": [
+                   0
+                 ],
+               
+               
+                 textStyle:{
+                   color:"#fff"},
+                 borderColor:"#90979c"
+               }, {
+                 "type": "inside",
+                 "show": true,
+                 "height": 15,
+                 "start": 1,
+                 "end": 35
+               }],
+               series: [{
+                 name: '早餐',
+                 type: 'bar',
+                 barWidth: '15%',
+                 itemStyle: {
+                   normal: {
+                       color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                           offset: 0,
+                           color: '#fccb05'
+                       }, {
+                           offset: 1,
+                           color: '#f5804d'
+                       }]),
+                       barBorderRadius: 12,
+                   },
+                 },
+                 data: data1
+               }
+               ,
+               {
+                name: '午餐',
+                type: 'bar',
+                barWidth: '15%',
+                itemStyle: {
+                  normal: {
+                      color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                          offset: 0,
+                          color: '#8bd46e'
+                      }, {
+                          offset: 1,
+                          color: '#09bcb7'
+                      }]),
+                      barBorderRadius: 11,
+                  }
+                  
+                },
+                data: data2
+              }, {
+                name: '晚餐',
+                type: 'bar',
+                barWidth: '15%',
+                itemStyle: {
+                  normal: {
+                      color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                          offset: 0,
+                          color: '#1d65f7f0'
+                      }, {
+                          offset: 1,
+                          color: '#2c62cef0'
+                      }]),
+                      barBorderRadius: 11,
+                  }
+                  
+                },
+                data: [10,30,50,40,30,56,20]
+              },]
+             };
+       
+           
+           
+
+        
+        myChart.setOption(option);
+        window.addEventListener("resize",function(){
+            myChart.resize();
+        });
+
+    
+    }
 
 
 

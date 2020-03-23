@@ -56,9 +56,9 @@
             </div>
 
             <div class="col-xs-12 col-sm-6">
-                <style type="text/css">#backImg{background: url("/img/oweld2dd.png");}</style>
+                <style type="text/css">#backImgshow{background: url("/img/owell2dd.png");}</style>
                 {{-- 此处height可以调整3d框图的高度 --}}
-                <div class="boxall_3d" id="backImg" style="width:100%; height:97.5%; background-size:100%; -moz-background-size:100%; background-repeat: no-repeat;">
+                <div class="boxall_3d" id="backImgshow" style="width:100%; height:97.5%; background-size:100%; -moz-background-size:100%; background-repeat: no-repeat;">
 
                     <div class="alltitle">全景地图</div>
                     <div class="allnav3d" id="e555"></div>
@@ -134,9 +134,9 @@
             </div>
 
             <div class="col-xs-12 col-sm-6">
-                <style type="text/css">#backImg{background: url("/img/oweld2dd.png");}</style>
+                <style type="text/css">#backImgkq{background: url("/img/owell2dd.png");}</style>
                 {{-- 此处height可以调整3d框图的高度 --}}
-                <div class="boxall_3d" id="backImg" style="width:100%; height:97.5%; background-size:100%; -moz-background-size:100%; background-repeat: no-repeat;">
+                <div class="boxall_3d" id="backImgkq" style="width:100%; height:97.5%; background-size:100%; -moz-background-size:100%; background-repeat: no-repeat;">
 
                     <div class="alltitle">全景地图</div>
                     <div class="allnav3d" id="kechart555"></div>
@@ -281,12 +281,12 @@
         
 
             <div class="col-xs-12 col-sm-6">
-                <style type="text/css">#backImg{background: url("/img/oweld2dd.png");}</style>
+                <style type="text/css">#backImgsz{background: url("/img/owell2dd.png");}</style>
                 {{-- 此处height可以调整3d框图的高度 --}}
-                <div class="boxall_3d" id="backImg" style="width:100%; height:97.5%; background-size:100%; -moz-background-size:100%; background-repeat: no-repeat;">
+                <div class="boxall_3d" id="backImgsz" style="width:100%; height:97.5%; background-size:100%; -moz-background-size:100%; background-repeat: no-repeat;">
 
                     <div class="alltitle">全景地图</div>
-                    <div class="allnav3d" id="e555"></div>
+                    <div class="allnav3d" id="sz555"></div>
                     <div class="boxfoot"></div>
                 </div> 
             </div>
@@ -412,9 +412,9 @@
             </div>
 
             <div class="col-xs-12 col-sm-6">
-            <style type="text/css">#backImg{background: url("/img/owell2dd.png");}</style>
+            <style type="text/css">#backImggq{background: url("/img/owell2dd.png");}</style>
                 {{-- 此处height可以调整3d框图的高度 --}}
-                <div class="boxall_3d" id="backImg" style="width:100%; height:97.5%; background-size:100%; -moz-background-size:100%; background-repeat: no-repeat;">
+                <div class="boxall_3d" id="backImggq" style="width:100%; height:97.5%; background-size:100%; -moz-background-size:100%; background-repeat: no-repeat;">
                     <div class="alltitle">全景地图</div>
                     <div class="allnav3d" id="gechart5"></div>
                     <div class="boxfoot"></div>
@@ -554,11 +554,11 @@
             </div>
 
             <div class="col-xs-12 col-sm-6">
-            <style type="text/css">#backImg{background: url("/img/owell2dd.png");}</style>
+            <style type="text/css">#backImgss{background: url("/img/owell2dd.png");}</style>
                 {{-- 此处height可以调整3d框图的高度 --}}
-                <div class="boxall_3d" id="backImg" style="width:100%; height:97.5%; background-size:100%; -moz-background-size:100%; background-repeat: no-repeat;">
+                <div class="boxall_3d" id="backImgss" style="width:100%; height:97.5%; background-size:100%; -moz-background-size:100%; background-repeat: no-repeat;">
                     <div class="alltitle">全景地图</div>
-                    <div class="allnav3d" id="gechart5"></div>
+                    <div class="allnav3d" id="ss555"></div>
                     <div class="boxfoot"></div>
                 </div> 
             </div>
@@ -718,9 +718,9 @@
         
             </div></div>
                     <div class="col-xs-12 col-sm-6">
-                <style type="text/css">#backImgyy{background: url("/img/oweld2dd.png");}</style>
+                <style type="text/css">#backImgyy{background: url("/img/owell2dd.png");}</style>
                 {{-- 此处height可以调整3d框图的高度 --}}
-                <div class="boxall_3d" id="backImgyy" style="width:100%; height:97.5%; background-size:100%; -moz-background-size:100%; background-repeat: no-repeat;">
+                <div class="boxall_3d" id="backImgyy" style="width:100%; height:97.5%; background-size:100%;background-repeat: no-repeat;">
 
                     <div class="alltitle">全景地图</div>
                     <div class="allnav3d" id="yy555"></div>
@@ -734,13 +734,30 @@
 
                 <div class="boxallright">
                     <div class="alltitle">每日菜单</div>
-                    <div class="allnav" id="yy666"></div>
+
+
+                    <style type="text/css">#backImgcaidan{background: url("/img/caidan.png");}</style>
+                {{-- 此处height可以调整3d框图的高度 --}}
+                <div class="caidanimg" id="backImgcaidan"  style="width:100%; height:100%; background-size:100%;background-repeat: no-repeat;">
+
+                 
+                 
+                   <div class="allnav" id="yy666"></div>
+                    </div>
+
+
+
                     <div class="boxfoot"></div>
                 </div>
 
                 <div class="boxallright">
                     <div class="alltitle">果蔬推广</div>
+                    <style type="text/css">#backImgcaidan{background: url("/img/caidan.png");}</style>
+                {{-- 此处height可以调整3d框图的高度 --}}
+                <div class="caidanimg" id="backImgcaidan"  style="width:100%; height:100%; background-size:100%;background-repeat: no-repeat;">
+
                     <div class="allnav" id="yy777"></div>
+                    </div>
                     <div class="boxfoot"></div>
                 </div>
 
@@ -752,7 +769,14 @@
 
                 <div class="boxallright">
                     <div class="alltitle">充值查询</div>
-                    <div class="allnav" id="yy999"></div>
+                    <style type="text/css">#backImgcz{background: url("/img/chongzhi.png");}</style>
+                {{-- 此处height可以调整3d框图的高度 --}}
+                <div class="caidanimg" id="backImgcz"  style="width:100%; height:100%; background-size:100%;background-repeat: no-repeat;">
+
+                    <div class="allnav" id="yy777"></div>
+                    </div>
+                    <div class="boxfoot"></div>
+                </div>
                     <div class="boxfoot"></div>
                 </div>
 
