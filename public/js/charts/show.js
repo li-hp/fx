@@ -894,8 +894,8 @@ $(function () {
             },
             grid: {
                 left: '6%',
-                right: '35%',
-                top: '16%',
+                right: '30%',
+                top: '15%',
                 bottom: '6%',
                 containLabel: true
             },
@@ -1719,7 +1719,7 @@ $(function () {
                     }
                 },
                grid: {
-                 left: '2%',
+                 left: '4%',
                  right: '4%',
                  bottom: '5%',
                  top:'20%',
