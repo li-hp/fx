@@ -1215,6 +1215,7 @@ $(function(){
             myChart.resize();
         });
     }
+    
     function sz888() {
 
         var myChart = echarts.init(document.getElementById('sz888'));

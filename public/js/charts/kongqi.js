@@ -680,7 +680,7 @@ $(function () {
     
             grid: {
                 left: '8%',
-                top: '5%',
+                top: '10%',
                 right: '8%',
                 bottom: '5%',
                 containLabel: true

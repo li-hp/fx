@@ -954,89 +954,113 @@
 
 
 
+   
+    <div class="maincontain maincontain_kangyi">
 
-        <div class="maincontain maincontain_kangyi">
-        <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:9.5px; margin-right:9.5px;">
-            <div class="col-xs-12 col-sm-3">
+   
+        
+        <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:0.5px; margin-right:0.5px;">
+
+
+
+            <div class="col-xs-12 col-sm-3" style="padding-left:0px; padding-right: 0px">
 
                 <div class="boxall">
-                    <div class="alltitle">红外测温门禁实时数据</div>
-                    <div class="allnav" id="kangyi_echarts_0"></div>
+                    <div class="alltitle">疫情上报</div>
+                    <div class="allnav" id="ky111"></div>
                     <div class="boxfoot"></div>
                 </div>
 
                 <div class="boxall">
-                    <div class="alltitle">消毒时长管理</div>
-                        <div class="allnav" id="kangyi_echarts_1">    
-                    </div>
+                    <div class="alltitle">异常监测</div>
+                    <div class="allnav" id="ky222"></div>
                     <div class="boxfoot"></div>
                 </div>
 
                 <div class="boxall">
-                    <div class="alltitle">会议管理</div>
-                    <div class="allnav" id="kangyi_echarts_2"></div>
+                    <div class="alltitle">紫外消毒</div>
+                    <div class="allnav" id="ky333"></div>
                     <div class="boxfoot"></div>
                 </div>
-
-
                 <div class="boxall">
-                    <div class="alltitle">舒适交互</div>
-                    <div class="sysw">
-                        <a type="button"
-                        class="btn btn-primary center-block btn-sm" >
-                        <p style="font-size:5rem;">总开关</p>
-                        </a>
-                    </div>
-                    <div class="sysw">
-                        <a type="button"
-                        class="btn btn-primary center-block btn-sm"
-                        aria-label="Right Align">
-                        <p style="font-size:5rem;">AUTO</p>
-                        </a>
-                    </div>
-
-
+                    <div class="alltitle">雾化消毒</div>
+                    <div class="allnav" id="ky444"></div>
                     <div class="boxfoot"></div>
                 </div>
+            
+                
+                </div>
 
-
-            </div>
+        
 
             <div class="col-xs-12 col-sm-6">
+                <style type="text/css">#backImgky{background: url("/img/owell2dd.png");}</style>
+                {{-- 此处height可以调整3d框图的高度 --}}
+                <div class="boxall_3d" id="backImgky" style="width:100%; height:97.5%; background-size:100%; -moz-background-size:100%; background-repeat: no-repeat;">
+
+                    <div class="alltitle">全景地图</div>
+                    <div class="allnav3d" id="ky555"></div>
+                    <div class="boxfoot"></div>
+                </div> 
             </div>
+
 
             <div class="col-xs-12 col-sm-3" style="padding-left:0px; padding-right: 0px">
 
 
-            <div class="boxallright">
-                <div class="alltitle">表格1</div>
-                <div class="allnav" style="padding-left:100px; padding-right: 10px" id="table" ></div>
-                <div class="boxfoot"></div>
+                <div class="boxallright">
+                    <div class="alltitle">物资（口罩）</div>
+                    <div class="allnav" id="ky666"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxallright">
+                    <div class="alltitle">物资（防护服）</div>
+                    <div class="allnav" id="ky777"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxallright">
+                    <div class="alltitle">人员</div>
+                    <div class="allnav" id="ky888"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxallright">
+                    <div class="alltitle">实时监控</div>
+                    <div class="allnav" id="ky999">
+
+                    <div class="sysw">
+ 
+                       <a href="#" class="button white bigrounded">茶水间1</a> 
+                   </div>
+                    <div class="sysw">
+
+                        <a href="#" class="button white bigrounded">茶水间2</a> 
+                    </div>
+                    <div class="sysw">
+
+                    <a href="#" class="button white bigrounded">茶水间3</a> 
+                    </div>
+                    <div class="sysw">
+
+                    <a href="#" class="button white bigrounded">办公室</a> 
+                    </div>
+                        
+
+                    </div>
+         
+
+
+                    <div class="boxfoot"></div>
+                </div>
+
             </div>
 
-            <div class="boxallright">
-                <div class="alltitle">表格2</div>
-                <div class="allnav" id="kangyi_echarts_5"></div>
-                <div class="boxfoot"></div>
-            </div>
-
-            <div class="boxallright">
-                <div class="alltitle">舒适</div>
-                <div class="allnav" id="kangyi_echarts_6"></div>
-                <div class="boxfoot"></div>
-            </div>
-
-            <div class="boxallright">
-                <div class="alltitle">综合</div>
-                <div class="allnav" id="kangyi_echarts_7"></div>
-                <div class="boxfoot"></div>
-            </div>
-
+        
         </div>
+    </div>
 
-        </div>
-
-        </div>
 
 
 </div>

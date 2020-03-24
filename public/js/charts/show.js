@@ -2060,7 +2060,7 @@ $(function () {
             },
             formatter: function(params){
                 let result = params[0].name + '<br />' + 
-                             '基站: xxx基站' + '<br />' +
+                            + '<br />' +
                              params[1].seriesName + ': ' + params[1].data.name;
                 return result;
             }
