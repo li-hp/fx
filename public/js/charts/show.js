@@ -356,7 +356,7 @@ $(function () {
               radius: radius,
                center: ['50%', '80%'],
                 min: 0,
-                 max: 100,
+                 max: 40,
               detail: {
                   fontSize:30,
                   formatter: '{value}μg/m³'+pm25,
@@ -382,7 +382,7 @@ $(function () {
                         
                         
                         
-                          [0.15,'#eddd2a'],
+                          [0.375,'#eddd2a'],
                           [1.0, '#ef5728']
                          
                       ]
@@ -857,24 +857,26 @@ $(function () {
         var outlight=outlightdata;
         option = {
             // backgroundColor: "#404A59",
-            color: ['#ffd285', '#ff733f', '#ec4863'],
+            color: ['#ffd285', '#ffd285', '#ef5728'],
         
             title: [{
-                text: '每日光强变化曲线',
-                left: '3%',
+                text: '光强变化曲线',
+                left: '5%',
                 top: '6%',
                 textStyle: {
                     color: '#fff',
-                    fontSize:24
+                    fontSize:25,
+                    fontWeight:'bold'
                 }
             }, {
                 text: '实时光强（LUX）',
-                left: '83%',
-                top: '6%',
+                left: '85%',
+                top: '7%',
                 textAlign: 'center',
                 textStyle: {
                     color: '#fff',
-                    fontSize:24
+                    fontSize:25,
+                    fontWeight:'bold'
                 }
             }],
             tooltip: {
@@ -885,13 +887,13 @@ $(function () {
                 top: '7%',
                 textStyle: {
                     color: '#ffd285',
-                    fontSize:'24',
+                    fontSize:'25',
                     fontWeight: 'bold',
                 },
                 data: ['室内', '室外']
             },
             grid: {
-                left: '3%',
+                left: '6%',
                 right: '35%',
                 top: '16%',
                 bottom: '6%',
@@ -907,7 +909,7 @@ $(function () {
                 type: 'category',
                 "axisLine": {
                     lineStyle: {
-                        color: '#FF4500'
+                        color: '#ef5728'
                     }
                 },
                 "axisTick": {
@@ -988,7 +990,7 @@ $(function () {
                         }],
 
                         lineStyle:{
-                            color:'#FF4500',
+                            color:'#ef5728',
                             width:3
                         },
                     },
@@ -1033,7 +1035,7 @@ $(function () {
 
             {
                 type: 'pie',
-                center: ['83%', '33%'],
+                center: ['85%', '33%'],
                 radius: ['25%', '30%'],
                 label: {
                     normal: {
@@ -1064,7 +1066,7 @@ $(function () {
             },
             {
                 type: 'pie',
-                center: ['83%', '72%'],
+                center: ['85%', '72%'],
                 radius: ['25%', '30%'],
                 label: {
                     normal: {
@@ -1076,14 +1078,14 @@ $(function () {
                     name: gdata4,
                     itemStyle: {
                         normal: {
-                            color: '#ff733f'
+                            color: '#ef5728'
                         }
                     },
                     label: {
                         normal: {
                             formatter: gdata4+"\n\n室外光强",
                             textStyle: {
-                                color: '#ff733f',
+                                color: '#ef5728',
                                 fontSize:'24',
                                 fontWeight: 'bold',
         
@@ -1121,11 +1123,11 @@ $(function () {
 
                 
             var humdata=data[2].value;
-            if (humdata>40&&humdata<60) data[1].name="优秀";
+            if (humdata>40&&humdata<60) data[2].name="舒适";
             else  data[2].name="一般";
 
             var temdata=data[3].value;
-            if (temdata>23&&temdata<26) data[3].name="优秀";
+            if (temdata>23&&temdata<26) data[3].name="舒适";
             else  data[3].name="一般";
 
 
@@ -1172,7 +1174,7 @@ $(function () {
                         name: item.name,
                         type: 'pie',
                         clockWise: false,
-                        radius: [75, 90],
+                        radius: [80, 90],
                         itemStyle:  {
                             normal: {
                                 color: colors[index][0],
@@ -1272,182 +1274,7 @@ $(function () {
 
 
     
-    function ss444() {
-        var myChart = echarts.init(document.getElementById('ss444'));
-
-        var randome81 = [randomNum(20,25), randomNum(30,50), 
-            randomNum(30,50), randomNum(30,50), 
-            randomNum(30,50), randomNum(30,50), 
-            randomNum(30,50), randomNum(30,50)];
-    
-        option = {
-            tooltip: {
-            trigger: 'axis',
-            axisPointer: {
-                lineStyle: {
-                    color: '#00B2EE'
-                    }
-                }
-            },
-    
-            legend: {
-            top:'0%',
-                data:['办公区1'],
-                        textStyle: {
-                            color: "#fff",
-                            fontSize:'24',
-                            fontWeight: 'bold',
-                }
-            },
-    
-            grid: {
-                left: '8%',
-                top: '10%',
-                right: '5%',
-                bottom: '8%',
-                containLabel: true
-            },
-    
-            xAxis: [{
-                // name:"分钟前",
-                nameLocation:'center',
-                nameGap:40,
-                nameTextStyle:{
-                    color: "#fff",
-                    fontSize:'24',
-                    fontWeight: 'bold',
-                },
-                type: 'category',
-                data: ['0:00', '3:00', '6:00', '9:00', '12:00', '15:00', '18:00','21:00'],
-                axisLine: {
-                    show: true,
-                 lineStyle: {
-                        color: "rgba(255,255,255,.1)",
-                        width: 1,
-                        type: "solid"
-                    },
-                },
-                axisTick: {
-                    show: false,
-                },
-                axisLabel:  {
-                        interval: 0,
-                       // rotate:50,
-                        show: true,
-                        splitNumber: 15,
-                        textStyle: {
-                            color: "#fff",
-                            fontSize:'24',
-                            fontWeight: 'bold',
-                        },
-                    },
-            }],
-    
-            yAxis: [{
-                name:"光强（LUX）",
-                nameTextStyle:{
-                    color: "#fff",
-                    fontSize:'24',
-                    fontWeight: 'bold',
-                },
-                type: 'value',
-                axisTick: {show: false},
-                min:0,
-                max:600,
-                axisLine: {
-                    lineStyle: {
-                        color: 'rgba(255,255,255,.1)'
-                    }
-                },
-            axisLabel:  {
-                    textStyle: {
-                        color: "#fff",
-                        fontSize:'24',
-                        fontWeight: 'bold',
-                    },
-                },
-                splitArea:{
-                    show:false,
-                    interval:(15-25),
-                },
-                splitNumber: 5,
-                splitLine: {
-                    interval:2,
-                    lineStyle: {
-                        color: 'rgba(255,255,255,.1)',
-                    }
-                },
-            }],
-    
-            series: [{
-                    name: '光强指标',
-                    type: 'line',
-                    smooth: true,
-                    symbol: 'circle',
-                    showAllSymbol: true,
-                    // symbol: 'image://./static/images/guang-circle.png',
-                    symbolSize: 20,
-                    lineStyle: {
-                        normal: {
-                            // color: "#53fdfe", // 线条颜色
-                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                                offset: 0,
-                                color: '#FFEC8B'
-                            }, {
-                                offset: 1,
-                                color: '#FFFF00'
-                            }]),
-                            barBorderRadius: 12,
-                            width:10
-                        },
-    
-                        borderColor: '#f0f',
-                    },
-                    itemStyle: {
-                        normal: {
-                            color: '#EEAD0E',
-                            borderColor: 'rgba(221, 220, 107, .1)',
-                            borderWidth: 30
-                        }
-                    },
-                    data: randome81,
-                    markLine:{
-                        silent: false,
-                        symbol: 'none',
-                        label: {
-                            show:true,
-                            position:'end', // 'start\middle\end'
-                            formatter: '{b}',
-                            color: "#fff",
-                            fontSize:'24',
-                            fontWeight: 'bold',
-                        },
-                        data: [{
-                            name: '中',
-                            yAxis: 2000
-                        }, {
-                            name: '优',
-                            yAxis: 1000
-                        }],
-                        lineStyle:{
-                            color:'#8E8E8E',
-                        },
-                    },
-            }]
-        };
-
-        myChart.setOption(option);
-        window.addEventListener("resize",function(){
-            myChart.resize();
-        });
-
-    }
-
-
-
-
-
-
+  
 
 
 
@@ -1670,7 +1497,7 @@ $(function () {
         const colorBlack = '#fff';
         const colorBlack_40 = 'rgba(0,0,0,0.4)';
         
-        
+        colors=[['#7bbfd4', '#c8447e','#598c90','#dfba2b','#ef5728'],['#dfba2b', '#598c90','#7bbfd4','#dfba2b','#ef5728'],['#7bbfd4', '#598c90','#e8b5de','#dfba2b','#ef5728'],['#ff8c37', '#ffdcc3'],['#fd6f97', '#fed4e0'],['#ffc257', '#ffedcc'], ['#a181fc', '#e3d9fe']]
         function get_multi_pie_option(settings) {
             let defaultSetting = {
                 title: '',//'Default Title',
@@ -1698,15 +1525,8 @@ $(function () {
                         '早餐': 89,
                         '午餐': 238,
                         '晚餐':200
-                    },
-                    '营养情况': {
-                        '蛋白质': 943,
-                        '蔬菜': 2084,
-                        '水果': 2804,
-                         '能量': 240,
-                        '脂肪': 2784
-                      
-                    },
+                    }
+                
                 },
                 // pie_name: ['维度1', '维度2', '维度3'],
                 // pie_data_label: ['上周', '本周'],
@@ -1734,6 +1554,7 @@ $(function () {
                         textStyle: {
                             color: colorBlack,
                             fontSize: defaultSetting.title_fontsize,
+                            fontWeight:400,
                         },
                     },
                 ].concat(Array.from({length: defaultSetting.pie_name.length}, (v, i) => {
@@ -1741,10 +1562,10 @@ $(function () {
                     let _title = {
                         text: defaultSetting.pie_name[i],
                         top: '85%',
-                        left: one_pie_width * i+13 + '%',
+                        left: one_pie_width * i+20 + '%',
                         textStyle: {
                             color: colorBlack,
-                            fontSize: 30,
+                            fontSize: 32,
                             fontWeight:"400"
                         },
                     }
@@ -1807,6 +1628,7 @@ $(function () {
                                     formatter: "{b} : {c} ({d}%)"
                                 },
                                 type: 'pie',
+                                color:colors[i],
                                 center: [one_pie_width*(i+0.5)+'%', '50%'],
                                 radius: 55+'%',//'33%',//['33%', '0%'],//33%=100%/3
                                 avoidLabelOverlap: false,
@@ -1816,8 +1638,9 @@ $(function () {
                                         position: 'outside',//'outside',//'inside',
                                         formatter: "{b} : {c} \n({d}%)",
                                            textStyle: {
-                                            fontSize: '20',
-                                            fontWeight: 'bold'
+                                            fontSize: '25',
+                                            fontWeight: 'bold',
+                                          
                                         }
                                     },
                                     emphasis: {
@@ -1887,7 +1710,7 @@ $(function () {
                },
                title: 
                 {
-                    text: '健身人数：'+data3,
+                    text: '实时健身人数：'+data3,
                     top:'12%',
                     left:'68%',
                     textStyle: {
@@ -2047,6 +1870,7 @@ $(function () {
     option = {
         title: {
             text: '消毒记录',
+            left:"4%",
             textStyle: {
                 color: "#fff",
                 fontSize:30
@@ -2185,10 +2009,10 @@ $(function () {
     
             series: [
                 {
-                    name: '办公区人数',
+                    name: '办公人数',
                     type: 'pie',
                     radius: radius,
-                    center: ['15%', '25%'],
+                    center: ['15%', '28%'],
                     startAngle: 225,
                     color: [new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
                         offset: 0,
@@ -2207,16 +2031,19 @@ $(function () {
                                 position: 'center'
                             }
                         },
+
+              
+            
                     data: [{
                         value: 75,
-                         name: '办公区人数',
+                         name: '办公人数',
                             label: {
                                 
                                 normal: {
-                                    formatter: '办公区人数',
+                                    formatter: '办公人数',
                                     textStyle: {
                                         color: '#EFFBFB',
-                                        fontSize: 24,
+                                        fontSize: 28,
                                     }
                                 }
                             }
@@ -2229,7 +2056,7 @@ $(function () {
                                     formatter: '\n{c0}',
                                     textStyle: {
                                         color: '#FDFF5C',
-                                        fontSize: 24,
+                                        fontSize: 28,
                                     }
                                 }
                             }
@@ -2242,7 +2069,7 @@ $(function () {
                                     formatter: '',
                                     textStyle: {
                                         color: '#EFFBFB',
-                                        fontSize: 24,
+                                        fontSize: 28,
     
                                     }
                                 }
@@ -2251,10 +2078,10 @@ $(function () {
                 },
     
                 {
-                    name: '会议区人数',
+                    name: '会议人数',
                     type: 'pie',
                     radius: radius,
-                    center: ['50%', '25%'],
+                    center: ['50%', '28%'],
                     startAngle: 225,
                     color: [new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
                         offset: 0,
@@ -2274,14 +2101,14 @@ $(function () {
                             }
                         },
                     data: [{
-                        value: 75,
-                         name: '会议区人数',
+                        value: 90,
+                         name: '会议人数',
                             label: {
                                 normal: {
-                                    formatter: '会议区人数',
+                                    formatter: '会议人数',
                                     textStyle: {
                                         color: '#FFFFFF',
-                                        fontSize: 24,
+                                        fontSize: 28,
                                     }
                                 }
                             }
@@ -2294,14 +2121,14 @@ $(function () {
                                     formatter: '\n\n{c0}',
                                     textStyle: {
                                         color: '#9FE6B8',
-                                        fontSize: 24,
+                                        fontSize: 28,
     
                                     }
                                 }
                             }
                     },
                     {
-                        value: 0,
+                        value: 10,
                         name: '%',
                             label: {
                                 normal: {
@@ -2320,7 +2147,7 @@ $(function () {
                     name: '来访人数',
                     type: 'pie',
                     radius: radius,
-                    center: ['85%', '25%'],
+                    center: ['85%', '28%'],
                     startAngle: 225,
                     labelLine: {
                         normal: {
@@ -2351,7 +2178,7 @@ $(function () {
                                     formatter: '来访人数',
                                     textStyle: {
                                         color: '#ffff',
-                                        fontSize: 24
+                                        fontSize: 28
     
                                     }
                                 }
@@ -2364,14 +2191,14 @@ $(function () {
                                     formatter: '\n\n{c0}',
                                     textStyle: {
                                         color: '#FF9F7F',
-                                        fontSize: 24,
+                                        fontSize: 28,
     
                                     }
                                 }
                             }
                     },
                     {
-                        value: 0,
+                        value: 2,
                         name: '%',
                             label: {
                                 normal: {
@@ -2387,10 +2214,10 @@ $(function () {
                 },
                 // 下一行3个
                 {
-                    name: '已开窗户数',
+                    name: '已开窗数',
                     type: 'pie',
                     radius: radius,
-                    center: ['15%', '75%'],
+                    center: ['15%', '85%'],
                     startAngle: 225,
                     labelLine: {
                         normal: {
@@ -2400,10 +2227,10 @@ $(function () {
                     label: {
                             normal: {
                                 position: 'center',
-                                formatter: '已开窗户数',
+                                formatter: '已开窗数',
                                 textStyle: {
                                     color: '#ffff',
-                                    fontSize: 24
+                                    fontSize: 28
                                 }
                             }
                         },
@@ -2421,7 +2248,7 @@ $(function () {
                                 }]),
                             }
                         },
-                        name: '已开窗户数'
+                        name: '已开窗数'
                     },
                     {
                         value: randomdata[3],
@@ -2430,7 +2257,7 @@ $(function () {
                             formatter: '\n\n{c0}',
                             textStyle: {
                                 color: '#58FA58',
-                                fontSize: 24,
+                                fontSize: 28,
                                 },
                         }
                     },
@@ -2455,7 +2282,7 @@ $(function () {
                     name: '已开门数',
                     type: 'pie',
                     radius: radius,
-                    center: ['50%', '75%'],
+                    center: ['50%', '85%'],
                     startAngle: 225,
                     labelLine: {
                         normal: {
@@ -2486,7 +2313,7 @@ $(function () {
                                     formatter: '已开门数',
                                     textStyle: {
                                         color: '#ffff',
-                                        fontSize: 24
+                                        fontSize: 28
     
                                     }
                                 }
@@ -2499,7 +2326,7 @@ $(function () {
                                     formatter: '\n\n{c0}',
                                     textStyle: {
                                         color: '#e74a3b',
-                                        fontSize: 24
+                                        fontSize: 28
     
                                     }
                                 }
@@ -2522,10 +2349,10 @@ $(function () {
                 },
     
                 {
-                    name: '门窗状态',
+                    name: '请假人数',
                     type: 'pie',
                     radius: radius,
-                    center: ['85%', '75%'],
+                    center: ['85%', '85%'],
                     startAngle: 225,
                     labelLine: {
                         normal: {
@@ -2539,7 +2366,7 @@ $(function () {
                         },
                     data: [
                         {
-                        value: 75,
+                        value: 15,
                         "itemStyle": {
                             "normal": {
                                 "color": new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
@@ -2554,10 +2381,10 @@ $(function () {
     
                             label: {
                                 normal: {
-                                    formatter: '门窗状态',
+                                    formatter: '请假人数',
                                     textStyle: {
                                         color: '#f8f9fc',
-                                        fontSize: 24,
+                                        fontSize: 28,
                                         }
                                 }
                             }
@@ -2569,7 +2396,7 @@ $(function () {
                                     formatter: '\n\n{c0}',
                                     textStyle: {
                                         color: '#BDBDBD',
-                                        fontSize: 24,
+                                        fontSize: 28,
                                         }
                                 }
                             }
