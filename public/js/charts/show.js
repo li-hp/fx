@@ -2012,7 +2012,7 @@ $(function () {
                     name: '办公人数',
                     type: 'pie',
                     radius: radius,
-                    center: ['15%', '28%'],
+                    center: ['18%', '28%'],
                     startAngle: 225,
                     color: [new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
                         offset: 0,
@@ -2081,7 +2081,7 @@ $(function () {
                     name: '会议人数',
                     type: 'pie',
                     radius: radius,
-                    center: ['50%', '28%'],
+                    center: ['53%', '28%'],
                     startAngle: 225,
                     color: [new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
                         offset: 0,
@@ -2217,7 +2217,7 @@ $(function () {
                     name: '已开窗数',
                     type: 'pie',
                     radius: radius,
-                    center: ['15%', '85%'],
+                    center: ['18%', '85%'],
                     startAngle: 225,
                     labelLine: {
                         normal: {
@@ -2282,7 +2282,7 @@ $(function () {
                     name: '已开门数',
                     type: 'pie',
                     radius: radius,
-                    center: ['50%', '85%'],
+                    center: ['53%', '85%'],
                     startAngle: 225,
                     labelLine: {
                         normal: {

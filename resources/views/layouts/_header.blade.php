@@ -18,7 +18,7 @@
         </ul>
         <i class="jmod-nav-slider slider hidden" style="transform: translateX(0px);"></i>
       </div>
-
+      <div class='mod-header-right'id='divT'></div>
       {{-- <div class="mod-header-user">
         <a href="#" target="_blank" class="try jmod-header-try">控制台</a>
         <a href="#" target="_blank" class="console jmod-header-console hidden">控制台</a>

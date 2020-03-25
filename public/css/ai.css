@@ -190,6 +190,18 @@ button,input,select,textarea {
 	float: left;
 	line-height: 1;
 }
+.mod-header-right{
+	text-align: center;
+	height:4rem;
+	width: 60rem;
+	font-size: 3rem;
+	margin-right: 0;
+	float:right;
+	line-height: 8rem;
+	position: relative;
+
+
+}
 
 .mod-header-nav a:hover {
 	text-decoration: none
@@ -215,6 +227,7 @@ button,input,select,textarea {
 	padding: 0;
 	position: relative
 }
+
 
 .mod-header-nav .top-cat-arrow {
 	content: "";

@@ -11,6 +11,7 @@
 
   <!-- Js -->
   <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
   <script type="text/javascript" src="js/echarts.min.js"></script>
   <script type="text/javascript" src="js/echarts-liquidfill.min.js"></script>
   
@@ -24,6 +25,9 @@
   <link rel="stylesheet" href="./css/ai.css">
   <link href="css/uiduck.css" type="text/css" rel="stylesheet">
   <link href="css/table.css" type="text/css" rel="stylesheet">
+  <link href="css/ion.checkRadio.cloudy.css" rel="stylesheet" type="text/css">
+
+
 
 
 
@@ -59,6 +63,7 @@
   <script src="js/jtoggler.js" type="text/javascript"></script>
   <script src="{{ mix('js/app.js') }}"></script>
   <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+ 
   <script type="text/javascript" src="js/js.js"></script>
   <!-- <script type="text/javascript" src="js/51vr.js"></script> -->
   <script type="text/javascript" src="js/let.js"></script>

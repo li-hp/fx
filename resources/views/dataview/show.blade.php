@@ -667,7 +667,12 @@
 </div>
 
                  
-     
+
+     <script>
+         $(".js-demo-1").find("input").ionCheckRadio();
+$(".js-demo-2").find("input").ionCheckRadio();
+
+         </script>
 
 
                        
