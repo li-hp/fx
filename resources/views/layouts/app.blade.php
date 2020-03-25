@@ -11,7 +11,7 @@
 
   <!-- Js -->
   <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+ 
   <script type="text/javascript" src="js/echarts.min.js"></script>
   <script type="text/javascript" src="js/echarts-liquidfill.min.js"></script>
   
@@ -25,9 +25,9 @@
   <link rel="stylesheet" href="./css/ai.css">
   <link href="css/uiduck.css" type="text/css" rel="stylesheet">
   <link href="css/table.css" type="text/css" rel="stylesheet">
-  <link href="css/ion.checkRadio.cloudy.css" rel="stylesheet" type="text/css">
-
-
+  <link rel="stylesheet" type="text/css" href="css/checkboxaaa.css">
+  <link rel="stylesheet" type="text/css" href="css/checkboxbbb.css">
+ 
 
 
 

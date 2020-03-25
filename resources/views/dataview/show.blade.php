@@ -651,28 +651,34 @@
                      <div class='henbox'></div>
                      <div class='henbox'></div>
 
-                    <div class='henbox'>                <div class="js-demo-1">
-
-                    <label><input style="height:30px;width:30px"type="radio" name="radio" value="0" checked /> 低</label>
-                    <label><input style="height:30px;width:30px"type="radio" name="radio" value="1" /> 中</label>
-                    <label><input style="height:30px;width:30px"type="radio" name="radio" value="2" /> 高</label>
+                    <div class='henbox'>                <div class="pretty circle primary">
+            <input type="radio" name="radio1" checked  onclick="console.log(this.checked)"> 
+            <label><i class="default"></i> 低</label>
+          </div>
+          <div class="pretty circle success">
+            <input type="radio" name="radio1"onclick="console.log(this.checked)"> 
+            <label><i class="default"></i> 中</label>
+          </div>
+          <div class="pretty circle info"onclick="console.log(this.checked)">
+            <input type="radio" name="radio1"> 
+            <label><i class="default"></i> 高</label>
+          </div>
                     </div>
-                    </div>
-                    <div class='henbox'>                <div class="js-demo-2">
-
-<label><input style="height:30px;width:30px"type="radio" name="radio2" value="0" checked /> 低</label>
-<label><input style="height:30px;width:30px"type="radio" name="radio2" value="1" /> 中</label>
-<label><input style="height:30px;width:30px"type="radio" name="radio2" value="2" /> 高</label>
+                    <div class='henbox'>             <div class="pretty circle primary">
+            <input type="radio" name="radio4" checked  onclick="console.log(this.checked)"> 
+            <label><i class="default"></i> 低</label>
+          </div>
+          <div class="pretty circle success">
+            <input type="radio" name="radio4"onclick="console.log(this.checked)"> 
+            <label><i class="default"></i> 中</label>
+          </div>
+          <div class="pretty circle info"onclick="console.log(this.checked)">
+            <input type="radio" name="radio4"> 
+            <label><i class="default"></i> 高</label>
+          </div>
 </div>
-</div>
 
-                 
-
-     <script>
-         $(".js-demo-1").find("input").ionCheckRadio();
-$(".js-demo-2").find("input").ionCheckRadio();
-
-         </script>
+  
 
 
                        
@@ -906,19 +912,32 @@ $(".js-demo-2").find("input").ionCheckRadio();
                      <div class='henbox'></div>
                      <div class='henbox'></div>
 
-                    <div class='henbox'>                <div class="js-demo-1">
-
-                    <label><input style="height:30px;width:30px"type="radio" name="radio" value="0" checked /> 低</label>
-                    <label><input style="height:30px;width:30px"type="radio" name="radio" value="1" /> 中</label>
-                    <label><input style="height:30px;width:30px"type="radio" name="radio" value="2" /> 高</label>
+                    <div class='henbox'>              <div class="pretty circle primary">
+            <input type="radio" name="radio7" checked  onclick="console.log(this.checked)"> 
+            <label><i class="default"></i> 低</label>
+          </div>
+          <div class="pretty circle success">
+            <input type="radio" name="radio7"onclick="console.log(this.checked)"> 
+            <label><i class="default"></i> 中</label>
+          </div>
+          <div class="pretty circle info"onclick="console.log(this.checked)">
+            <input type="radio" name="radio7"> 
+            <label><i class="default"></i> 高</label>
+          </div>
                     </div>
-                    </div>
-                    <div class='henbox'>                <div class="js-demo-2">
-
-<label><input style="height:30px;width:30px"type="radio" name="radio2" value="0" checked /> 低</label>
-<label><input style="height:30px;width:30px"type="radio" name="radio2" value="1" /> 中</label>
-<label><input style="height:30px;width:30px"type="radio" name="radio2" value="2" /> 高</label>
-</div>
+                    <div class='henbox'>          
+                            <div class="pretty circle primary">
+            <input type="radio" name="radio11" checked  onclick="console.log(this.checked)"> 
+            <label><i class="default"></i> 低</label>
+          </div>
+          <div class="pretty circle success">
+            <input type="radio" name="radio11"onclick="console.log(this.checked)"> 
+            <label><i class="default"></i> 中</label>
+          </div>
+          <div class="pretty circle info"onclick="console.log(this.checked)">
+            <input type="radio" name="radio11"> 
+            <label><i class="default"></i> 高</label>
+          </div>
 </div>
 
                  

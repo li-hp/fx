@@ -8,6 +8,7 @@ yy444();
 //yy666();
 //yy777();
 yy888();
+colors=[['#7bbfd4', '#c8447e','#598c90','#dfba2b','#ef5728'],['#dfba2b', '#598c90','#7bbfd4','#dfba2b','#ef5728'],['#7bbfd4', '#598c90','#e8b5de','#dfba2b','#ef5728'],['#ff8c37', '#ffdcc3'],['#fd6f97', '#fed4e0'],['#ffc257', '#ffedcc'], ['#a181fc', '#e3d9fe']]
 
     function yy111() {
     
@@ -15,6 +16,7 @@ yy888();
     
         var myChart = echarts.init(document.getElementById('yy111'));
 
+       
         const colorBlueDark = 'rgb(26, 214,214)';
         const colorBlueDark_50 = 'rgba(26, 214,214, 0.5)';
         const colorBlueLight = 'rgb(0, 72, 195)';
@@ -29,7 +31,7 @@ yy888();
         const colorBlack = '#fff';
         const colorBlack_40 = 'rgba(0,0,0,0.4)';
         
-        
+        colors=[['#7bbfd4', '#c8447e','#598c90','#dfba2b','#ef5728'],['#dfba2b', '#598c90','#7bbfd4','#dfba2b','#ef5728'],['#7bbfd4', '#598c90','#e8b5de','#dfba2b','#ef5728'],['#ff8c37', '#ffdcc3'],['#fd6f97', '#fed4e0'],['#ffc257', '#ffedcc'], ['#a181fc', '#e3d9fe']]
         function get_multi_pie_option(settings) {
             let defaultSetting = {
                 title: '',//'Default Title',
@@ -57,15 +59,8 @@ yy888();
                         '早餐': 89,
                         '午餐': 238,
                         '晚餐':200
-                    },
-                    '营养情况': {
-                        '蛋白质': 943,
-                        '蔬菜': 2084,
-                        '水果': 2804,
-                         '能量': 240,
-                        '脂肪': 2784
-                      
-                    },
+                    }
+                
                 },
                 // pie_name: ['维度1', '维度2', '维度3'],
                 // pie_data_label: ['上周', '本周'],
@@ -93,6 +88,7 @@ yy888();
                         textStyle: {
                             color: colorBlack,
                             fontSize: defaultSetting.title_fontsize,
+                            fontWeight:400,
                         },
                     },
                 ].concat(Array.from({length: defaultSetting.pie_name.length}, (v, i) => {
@@ -100,10 +96,10 @@ yy888();
                     let _title = {
                         text: defaultSetting.pie_name[i],
                         top: '85%',
-                        left: one_pie_width * i+13 + '%',
+                        left: one_pie_width * i+20 + '%',
                         textStyle: {
                             color: colorBlack,
-                            fontSize: 30,
+                            fontSize: 32,
                             fontWeight:"400"
                         },
                     }
@@ -166,6 +162,7 @@ yy888();
                                     formatter: "{b} : {c} ({d}%)"
                                 },
                                 type: 'pie',
+                                color:colors[i],
                                 center: [one_pie_width*(i+0.5)+'%', '50%'],
                                 radius: 55+'%',//'33%',//['33%', '0%'],//33%=100%/3
                                 avoidLabelOverlap: false,
@@ -175,8 +172,9 @@ yy888();
                                         position: 'outside',//'outside',//'inside',
                                         formatter: "{b} : {c} \n({d}%)",
                                            textStyle: {
-                                            fontSize: '20',
-                                            fontWeight: 'bold'
+                                            fontSize: '25',
+                                            fontWeight: 'bold',
+                                          
                                         }
                                     },
                                     emphasis: {
@@ -213,6 +211,7 @@ yy888();
         
 
 
+
         myChart.setOption(option);
         window.addEventListener("resize",function(){
             myChart.resize();
@@ -244,6 +243,8 @@ yy888();
         const colorWhite = '#fff';
         const colorBlack = '#fff';
         const colorBlack_40 = 'rgba(0,0,0,0.4)';
+        
+        colors=[['#7bbfd4', '#c8447e','#598c90','#dfba2b','#ef5728'],['#dfba2b', '#598c90','#7bbfd4','#dfba2b','#ef5728'],['#7bbfd4', '#598c90','#e8b5de','#dfba2b','#ef5728'],['#ff8c37', '#ffdcc3'],['#fd6f97', '#fed4e0'],['#ffc257', '#ffedcc'], ['#a181fc', '#e3d9fe']]
         
         
         function get_multi_pie_option(settings) {
@@ -345,7 +346,7 @@ yy888();
                         top: '85%',
                         left: one_pie_width * i+13 + '%',
                         textStyle: {
-                            color: colorBlack,
+                            color: colors[i],
                             fontSize: 30,
                             fontWeight:"400"
                         },
@@ -410,6 +411,7 @@ yy888();
                                     formatter: "{b} : {c} ({d}%)"
                                 },
                                 type: 'pie',
+                                color:colors[i],
                                 center: [one_pie_width*(i+0.5)-20+'%', '50%'],
                                 radius: 55+'%',//'33%',//['33%', '0%'],//33%=100%/3
                                 avoidLabelOverlap: false,
@@ -640,6 +642,7 @@ yy888();
                                     formatter: "{b} : {c} ({d}%)"
                                 },
                                 type: 'pie',
+                                color:colors[1],
                                 center: [one_pie_width*(i+0.5)-20+'%', '50%'],
                                 radius: 55+'%',//'33%',//['33%', '0%'],//33%=100%/3
                                 avoidLabelOverlap: false,
