@@ -2366,7 +2366,7 @@ $(function () {
                         },
                     data: [
                         {
-                        value: 15,
+                        value: 75,
                         "itemStyle": {
                             "normal": {
                                 "color": new echarts.graphic.LinearGradient(0, 0, 0, 1, [{

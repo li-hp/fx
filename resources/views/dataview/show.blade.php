@@ -1087,6 +1087,98 @@
 
 
 
+
+
+    <div class="maincontain maincontain_renyuan">
+        
+        <div class="row" style="padding-right: 0px; padding-left:0px; margin-left:0.5px; margin-right:0.5px;">
+
+
+
+            <div class="col-xs-12 col-sm-3" style="padding-left:0px; padding-right: 0px">
+
+                <div class="boxall">
+                    <div class="alltitle">人员密度</div>
+                    <div class="allnav" id="rr111"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxall">
+                    <div class="alltitle">办公人数</div>
+                    <div class="allnav" id="rr222"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxall">
+                    <div class="alltitle">请假人数</div>
+                    <div class="allnav" id="rr333"></div>
+                    <div class="boxfoot"></div>
+                </div>
+                <div class="boxall">
+                    <div class="alltitle">来访人数</div>
+                    <div class="allnav" id="rr444"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+            
+
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+                <style type="text/css">#backImgshow{background: url("/img/owell2dd.png");}</style>
+                {{-- 此处height可以调整3d框图的高度 --}}
+                <div class="boxall_3d" id="backImgshow" style="width:100%; height:97.5%; background-size:100%; -moz-background-size:100%; background-repeat: no-repeat;">
+
+                    <div class="alltitle">全景地图</div>
+                    <div class="allnav3d" id="rr555"></div>
+                    <div class="boxfoot"></div>
+                </div> 
+            </div>
+
+
+            <div class="col-xs-12 col-sm-3" style="padding-left:0px; padding-right: 0px">
+
+
+                <div class="boxallright">
+                    <div class="alltitle">会议人数</div>
+                    <div class="allnav" id="rr666"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxallright">
+                    <div class="alltitle">开窗数</div>
+                    <div class="allnav" id="rr777"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxallright">
+                    <div class="alltitle">站立办公</div>
+                    <div class="allnav" id="rr888"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+                <div class="boxallright">
+                    <div class="alltitle">监控</div>
+                    <div class="allnav" id="rr999"></div>
+                    <div class="boxfoot"></div>
+                </div>
+
+            </div>
+
+        
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
 </div>
 
 

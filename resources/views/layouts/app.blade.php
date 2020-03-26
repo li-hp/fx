@@ -82,6 +82,7 @@
   <script type="text/javascript" src="js/charts/yingyang.js"></script>
   <script type="text/javascript" src="js/charts/jianshen.js"></script>
   <script type="text/javascript" src="js/charts/kangyi.js"></script>
+  <script type="text/javascript" src="js/charts/renyuan.js"></script>
 
   @yield('scripts')
 
