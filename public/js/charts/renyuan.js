@@ -4,6 +4,9 @@
    rr222();
    rr333();
    rr444();
+   rr666();
+   rr777();
+   rr888();
 
     function rr111() {
 
@@ -865,9 +868,441 @@
         });
     }
 
+    
 
 
 
+
+    function rr666() {
+        // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('rr666'));
+   
+    option = {
+        // backgroundColor: "#05224d",
+      
+        grid: {
+            top: '8%',
+            left: '5%',
+            right: '5%',
+            bottom: '8%',
+            containLabel: true,
+        },
+        legend: {
+            itemGap: 50,
+            show:false,
+            data: ['变化趋势' ,'每日数据'],
+            textStyle: {
+                color: "#fff",
+                fontSize:'24',
+                fontWeight: 'bold',
+            },
+        },
+        xAxis: [{
+            type: 'category',
+            boundaryGap: true,
+            axisLine: { //坐标轴轴线相关设置。数学上的x轴
+                show: true,
+                lineStyle: {
+                    color: '#f9f9f9'
+                },
+            },
+            axisLabel: { //坐标轴刻度标签的相关设置
+                textStyle: {
+                    color: "#fff",
+                    fontSize:'24',
+                    fontWeight: 'bold',
+                    margin: 15,
+                },
+            },
+            axisTick: {
+                show: false,
+            },
+            data: timeday
+        }],
+        yAxis: [{
+            name:'会议人数(人)',
+            nameTextStyle:{
+                color: "#fff",
+                fontSize:'24',
+                fontWeight: 'bold',
+            },
+            type: 'value',
+            min: 0,
+            max: 240,
+            splitNumber: 7,
+            splitLine: {
+                show: true,
+                lineStyle: {
+                    color: '#0a3256'
+                }
+            },
+            axisLine: {
+                show: false,
+            },
+            axisLabel: {
+                margin: 20,
+                textStyle: {
+                    color: "#fff",
+                    fontSize:'24',
+                    fontWeight: 'bold',
+    
+                },
+            },
+            axisTick: {
+                show: true,
+            },
+        }],
+        series: [
+            {
+            name: '每日数据',
+            type: 'bar',
+            barWidth: '30px',
+            tooltip: {
+                show: false
+            },
+             label: {
+                show: true,
+                position: 'top',
+                textStyle: {
+                    color: "#fff",
+                    fontSize:'24',
+                    fontWeight: 'bold',
+                }
+            },
+            markLine: {
+                silent: false,
+                symbol: 'none',
+                label: {
+                    show:true,
+                    position:'end', // 'start\middle\end'
+                    formatter: '{b}',
+                    color: "#fff",
+                    fontSize:'24',
+                    fontWeight: 'bold',
+                },
+                data: [
+                   
+                 {
+                    name: '超标',
+                    yAxis: 2000,
+                    lineStyle:{
+                        color:'#FF4500',
+                        width:2
+                    }
+                }],
+    
+               
+            },
+        
+            itemStyle: {
+                normal: {
+                    color: function(params) {
+                        var colorList = ['#0ec1ff', '#10cdff', '#12daff', '#15ebff', '#17f8ff', '#1cfffb', '#1dfff1'];
+                        return colorList[params.dataIndex];
+                    },
+                    barBorderRadius: [30, 30, 0, 0],
+                    shadowBlur: 4,
+                }
+            },
+            data: bangongrenshu
+        }]
+    };
+    
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+        window.addEventListener("resize",function(){
+            myChart.resize();
+        });
+    }
+
+    function rr777() {
+        // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('rr777'));
+   
+    option = {
+        // backgroundColor: "#05224d",
+      
+        grid: {
+            top: '8%',
+            left: '5%',
+            right: '5%',
+            bottom: '8%',
+            containLabel: true,
+        },
+        legend: {
+            itemGap: 50,
+            show:false,
+            data: ['变化趋势' ,'每日数据'],
+            textStyle: {
+                color: "#fff",
+                fontSize:'24',
+                fontWeight: 'bold',
+            },
+        },
+        xAxis: [{
+            type: 'category',
+            boundaryGap: true,
+            axisLine: { //坐标轴轴线相关设置。数学上的x轴
+                show: true,
+                lineStyle: {
+                    color: '#f9f9f9'
+                },
+            },
+            axisLabel: { //坐标轴刻度标签的相关设置
+                textStyle: {
+                    color: "#fff",
+                    fontSize:'24',
+                    fontWeight: 'bold',
+                    margin: 15,
+                },
+            },
+            axisTick: {
+                show: false,
+            },
+            data: timeweek
+        }],
+        yAxis: [{
+            name:'站立办公(人)',
+            nameTextStyle:{
+                color: "#fff",
+                fontSize:'24',
+                fontWeight: 'bold',
+            },
+            type: 'value',
+            min: 0,
+            max: 20,
+            splitNumber: 7,
+            splitLine: {
+                show: true,
+                lineStyle: {
+                    color: '#0a3256'
+                }
+            },
+            axisLine: {
+                show: false,
+            },
+            axisLabel: {
+                margin: 20,
+                textStyle: {
+                    color: "#fff",
+                    fontSize:'24',
+                    fontWeight: 'bold',
+    
+                },
+            },
+            axisTick: {
+                show: true,
+            },
+        }],
+        series: [
+            {
+            name: '每日数据',
+            type: 'bar',
+            barWidth: '30px',
+            tooltip: {
+                show: false
+            },
+             label: {
+                show: true,
+                position: 'top',
+                textStyle: {
+                    color: "#fff",
+                    fontSize:'24',
+                    fontWeight: 'bold',
+                }
+            },
+            markLine: {
+                silent: false,
+                symbol: 'none',
+                label: {
+                    show:true,
+                    position:'end', // 'start\middle\end'
+                    formatter: '{b}',
+                    color: "#fff",
+                    fontSize:'24',
+                    fontWeight: 'bold',
+                },
+                data: [
+                   
+                 {
+                    name: '超标',
+                    yAxis: 2000,
+                    lineStyle:{
+                        color:'#FF4500',
+                        width:2
+                    }
+                }],
+    
+               
+            },
+        
+            itemStyle: {
+                normal: {
+                    color: function(params) {
+                        var colorList = ['#0ec1ff', '#10cdff', '#12daff', '#15ebff', '#17f8ff', '#1cfffb', '#1dfff1'];
+                        return colorList[params.dataIndex];
+                    },
+                    barBorderRadius: [30, 30, 0, 0],
+                    shadowBlur: 4,
+                }
+            },
+            data: laifangrenshu
+        }]
+    };
+    
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+        window.addEventListener("resize",function(){
+            myChart.resize();
+        });
+    }
+
+    
+    function rr888() {
+        // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('rr888'));
+   
+    option = {
+        // backgroundColor: "#05224d",
+      
+        grid: {
+            top: '8%',
+            left: '5%',
+            right: '5%',
+            bottom: '8%',
+            containLabel: true,
+        },
+        legend: {
+            itemGap: 50,
+            show:false,
+            data: ['变化趋势' ,'每日数据'],
+            textStyle: {
+                color: "#fff",
+                fontSize:'24',
+                fontWeight: 'bold',
+            },
+        },
+        xAxis: [{
+            type: 'category',
+            boundaryGap: true,
+            axisLine: { //坐标轴轴线相关设置。数学上的x轴
+                show: true,
+                lineStyle: {
+                    color: '#f9f9f9'
+                },
+            },
+            axisLabel: { //坐标轴刻度标签的相关设置
+                textStyle: {
+                    color: "#fff",
+                    fontSize:'24',
+                    fontWeight: 'bold',
+                    margin: 15,
+                },
+            },
+            axisTick: {
+                show: false,
+            },
+            data: timeweek
+        }],
+        yAxis: [{
+            name:'开窗数',
+            nameTextStyle:{
+                color: "#fff",
+                fontSize:'24',
+                fontWeight: 'bold',
+            },
+            type: 'value',
+            min: 0,
+            max: 20,
+            splitNumber: 7,
+            splitLine: {
+                show: true,
+                lineStyle: {
+                    color: '#0a3256'
+                }
+            },
+            axisLine: {
+                show: false,
+            },
+            axisLabel: {
+                margin: 20,
+                textStyle: {
+                    color: "#fff",
+                    fontSize:'24',
+                    fontWeight: 'bold',
+    
+                },
+            },
+            axisTick: {
+                show: true,
+            },
+        }],
+        series: [
+            {
+            name: '每日数据',
+            type: 'bar',
+            barWidth: '30px',
+            tooltip: {
+                show: false
+            },
+             label: {
+                show: true,
+                position: 'top',
+                textStyle: {
+                    color: "#fff",
+                    fontSize:'24',
+                    fontWeight: 'bold',
+                }
+            },
+            markLine: {
+                silent: false,
+                symbol: 'none',
+                label: {
+                    show:true,
+                    position:'end', // 'start\middle\end'
+                    formatter: '{b}',
+                    color: "#fff",
+                    fontSize:'24',
+                    fontWeight: 'bold',
+                },
+                data: [
+                   
+                 {
+                    name: '超标',
+                    yAxis: 2000,
+                    lineStyle:{
+                        color:'#FF4500',
+                        width:2
+                    }
+                }],
+    
+               
+            },
+        
+            itemStyle: {
+                normal: {
+                    color: function(params) {
+                        var colorList = ['#0ec1ff', '#10cdff', '#12daff', '#15ebff', '#17f8ff', '#1cfffb', '#1dfff1'];
+                        return colorList[params.dataIndex];
+                    },
+                    barBorderRadius: [30, 30, 0, 0],
+                    shadowBlur: 4,
+                }
+            },
+            data: laifangrenshu
+        }]
+    };
+    
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+        window.addEventListener("resize",function(){
+            myChart.resize();
+        });
+    }
+
+    
+
+    
     
   
     

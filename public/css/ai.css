@@ -39,7 +39,9 @@ em {
 }
 
 html {
-	height: 100%
+	height: 100%;
+	scrollbar-width: none;
+	overflow:-moz-scrollbars-none;
 }
 
 body {
@@ -50,7 +52,8 @@ body {
 	min-width: 1200px;
 	color: #323232;
 	min-height: 100%;
-	box-sizing: border-box
+	box-sizing: border-box;
+	
 }
 
 button,input,select,textarea {
@@ -61,6 +64,7 @@ button,input,select,textarea {
 ::-webkit-input-placeholder {
 	color: #a9a9a9
 }
+
 
 :-moz-placeholder {
 	color: #a9a9a9
@@ -173,7 +177,7 @@ button,input,select,textarea {
 	/* //鼠标选定前的logo */
 	float: left;
 	width: 600px;
-	height: 135px; 
+	height: 130px; 
 	background-image: url(../img/cpimg/owell5.png);
 	background-position: 0 15px;
 	margin-left: 70px;

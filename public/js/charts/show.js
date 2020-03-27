@@ -2000,6 +2000,12 @@ $(function () {
     function e999() {
 
         var myChart = echarts.init(document.getElementById('e999'));
+        var yzhou;
+        if (mb=="FF"){
+          yzhou="80%"
+        }
+        else yzhou='85%'
+        
     
         var randomdata = renyuandata;
     
@@ -2217,7 +2223,7 @@ $(function () {
                     name: '已开窗数',
                     type: 'pie',
                     radius: radius,
-                    center: ['18%', '85%'],
+                    center: ['18%', yzhou],
                     startAngle: 225,
                     labelLine: {
                         normal: {
@@ -2282,7 +2288,7 @@ $(function () {
                     name: '已开门数',
                     type: 'pie',
                     radius: radius,
-                    center: ['53%', '85%'],
+                    center: ['53%', yzhou],
                     startAngle: 225,
                     labelLine: {
                         normal: {
@@ -2352,7 +2358,7 @@ $(function () {
                     name: '请假人数',
                     type: 'pie',
                     radius: radius,
-                    center: ['85%', '85%'],
+                    center: ['85%', yzhou],
                     startAngle: 225,
                     labelLine: {
                         normal: {

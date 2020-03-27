@@ -1146,13 +1146,13 @@
                 </div>
 
                 <div class="boxallright">
-                    <div class="alltitle">开窗数</div>
+                    <div class="alltitle">站立办公</div>
                     <div class="allnav" id="rr777"></div>
                     <div class="boxfoot"></div>
                 </div>
 
                 <div class="boxallright">
-                    <div class="alltitle">站立办公</div>
+                    <div class="alltitle">开窗数</div>
                     <div class="allnav" id="rr888"></div>
                     <div class="boxfoot"></div>
                 </div>
