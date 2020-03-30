@@ -6,10 +6,11 @@
 // License: http://www.apache.org/licenses/LICENSE-2.0
 //-----------------------------------------------------------
 
-define("LAJP_PORT_2", 11111);         //Python端侦听端口,对应php_python.py的端口
-define("LAJP_IP_2", "10.0.75.1");     
-//          172.16.85.52          10.0.75.1
-//Python端IP-python端位于workspace容器IP地址172.25.0.4 主机地址10.0.75.1
+define("LAJP_PORT_2", 11112);         //Python端侦听端口,对应php_python.py的端口
+define("LAJP_IP_2", "192.168.28.1");
+
+//php-fpm 地址：172.22.0.9   workspace：172.22.0.5  主机：10.0.75.1
+//Python端IP-python端位于workspace容器IP地址172.22.0.9 主机地址10.0.75.1
 //由于新建镜像（dock-compose build）后再启动laradock容器可能会导致IP地址有变化
 //在主机内使用命令( dock network inspect "lardock-backend网络ID" ) 查看具体的IP地址
 
@@ -37,7 +38,7 @@ function ppython2()
     {
         throw new Exception("[PPython Error] lapp_call function's first argument must be string \"module_name::function_name\".", PARAM_TYPE_ERROR_2);
     }
-    
+
     if (($socket = socket_create(AF_INET, SOCK_STREAM, 0)) === false)
     {
         throw new Exception("[PPython Error] socket create error.", SOCKET_ERROR_2);
@@ -117,7 +118,7 @@ function ppython2()
             }
             catch (Exception $e){
                 echo "receive ".$rsp_msg."<br/>\r\n";
-            } 
+            }
         }
     }
 }

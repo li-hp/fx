@@ -27,12 +27,18 @@ Route::get('/renyuan', 'PagessController@renyuan')->name('huiyi');
 Route::get('/test', 'PagessController@test')->name('test');
 
 // 灯光控制和模拟展示
-
 Route::get('/ledonoff', 'LedsController@update')->name('led.update');
 Route::get('/ledshow', 'LedsController@show')->name('led.show');
 
 Route::get('/socketpython/{id}', 'LedsController@socketpython')->name('led.socketpython');
-// Route::post('/ledonff', 'LedsController@update')->name('led.update');
+Route::get('/websocket_ppython2','LedsController@websocket_ppython')->name('yiwelink');
+
 
 Route::get('/airdatashow','AirshowController@airdata')->name('airdata');
 Route::resource('airs', 'AirsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
+
+// 采集 2020.03.25
+Route::get('/lanju_inside_n', 'CollectController@datathismoment')->name('lanju_inside_n');
+Route::get('/lanju_inside_h', 'CollectController@data7hour')->name('lanju_inside_h');
+Route::get('/lanju_inside_d', 'CollectController@data7day')->name('lanju_inside_d');
+Route::get('/axis', 'CollectController@axis')->name('axis');

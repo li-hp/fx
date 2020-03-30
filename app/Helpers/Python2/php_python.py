@@ -6,11 +6,11 @@ import socket
 import os
 
 import process
-import test_socket
+import websocket45
 # -------------------------------------------------
 # 基本配置
 # -------------------------------------------------
-LISTEN_PORT = 11111     #服务侦听端口
+LISTEN_PORT = 11112     #服务侦听端口
 CHARSET = "utf-8"       #设置字符集（和PHP交互的字符集）
 
 
@@ -19,7 +19,7 @@ CHARSET = "utf-8"       #设置字符集（和PHP交互的字符集）
 # -------------------------------------------------
 #import cx_Oracle
 #数据库字符集
-#os.environ['NLS_LANG'] = 'SIMPLIFIED CHINESE_CHINA.UTF8' 
+#os.environ['NLS_LANG'] = 'SIMPLIFIED CHINESE_CHINA.UTF8'
 #数据库连接池
 #pool = cx_Oracle.SessionPool(
 #    user='diaoyf',
@@ -66,14 +66,14 @@ if __name__ == '__main__':
     print ("-------------------------------------------")
 
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  #TCP/IP
-    sock.bind(('', LISTEN_PORT))  
-    sock.listen(5)  
+    sock.bind(('', LISTEN_PORT))
+    sock.listen(5)
 
     print ("Listen port: %d" % LISTEN_PORT)
     print ("charset: %s" % CHARSET)
     print ("Server startup...")
 
-    while 1:  
+    while 1:
         connection,address = sock.accept()  #收到一个请求
 
         print ("client's IP:%s, PORT:%d" % address)

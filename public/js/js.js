@@ -89,7 +89,6 @@ if (mb=="FF"){
 
 
 
-
 //  子页面切换函数
 var s=0;
 
@@ -99,13 +98,13 @@ test1(ziyemiandata);
 test2(ziyemiandata);
 
 //     setInterval(function(){document.querySelector('.nav-lin'+s).click();
-//     if(s++==8)  s=0; 
-// },30000); 
+//     if(s++==8)  s=0;
+// },30000);
 
 
 
-function test1 (data) { 
-    
+function test1 (data) {
+
     var zymdata = data;
     setTimeout(function(){
         var str1 = '.maincontain_';
@@ -113,8 +112,7 @@ function test1 (data) {
 
         for (var i = 1; i < zymdata.length; i++)
         {
-            $(str1.concat(zymdata[i])).css("display","none"); 
-         
+            $(str1.concat(zymdata[i])).css("display","none");
         }
     },800);
 }
@@ -147,7 +145,7 @@ function test2 (data) {
 
 
         })
-    }   
+    }
 }
 
 

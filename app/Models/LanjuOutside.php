@@ -4,9 +4,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Airr extends Model
+class LanjuOutside extends Model
 {
+
     protected $fillable = [
-        'x', 'y', 'z'
+        'co2', 'voc', 'tem', 'hum', 'pm25', 'ch2o'
     ];
 }

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTemporariesTable extends Migration
+class CreateLanjuOutsidesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class CreateTemporariesTable extends Migration
      */
     public function up()
     {
-        Schema::create('temporaries', function (Blueprint $table) {
+        Schema::create('lanju_outsides', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('devid');
+            $table->char('name',100);
+            $table->bigInteger('device');
             $table->float('co2', 8, 2);
             $table->float('voc', 8, 2);
             $table->float('tem', 8, 2);
@@ -33,6 +34,6 @@ class CreateTemporariesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('temporaries');
+        Schema::dropIfExists('lanju_outsides');
     }
 }
