@@ -23,9 +23,9 @@ timeday=["8:00","9:00","10:00","11:00","12:00","13:00","14:00"]   // 一天的�
 
 
 // kqdata=[kqdatabase[0][1],kqdatabase[0][5],kqdatabase[0][2],kqdatabase[0][6],kqdatabase[0][2],kqdatabase[0][3]]//空气数据  温度，湿度，甲醛 voc pm2.5 co2
-kqdata=[1,11,1,1,1,1]
-setTimeout(function(){kqdata=[kqdatabase[0][1],kqdatabase[0][5],kqdatabase[0][2],kqdatabase[0][6],kqdatabase[0][2],kqdatabase[0][3]]//空气数据  温度，湿度，甲醛 voc pm2.5 co2
-}, 3000);
+ kqdata=[1,11,1,1,1,1]
+// setTimeout(function(){kqdata=[kqdatabase[0][1],kqdatabase[0][5],kqdatabase[0][2],kqdatabase[0][6],kqdatabase[0][2],kqdatabase[0][3]]//空气数据  温度，湿度，甲醛 voc pm2.5 co2
+// }, 3000);
 
 
 
