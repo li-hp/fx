@@ -38,4 +38,7 @@ Route::get('/airdatashow','AirshowController@airdata')->name('airdata');
 Route::resource('airs', 'AirsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
 
 // 采集 2020.03.25
-Route::get('/lanju_inside', 'CollectController@datathismoment')->name('lanju_inside');
+Route::get('/lanju_inside_n', 'CollectController@datathismoment')->name('lanju_inside_n');
+Route::get('/lanju_inside_h', 'CollectController@data7hour')->name('lanju_inside_h');
+Route::get('/lanju_inside_d', 'CollectController@data7day')->name('lanju_inside_d');
+Route::get('/axis', 'CollectController@axis')->name('axis');

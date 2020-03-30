@@ -13,11 +13,15 @@ class CollectController extends Controller
         // 设置时区,待优化，写入php.ini文件内
         date_default_timezone_set('PRC');
 
+        //插入数据
         $py_data = ppython2("lanju_inside::Lanju_inside");
         DB::table('lanju_insides')->insert($py_data);
 
-        return $py_data;
+        //读取最新数据
+        $maxid = DB::table('lanju_insides')->max('id');
+        $data_now = DB::table('lanju_insides')->where('id', '=', $maxid)->first();
 
+        return $py_data;
     }
 
     // 7小时历史数据

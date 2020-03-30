@@ -1,44 +1,79 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<html lang="{{ app()->getLocale() }}">
+
 <head>
-<meta charset="UTF-8" />
-<title>jQuery仿腾讯AI开发平台导航代码</title>
-<meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
 
-<link rel="stylesheet" href="./css/ai.css">
+    <meta charset="utf-8">
 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    {{--        <meta name="csrf-token" content="{{ csrf_token() }}">--}}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Lar1avel1</title>
+
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
+
 <body>
-<div class="mod-header">
-
-
-  <div class="layout clearfix">
-    <a href="" class="mod-header-logo"></a>
-
-    <div class="mod-header-nav">
-      <ul id="jmod-header-nav">
-        <li id="nav-header-accelerator" class="top-cat"><h2><a href="#">AI加速器</a></h2></li>
-        <li id="nav-header-info" class="top-cat"><h2><a href="#">资讯动态</a></h2></li>
-        <li id="nav-header-hr" class="top-cat"><h2><a href="#">AI在腾讯</a></h2></li>
-        <li id="nav-header-join" class="top-cat"><h2><a href="#">加入我们</a></h2></li>
-        <li id="nav-header-doc" class="top-cat"><h2><a href="#">文档中心</a></h2></li>
-      </ul>
-      <i class="jmod-nav-slider slider hidden" style="transform: translateX(0px);"></i>
+<div class="boxall">
+    <div class="alltitle">交互指令</div>
+    <div class="sysw">
+        <button
+            class="changjingqiehuan btn-success center-block btn-sm ">
+            <p style="font-size:5rem;">场景</p>
+        </button>
     </div>
-
-    <div class="mod-header-user">
-      <a href="#" target="_blank" class="try jmod-header-try">控制台</a>
-      <a href="#" target="_blank" class="console jmod-header-console hidden">控制台</a>
+    <div class="sysw">
+        <button
+            class="light button-3d button-primary center-block btn-sm ">
+            <p style="font-size:5rem;">灯光</p>
+        </button>
     </div>
-  </div>
-
+    <div class="sysw">
+        <button
+            class="heatmap btn-success center-block btn-sm ">
+            <p style="font-size:5rem;">热力</p>
+        </button>
+    </div>
+    <div class="sysw">
+        <button
+            class="curtains btn-primary center-block btn-sm ">
+            <p style="font-size:5rem;">窗帘</p>
+        </button>
+    </div>
+    <div class="sysw">
+        <button
+            class="axis btn-primary center-block btn-sm ">
+            <p style="font-size:5rem;">坐标</p>
+        </button>
+    </div>
+    <div class="sysw">
+        <button
+            class="qixiaoshi btn-primary center-block btn-sm ">
+            <p style="font-size:5rem;">七小时</p>
+        </button>
+    </div>
+    <div class="sysw">
+        <button
+            class="qitian btn-primary center-block btn-sm ">
+            <p style="font-size:5rem;">七天</p>
+        </button>
+    </div>
+    <div class="sysw">
+        <button
+            class="shishi btn-primary center-block btn-sm ">
+            <p style="font-size:5rem;">实时</p>
+        </button>
+    </div>
+    <div class="boxfoot"></div>
 </div>
 
-  <div class="banner jmod_banner">
-    <div class="ban cur" style="background-color:#ff0;background-image:url('自定义Banner图片地址');height: 62px;">
-    </div>
-  </div>
-<script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-<script src="./js/ai.js"></script>
+<script src="{{ mix('js/app.js') }}"></script>
+<script src="js/js.js"></script>
+
 </body>
+
 </html>

@@ -111,134 +111,1269 @@
 *
 * The default values for the .button class
 */
+
 .button {
-	display: flex;
-	outline: none;
+  color: #666;
+  background-color: #EEE;
+  border-color: #EEE;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+  padding: 0 40px;
+  margin: 0;
+  display: inline-block;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   cursor: pointer;
-  height:50%;
-  width:90%;
-  text-align:  center;
-  align-items: center;        
-	text-decoration: none;
-	font: 30px/100% 'Microsoft yahei',Arial, Helvetica, sans-serif;
-	padding: .5em 2em .55em;
-	text-shadow: 0 1px 1px rgba(0,0,0,.3);
-	-webkit-border-radius: .5em; 
-	-moz-border-radius: .5em;
-	border-radius: .5em;
-	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	box-shadow: 0 1px 2px rgba(0,0,0,.2);
-}
-.button:hover {
-	text-decoration: none;
-}
-.button:active {
-	position: relative;
-	top: 1px;
-}
-.bigrounded {
-	-webkit-border-radius: 2em;
-	-moz-border-radius: 2em;
-	border-radius: 2em;
-}
-.medium {
-	font-size: 12px;
-	padding: .4em 1.5em .42em;
-}
-.small {
-	font-size: 11px;
-	padding: .2em 1em .275em;
+  border: none;
+  box-sizing: border-box;
+  transition-property: all;
+  transition-duration: 0.3s;
+  /*
+  * Disabled State
+  *
+  * The disabled state uses the class .disabled, is-disabled,
+  * and the form attribute disabled="disabled".
+  * The use of !important is only added because this is a state
+  * that must be applied to all buttons when in a disabled state.
+  */
 }
 
-
-/* blue */
-.blue {
-	color: #d9eef7;
-	border: solid 1px #0076a3;
-	background: #0095cd;
-	background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
-	background: -moz-linear-gradient(top,  #00adee,  #0078a5);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
-}
-.blue:hover {
-	background: #007ead;
-	background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
-	background: -moz-linear-gradient(top,  #0095cc,  #00678e);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095cc', endColorstr='#00678e');
-}
-.blue:active {
-	color: #80bed6;
-	background: -webkit-gradient(linear, left top, left bottom, from(#0078a5), to(#00adee));
-	background: -moz-linear-gradient(top,  #0078a5,  #00adee);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0078a5', endColorstr='#00adee');
+.button:visited {
+  color: #666;
 }
 
-/* green */
-.green {
-	color: #e8f0de;
-	border: solid 1px #538312;
-	background: #64991e;
-	background: -webkit-gradient(linear, left top, left bottom, from(#7db72f), to(#4e7d0e));
-	background: -moz-linear-gradient(top,  #7db72f,  #4e7d0e);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#7db72f', endColorstr='#4e7d0e');
-}
-.green:hover {
-	background: #538018;
-	background: -webkit-gradient(linear, left top, left bottom, from(#6b9d28), to(#436b0c));
-	background: -moz-linear-gradient(top,  #6b9d28,  #436b0c);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#6b9d28', endColorstr='#436b0c');
-}
-.green:active {
-	color: #a9c08c;
-	background: -webkit-gradient(linear, left top, left bottom, from(#4e7d0e), to(#7db72f));
-	background: -moz-linear-gradient(top,  #4e7d0e,  #7db72f);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#4e7d0e', endColorstr='#7db72f');
+.button:hover,
+.button:focus {
+  background-color: #f6f6f6;
+  text-decoration: none;
+  outline: none;
 }
 
-/* white */
-.white {
-	color: #606060;
-	border: solid 1px #b7b7b7;
-	background: rgba(255, 255, 255, 0.233);
-	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
-	background: -moz-linear-gradient(top,  #fff,  #ededed);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');
-}
-.white:hover {
-	background: rgba(255, 255, 255, 0.233);
-	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc));
-	background: -moz-linear-gradient(top,  #fff,  #dcdcdc);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcdcdc');
-}
-.white:active {
-	color: #999;
-	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#fff));
-	background: -moz-linear-gradient(top,  #ededed,  #fff);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ffffff');
+.button:active,
+.button.active,
+.button.is-active {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  background-color: #eeeeee;
+  border-color: #cfcfcf;
+  color: #d4d4d4;
+  transition-duration: 0s;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-/* orange */
-.orange {
-	color: #fef4e9;
-	border: solid 1px #da7c0c;
-	background: #f78d1d;
-	background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
-	background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+.button.disabled,
+.button.is-disabled,
+.button:disabled {
+  top: 0 !important;
+  background: #EEE !important;
+  border: 1px solid #DDD !important;
+  text-shadow: 0 1px 1px white !important;
+  color: #CCC !important;
+  cursor: default !important;
+  -webkit-appearance: none !important;
+     -moz-appearance: none !important;
+          appearance: none !important;
+  box-shadow: none !important;
+  opacity: 0.8 !important;
 }
-.orange:hover {
-	background: #f47c20;
-	background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
-	background: -moz-linear-gradient(top,  #f88e11,  #f06015);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+
+/*
+* Base Button Tyography
+*
+*/
+
+.button-uppercase {
+  text-transform: uppercase;
 }
-.orange:active {
-	color: #fcd3a5;
-	background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
-	background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
-	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');
+
+.button-lowercase {
+  text-transform: lowercase;
 }
+
+.button-capitalize {
+  text-transform: capitalize;
+}
+
+.button-small-caps {
+  font-variant: small-caps;
+}
+
+.button-icon-txt-large {
+  font-size: 36px !important;
+}
+
+/*
+* Base padding
+*
+*/
+
+.button-width-small {
+  padding: 0 10px !important;
+}
+
+/*
+* Base Colors
+*
+* Create colors for buttons
+* (.button-primary, .button-secondary, etc.)
+*/
+
+.button-primary,
+.button-primary-flat {
+  background-color: #1B9AF7;
+  border-color: #1B9AF7;
+  color: #FFF;
+}
+
+.button-primary:visited,
+.button-primary-flat:visited {
+  color: #FFF;
+}
+
+.button-primary:hover,
+.button-primary:focus,
+.button-primary-flat:hover,
+.button-primary-flat:focus {
+  background-color: #4cb0f9;
+  border-color: #4cb0f9;
+  color: #FFF;
+}
+
+.button-primary:active,
+.button-primary.active,
+.button-primary.is-active,
+.button-primary-flat:active,
+.button-primary-flat.active,
+.button-primary-flat.is-active {
+  background-color: #2798eb;
+  border-color: #2798eb;
+  color: #0880d7;
+}
+
+.button-plain,
+.button-plain-flat {
+  background-color: #FFF;
+  border-color: #FFF;
+  color: #1B9AF7;
+}
+
+.button-plain:visited,
+.button-plain-flat:visited {
+  color: #1B9AF7;
+}
+
+.button-plain:hover,
+.button-plain:focus,
+.button-plain-flat:hover,
+.button-plain-flat:focus {
+  background-color: white;
+  border-color: white;
+  color: #1B9AF7;
+}
+
+.button-plain:active,
+.button-plain.active,
+.button-plain.is-active,
+.button-plain-flat:active,
+.button-plain-flat.active,
+.button-plain-flat.is-active {
+  background-color: white;
+  border-color: white;
+  color: #e6e6e6;
+}
+
+.button-inverse,
+.button-inverse-flat {
+  background-color: #222;
+  border-color: #222;
+  color: #EEE;
+}
+
+.button-inverse:visited,
+.button-inverse-flat:visited {
+  color: #EEE;
+}
+
+.button-inverse:hover,
+.button-inverse:focus,
+.button-inverse-flat:hover,
+.button-inverse-flat:focus {
+  background-color: #3c3c3c;
+  border-color: #3c3c3c;
+  color: #EEE;
+}
+
+.button-inverse:active,
+.button-inverse.active,
+.button-inverse.is-active,
+.button-inverse-flat:active,
+.button-inverse-flat.active,
+.button-inverse-flat.is-active {
+  background-color: #222222;
+  border-color: #222222;
+  color: #090909;
+}
+
+.button-action,
+.button-action-flat {
+  background-color: #A5DE37;
+  border-color: #A5DE37;
+  color: #FFF;
+}
+
+.button-action:visited,
+.button-action-flat:visited {
+  color: #FFF;
+}
+
+.button-action:hover,
+.button-action:focus,
+.button-action-flat:hover,
+.button-action-flat:focus {
+  background-color: #b9e563;
+  border-color: #b9e563;
+  color: #FFF;
+}
+
+.button-action:active,
+.button-action.active,
+.button-action.is-active,
+.button-action-flat:active,
+.button-action-flat.active,
+.button-action-flat.is-active {
+  background-color: #a1d243;
+  border-color: #a1d243;
+  color: #8bc220;
+}
+
+.button-highlight,
+.button-highlight-flat {
+  background-color: #FEAE1B;
+  border-color: #FEAE1B;
+  color: #FFF;
+}
+
+.button-highlight:visited,
+.button-highlight-flat:visited {
+  color: #FFF;
+}
+
+.button-highlight:hover,
+.button-highlight:focus,
+.button-highlight-flat:hover,
+.button-highlight-flat:focus {
+  background-color: #fec04e;
+  border-color: #fec04e;
+  color: #FFF;
+}
+
+.button-highlight:active,
+.button-highlight.active,
+.button-highlight.is-active,
+.button-highlight-flat:active,
+.button-highlight-flat.active,
+.button-highlight-flat.is-active {
+  background-color: #f3ab26;
+  border-color: #f3ab26;
+  color: #e59501;
+}
+
+.button-caution,
+.button-caution-flat {
+  background-color: #FF4351;
+  border-color: #FF4351;
+  color: #FFF;
+}
+
+.button-caution:visited,
+.button-caution-flat:visited {
+  color: #FFF;
+}
+
+.button-caution:hover,
+.button-caution:focus,
+.button-caution-flat:hover,
+.button-caution-flat:focus {
+  background-color: #ff7680;
+  border-color: #ff7680;
+  color: #FFF;
+}
+
+.button-caution:active,
+.button-caution.active,
+.button-caution.is-active,
+.button-caution-flat:active,
+.button-caution-flat.active,
+.button-caution-flat.is-active {
+  background-color: #f64c59;
+  border-color: #f64c59;
+  color: #ff1022;
+}
+
+.button-royal,
+.button-royal-flat {
+  background-color: #7B72E9;
+  border-color: #7B72E9;
+  color: #FFF;
+}
+
+.button-royal:visited,
+.button-royal-flat:visited {
+  color: #FFF;
+}
+
+.button-royal:hover,
+.button-royal:focus,
+.button-royal-flat:hover,
+.button-royal-flat:focus {
+  background-color: #a49ef0;
+  border-color: #a49ef0;
+  color: #FFF;
+}
+
+.button-royal:active,
+.button-royal.active,
+.button-royal.is-active,
+.button-royal-flat:active,
+.button-royal-flat.active,
+.button-royal-flat.is-active {
+  background-color: #827ae1;
+  border-color: #827ae1;
+  color: #5246e2;
+}
+
+/*
+* Base Layout Styles
+*
+* Very Miminal Layout Styles
+*/
+
+.button-block,
+.button-stacked {
+  display: block;
+}
+
+/*
+* Button Types (optional)
+*
+* All of the files below represent the various button
+* types (including shapes & sizes). None of these files
+* are required. Simple remove the uneeded type below and
+* the button type will be excluded from the final build
+*/
+
+/*
+* Button Shapes
+*
+* This file creates the various button shapes
+* (ex. Circle, Rounded, Pill)
+*/
+
+.button-square {
+  border-radius: 0;
+}
+
+.button-box {
+  border-radius: 10px;
+}
+
+.button-rounded {
+  border-radius: 4px;
+}
+
+.button-pill {
+  border-radius: 200px;
+}
+
+.button-circle {
+  border-radius: 100%;
+}
+
+/*
+* Size Adjustment for equal height & widht buttons
+*
+* Remove padding and set a fixed width.
+*/
+
+.button-circle,
+.button-box,
+.button-square {
+  padding: 0 !important;
+  width: 40px;
+}
+
+.button-circle.button-giant,
+.button-box.button-giant,
+.button-square.button-giant {
+  width: 70px;
+}
+
+.button-circle.button-jumbo,
+.button-box.button-jumbo,
+.button-square.button-jumbo {
+  width: 60px;
+}
+
+.button-circle.button-large,
+.button-box.button-large,
+.button-square.button-large {
+  width: 50px;
+}
+
+.button-circle.button-normal,
+.button-box.button-normal,
+.button-square.button-normal {
+  width: 40px;
+}
+
+.button-circle.button-small,
+.button-box.button-small,
+.button-square.button-small {
+  width: 30px;
+}
+
+.button-circle.button-tiny,
+.button-box.button-tiny,
+.button-square.button-tiny {
+  width: 24px;
+}
+
+/*
+* Border Buttons
+*
+* These buttons have no fill they only have a
+* border to define their hit target.
+*/
+
+.button-border,
+.button-border-thin,
+.button-border-thick {
+  background: none;
+  border-width: 2px;
+  border-style: solid;
+  line-height: 36px;
+}
+
+.button-border:hover,
+.button-border-thin:hover,
+.button-border-thick:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.button-border:active,
+.button-border-thin:active,
+.button-border-thick:active,
+.button-border.active,
+.active.button-border-thin,
+.active.button-border-thick,
+.button-border.is-active,
+.is-active.button-border-thin,
+.is-active.button-border-thick {
+  box-shadow: none;
+  text-shadow: none;
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+
+/*
+* Border Optional Sizes
+*
+* A slight variation in border thickness
+*/
+
+.button-border-thin {
+  border-width: 1px;
+}
+
+.button-border-thick {
+  border-width: 3px;
+}
+
+/*
+* Border Button Colors
+*
+* Create colors for buttons
+* (.button-primary, .button-secondary, etc.)
+*/
+
+.button-border,
+.button-border-thin,
+.button-border-thick,
+.button-border-thin,
+.button-border-thick {
+  /*
+  * Border Button Size Adjustment
+  *
+  * The line-height must be adjusted to compinsate for
+  * the width of the border.
+  */
+}
+
+.button-border.button-primary,
+.button-primary.button-border-thin,
+.button-primary.button-border-thick,
+.button-border-thin.button-primary,
+.button-border-thick.button-primary {
+  color: #1B9AF7;
+}
+
+.button-border.button-primary:hover,
+.button-primary.button-border-thin:hover,
+.button-primary.button-border-thick:hover,
+.button-border.button-primary:focus,
+.button-primary.button-border-thin:focus,
+.button-primary.button-border-thick:focus,
+.button-border-thin.button-primary:hover,
+.button-border-thin.button-primary:focus,
+.button-border-thick.button-primary:hover,
+.button-border-thick.button-primary:focus {
+  background-color: rgba(76, 176, 249, 0.9);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.button-border.button-primary:active,
+.button-primary.button-border-thin:active,
+.button-primary.button-border-thick:active,
+.button-border.button-primary.active,
+.button-primary.active.button-border-thin,
+.button-primary.active.button-border-thick,
+.button-border.button-primary.is-active,
+.button-primary.is-active.button-border-thin,
+.button-primary.is-active.button-border-thick,
+.button-border-thin.button-primary:active,
+.button-border-thin.button-primary.active,
+.button-border-thin.button-primary.is-active,
+.button-border-thick.button-primary:active,
+.button-border-thick.button-primary.active,
+.button-border-thick.button-primary.is-active {
+  background-color: rgba(39, 152, 235, 0.7);
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 0.3;
+}
+
+.button-border.button-plain,
+.button-plain.button-border-thin,
+.button-plain.button-border-thick,
+.button-border-thin.button-plain,
+.button-border-thick.button-plain {
+  color: #FFF;
+}
+
+.button-border.button-plain:hover,
+.button-plain.button-border-thin:hover,
+.button-plain.button-border-thick:hover,
+.button-border.button-plain:focus,
+.button-plain.button-border-thin:focus,
+.button-plain.button-border-thick:focus,
+.button-border-thin.button-plain:hover,
+.button-border-thin.button-plain:focus,
+.button-border-thick.button-plain:hover,
+.button-border-thick.button-plain:focus {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: rgba(27, 154, 247, 0.9);
+}
+
+.button-border.button-plain:active,
+.button-plain.button-border-thin:active,
+.button-plain.button-border-thick:active,
+.button-border.button-plain.active,
+.button-plain.active.button-border-thin,
+.button-plain.active.button-border-thick,
+.button-border.button-plain.is-active,
+.button-plain.is-active.button-border-thin,
+.button-plain.is-active.button-border-thick,
+.button-border-thin.button-plain:active,
+.button-border-thin.button-plain.active,
+.button-border-thin.button-plain.is-active,
+.button-border-thick.button-plain:active,
+.button-border-thick.button-plain.active,
+.button-border-thick.button-plain.is-active {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: rgba(27, 154, 247, 0.5);
+  opacity: 0.3;
+}
+
+.button-border.button-inverse,
+.button-inverse.button-border-thin,
+.button-inverse.button-border-thick,
+.button-border-thin.button-inverse,
+.button-border-thick.button-inverse {
+  color: #222;
+}
+
+.button-border.button-inverse:hover,
+.button-inverse.button-border-thin:hover,
+.button-inverse.button-border-thick:hover,
+.button-border.button-inverse:focus,
+.button-inverse.button-border-thin:focus,
+.button-inverse.button-border-thick:focus,
+.button-border-thin.button-inverse:hover,
+.button-border-thin.button-inverse:focus,
+.button-border-thick.button-inverse:hover,
+.button-border-thick.button-inverse:focus {
+  background-color: rgba(60, 60, 60, 0.9);
+  color: rgba(238, 238, 238, 0.9);
+}
+
+.button-border.button-inverse:active,
+.button-inverse.button-border-thin:active,
+.button-inverse.button-border-thick:active,
+.button-border.button-inverse.active,
+.button-inverse.active.button-border-thin,
+.button-inverse.active.button-border-thick,
+.button-border.button-inverse.is-active,
+.button-inverse.is-active.button-border-thin,
+.button-inverse.is-active.button-border-thick,
+.button-border-thin.button-inverse:active,
+.button-border-thin.button-inverse.active,
+.button-border-thin.button-inverse.is-active,
+.button-border-thick.button-inverse:active,
+.button-border-thick.button-inverse.active,
+.button-border-thick.button-inverse.is-active {
+  background-color: rgba(34, 34, 34, 0.7);
+  color: rgba(238, 238, 238, 0.5);
+  opacity: 0.3;
+}
+
+.button-border.button-action,
+.button-action.button-border-thin,
+.button-action.button-border-thick,
+.button-border-thin.button-action,
+.button-border-thick.button-action {
+  color: #A5DE37;
+}
+
+.button-border.button-action:hover,
+.button-action.button-border-thin:hover,
+.button-action.button-border-thick:hover,
+.button-border.button-action:focus,
+.button-action.button-border-thin:focus,
+.button-action.button-border-thick:focus,
+.button-border-thin.button-action:hover,
+.button-border-thin.button-action:focus,
+.button-border-thick.button-action:hover,
+.button-border-thick.button-action:focus {
+  background-color: rgba(185, 229, 99, 0.9);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.button-border.button-action:active,
+.button-action.button-border-thin:active,
+.button-action.button-border-thick:active,
+.button-border.button-action.active,
+.button-action.active.button-border-thin,
+.button-action.active.button-border-thick,
+.button-border.button-action.is-active,
+.button-action.is-active.button-border-thin,
+.button-action.is-active.button-border-thick,
+.button-border-thin.button-action:active,
+.button-border-thin.button-action.active,
+.button-border-thin.button-action.is-active,
+.button-border-thick.button-action:active,
+.button-border-thick.button-action.active,
+.button-border-thick.button-action.is-active {
+  background-color: rgba(161, 210, 67, 0.7);
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 0.3;
+}
+
+.button-border.button-highlight,
+.button-highlight.button-border-thin,
+.button-highlight.button-border-thick,
+.button-border-thin.button-highlight,
+.button-border-thick.button-highlight {
+  color: #FEAE1B;
+}
+
+.button-border.button-highlight:hover,
+.button-highlight.button-border-thin:hover,
+.button-highlight.button-border-thick:hover,
+.button-border.button-highlight:focus,
+.button-highlight.button-border-thin:focus,
+.button-highlight.button-border-thick:focus,
+.button-border-thin.button-highlight:hover,
+.button-border-thin.button-highlight:focus,
+.button-border-thick.button-highlight:hover,
+.button-border-thick.button-highlight:focus {
+  background-color: rgba(254, 192, 78, 0.9);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.button-border.button-highlight:active,
+.button-highlight.button-border-thin:active,
+.button-highlight.button-border-thick:active,
+.button-border.button-highlight.active,
+.button-highlight.active.button-border-thin,
+.button-highlight.active.button-border-thick,
+.button-border.button-highlight.is-active,
+.button-highlight.is-active.button-border-thin,
+.button-highlight.is-active.button-border-thick,
+.button-border-thin.button-highlight:active,
+.button-border-thin.button-highlight.active,
+.button-border-thin.button-highlight.is-active,
+.button-border-thick.button-highlight:active,
+.button-border-thick.button-highlight.active,
+.button-border-thick.button-highlight.is-active {
+  background-color: rgba(243, 171, 38, 0.7);
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 0.3;
+}
+
+.button-border.button-caution,
+.button-caution.button-border-thin,
+.button-caution.button-border-thick,
+.button-border-thin.button-caution,
+.button-border-thick.button-caution {
+  color: #FF4351;
+}
+
+.button-border.button-caution:hover,
+.button-caution.button-border-thin:hover,
+.button-caution.button-border-thick:hover,
+.button-border.button-caution:focus,
+.button-caution.button-border-thin:focus,
+.button-caution.button-border-thick:focus,
+.button-border-thin.button-caution:hover,
+.button-border-thin.button-caution:focus,
+.button-border-thick.button-caution:hover,
+.button-border-thick.button-caution:focus {
+  background-color: rgba(255, 118, 128, 0.9);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.button-border.button-caution:active,
+.button-caution.button-border-thin:active,
+.button-caution.button-border-thick:active,
+.button-border.button-caution.active,
+.button-caution.active.button-border-thin,
+.button-caution.active.button-border-thick,
+.button-border.button-caution.is-active,
+.button-caution.is-active.button-border-thin,
+.button-caution.is-active.button-border-thick,
+.button-border-thin.button-caution:active,
+.button-border-thin.button-caution.active,
+.button-border-thin.button-caution.is-active,
+.button-border-thick.button-caution:active,
+.button-border-thick.button-caution.active,
+.button-border-thick.button-caution.is-active {
+  background-color: rgba(246, 76, 89, 0.7);
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 0.3;
+}
+
+.button-border.button-royal,
+.button-royal.button-border-thin,
+.button-royal.button-border-thick,
+.button-border-thin.button-royal,
+.button-border-thick.button-royal {
+  color: #7B72E9;
+}
+
+.button-border.button-royal:hover,
+.button-royal.button-border-thin:hover,
+.button-royal.button-border-thick:hover,
+.button-border.button-royal:focus,
+.button-royal.button-border-thin:focus,
+.button-royal.button-border-thick:focus,
+.button-border-thin.button-royal:hover,
+.button-border-thin.button-royal:focus,
+.button-border-thick.button-royal:hover,
+.button-border-thick.button-royal:focus {
+  background-color: rgba(164, 158, 240, 0.9);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.button-border.button-royal:active,
+.button-royal.button-border-thin:active,
+.button-royal.button-border-thick:active,
+.button-border.button-royal.active,
+.button-royal.active.button-border-thin,
+.button-royal.active.button-border-thick,
+.button-border.button-royal.is-active,
+.button-royal.is-active.button-border-thin,
+.button-royal.is-active.button-border-thick,
+.button-border-thin.button-royal:active,
+.button-border-thin.button-royal.active,
+.button-border-thin.button-royal.is-active,
+.button-border-thick.button-royal:active,
+.button-border-thick.button-royal.active,
+.button-border-thick.button-royal.is-active {
+  background-color: rgba(130, 122, 225, 0.7);
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 0.3;
+}
+
+.button-border.button-giant,
+.button-giant.button-border-thin,
+.button-giant.button-border-thick,
+.button-border-thin.button-giant,
+.button-border-thick.button-giant {
+  line-height: 66px;
+}
+
+.button-border.button-jumbo,
+.button-jumbo.button-border-thin,
+.button-jumbo.button-border-thick,
+.button-border-thin.button-jumbo,
+.button-border-thick.button-jumbo {
+  line-height: 56px;
+}
+
+.button-border.button-large,
+.button-large.button-border-thin,
+.button-large.button-border-thick,
+.button-border-thin.button-large,
+.button-border-thick.button-large {
+  line-height: 46px;
+}
+
+.button-border.button-normal,
+.button-normal.button-border-thin,
+.button-normal.button-border-thick,
+.button-border-thin.button-normal,
+.button-border-thick.button-normal {
+  line-height: 36px;
+}
+
+.button-border.button-small,
+.button-small.button-border-thin,
+.button-small.button-border-thick,
+.button-border-thin.button-small,
+.button-border-thick.button-small {
+  line-height: 26px;
+}
+
+.button-border.button-tiny,
+.button-tiny.button-border-thin,
+.button-tiny.button-border-thick,
+.button-border-thin.button-tiny,
+.button-border-thick.button-tiny {
+  line-height: 20px;
+}
+
+/*
+* Border Buttons
+*
+* These buttons have no fill they only have a
+* border to define their hit target.
+*/
+
+.button-borderless {
+  background: none;
+  border: none;
+  padding: 0 8px !important;
+  color: #EEE;
+  font-size: 20.8px;
+  font-weight: 200;
+  /*
+  * Borderless Button Colors
+  *
+  * Create colors for buttons
+  * (.button-primary, .button-secondary, etc.)
+  */
+  /*
+  * Borderles Size Adjustment
+  *
+  * The font-size must be large to compinsate for
+  * the lack of a hit target.
+  */
+}
+
+.button-borderless:hover,
+.button-borderless:focus {
+  background: none;
+}
+
+.button-borderless:active,
+.button-borderless.active,
+.button-borderless.is-active {
+  box-shadow: none;
+  text-shadow: none;
+  transition-property: all;
+  transition-duration: 0.3s;
+  opacity: 0.3;
+}
+
+.button-borderless.button-primary {
+  color: #1B9AF7;
+}
+
+.button-borderless.button-plain {
+  color: #FFF;
+}
+
+.button-borderless.button-inverse {
+  color: #222;
+}
+
+.button-borderless.button-action {
+  color: #A5DE37;
+}
+
+.button-borderless.button-highlight {
+  color: #FEAE1B;
+}
+
+.button-borderless.button-caution {
+  color: #FF4351;
+}
+
+.button-borderless.button-royal {
+  color: #7B72E9;
+}
+
+.button-borderless.button-giant {
+  font-size: 36.4px;
+  height: 52.4px;
+  line-height: 52.4px;
+}
+
+.button-borderless.button-jumbo {
+  font-size: 31.2px;
+  height: 47.2px;
+  line-height: 47.2px;
+}
+
+.button-borderless.button-large {
+  font-size: 26px;
+  height: 42px;
+  line-height: 42px;
+}
+
+.button-borderless.button-normal {
+  font-size: 20.8px;
+  height: 36.8px;
+  line-height: 36.8px;
+}
+
+.button-borderless.button-small {
+  font-size: 15.6px;
+  height: 31.6px;
+  line-height: 31.6px;
+}
+
+.button-borderless.button-tiny {
+  font-size: 12.48px;
+  height: 28.48px;
+  line-height: 28.48px;
+}
+
+/*
+* Raised Buttons
+*
+* A classic looking button that offers
+* great depth and affordance.
+*/
+
+.button-raised {
+  border-color: #e1e1e1;
+  border-style: solid;
+  border-width: 1px;
+  line-height: 38px;
+  background: linear-gradient(#f6f6f6, #e1e1e1);
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.button-raised:hover,
+.button-raised:focus {
+  background: linear-gradient(top, white, gainsboro);
+}
+
+.button-raised:active,
+.button-raised.active,
+.button-raised.is-active {
+  background: #eeeeee;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 1px 0px white;
+}
+
+/*
+* Raised Button Colors
+*
+* Create colors for raised buttons
+*/
+
+.button-raised.button-primary {
+  border-color: #088ef0;
+  background: linear-gradient(#34a5f8, #088ef0);
+}
+
+.button-raised.button-primary:hover,
+.button-raised.button-primary:focus {
+  background: linear-gradient(top, #42abf8, #0888e6);
+}
+
+.button-raised.button-primary:active,
+.button-raised.button-primary.active,
+.button-raised.button-primary.is-active {
+  border-color: #0880d7;
+  background: #2798eb;
+}
+
+.button-raised.button-plain {
+  border-color: #f2f2f2;
+  background: linear-gradient(white, #f2f2f2);
+}
+
+.button-raised.button-plain:hover,
+.button-raised.button-plain:focus {
+  background: linear-gradient(top, white, #ededed);
+}
+
+.button-raised.button-plain:active,
+.button-raised.button-plain.active,
+.button-raised.button-plain.is-active {
+  border-color: #e6e6e6;
+  background: white;
+}
+
+.button-raised.button-inverse {
+  border-color: #151515;
+  background: linear-gradient(#2f2f2f, #151515);
+}
+
+.button-raised.button-inverse:hover,
+.button-raised.button-inverse:focus {
+  background: linear-gradient(top, #363636, #101010);
+}
+
+.button-raised.button-inverse:active,
+.button-raised.button-inverse.active,
+.button-raised.button-inverse.is-active {
+  border-color: #090909;
+  background: #222222;
+}
+
+.button-raised.button-action {
+  border-color: #9ad824;
+  background: linear-gradient(#afe24d, #9ad824);
+}
+
+.button-raised.button-action:hover,
+.button-raised.button-action:focus {
+  background: linear-gradient(top, #b5e45a, #94cf22);
+}
+
+.button-raised.button-action:active,
+.button-raised.button-action.active,
+.button-raised.button-action.is-active {
+  border-color: #8bc220;
+  background: #a1d243;
+}
+
+.button-raised.button-highlight {
+  border-color: #fea502;
+  background: linear-gradient(#feb734, #fea502);
+}
+
+.button-raised.button-highlight:hover,
+.button-raised.button-highlight:focus {
+  background: linear-gradient(top, #febc44, #f49f01);
+}
+
+.button-raised.button-highlight:active,
+.button-raised.button-highlight.active,
+.button-raised.button-highlight.is-active {
+  border-color: #e59501;
+  background: #f3ab26;
+}
+
+.button-raised.button-caution {
+  border-color: #ff2939;
+  background: linear-gradient(#ff5c69, #ff2939);
+}
+
+.button-raised.button-caution:hover,
+.button-raised.button-caution:focus {
+  background: linear-gradient(top, #ff6c77, #ff1f30);
+}
+
+.button-raised.button-caution:active,
+.button-raised.button-caution.active,
+.button-raised.button-caution.is-active {
+  border-color: #ff1022;
+  background: #f64c59;
+}
+
+.button-raised.button-royal {
+  border-color: #665ce6;
+  background: linear-gradient(#9088ec, #665ce6);
+}
+
+.button-raised.button-royal:hover,
+.button-raised.button-royal:focus {
+  background: linear-gradient(top, #9c95ef, #5e53e4);
+}
+
+.button-raised.button-royal:active,
+.button-raised.button-royal.active,
+.button-raised.button-royal.is-active {
+  border-color: #5246e2;
+  background: #827ae1;
+}
+
+/*
+* 3D Buttons
+*
+* These buttons have a heavy three dimensional
+* style that mimics the visual appearance of a
+* real life button.
+*/
+
+.button-3d {
+  position: relative;
+  top: 0;
+  box-shadow: 0 7px 0 #bbbbbb, 0 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+.button-3d:hover,
+.button-3d:focus {
+  box-shadow: 0 7px 0 #bbbbbb, 0 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+.button-3d:active,
+.button-3d.active,
+.button-3d.is-active {
+  top: 5px;
+  transition-property: all;
+  transition-duration: 0.15s;
+  box-shadow: 0 2px 0 #bbbbbb, 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+/*
+* 3D Button Colors
+*
+* Create colors for buttons
+* (.button-primary, .button-secondary, etc.)
+*/
+
+.button-3d.button-primary {
+  box-shadow: 0 7px 0 #0880d7, 0 8px 3px rgba(0, 0, 0, 0.3);
+}
+
+.button-3d.button-primary:hover,
+.button-3d.button-primary:focus {
+  box-shadow: 0 7px 0 #077ace, 0 8px 3px rgba(0, 0, 0, 0.3);
+}
+
+.button-3d.button-primary:active,
+.button-3d.button-primary.active,
+.button-3d.button-primary.is-active {
+  box-shadow: 0 2px 0 #0662a6, 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.button-3d.button-plain {
+  box-shadow: 0 7px 0 #e6e6e6, 0 8px 3px rgba(0, 0, 0, 0.3);
+}
+
+.button-3d.button-plain:hover,
+.button-3d.button-plain:focus {
+  box-shadow: 0 7px 0 #e0e0e0, 0 8px 3px rgba(0, 0, 0, 0.3);
+}
+
+.button-3d.button-plain:active,
+.button-3d.button-plain.active,
+.button-3d.button-plain.is-active {
+  box-shadow: 0 2px 0 #cccccc, 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.button-3d.button-inverse {
+  box-shadow: 0 7px 0 #090909, 0 8px 3px rgba(0, 0, 0, 0.3);
+}
+
+.button-3d.button-inverse:hover,
+.button-3d.button-inverse:focus {
+  box-shadow: 0 7px 0 #030303, 0 8px 3px rgba(0, 0, 0, 0.3);
+}
+
+.button-3d.button-inverse:active,
+.button-3d.button-inverse.active,
+.button-3d.button-inverse.is-active {
+  box-shadow: 0 2px 0 black, 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.button-3d.button-action {
+  box-shadow: 0 7px 0 #8bc220, 0 8px 3px rgba(0, 0, 0, 0.3);
+}
+
+.button-3d.button-action:hover,
+.button-3d.button-action:focus {
+  box-shadow: 0 7px 0 #84b91f, 0 8px 3px rgba(0, 0, 0, 0.3);
+}
+
+.button-3d.button-action:active,
+.button-3d.button-action.active,
+.button-3d.button-action.is-active {
+  box-shadow: 0 2px 0 #6b9619, 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.button-3d.button-highlight {
+  box-shadow: 0 7px 0 #e59501, 0 8px 3px rgba(0, 0, 0, 0.3);
+}
+
+.button-3d.button-highlight:hover,
+.button-3d.button-highlight:focus {
+  box-shadow: 0 7px 0 #db8e01, 0 8px 3px rgba(0, 0, 0, 0.3);
+}
+
+.button-3d.button-highlight:active,
+.button-3d.button-highlight.active,
+.button-3d.button-highlight.is-active {
+  box-shadow: 0 2px 0 #b27401, 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.button-3d.button-caution {
+  box-shadow: 0 7px 0 #ff1022, 0 8px 3px rgba(0, 0, 0, 0.3);
+}
+
+.button-3d.button-caution:hover,
+.button-3d.button-caution:focus {
+  box-shadow: 0 7px 0 #ff0618, 0 8px 3px rgba(0, 0, 0, 0.3);
+}
+
+.button-3d.button-caution:active,
+.button-3d.button-caution.active,
+.button-3d.button-caution.is-active {
+  box-shadow: 0 2px 0 #dc0010, 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.button-3d.button-royal {
+  box-shadow: 0 7px 0 #5246e2, 0 8px 3px rgba(0, 0, 0, 0.3);
+}
+
+.button-3d.button-royal:hover,
+.button-3d.button-royal:focus {
+  box-shadow: 0 7px 0 #493de1, 0 8px 3px rgba(0, 0, 0, 0.3);
+}
+
+.button-3d.button-royal:active,
+.button-3d.button-royal.active,
+.button-3d.button-royal.is-active {
+  box-shadow: 0 2px 0 #2f21d4, 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+/*
+* Glowing Buttons
+*
+* A pulse like glow that appears
+* rythmically around the edges of
+* a button.
+*/
+
+/*
+* Glow animation mixin for Compass users
+*
+*/
+
+/*
+* Glowing Keyframes
+*
+*/
 
 @-webkit-keyframes glowing {
   from {
@@ -11720,7 +12855,7 @@ a.text-dark:focus {
 }
 
 /*!
- * Font Awesome Free 5.11.1 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 
@@ -12285,6 +13420,10 @@ readers do not read off random characters that represent icons */
   content: "\F7E5";
 }
 
+.fa-bahai:before {
+  content: "\F666";
+}
+
 .fa-balance-scale:before {
   content: "\F24E";
 }
@@ -12533,6 +13672,10 @@ readers do not read off random characters that represent icons */
   content: "\F49E";
 }
 
+.fa-box-tissue:before {
+  content: "\F95B";
+}
+
 .fa-boxes:before {
   content: "\F468";
 }
@@ -12703,6 +13846,10 @@ readers do not read off random characters that represent icons */
 
 .fa-car-side:before {
   content: "\F5E4";
+}
+
+.fa-caravan:before {
+  content: "\F8FF";
 }
 
 .fa-caret-down:before {
@@ -13117,6 +14264,10 @@ readers do not read off random characters that represent icons */
   content: "\F066";
 }
 
+.fa-compress-alt:before {
+  content: "\F422";
+}
+
 .fa-compress-arrows-alt:before {
   content: "\F78C";
 }
@@ -13289,6 +14440,10 @@ readers do not read off random characters that represent icons */
   content: "\F6CA";
 }
 
+.fa-dailymotion:before {
+  content: "\F952";
+}
+
 .fa-dashcube:before {
   content: "\F210";
 }
@@ -13403,6 +14558,10 @@ readers do not read off random characters that represent icons */
 
 .fa-discourse:before {
   content: "\F393";
+}
+
+.fa-disease:before {
+  content: "\F7FA";
 }
 
 .fa-divide:before {
@@ -13649,6 +14808,10 @@ readers do not read off random characters that represent icons */
   content: "\F065";
 }
 
+.fa-expand-alt:before {
+  content: "\F424";
+}
+
 .fa-expand-arrows-alt:before {
   content: "\F31E";
 }
@@ -13707,6 +14870,10 @@ readers do not read off random characters that represent icons */
 
 .fa-fast-forward:before {
   content: "\F050";
+}
+
+.fa-faucet:before {
+  content: "\F905";
 }
 
 .fa-fax:before {
@@ -13867,6 +15034,10 @@ readers do not read off random characters that represent icons */
 
 .fa-firefox:before {
   content: "\F269";
+}
+
+.fa-firefox-browser:before {
+  content: "\F907";
 }
 
 .fa-first-aid:before {
@@ -14353,8 +15524,16 @@ readers do not read off random characters that represent icons */
   content: "\F4BE";
 }
 
+.fa-hand-holding-medical:before {
+  content: "\F95C";
+}
+
 .fa-hand-holding-usd:before {
   content: "\F4C0";
+}
+
+.fa-hand-holding-water:before {
+  content: "\F4C1";
 }
 
 .fa-hand-lizard:before {
@@ -14401,6 +15580,10 @@ readers do not read off random characters that represent icons */
   content: "\F257";
 }
 
+.fa-hand-sparkles:before {
+  content: "\F95D";
+}
+
 .fa-hand-spock:before {
   content: "\F259";
 }
@@ -14413,8 +15596,20 @@ readers do not read off random characters that represent icons */
   content: "\F4C4";
 }
 
+.fa-hands-wash:before {
+  content: "\F95E";
+}
+
 .fa-handshake:before {
   content: "\F2B5";
+}
+
+.fa-handshake-alt-slash:before {
+  content: "\F95F";
+}
+
+.fa-handshake-slash:before {
+  content: "\F960";
 }
 
 .fa-hanukiah:before {
@@ -14441,12 +15636,24 @@ readers do not read off random characters that represent icons */
   content: "\F6E8";
 }
 
-.fa-haykal:before {
-  content: "\F666";
-}
-
 .fa-hdd:before {
   content: "\F0A0";
+}
+
+.fa-head-side-cough:before {
+  content: "\F961";
+}
+
+.fa-head-side-cough-slash:before {
+  content: "\F962";
+}
+
+.fa-head-side-mask:before {
+  content: "\F963";
+}
+
+.fa-head-side-virus:before {
+  content: "\F964";
 }
 
 .fa-heading:before {
@@ -14545,6 +15752,10 @@ readers do not read off random characters that represent icons */
   content: "\F47E";
 }
 
+.fa-hospital-user:before {
+  content: "\F80D";
+}
+
 .fa-hot-tub:before {
   content: "\F593";
 }
@@ -14579,6 +15790,10 @@ readers do not read off random characters that represent icons */
 
 .fa-house-damage:before {
   content: "\F6F1";
+}
+
+.fa-house-user:before {
+  content: "\F965";
 }
 
 .fa-houzz:before {
@@ -14625,6 +15840,10 @@ readers do not read off random characters that represent icons */
   content: "\F47F";
 }
 
+.fa-ideal:before {
+  content: "\F913";
+}
+
 .fa-igloo:before {
   content: "\F7AE";
 }
@@ -14667,6 +15886,10 @@ readers do not read off random characters that represent icons */
 
 .fa-instagram:before {
   content: "\F16D";
+}
+
+.fa-instagram-square:before {
+  content: "\F955";
 }
 
 .fa-intercom:before {
@@ -14819,6 +16042,10 @@ readers do not read off random characters that represent icons */
 
 .fa-laptop-code:before {
   content: "\F5FC";
+}
+
+.fa-laptop-house:before {
+  content: "\F966";
 }
 
 .fa-laptop-medical:before {
@@ -14975,6 +16202,14 @@ readers do not read off random characters that represent icons */
 
 .fa-luggage-cart:before {
   content: "\F59D";
+}
+
+.fa-lungs:before {
+  content: "\F604";
+}
+
+.fa-lungs-virus:before {
+  content: "\F967";
 }
 
 .fa-lyft:before {
@@ -15145,6 +16380,10 @@ readers do not read off random characters that represent icons */
   content: "\F753";
 }
 
+.fa-microblog:before {
+  content: "\F91A";
+}
+
 .fa-microchip:before {
   content: "\F2DB";
 }
@@ -15195,6 +16434,10 @@ readers do not read off random characters that represent icons */
 
 .fa-mixcloud:before {
   content: "\F289";
+}
+
+.fa-mixer:before {
+  content: "\F956";
 }
 
 .fa-mizuni:before {
@@ -15513,6 +16756,10 @@ readers do not read off random characters that represent icons */
   content: "\F704";
 }
 
+.fa-people-arrows:before {
+  content: "\F968";
+}
+
 .fa-people-carry:before {
   content: "\F4CE";
 }
@@ -15597,6 +16844,10 @@ readers do not read off random characters that represent icons */
   content: "\F1A7";
 }
 
+.fa-pied-piper-square:before {
+  content: "\F91E";
+}
+
 .fa-piggy-bank:before {
   content: "\F4D3";
 }
@@ -15635,6 +16886,10 @@ readers do not read off random characters that represent icons */
 
 .fa-plane-departure:before {
   content: "\F5B0";
+}
+
+.fa-plane-slash:before {
+  content: "\F969";
 }
 
 .fa-play:before {
@@ -15735,6 +16990,14 @@ readers do not read off random characters that represent icons */
 
 .fa-project-diagram:before {
   content: "\F542";
+}
+
+.fa-pump-medical:before {
+  content: "\F96A";
+}
+
+.fa-pump-soap:before {
+  content: "\F96B";
 }
 
 .fa-pushed:before {
@@ -16117,6 +17380,10 @@ readers do not read off random characters that represent icons */
   content: "\F3ED";
 }
 
+.fa-shield-virus:before {
+  content: "\F96C";
+}
+
 .fa-ship:before {
   content: "\F21A";
 }
@@ -16131,6 +17398,10 @@ readers do not read off random characters that represent icons */
 
 .fa-shoe-prints:before {
   content: "\F54B";
+}
+
+.fa-shopify:before {
+  content: "\F957";
 }
 
 .fa-shopping-bag:before {
@@ -16311,6 +17582,10 @@ readers do not read off random characters that represent icons */
 
 .fa-snowplow:before {
   content: "\F7D2";
+}
+
+.fa-soap:before {
+  content: "\F96E";
 }
 
 .fa-socks:before {
@@ -16533,12 +17808,24 @@ readers do not read off random characters that represent icons */
   content: "\F2F2";
 }
 
+.fa-stopwatch-20:before {
+  content: "\F96F";
+}
+
 .fa-store:before {
   content: "\F54E";
 }
 
 .fa-store-alt:before {
   content: "\F54F";
+}
+
+.fa-store-alt-slash:before {
+  content: "\F970";
+}
+
+.fa-store-slash:before {
+  content: "\F971";
 }
 
 .fa-strava:before {
@@ -16857,6 +18144,10 @@ readers do not read off random characters that represent icons */
   content: "\F71E";
 }
 
+.fa-toilet-paper-slash:before {
+  content: "\F972";
+}
+
 .fa-toolbox:before {
   content: "\F552";
 }
@@ -16891,6 +18182,10 @@ readers do not read off random characters that represent icons */
 
 .fa-traffic-light:before {
   content: "\F637";
+}
+
+.fa-trailer:before {
+  content: "\F941";
 }
 
 .fa-train:before {
@@ -17035,6 +18330,10 @@ readers do not read off random characters that represent icons */
 
 .fa-uniregistry:before {
   content: "\F404";
+}
+
+.fa-unity:before {
+  content: "\F949";
 }
 
 .fa-universal-access:before {
@@ -17263,6 +18562,18 @@ readers do not read off random characters that represent icons */
 
 .fa-vine:before {
   content: "\F1CA";
+}
+
+.fa-virus:before {
+  content: "\F974";
+}
+
+.fa-virus-slash:before {
+  content: "\F975";
+}
+
+.fa-viruses:before {
+  content: "\F976";
 }
 
 .fa-vk:before {
@@ -17547,7 +18858,7 @@ readers do not read off random characters that represent icons */
 }
 
 /*!
- * Font Awesome Free 5.11.1 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 
@@ -17555,9 +18866,9 @@ readers do not read off random characters that represent icons */
   font-family: "Font Awesome 5 Free";
   font-style: normal;
   font-weight: 400;
-  font-display: auto;
-  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.eot?b6579220162705be426ad4db0dc43f6b);
-  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.eot?b6579220162705be426ad4db0dc43f6b) format("embedded-opentype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff2?772a0f14c850c8b0dfe283a95857583e) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff?14f22fbed8146dbf3b497bb32d8491b0) format("woff"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.ttf?9230982faf6ed4d1dab07babfb813777) format("truetype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.svg?8cd2768111e3091948920a3ad11f96c6) format("svg");
+  font-display: block;
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.eot?261d666b0147c6c5cda07265f98b8f8c);
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.eot?261d666b0147c6c5cda07265f98b8f8c) format("embedded-opentype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff2?c20b5b7362d8d7bb7eddf94344ace33e) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff?f89ea91ecd1ca2db7e09baa2c4b156d1) format("woff"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.ttf?db78b9359171f24936b16d84f63af378) format("truetype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.svg?89ffa3aba80d30ee0a9371b25c968bbb) format("svg");
 }
 
 .far {
@@ -17566,7 +18877,7 @@ readers do not read off random characters that represent icons */
 }
 
 /*!
- * Font Awesome Free 5.11.1 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 
@@ -17574,9 +18885,9 @@ readers do not read off random characters that represent icons */
   font-family: "Font Awesome 5 Free";
   font-style: normal;
   font-weight: 900;
-  font-display: auto;
-  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot?1898ebd2e3162e7ca8627073d865b893);
-  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot?1898ebd2e3162e7ca8627073d865b893) format("embedded-opentype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff2?4cc04a31c42f2f9d951547bbce75960b) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff?db525089f5101b59a66184d109e6f917) format("woff"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.ttf?b1161bce5381a5fa7aacc073e1a01dd3) format("truetype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.svg?1d825f28ae4e412886fb0123b94a8ac2) format("svg");
+  font-display: block;
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot?a0369ea57eb6d3843d6474c035111f29);
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot?a0369ea57eb6d3843d6474c035111f29) format("embedded-opentype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff2?b15db15f746f29ffa02638cb455b8ec0) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff?bea989e82b07e9687c26fc58a4805021) format("woff"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.ttf?1ab236ed440ee51810c56bd16628aef0) format("truetype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.svg?ec763292e583294612f124c0b0def500) format("svg");
 }
 
 .fa,
@@ -17586,21 +18897,22 @@ readers do not read off random characters that represent icons */
 }
 
 /*!
- * Font Awesome Free 5.11.1 by @fontawesome - https://fontawesome.com
+ * Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 
 @font-face {
   font-family: "Font Awesome 5 Brands";
   font-style: normal;
-  font-weight: normal;
-  font-display: auto;
-  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot?451b51d8700fb035bcaaa9e8710b384a);
-  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot?451b51d8700fb035bcaaa9e8710b384a) format("embedded-opentype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff2?0425d661f34ffa46604c9dfa344c03bb) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff?85b063debeb5d5f079776ac1a9c924cb) format("woff"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.ttf?189c0326f75931886d5b60cde8b5628f) format("truetype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.svg?3a19eb0134e93ea0caa5826f5fb7b642) format("svg");
+  font-weight: 400;
+  font-display: block;
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot?c1868c9545d2de1cf8488f1dadd8c9d0);
+  src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot?c1868c9545d2de1cf8488f1dadd8c9d0) format("embedded-opentype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff2?a06da7f0950f9dd366fc9db9d56d618a) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff?ec3cfddedb8bebd2d7a3fdf511f7c1cc) format("woff"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.ttf?13685372945d816a2b474fc082fd9aaa) format("truetype"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.svg?0cb5a5c0d251c109458c85c6afeffbaa) format("svg");
 }
 
 .fab {
   font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
 }
 
 /* universal */
@@ -17695,105 +19007,20 @@ body {
   text-align: center;
   line-height: 4rem;
 }
-.shubox1 {
-  
-  font-size: 2.25rem;
-  color: #fff;
-  float: left;
-  margin-left:8%;
-  margin-right:15%;
- height:100%;
- width:20%;
-
-  
-  position: relative;
-  z-index: 15;
-}
-.shubox2 {
- 
-  font-size: 2.25rem;
-  color: #fff;
-  float: left;
-  margin-left:3%;
- height:100%;
- width:20%;
- 
-
-  
-  position: relative;
-  z-index: 15;
-}
-
-.shubox3 {
- 
-  font-size: 4rem;
-  color: #fff;
-  float: left;
-  margin-left:10%;
- height:100%;
- width:10%;
- 
-
-  
-  position: relative;
-  z-index: 15;
-}
-
-.shubox4 {
- 
-  font-size: 4rem;
-  color: #fff;
-  float: left;
-  margin-left:20%;
- height:100%;
- width:30%;
- 
-
-  
-  position: relative;
-  z-index: 15;
-}
-.henbox {
-  height:6rem;
-  font-size:2.25rem;
-  color:#fff
-
-}
-.henbox2 {
-  height:6rem;
-  font-size:4rem;
-  color:#fff
-
-}
-
-
-
-
 
 .sysw {
   float: left;
   width: 20%;
-  height: 35%;
-  margin-top: 6rem;
-  
-  margin-left: 5%;
-}
-
-.sysw2 {
-  float: left;
-  width: 20%;
   height: 48%;
-  margin-top: 0.1rem;
-  
-  margin-left: 5%;
-  padding-left: 5%;
+  margin-top: 5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .allnav {
   height: 498px;
   width: 1200px;
   display: block;
-  position:absolute;
   margin-left: auto;
   margin-right: auto;
 }
@@ -18033,191 +19260,4 @@ canvas {
   z-index: 11;
   display: block;
 }
-
-/* 开关按钮 */
-
-/* 开关按钮 */
-
-.kaiguan {
-  display: block;
-  position: relative;
-  width: 9rem;
-  height: 1.5rem;
-  top:30%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background: -webkit-linear-gradient(top, #11181f 0%, #161f29 100%);
-  background: linear-gradient(to bottom, #11181f 0%, #161f29 100%);
-  border-radius: 40px;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
-  cursor: pointer;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.kaiguan span {
-  position: absolute;
-  display: block;
-}
-.kaiguan span:first-of-type {
-  z-index: 100;
-  top: 4px;
-  right: 4px;
-  width: 5rem;
-  height: 1.5rem;
-  background: -webkit-linear-gradient(top, #2c3e50 0%, #1e2a36 100%);
-  background: linear-gradient(to bottom, #2c3e50 0%, #1e2a36 100%);
-  box-shadow: 0 6px 4px rgba(255, 255, 255, 0.1) inset, 0 2px 0px rgba(255, 255, 255, 0.2) inset, 0 -6px 0px rgba(0, 0, 0, 0.2) inset, 0 -2px 0px rgba(0, 0, 0, 0.2) inset, 0 2px 2px rgba(0, 0, 0, 0.4), -4px 2px 8px rgba(0, 0, 0, 0.4), 2px 0 1px rgba(242, 201, 197, 0.5) inset;
-  border-radius: 36px;
-  -webkit-transition: right 400ms cubic-bezier(1, 0, 0, 1), box-shadow 400ms ease;
-          transition: right 400ms cubic-bezier(1, 0, 0, 1), box-shadow 400ms ease;
-}
-.kaiguan span:nth-last-of-type(-n+2) {
-  z-index: 10;
-  top: 4px;
-  width: 4rem;
-  height: 1.5rem;
-  -webkit-transition: opacity 800ms ease 100ms;
-          transition: opacity 800ms ease 100ms;
-}
-.kaiguan span:nth-last-of-type(-n+2):after {
-  position: absolute;
-  top: 26px;
-  line-height: 1;
-  font-family: "Open Sans";
-  font-weight: 800;
-  font-size: 24px;
-  color: white;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 0 20px #ffffff;
-}
-.kaiguan span:nth-of-type(2) {
-  left: 4px;
-  width: 4rem;
-  background: -webkit-linear-gradient(top, #c0392b 0%, #d65548 100%);
-  background: linear-gradient(to bottom, #c0392b 0%, #d65548 100%);
-  border-top-left-radius: 36px;
-  border-bottom-left-radius: 36px;
-  box-shadow: 4px 4px 12px 4px rgba(0, 0, 0, 0.5) inset, 0 -2px 8px rgba(0, 0, 0, 0.4) inset;
-}
-.kaiguan span:nth-of-type(2):after {
-  content: "OFF";
-  left: 12px;
-}
-.kaiguan span:last-of-type {
-  right: 4px;
-  background: -webkit-linear-gradient(top, #2ecc71 0%, #7ee2a8 100%);
-  background: linear-gradient(to bottom, #2ecc71 0%, #7ee2a8 100%);
-  border-top-right-radius: 36px;
-  border-bottom-right-radius: 36px;
-  box-shadow: -4px 4px 12px 4px rgba(0, 0, 0, 0.5) inset, 0 -2px 8px rgba(0, 0, 0, 0.4) inset;
-  opacity: 0.2;
-}
-.kaiguan span:last-of-type:after {
-  content: "ON";
-  right: 22px;
-}
-.kaiguan input[type="checkbox"] {
-  display: none;
-}
-.kaiguan input[type="checkbox"]:checked ~ span:first-of-type {
-  right: 66px;
-  box-shadow: 0 6px 4px rgba(255, 255, 255, 0.1) inset, 0 2px 0px rgba(255, 255, 255, 0.2) inset, 0 -6px 0px rgba(0, 0, 0, 0.2) inset, 0 -2px 0px rgba(0, 0, 0, 0.2) inset, 0 2px 2px rgba(0, 0, 0, 0.4), 4px 2px 8px rgba(0, 0, 0, 0.4), -2px 0 1px rgba(209, 245, 224, 0.5) inset;
-}
-.kaiguan input[type="checkbox"]:checked ~ span:nth-of-type(2) {
-  opacity: 0.2;
-}
-.kaiguan input[type="checkbox"]:checked ~ span:last-of-type {
-  opacity: 1;
-}
-
-
-/* /////三状态开关按钮 */
-
-.jtoggler {
-  display: none;
-}
-.jtoggler:disabled + .jtoggler-control,
-.jtoggler:checked:disabled + .jtoggler-control {
-  background-color: rgba(0,0,0,0.05);
-}
-.jtoggler:disabled + .jtoggler-control .jtoggler-handle {
-  background-color: #ccc;
-}
-.jtoggler:disabled + .jtoggler-control:hover {
-  cursor: default;
-}
-.jtoggler-wrapper {
-  display: inline-flex;
-  align-items: center;
-}
-.jtoggler-control {
-  position: relative;
-
-  width: 70px;
-  height: 30px;
-
-  background: #fff;
-  border-radius: 30px;
-  box-shadow: inset 0 0 1px rgba(0,0,0,0.25);
-
-  transition: background-color 0.3s;
-}
-.jtoggler-control:hover {
-  cursor: pointer;
-}
-.jtoggler-control .jtoggler-handle {
-  display: block;
-  position: absolute;
-
-  width: 28px;
-  height: 28px;
-  top: calc(50% - 14px);
-  left: 0;
-
-  background: #fff;
-  border-radius: 50%;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.25);
-
-  transition: left 0.3s;
-}
-.jtoggler:checked + .jtoggler-control {
-  background: #4a89dc;
-}
-.jtoggler:checked + .jtoggler-control .jtoggler-handle {
-  left: 42px;
-}
-.jtoggler-label {
-  padding-left: 5px;
-}
-.jtoggler-radio {
-  display: none;
-}
-.jtoggler-btn-wrapper {
-  display: flex;
-  width: 33.33%;
-}
-.jtoggler-btn-wrapper:hover {
-  cursor: pointer;
-}
-.jtoggler-wrapper-multistate .jtoggler-control {
-  display: flex;
-  width: 90px;
-}
-.jtoggler-wrapper-multistate .jtoggler-control.is-fully-active {
-  background: #4a89dc;
-}
-.jtoggler-wrapper-multistate .jtoggler:disabled + .jtoggler-control:hover .jtoggler-btn-wrapper {
-  cursor: default;
-}
-.jtoggler-btn-wrapper:nth-child(1).is-active ~ .jtoggler-handle {
-  left: 0;
-}
-.jtoggler-btn-wrapper:nth-child(2).is-active ~ .jtoggler-handle {
-  left: 30px;
-
-  background: #4a89dc;
-}
-.jtoggler-btn-wrapper:nth-child(3).is-active ~ .jtoggler-handle {
-  left: 62px;
-}
-/* 三选一按钮 */
 
