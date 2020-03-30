@@ -11,7 +11,7 @@
 
   <!-- Js -->
   <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/control.js"></script>
+ 
   <script type="text/javascript" src="js/echarts.min.js"></script>
   <script type="text/javascript" src="js/echarts-liquidfill.min.js"></script>
   
@@ -83,6 +83,7 @@
   <script type="text/javascript" src="js/charts/jianshen.js"></script>
   <script type="text/javascript" src="js/charts/kangyi.js"></script>
   <script type="text/javascript" src="js/charts/renyuan.js"></script>
+  <script type="text/javascript" src="js/control.js"></script>
 
   @yield('scripts')
 

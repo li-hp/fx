@@ -191,42 +191,43 @@
                      <div class="shubox4">
                      <div class='henbox'></div>
                      <div class='henbox'>                <div class="pretty circle primary">
-            <input type="radio" name="radio1" checked  onclick="kcontrol1()"> 
+            <input type="radio" name="radio1" checked  onclick="kqcontrol1(1)"> 
             <label><i class="default"></i> 低</label>
           </div>
           <div class="pretty circle success">
-            <input type="radio" name="radio1"onclick="console.log(this.checked)"> 
+            <input type="radio" name="radio1"  onclick="kqcontrol1(2)"> 
             <label><i class="default"></i> 中</label>
           </div>
-          <div class="pretty circle info"onclick="console.log(this.checked)">
+          <div class="pretty circle danger"onclick="kqcontrol1(3)">
             <input type="radio" name="radio1"> 
             <label><i class="default"></i> 高</label>
           </div>
              </div>
+           
 
                     <div class='henbox'>                <div class="pretty circle primary">
-            <input type="radio" name="radio4" checked  onclick="console.log(this.checked)"> 
+            <input type="radio" name="radio4" checked onclick="kqcontrol2(1)">
             <label><i class="default"></i> 低</label>
           </div>
           <div class="pretty circle success">
-            <input type="radio" name="radio4"onclick="console.log(this.checked)"> 
+            <input type="radio" name="radio4"onclick="kqcontrol2(2)">
             <label><i class="default"></i> 中</label>
           </div>
-          <div class="pretty circle info"onclick="console.log(this.checked)">
+          <div class="pretty circle danger"onclick="kqcontrol2(3)">
             <input type="radio" name="radio4"> 
             <label><i class="default"></i> 高</label>
           </div>
              </div>
 
              <div class='henbox'>                <div class="pretty circle primary">
-            <input type="radio" name="radio7" checked  onclick="console.log(this.checked)"> 
+            <input type="radio" name="radio7" checked  onclick="kqcontrol3(1)">
             <label><i class="default"></i> 低</label>
           </div>
           <div class="pretty circle success">
-            <input type="radio" name="radio7"onclick="console.log(this.checked)"> 
+            <input type="radio" name="radio7" onclick="kqcontrol3(2)">
             <label><i class="default"></i> 中</label>
           </div>
-          <div class="pretty circle info"onclick="console.log(this.checked)">
+          <div class="pretty circle danger" onclick="kqcontrol3(3)">
             <input type="radio" name="radio7"> 
             <label><i class="default"></i> 高</label>
           </div>
@@ -235,14 +236,14 @@
 
 
                     <div class='henbox'>             <div class="pretty circle primary">
-            <input type="radio" name="radio11" checked  onclick="console.log(this.checked)"> 
+            <input type="radio" name="radio11" checked onclick="kqcontrol4(1)">
             <label><i class="default"></i> 低</label>
           </div>
           <div class="pretty circle success">
-            <input type="radio" name="radio11"onclick="console.log(this.checked)"> 
+            <input type="radio" name="radio11"      onclick="kqcontrol4(2)">
             <label><i class="default"></i> 中</label>
           </div>
-          <div class="pretty circle info"onclick="console.log(this.checked)">
+          <div class="pretty circle danger"  onclick="kqcontrol4(3)">
             <input type="radio" name="radio11"> 
             <label><i class="default"></i> 高</label>
           </div>
@@ -347,19 +348,22 @@
 
                     <div class="sysw">
  
-                       <a  class="button white bigrounded"  onclick=" alert('3')" >茶水间1</a> 
+                       <a  class="button white bigrounded"  onclick="szbutton(1)"> 茶水间1</a> 
                    </div>
+
                     <div class="sysw">
 
-                        <a href="#" class="button white bigrounded">茶水间2</a> 
+                        <a  class="button white bigrounded"  onclick="szbutton(2)">茶水间2</a> 
                     </div>
+
                     <div class="sysw">
 
-                    <a href="#" class="button white bigrounded">茶水间3</a> 
+                    <a  class="button white bigrounded"  onclick="szbutton(3)">茶水间3</a> 
                     </div>
+
                     <div class="sysw">
 
-                    <a href="#" class="button white bigrounded">办公室</a> 
+                    <a  class="button white bigrounded" onclick="szbutton(4)">办公室</a> 
                     </div>
                         
 
@@ -503,27 +507,27 @@
                      <div class='henbox'></div>
 
                     <div class='henbox'>                <div class="pretty circle primary">
-            <input type="radio" name="radio14" checked  onclick="console.log(this.checked)"> 
+            <input type="radio" name="radio14" checked  onclick="gqcontrol1(1)"> 
             <label><i class="default"></i> 低</label>
           </div>
           <div class="pretty circle success">
-            <input type="radio" name="radio14"onclick="console.log(this.checked)"> 
+            <input type="radio" name="radio14" onclick="gqcontrol1(2)"> 
             <label><i class="default"></i> 中</label>
           </div>
-          <div class="pretty circle info"onclick="console.log(this.checked)">
+          <div class="pretty circle danger" onclick="gqcontrol1(3)"> 
             <input type="radio" name="radio14"> 
             <label><i class="default"></i> 高</label>
           </div>
                     </div>
                     <div class='henbox'>             <div class="pretty circle primary">
-            <input type="radio" name="radio17" checked  onclick="console.log(this.checked)"> 
+            <input type="radio" name="radio17" checked   onclick="gqcontrol2(1)"> 
             <label><i class="default"></i> 低</label>
           </div>
           <div class="pretty circle success">
-            <input type="radio" name="radio17"onclick="console.log(this.checked)"> 
+            <input type="radio" name="radio17" onclick="gqcontrol2(2)"> 
             <label><i class="default"></i> 中</label>
           </div>
-          <div class="pretty circle info"onclick="console.log(this.checked)">
+          <div class="pretty circle danger" onclick="gqcontrol2(3)"> 
             <input type="radio" name="radio17"> 
             <label><i class="default"></i> 高</label>
           </div>
@@ -698,28 +702,28 @@
                      <div class='henbox'></div>
 
                     <div class='henbox'>                <div class="pretty circle primary">
-            <input type="radio" name="radio20" checked  onclick="console.log(this.checked)"> 
+            <input type="radio" name="radio20" checked  onclick="sscontrol1(1)"> 
             <label><i class="default"></i> 低</label>
           </div>
           <div class="pretty circle success">
-            <input type="radio" name="radio20"onclick="console.log(this.checked)"> 
+            <input type="radio" name="radio20"   onclick="sscontrol1(2)"> 
             <label><i class="default"></i> 中</label>
           </div>
-          <div class="pretty circle info"onclick="console.log(this.checked)">
+          <div class="pretty circle danger" onclick="sscontrol1(3)"> 
             <input type="radio" name="radio20"> 
             <label><i class="default"></i> 高</label>
           </div>
                     </div>
                     <div class='henbox'>             <div class="pretty circle primary">
-            <input type="radio" name="radio24" checked  onclick="console.log(this.checked)"> 
+            <input type="radio" name="radio24" checked  onclick="sscontrol2(1)"> 
             <label><i class="default"></i> 低</label>
           </div>
           <div class="pretty circle success">
-            <input type="radio" name="radio24"onclick="console.log(this.checked)"> 
+            <input type="radio" name="radio24"  onclick="sscontrol2(2)"> 
             <label><i class="default"></i> 中</label>
           </div>
-          <div class="pretty circle info"onclick="console.log(this.checked)">
-            <input type="radio" name="radio24"> 
+          <div class="pretty circle danger"> 
+          <input type="radio" name="radio24"  onclick="sscontrol2(3)"> 
             <label><i class="default"></i> 高</label>
           </div>
 </div>
@@ -959,28 +963,28 @@
                      <div class='henbox'></div>
 
                     <div class='henbox'>              <div class="pretty circle primary">
-            <input type="radio" name="radio27" checked  onclick="console.log(this.checked)"> 
+            <input type="radio" name="radio27" checked  onclick="jscontrol1(1)"> 
             <label><i class="default"></i> 低</label>
           </div>
           <div class="pretty circle success">
-            <input type="radio" name="radio27"onclick="console.log(this.checked)"> 
+            <input type="radio" name="radio27"  onclick="jscontrol1(2)"> 
             <label><i class="default"></i> 中</label>
           </div>
-          <div class="pretty circle info"onclick="console.log(this.checked)">
+          <div class="pretty circle danger"  onclick="jscontrol1(3)"> 
             <input type="radio" name="radio27"> 
             <label><i class="default"></i> 高</label>
           </div>
                     </div>
                     <div class='henbox'>          
                             <div class="pretty circle primary">
-            <input type="radio" name="radio30" checked  onclick="console.log(this.checked)"> 
+            <input type="radio" name="radio30" checked  onclick="jscontrol2(1)"> 
             <label><i class="default"></i> 低</label>
           </div>
           <div class="pretty circle success">
-            <input type="radio" name="radio30"onclick="console.log(this.checked)"> 
+            <input type="radio" name="radio30" onclick="jscontrol2(2)"> 
             <label><i class="default"></i> 中</label>
           </div>
-          <div class="pretty circle info"onclick="console.log(this.checked)">
+          <div class="pretty circle danger"  onclick="jscontrol2(3)"> 
             <input type="radio" name="radio30"> 
             <label><i class="default"></i> 高</label>
           </div>
@@ -1102,19 +1106,22 @@
 
                     <div class="sysw">
  
-                       <a href="#" class="button white bigrounded">茶水间1</a> 
+                       <a  class="button white bigrounded"  onclick="kybutton(1)"> 茶水间1</a> 
                    </div>
+
                     <div class="sysw">
 
-                        <a href="#" class="button white bigrounded">茶水间2</a> 
+                        <a  class="button white bigrounded"  onclick="kybutton(2)">茶水间2</a> 
                     </div>
+
                     <div class="sysw">
 
-                    <a href="#" class="button white bigrounded">茶水间3</a> 
+                    <a  class="button white bigrounded"  onclick="kybutton(3)">茶水间3</a> 
                     </div>
+
                     <div class="sysw">
 
-                    <a href="#" class="button white bigrounded">办公室</a> 
+                    <a  class="button white bigrounded" onclick="kybutton(4)">办公室</a> 
                     </div>
                         
 
