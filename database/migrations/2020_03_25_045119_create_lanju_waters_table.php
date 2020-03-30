@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAirrsTable extends Migration
+class CreateLanjuWatersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ class CreateAirrsTable extends Migration
      */
     public function up()
     {
-        Schema::create('airrs', function (Blueprint $table) {
+        Schema::create('lanju_waters', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->text('x');
-            $table->float('y', 8, 2);
-            $table->float('z', 8, 2);
+            $table->bigInteger('device');
+            $table->float('ph', 8, 2);
             $table->nullabletimestamps();
         });
     }
@@ -29,6 +28,6 @@ class CreateAirrsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('airrs');
+        Schema::dropIfExists('lanju_waters');
     }
 }

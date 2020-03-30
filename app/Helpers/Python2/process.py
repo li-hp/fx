@@ -13,7 +13,8 @@ import json
 import numpy
 
 import php_python
-import test_socket  #具体的python脚本模块
+
+import websocket45
 
 REQUEST_MIN_LEN = 10    #合法的request消息包最小长度    
 TIMEOUT = 180           #socket处理时间180秒
