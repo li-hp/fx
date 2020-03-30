@@ -84,6 +84,7 @@
   <script type="text/javascript" src="js/charts/kangyi.js"></script>
   <script type="text/javascript" src="js/charts/renyuan.js"></script>
   <script type="text/javascript" src="js/control.js"></script>
+  <script type="text/javascript" src="js/database.js"></script>
 
   @yield('scripts')
 
