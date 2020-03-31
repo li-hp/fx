@@ -26,7 +26,7 @@ setInterval(function(){
     ss777();
  
 
-},100); 
+},10000); 
     
 
 
@@ -357,10 +357,7 @@ setInterval(function(){
     function ss333() {
         var myChart = echarts.init(document.getElementById('ss333'));
 
-        var randome81 = [randomNum(3,30), randomNum(3,30), 
-            randomNum(3,30), randomNum(3,30), 
-            randomNum(3,30), randomNum(3,30), 
-            randomNum(3,30), randomNum(3,30)];
+        var randome81 = airtemdata;
     
         option = {
             tooltip: {
@@ -699,10 +696,7 @@ setInterval(function(){
     function ss666() {
         var myChart = echarts.init(document.getElementById('ss666'));
 
-        var randome81 = [randomNum(3,30), randomNum(3,30), 
-            randomNum(3,30), randomNum(3,30), 
-            randomNum(3,30), randomNum(3,30), 
-            randomNum(3,30)];
+        var randome81 =airtemdata;
     
         option = {
             tooltip: {
