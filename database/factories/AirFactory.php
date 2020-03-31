@@ -3,10 +3,10 @@
 use Faker\Generator as Faker;
 
 $factory->define(App\Models\Air::class, function (Faker $faker) {
-    
+
     $date_time = $faker->date . ' ' . $faker->time;
     return [
-        'co2' => randomFloat(800, 1200),
+        'co2' => round(randomFloat(800, 1200),2),
         'voc' => randomFloat(220, 260),
         'tem' => randomFloat(20, 33),
         'hum' => randomFloat(45, 70),

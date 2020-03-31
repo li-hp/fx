@@ -20,7 +20,7 @@ $factory->define(LanjuInside::class, function (Faker $faker) {
 
     return [
         'DeviceID' => '62011711',
-        'TEMP' => randomFloat(25, 29),
+        'TEMP' => round(randomFloat(25, 29),1),
         'PM25' => randomFloat(15, 19),
         'CO2' => randomFloat(700, 800),
         'NOISE' => randomFloat(20, 40),
