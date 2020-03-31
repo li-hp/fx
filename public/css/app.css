@@ -2827,6 +2827,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+ 
 }
 
 .row {
@@ -2834,6 +2835,7 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+
 }
 
 .no-gutters {
@@ -2921,6 +2923,7 @@ pre code {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+ 
 }
 
 .col {
@@ -19029,7 +19032,7 @@ body {
 
 .boxall {
   border: 0px solid rgba(25, 186, 138, 0);
-  padding: 0 0rem 8rem 0rem;
+  padding: 2rem 0rem 8rem 0rem;
   background: url(/images/jianbian.png?b3d6850c72b4a2eca0500d84d481c54e);
   background-size: 100% auto;
   position: relative;
@@ -19064,7 +19067,7 @@ body {
 
 .boxallright {
   border: 0px solid rgba(25, 186, 138, 0);
-  padding: 0 0rem 8rem 0rem;
+  padding: 2rem 0rem 8rem 0rem;
   background: url(/images/jianbian-you.png?f1d3af582ec69b5a36715b2895e7f130);
   background-size: 100% auto;
   position: relative;

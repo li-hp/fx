@@ -11,6 +11,7 @@
 
   <!-- Js -->
   <script type="text/javascript" src="js/jquery.js"></script>
+ 
   <script type="text/javascript" src="js/echarts.min.js"></script>
   <script type="text/javascript" src="js/echarts-liquidfill.min.js"></script>
   
@@ -24,6 +25,9 @@
   <link rel="stylesheet" href="./css/ai.css">
   <link href="css/uiduck.css" type="text/css" rel="stylesheet">
   <link href="css/table.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/checkboxaaa.css">
+  <link rel="stylesheet" type="text/css" href="css/checkboxbbb.css">
+ 
 
 
 
@@ -59,6 +63,7 @@
   <script src="js/jtoggler.js" type="text/javascript"></script>
   <script src="{{ mix('js/app.js') }}"></script>
   <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+ 
   <script type="text/javascript" src="js/js.js"></script>
   <!-- <script type="text/javascript" src="js/51vr.js"></script> -->
   <script type="text/javascript" src="js/let.js"></script>
@@ -77,6 +82,8 @@
   <script type="text/javascript" src="js/charts/yingyang.js"></script>
   <script type="text/javascript" src="js/charts/jianshen.js"></script>
   <script type="text/javascript" src="js/charts/kangyi.js"></script>
+  <script type="text/javascript" src="js/charts/renyuan.js"></script>
+  <script type="text/javascript" src="js/control.js"></script>
 
   @yield('scripts')
 
