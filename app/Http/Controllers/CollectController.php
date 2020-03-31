@@ -28,7 +28,7 @@ class CollectController extends Controller
     // 7小时历史数据
     public function data7hour () {
         date_default_timezone_set('PRC');
-        $history_hour_origin = LanjuInside::latest('SERVER_TIME')
+        $history_hour_origin = DB::table('lanju_insides')->latest('SERVER_TIME')
             ->where('SERVER_TIME', '>', date('Y-m-d H:i:s',strtotime('-7 hour')))
             ->where('SERVER_TIME', '<=', date('Y-m-d H:i:s',strtotime('now')))
             ->limit(420)->get()->toArray();
@@ -94,7 +94,8 @@ class CollectController extends Controller
             for ($b=1; $b<count($strdata); $b++) {
                 $sum = 0;
                 for ($c=0; $c<count($array2[$a]); $c++) {
-                    $sum += $array2[$a][$c][$strdata[$b]];
+                    $str = object_array($strdata[$b]);
+                    $sum += $array2[$a][$c]->$str; //d可以h不可以
                 }
                 $avg = round($sum / count($array2[$a]),1);
                 array_push($array_avg,$avg);
