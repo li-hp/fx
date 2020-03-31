@@ -1,25 +1,41 @@
 ﻿
 $(function () {
 
-    gecharts_1();setInterval(function(){gecharts_1();}, 2000);
+    gecharts_1();
+    gecharts_2();
+    gecharts_3();
+    gecharts_4();
+    gecharts_6();
+    gecharts_7();
+    gecharts_8();
 
-    gecharts_2();setInterval(function(){gecharts_2();}, 1500);
+    
+    setTimeout(function(){
 
-    gecharts_3();setInterval(function(){gecharts_3();}, 2000);
+        gecharts_1();
+        gecharts_2();
+        gecharts_3();
+        gecharts_4();
+        gecharts_6();
+        gecharts_7();
+        gecharts_8();
+    
+    
+    },5000); 
+        
 
-    gecharts_4();setInterval(function(){gecharts_4();}, 1500);
-
-
-    gecharts_6();setInterval(function(){gecharts_6();}, 1500);
-
-    gecharts_7();setInterval(function(){gecharts_7();}, 1500);
-
-
- 
    
+    setInterval(function(){
 
-    gecharts_8();setInterval(function(){gecharts_8();}, 1500);
-
+        gecharts_1();
+        gecharts_2();
+        gecharts_3();
+        gecharts_4();
+        gecharts_6();
+        gecharts_7();
+        gecharts_8();
+    
+    },360000); 
  
 
 

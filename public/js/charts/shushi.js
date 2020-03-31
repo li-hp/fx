@@ -12,6 +12,21 @@ $(function(){
  
 
           
+setTimeout(function(){
+
+    ss111();
+    ss222();
+     ss333();  
+  ss444();
+    ss666();
+
+
+   
+   
+    ss777();
+ 
+
+},5000); 
 setInterval(function(){
 
     ss111();
@@ -26,7 +41,7 @@ setInterval(function(){
     ss777();
  
 
-},10000); 
+},360000); 
     
 
 

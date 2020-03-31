@@ -5,7 +5,7 @@ $(function () {
 
     setInterval(function(){
    getkqdata_h();
-    },3600000); 
+    },360000); 
 
   
     

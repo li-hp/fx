@@ -5,29 +5,46 @@ $(function () {
     
     // --------------- 每1.5秒随机数 -----------------//
     
-    function airdata(){
-        $.ajax({
-            url:'js/data_json/jj111.json',
-            type:'get',
-            success: function (result) {
-                kecharts_0(result);
-                
-            },
-            error : function() {
-                alert("数据异常！");
-            }
-        })
-    }
+ 
     
     // kecharts_0();setInterval(function(){kecharts_0();}, randomNum(2000,7000));
     
-    kecharts_0();setInterval(function(){kecharts_0();}, randomNum(2000,7000));
-    kecharts_1();setInterval(function(){kecharts_1();}, randomNum(2000,7000));
-    kecharts_2();setInterval(function(){kecharts_2();}, randomNum(2000,7000));
-    kecharts_3();setInterval(function(){kecharts_3();}, randomNum(2000,7000));
-    kecharts_4();setInterval(function(){kecharts_4();}, randomNum(2000,7000));
-    kecharts_5();setInterval(function(){kecharts_5();}, randomNum(2000,7000));
-    kecharts_6();setInterval(function(){kecharts_6();}, randomNum(2000,7000));
+    kecharts_0();
+    kecharts_1();
+    kecharts_2();
+    kecharts_3();
+    kecharts_4();
+    kecharts_5();
+    kecharts_6();
+
+
+    setTimeout(function(){
+
+        kecharts_0();
+        kecharts_1();
+        kecharts_2();
+        kecharts_3();
+        kecharts_4();
+        kecharts_5();
+        kecharts_6();
+    },5000); 
+        
+
+    setInterval(function(){
+        kecharts_0();
+        kecharts_1();
+        kecharts_2();
+        kecharts_3();
+        kecharts_4();
+        kecharts_5();
+        kecharts_6();
+    
+    
+    },360000); 
+        
+    
+
+
     
     // --------------- echart图表 -----------------//
     function kecharts_0() {

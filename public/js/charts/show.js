@@ -19,7 +19,18 @@ $(function () {
     e999();
     // e999();setInterval(function(){e999();},  2500);
     
-  
+  setTimeout(function(){
+
+    e111();
+    e222();
+    e333();
+     e444();
+    e666();
+    e777();
+    e888();
+    e999();
+
+},5000); 
     
 setInterval(function(){
 
@@ -32,9 +43,11 @@ setInterval(function(){
     e888();
     e999();
 
-},10000); 
+},360000); 
     
     
+        
+
     
     
     

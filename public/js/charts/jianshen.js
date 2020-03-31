@@ -8,7 +8,15 @@ $(function () {
 
 
 
+    setTimeout(function(){
 
+        js111();
+        js222();
+        js333();
+        js444();
+    
+    },5000); 
+        
 
 
     
@@ -19,7 +27,7 @@ setInterval(function(){
     js333();
     js444();
 
-},100); 
+},360000); 
     
 
 
