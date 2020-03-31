@@ -8,6 +8,24 @@
    rr777();
    rr888();
 
+
+
+
+
+   setInterval(function(){
+    rr111();
+    rr222();
+    rr333();
+    rr444();
+    rr666();
+    rr777();
+    rr888();
+ 
+
+},10000); 
+    
+
+
     function rr111() {
 
         var myChart = echarts.init(document.getElementById('rr111'));

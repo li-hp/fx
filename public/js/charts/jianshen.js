@@ -1,5 +1,6 @@
 
 $(function () {
+
     js111();
     js222();
     js333();
@@ -10,7 +11,16 @@ $(function () {
 
 
 
+    
+setInterval(function(){
 
+    js111();
+    js222();
+    js333();
+    js444();
+
+},100); 
+    
 
 
 

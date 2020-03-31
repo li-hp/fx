@@ -8,6 +8,23 @@ $(function(){
   sz777();
   sz888();
 
+
+
+      
+setInterval(function(){
+
+    sz111();
+   sz222();
+  sz333();
+  sz444();
+  sz666();
+  sz777();
+  sz888();
+
+
+},10000); 
+    
+
     function sz111() {
 
         var myChart = echarts.init(document.getElementById('sz111'));

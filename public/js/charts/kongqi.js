@@ -827,7 +827,7 @@ $(function () {
             //     color: '#471bba'
             // }]),
              title: {
-                 text: (value ).toFixed(0) + '{a|%}',
+                 text: (value ) + '{a|%}',
                  textStyle: {
                      fontSize: 50,
                      fontFamily: 'Microsoft Yahei',

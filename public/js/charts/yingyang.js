@@ -8,6 +8,24 @@ yy444();
 //yy666();
 //yy777();
 yy888();
+
+
+
+
+          
+setInterval(function(){
+
+    yy111();
+    yy222();
+    yy333();
+    yy444();
+    //yy666();
+    //yy777();
+    yy888();
+ 
+
+},100); 
+    
 colors=[['#7bbfd4', '#c8447e','#598c90','#dfba2b','#ef5728'],['#dfba2b', '#598c90','#7bbfd4','#dfba2b','#ef5728'],['#7bbfd4', '#598c90','#e8b5de','#dfba2b','#ef5728'],['#ff8c37', '#ffdcc3'],['#fd6f97', '#fed4e0'],['#ffc257', '#ffedcc'], ['#a181fc', '#e3d9fe']]
 
     function yy111() {
@@ -262,7 +280,7 @@ colors=[['#7bbfd4', '#c8447e','#598c90','#dfba2b','#ef5728'],['#dfba2b', '#598c9
         
                 // Data in as an Array
                 pie_data: {
-                    '综合评分': {
+                    '': {
                         '60-':10,
                         '60-70':10,
                         '70-80':50,
@@ -499,7 +517,7 @@ colors=[['#7bbfd4', '#c8447e','#598c90','#dfba2b','#ef5728'],['#dfba2b', '#598c9
         
                 // Data in as an Array
                 pie_data: {
-                    '用餐情况':{
+                    '':{
                         '早餐': 89,
                         '午餐': 238,
                         '晚餐':200

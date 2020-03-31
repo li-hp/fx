@@ -131,12 +131,12 @@ function test2 (data) {
 
             $(str1 + zymdata[lastdata]).css("display","none");
       
-                  $('.nav-lin'+lastdata).css("background-color","#ba1c1c00");
+         $('.nav-lin'+lastdata).css("background-color","#ba1c1c00");
             $(str1 + data123).css("display","block");
    if(i!=0)
          {
          
-            $('.nav-lin'+i).css("background-color","#158fd587");
+          $('.nav-lin'+i).css("background-color","#158fd587");
 
          }
     

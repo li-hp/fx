@@ -9,9 +9,12 @@
 2020/01/16 许耿瑞
 */
 
+
+
 // kqdatabase=[]
 // --------------------------全局  主页数据----------------------------------- // 
 kqdatabase=[[]];
+xtimeday=[[]];
 
 ziyemiandata =["zhuye","kongqi","shuizhi","guangqiang", "shushi", "yingyang","jianshen", "kangyi", "renyuan"]
 
@@ -20,11 +23,15 @@ ziyemiandata =["zhuye","kongqi","shuizhi","guangqiang", "shushi", "yingyang","ji
 
 timeweek=["3/15","3/16","3/17","3,18","3/19","3/20","3/21"]   //s一周的时间坐标
 timeday=["8:00","9:00","10:00","11:00","12:00","13:00","14:00"]   // 一天的时间坐标，倒推七个小时
-
+setInterval(function(){timeday=xtimeday[1];
+    timeweek=xtimeday[0];
+    kqdata=[kqdatabase[0][0],kqdatabase[0][4],kqdatabase[0][6],kqdatabase[0][5],kqdatabase[0][1],kqdatabase[0][2]]//空气数据  温度，湿度，甲醛 voc pm2.5 co2
+}, 4000);
 
 // kqdata=[kqdatabase[0][1],kqdatabase[0][5],kqdatabase[0][2],kqdatabase[0][6],kqdatabase[0][2],kqdatabase[0][3]]//空气数据  温度，湿度，甲醛 voc pm2.5 co2
  kqdata=[1,11,1,1,1,1]
-// setTimeout(function(){kqdata=[kqdatabase[0][1],kqdatabase[0][5],kqdatabase[0][2],kqdatabase[0][6],kqdatabase[0][2],kqdatabase[0][3]]//空气数据  温度，湿度，甲醛 voc pm2.5 co2
+
+// setTimeout(function(){kqdata=[kqdatabase[0][0],kqdatabase[0][4],kqdatabase[0][6],kqdatabase[0][5],kqdatabase[0][1],kqdatabase[0][2]]//空气数据  温度，湿度，甲醛 voc pm2.5 co2
 // }, 3000);
 
 

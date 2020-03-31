@@ -10,6 +10,22 @@ ky888();
   
 
 
+    
+setInterval(function(){
+    ky111();
+    ky222();
+    ky333();
+    ky444();
+    ky666();
+    ky777();
+    ky888();
+      
+    
+
+},10000); 
+    
+
+
     function ky111() {
     
     

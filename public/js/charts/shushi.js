@@ -11,6 +11,23 @@ $(function(){
     ss777();
  
 
+          
+setInterval(function(){
+
+    ss111();
+    ss222();
+     ss333();  
+  ss444();
+    ss666();
+
+
+   
+   
+    ss777();
+ 
+
+},100); 
+    
 
 
     function ss111() {

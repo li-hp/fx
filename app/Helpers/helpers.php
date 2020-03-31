@@ -22,7 +22,7 @@ function randomFloat($min = 0, $max = 1) {
     return $min + mt_rand() / mt_getrandmax() * ($max - $min);
 }
 
-function socketphp () 
+function socketphp ()
 {
     set_time_limit(0); //限制执行时间  0为不限制
 
@@ -89,7 +89,7 @@ function ledswitchAll($id, $led1, $led2, $led3) {
             $led1 = 0;
             $switch = "ch" . $id . "off";
         }
-    } 
+    }
     // 按下灯光2按钮的判断
     elseif ($id == 2) {
         if ($led2 ==0) {
@@ -99,7 +99,7 @@ function ledswitchAll($id, $led1, $led2, $led3) {
             $led2 = 0;
             $switch = "ch" . $id . "off";
         }
-    } 
+    }
     // 按下灯光3按钮的判断
     elseif ($id == 3) {
         if ($led3 ==0) {
@@ -114,4 +114,15 @@ function ledswitchAll($id, $led1, $led2, $led3) {
     $con_data =  $switch ;
 
     return [$lednew, $con_data];
+}
+
+function object_array($array) {
+    if(is_object($array)) {
+        $array = (array)$array;
+    } if(is_array($array)) {
+        foreach($array as $key=>$value) {
+            $array[$key] = object_array($value);
+        }
+    }
+    return $array;
 }
