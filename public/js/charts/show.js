@@ -320,7 +320,7 @@ setInterval(function(){
                  max: 1000,
               detail: {
                   fontSize:30,
-                  formatter: '{value}μg/m³\n'+voc,
+                  formatter: '{value}mg/m³\n'+voc,
               },
                 axisTick: {            // 坐标轴小标记
                  show:false,
@@ -427,7 +427,7 @@ setInterval(function(){
               },
               data: [{
                    name: 'PM2.5',
-                  value: data[4],
+                  value: parseInt(data[4]),
                  
               }]
       
@@ -1491,6 +1491,16 @@ setInterval(function(){
     
     
         myChart.setOption(option);
+    
+
+
+        // 处理点击事件并且跳转到相应的百度搜索页面
+        myChart.on('click', function (params) {
+            window.open('https://www.baidu.com/s?wd=' + encodeURIComponent(params.data));
+        });
+
+
+
         window.addEventListener("resize",function(){
             myChart.resize();
         });
