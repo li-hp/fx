@@ -5,31 +5,258 @@ $(function () {
     
     // --------------- 每1.5秒随机数 -----------------//
     
-    function airdata(){
-        $.ajax({
-            url:'js/data_json/jj111.json',
-            type:'get',
-            success: function (result) {
-                kecharts_0(result);
-                
-            },
-            error : function() {
-                alert("数据异常！");
-            }
-        })
-    }
+ 
     
     // kecharts_0();setInterval(function(){kecharts_0();}, randomNum(2000,7000));
     
-    kecharts_0();setInterval(function(){kecharts_0();}, randomNum(2000,7000));
-    kecharts_1();setInterval(function(){kecharts_1();}, randomNum(2000,7000));
-    kecharts_2();setInterval(function(){kecharts_2();}, randomNum(2000,7000));
-    kecharts_3();setInterval(function(){kecharts_3();}, randomNum(2000,7000));
-    kecharts_4();setInterval(function(){kecharts_4();}, randomNum(2000,7000));
-    kecharts_5();setInterval(function(){kecharts_5();}, randomNum(2000,7000));
-    kecharts_6();setInterval(function(){kecharts_6();}, randomNum(2000,7000));
+    kecharts_0();
+    kecharts_1();
+    kecharts_2();
+    kecharts_3();
+    kecharts_4();
+    kecharts_5();
+    kecharts_6();
+    ke555();
+
+
+    setTimeout(function(){
+
+        kecharts_0();
+        kecharts_1();
+        kecharts_2();
+        kecharts_3();
+        kecharts_4();
+        kecharts_5();
+        kecharts_6();
+      
+    },5000); 
+        
+
+    setInterval(function(){
+        kecharts_0();
+        kecharts_1();
+        kecharts_2();
+        kecharts_3();
+        kecharts_4();
+        kecharts_5();
+        kecharts_6();
+        ke555();
+    
+    
+    },360000); 
+        
+    
+
+
     
     // --------------- echart图表 -----------------//
+
+
+  
+    function ke555() {
+        var myChart = echarts.init(document.getElementById('kechart555'));
+    
+        var dataBJ = [
+            [10,60,26,0.46,18,6,8,1,"室外"],
+          
+        
+        ];
+        
+        var dataGZ = [
+            [18,15,25,0.46,18,6,8,1,"室内"],
+          
+    
+        ];
+        
+        var dataSH = [
+          
+    
+        ];
+        
+        var schema = [
+            {name: '区域x', index: 0, text: ''},
+            {name: '区域t', index: 1, text: ''},
+            {name: '温度', index: 2, text: '温度'},
+            {name: '湿度', index: 3, text: '湿度'},
+            {name: 'PM2.5', index: 4, text: 'PM2.5'},
+            {name: 'CO2', index: 5, text: '二氧化碳（CO2）'},
+            {name: 'VOC', index: 6, text: '可挥发化合物（VOC）'},
+            {name: '甲醛', index: 7, text: '甲醛（CHOH）'},
+            {name: '区域t', index: 8, text: ''},
+        ];
+        
+        
+        var itemStyle = {
+            opacity: 0.8,
+            shadowBlur: 10,
+            shadowOffsetX: 0,
+            shadowOffsetY: 0,
+            shadowColor: 'rgba(0, 0, 0, 0.5)'
+        };
+        
+        option = {
+            // backgroundColor: '#404a59',
+            color: [
+                '#dd4444', '#fec42c', '#80F1BE'
+            ],
+            // legend: {
+            //     top: 10,
+            //     data: ['北京', '上海', '广州'],
+            //     textStyle: {
+            //         color: '#fff',
+            //         fontSize: 16
+            //     }
+            // },
+            grid: {
+                left: '5%',
+                right: 150,
+                top: '10%',
+                bottom: '5%'
+            },
+            tooltip: {
+                padding: 60,
+                fontSize:300,
+                backgroundColor: '#222',
+                borderColor: '#777',
+                borderWidth: 1,
+                formatter: function (obj) {
+                    var value = obj.value;
+                    return '<div style=" font-size: 50px;padding-bottom: 30px;margin-bottom: 0px;line-height:60px">'
+                        +  ' ' + value[8] + ' ：'+ '<br>'
+                                         
+                        + schema[2].text + '：' + value[2] + '<br>'
+                        + schema[3].text + '：' + value[3] + '<br>'
+                        + schema[4].text + '：' + value[4] + '<br>'
+                        + schema[5].text + '：' + value[5] + '<br>'
+                        + schema[6].text + '：' + value[6] + '<br>'
+                        + schema[7].text + '：' + value[7] + '<br>'
+                        + '</div>';
+                       
+                }
+            },
+            xAxis: {
+                type: 'value',
+                name: '日期',
+                nameGap: 16,
+                nameTextStyle: {
+                    color: '#fff',
+                    fontSize: 14
+                },
+                max: 31,
+                splitLine: {
+                    show: false
+                },
+                axisLine: {
+                    lineStyle: {
+                        color: '#eee'
+                    }
+                }
+            },
+            yAxis: {
+                type: 'value',
+                name: 'AQI指数',
+                nameLocation: 'end',
+                nameGap: 20,
+                min:0,
+                max:100,
+                nameTextStyle: {
+                    color: '#fff',
+                    fontSize: 16
+                },
+                axisLine: {
+                    lineStyle: {
+                        color: '#eee'
+                    }
+                },
+                splitLine: {
+                    show: false
+                }
+            },
+            visualMap: [
+                {
+                   
+                    min: 800,
+                    max: 800,
+                   
+                    inRange: {
+                        symbolSize: [100, 100]
+                    },
+                    outOfRange: {
+                        symbolSize: [100, 100],
+                        color: ['rgba(255,255,255,.2)']
+                    },
+                    
+                },
+                
+            ],
+            series: [
+                {
+                    name: '北京',
+                    type: 'scatter',
+                    itemStyle: itemStyle,
+                    data: dataBJ
+                },
+                {
+                    name: '上海',
+                    type: 'scatter',
+                    itemStyle: itemStyle,
+                    data: dataSH
+                },
+                {
+                    name: '广州',
+                    type: 'scatter',
+                    itemStyle: itemStyle,
+                    data: dataGZ
+                }
+            ]
+        };
+    
+    
+    
+    
+    
+    
+    
+        myChart.setOption(option);
+    
+
+
+        // 处理点击事件并且跳转到相应的百度搜索页面
+        myChart.on('click', function (params) {
+          
+            if(params.data[8]=="室内"){
+                kqdata=[25,50,12,20,15,800];
+            kecharts_0();}
+            else{
+                kqdata=[kqdatabase[0][0],kqdatabase[0][4],kqdatabase[0][6],kqdatabase[0][5],kqdatabase[0][1],kqdatabase[0][2]]//空气数据  温度，湿度，甲醛 voc pm2.5 co2
+                kecharts_0();}
+            
+        });
+
+
+
+        window.addEventListener("resize",function(){
+            myChart.resize();
+        });
+    
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     function kecharts_0() {
     
         var myChart = echarts.init(document.getElementById('kechart0'));
@@ -297,7 +524,7 @@ $(function () {
                max: 1000,
             detail: {
                 fontSize:30,
-                formatter: '{value}μg/m³\n'+voc,
+                formatter: '{value}mg/m³\n'+voc,
             },
               axisTick: {            // 坐标轴小标记
                show:false,
@@ -404,7 +631,7 @@ $(function () {
             },
             data: [{
                  name: 'PM2.5',
-                value: data[4],
+                 value: parseInt(data[4]),
                
             }]
     
@@ -567,8 +794,8 @@ $(function () {
                 },
                 type: 'value',
                 axisTick: {show: false},
-                min:0,
-                max:1500,
+               min:parseInt(Math.min.apply(null, randome81)-50)/50*50,
+               max:parseInt(Math.max.apply(null, randome81)+50)/50*50,
                 axisLine: {
                     lineStyle: {
                         color: 'rgba(255,255,255,.1)'
@@ -724,14 +951,15 @@ $(function () {
             }],
     
             yAxis: [{
-                name:"浓度:PPB",
+                name:"浓度:mg/m³",
                 nameTextStyle:{
                     color: "#fff",
                     fontSize:'24',
                     fontWeight: 'bold',
                 },
                 type: 'value',
-                max:750,
+               
+                max:parseInt(Math.max.apply(null, randome81)+1)/1*1-0.4,
                 axisTick: {show: false},
                 axisLine: {
                     lineStyle: {
@@ -792,8 +1020,8 @@ $(function () {
                         name: '中',
                         yAxis: 700
                     }, {
-                        name: '优',
-                        yAxis: 600
+                        name: '超标',
+                        yAxis: 0.5
                     }],
                     lineStyle:{
                         color:'#8E8E8E',
@@ -811,6 +1039,11 @@ $(function () {
     function kecharts_3() {
         // 基于准备好的dom，初始化echarts实例
         var value = kqdata[1];
+        var date;
+        var jianyi;
+        if (value<=40) {date="干燥"; datecolor='#fcd22c';  jianyi="开启加湿器\n增加饮水量\n增添植物摆件" }
+        else if (value>60)  {date="潮湿"; datecolor='#f50a0a';  jianyi="放置干燥剂\n活性炭除湿盒\n开启抽湿器\n开窗通风"   }
+        else {date="舒适";   datecolor='#6bdde2'; jianyi="无"  }
 
         var data = [value,value];
         var dom = document.getElementById("kechart3");
@@ -826,27 +1059,100 @@ $(function () {
             //     offset: 1,
             //     color: '#471bba'
             // }]),
-             title: {
+             title: [{
                  text: (value ) + '{a|%}',
                  textStyle: {
-                     fontSize: 50,
+                     fontSize: 30,
                      fontFamily: 'Microsoft Yahei',
                      fontWeight: 'normal',
                      color: '#fff',
                      rich: {
                          a: {
-                             fontSize: 28,
+                             fontSize: 30,
                              fontWeight: 'bold',
                          }
                      }
                  },
-                 x: 'center',
-                 y: '35%'
+                 x: '37%',
+                 y: '40%'
              },
+             {
+                text: date,
+                textStyle: {
+                    fontSize: 40,
+                    fontFamily: 'Microsoft Yahei',
+                    fontWeight: 'bold',
+                    color: datecolor,
+                    rich: {
+                        a: {
+                            fontSize: 28,
+                            fontWeight: 'bold',
+                        }
+                    }
+                },
+                x: '75%',
+                y: '25%'
+            },
+            {
+                text: jianyi,
+                textStyle: {
+                    fontSize: 37,
+                    fontFamily: 'light',
+                    lineHeigh:50,
+                    fontWeight: 'normal',
+                    color: "#fff",
+                    rich: {
+                        a: {
+                            fontSize: 18,
+                            fontWeight: 'normoal',
+                        }
+                    }
+                },
+                x: '75%',
+                y: '40%'
+            },
+            {
+                text: "状态：",
+                textStyle: {
+                    fontSize: 40,
+                    fontFamily: 'Microsoft Yahei',
+                    fontWeight: 'bold',
+                    color: "#6bdde2",
+                    rich: {
+                        a: {
+                            fontSize: 18,
+                            fontWeight: 'normoal',
+                        }
+                    }
+                },
+                x: '65%',
+                y: '25%'
+            },
+            {
+                text: "建议：",
+                textStyle: {
+                    fontSize: 40,
+                    fontFamily: 'Microsoft Yahei',
+                    fontWeight: 'bold',
+                    color: "#6bdde2",
+                    rich: {
+                        a: {
+                            fontSize: 18,
+                            fontWeight: 'normoal',
+                        }
+                    }
+                },
+                x: '65%',
+                y: '40%'
+            },
+       
+            
+            
+            ],
              graphic: [{
                  type: 'group',
-                 left: 'center',
-                 top: '60%',
+                 left: '36%',
+                 top: '55%',
                  children: [{
                      type: 'text',
                      z: 100,
@@ -855,7 +1161,7 @@ $(function () {
                      style: {
                          fill: '#fff',
                          text: '实时湿度',
-                         font: '24px Microsoft YaHei',
+                         font: '30px Microsoft YaHei',
                          fontWeight: 'bold',
                      }
                  }]
@@ -863,7 +1169,7 @@ $(function () {
              series: [{
                  type: 'liquidFill',
                  radius: '80%',
-                 center: ['50%', '50%'],
+                 center: ['40%', '50%'],
                  //  shape: 'roundRect',
                  data: data,
                  backgroundStyle: {
@@ -943,6 +1249,20 @@ $(function () {
          });
     
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     function kecharts_4() {
         // 基于准备好的dom，初始化echarts实例
