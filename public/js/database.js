@@ -53,17 +53,6 @@ init();
 
 
 
-<<<<<<< HEAD
- function getkqdata_h() {
-        $.ajax({
-            url:'/lanju_inside_h',
-            type:'get',
-            success: function (data) {
-                console.log("-------------");
-                     //是否可以使用php写出来
-                   console.log(data);
-          kqdatabase=data;
-=======
 
 
 
@@ -95,16 +84,10 @@ function getkqdata_h() {
 
 
 
->>>>>>> f69e6c316d618cd6d8368ed2f57ea795fe65348d
             },
             error : function() {
                 alert("异常！");
             }
-<<<<<<< HEAD
-        }
-        )
-
-=======
             }
             )
 
@@ -128,7 +111,6 @@ function getkqdata_d() {
     error : function() {
         alert("异常！");
     }
->>>>>>> f69e6c316d618cd6d8368ed2f57ea795fe65348d
     }
     )
 
