@@ -9,7 +9,18 @@ yy444();
 //yy777();
 yy888();
 
+setTimeout(function(){
 
+    yy111();
+    yy222();
+    yy333();
+    yy444();
+    //yy666();
+    //yy777();
+    yy888();
+ 
+
+},5000); 
 
 
           
@@ -24,7 +35,7 @@ setInterval(function(){
     yy888();
  
 
-},100); 
+},360000); 
     
 colors=[['#7bbfd4', '#c8447e','#598c90','#dfba2b','#ef5728'],['#dfba2b', '#598c90','#7bbfd4','#dfba2b','#ef5728'],['#7bbfd4', '#598c90','#e8b5de','#dfba2b','#ef5728'],['#ff8c37', '#ffdcc3'],['#fd6f97', '#fed4e0'],['#ffc257', '#ffedcc'], ['#a181fc', '#e3d9fe']]
 

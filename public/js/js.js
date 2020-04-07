@@ -97,9 +97,9 @@ var lastdata=0;
 test1(ziyemiandata);
 test2(ziyemiandata);
 
-    setInterval(function(){document.querySelector('.nav-lin'+s).click();
-    if(s++==8)  s=0;
-},60000);
+//     setInterval(function(){document.querySelector('.nav-lin'+s).click();
+//     if(s++==8)  s=0;
+// },60000);
 
 
 
