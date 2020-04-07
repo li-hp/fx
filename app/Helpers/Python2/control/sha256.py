@@ -25,6 +25,8 @@ def main():
     import json
     data = {
         "appid": appid,
+        # "phoneNumber": "+8615915726010",
+        # "password": "123123aa",
         "phoneNumber": "+8618682218203",
         "password": "66668888",
         "ts": "1558004249",

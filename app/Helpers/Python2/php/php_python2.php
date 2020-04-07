@@ -7,7 +7,7 @@
 //-----------------------------------------------------------
 
 define("LAJP_PORT_2", 11112);         //Python端侦听端口,对应php_python.py的端口
-define("LAJP_IP_2", "192.168.28.1");
+define("LAJP_IP_2", "192.168.17.60");
 
 //php-fpm 地址：172.22.0.9   workspace：172.22.0.5  主机：10.0.75.1
 //Python端IP-python端位于workspace容器IP地址172.22.0.9 主机地址10.0.75.1
@@ -55,7 +55,7 @@ function ppython2()
 
     $request = $req_len.",".$request;
 
-    //echo "{$request}<br>";
+//    echo "{$request}<br>";
 
     $send_len = 0;
     do

@@ -22,26 +22,26 @@
     <div class="alltitle">交互指令</div>
     <div class="sysw">
         <button
-            class="changjingqiehuan btn-success center-block btn-sm ">
-            <p style="font-size:5rem;">场景</p>
+            class="light_IC4_2 btn-success center-block btn-sm ">
+            <p style="font-size:5rem;">区域灯光</p>
         </button>
     </div>
     <div class="sysw">
         <button
-            class="light button-3d button-primary center-block btn-sm ">
-            <p style="font-size:5rem;">灯光</p>
+            class="light_spotlight button-3d button-primary center-block btn-sm ">
+            <p style="font-size:5rem;">射灯灯光</p>
         </button>
     </div>
     <div class="sysw">
         <button
-            class="heatmap btn-success center-block btn-sm ">
-            <p style="font-size:5rem;">热力</p>
+            class="light_ultra_violet btn-success center-block btn-sm ">
+            <p style="font-size:5rem;">紫外线灯</p>
         </button>
     </div>
     <div class="sysw">
         <button
-            class="curtains btn-primary center-block btn-sm ">
-            <p style="font-size:5rem;">窗帘</p>
+            class="light_booth btn-primary center-block btn-sm ">
+            <p style="font-size:5rem;">展台灯光</p>
         </button>
     </div>
     <div class="sysw">
@@ -77,6 +77,70 @@
 </body>
 <script>
 //js.js  用于场景切换，点击事件，跳转事件等。
+
+let light_test0 = document.querySelector('.light_IC4_2');
+light_test0.addEventListener('click', function() {
+    $.ajax({
+            url:'/light_controller/0',
+            type:'get',
+            success: function (data) {
+                console.log(data);
+            },
+            error : function() {
+                console.log("异常！");
+            }
+        }
+    )
+})
+
+//用于biaogetest测试
+let light_test1 = document.querySelector('.light_spotlight');
+light_test1.addEventListener('click', function() {
+    $.ajax({
+            url:'/light_controller/1',
+            type:'get',
+            success: function (data) {
+                console.log(data);
+            },
+            error : function() {
+                console.log("异常！");
+            }
+        }
+    )
+})
+
+let light_test2 = document.querySelector('.light_ultra_violet');
+light_test2.addEventListener('click', function() {
+    $.ajax({
+            url:'/light_controller/2',
+            type:'get',
+            success: function (data) {
+                console.log(data);
+            },
+            error : function() {
+                console.log("异常！");
+            }
+        }
+    )
+})
+
+let light_test3 = document.querySelector('.light_booth');
+light_test3.addEventListener('click', function() {
+    $.ajax({
+            url:'/light_controller/3',
+            type:'get',
+            success: function (data) {
+                console.log(data);
+            },
+            error : function() {
+                console.log("异常！");
+            }
+        }
+    )
+})
+
+
+
 let qixiaoshi = document.querySelector('.qixiaoshi');
     qixiaoshi.addEventListener('click', function() {
         $.ajax({
@@ -123,17 +187,17 @@ let qixiaoshi = document.querySelector('.qixiaoshi');
                             sum1 += dazu[o][i][strdata[j]];
                         }
                         avg = sum1 / dazu[o].length;
-                        
+
                         xiaozu_avg.push(avg);
                     }
                     console.log(xiaozu_avg);
                     dazu_avg.push(xiaozu_avg);
                 }
-               
 
 
-          
-           
+
+
+
 
             },
             error : function() {

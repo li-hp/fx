@@ -12,11 +12,12 @@ import socket
 import json
 import numpy
 
+import get_device_status
 import php_python
+import light_controller
+import lanju_inside
 
-import websocket45
-
-REQUEST_MIN_LEN = 10    #合法的request消息包最小长度    
+REQUEST_MIN_LEN = 10    #合法的request消息包最小长度
 TIMEOUT = 180           #socket处理时间180秒
 
 pc_dict = {}        #预编译字典，key:调用模块、函数、参数字符串，值是编译对象
@@ -120,7 +121,7 @@ def z_decode(p):
             key,pp=z_decode(pp)  #key解析
             if (i == 0): #判断第一个元素key是否int 0
                 if (not isinstance(key, int)) or (key != 0):
-                    flag = False            
+                    flag = False
             val,pp=z_decode(pp)  #value解析
             list_.append(val)
             dict_[key]=val
@@ -139,13 +140,13 @@ def parse_php_req(p):
         params = v
 
     modul_func = params[0]      #第一个元素是调用模块和函数名
-    #print("模块和函数名:%s" % modul_func)
-    #print("参数:%s" % params[1:])    
+    # print("模块和函数名:%s" % modul_func)
+    # print("参数:%s" % params[1:])
     pos = modul_func.find("::")
     modul = modul_func[:pos]    #模块名
     func = modul_func[pos+2:]   #函数名
-    return modul, func, params[1:]   
-    
+    return modul, func, params[1:]
+
 
 class ProcessThread(threading.Thread):
     """
@@ -162,8 +163,8 @@ class ProcessThread(threading.Thread):
         #---------------------------------------------------
         #    1.接收消息
         #---------------------------------------------------
-        
-        try:  
+
+        try:
             self._socket.settimeout(TIMEOUT)                  #设置socket超时时间
             firstbuf = self._socket.recv(16 * 1024)           #接收第一个消息包(bytes)
             if len(firstbuf) < REQUEST_MIN_LEN:               #不够消息最小长度
@@ -175,13 +176,13 @@ class ProcessThread(threading.Thread):
             totalLen = int(firstbuf[0:firstComma])            #消息包总长度
             # print("消息长度:%d" % totalLen)
             reqMsg = firstbuf[firstComma+1:]
-            while (len(reqMsg) < totalLen):    
+            while (len(reqMsg) < totalLen):
                 reqMsg = reqMsg + self._socket.recv(16 * 1024)
 
             #调试
             # print ("请求包：%s" % reqMsg)
 
-        except Exception as e:  
+        except Exception as e:
             print ('接收消息异常', e)
             self._socket.close()
             return
@@ -218,22 +219,22 @@ class ProcessThread(threading.Thread):
         #    3.Python函数调用
         #---------------------------------------------------
 
-        try: 
-            params = ','.join([repr(x) for x in params])         
-            #print ("调用函数及参数：%s(%s)" % (modul+'.'+func, params) )
-            
+        try:
+            params = ','.join([repr(x) for x in params])
+            print ("调用函数及参数：%s(%s)" % (modul+'.'+func, params) )
+
             #加载函数
             compStr = "import %s\nret=%s(%s)" % (modul, modul+'.'+func, params)
-            #print("函数调用代码:%s" % compStr)
+            print("函数调用代码:%s" % compStr)
             rpFunc = compile(compStr, "", "exec")
-            
-            if func not in global_env: 
-                global_env[func] = rpFunc   
+
+            if func not in global_env:
+                global_env[func] = rpFunc
             local_env = {}
             exec (rpFunc, global_env, local_env)     #函数调用
-            #print (global_env)
-            #print (local_env)
-        except Exception as e:  
+            # print (global_env)
+            # print (local_env)
+        except Exception as e:
             print ('调用Python业务函数异常', e )
             errType, errMsg, traceback = sys.exc_info()
             self._socket.sendall(("F%s" % errMsg).encode(php_python.CHARSET)) #异常信息返回
@@ -244,16 +245,16 @@ class ProcessThread(threading.Thread):
         #    4.结果返回给PHP
         #---------------------------------------------------
         retType = type(local_env['ret'])
-        # print ("函数返回：%s" % retType)  #测试语句
+        print ("函数返回：%s" % retType)  #测试语句
         rspStr = z_encode(local_env['ret'])  #函数结果组装为PHP序列化字符串
 
-        try:  
+        try:
             #加上成功前缀'S'
             rspStr = "S" + rspStr
             #调试
-            # print ("返回包：%s" % rspStr)  #测试语句
+            print ("返回包：%s" % rspStr)  #测试语句
             self._socket.sendall(rspStr.encode(php_python.CHARSET))
-        except Exception as e:  
+        except Exception as e:
             print ('发送消息异常', e)
             errType, errMsg, traceback = sys.exc_info()
             self._socket.sendall(("F%s" % errMsg).encode(php_python.CHARSET)) #异常信息返回

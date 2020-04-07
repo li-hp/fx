@@ -1,7 +1,7 @@
 # wss://cn-pconnect2.coolkit.cc:8080/api/ws
 # url = "wss://" + part3post.main() + ":8080/api/ws"
 from control import constant
-from control import get_device_status
+import get_device_status
 
 import websocket
 import time
@@ -17,11 +17,10 @@ except ImportError:
     import _thread as thread
 
 
-def main(device_name, device_status):
+def go(device_name, device_status):
 
     # 主要特征
     appid = constant.appid1
-    device_get = get_device_status.main()
     url = "wss://" + "cn-pconnect2.coolkit.cc" + ":8080/api/ws"
 
     # 握手凭证获取
@@ -29,7 +28,7 @@ def main(device_name, device_status):
         "action": "userOnline",
         "version": 8,
         "ts": 1571141259,
-        "at": device_get[0],
+        "at": constant.at,
         "userAgent": "app",
         "apikey": "fdd2c4a2-ee08-4b8a-a0cb-46dfd8c3e90a",
         "appid": appid,
@@ -38,32 +37,33 @@ def main(device_name, device_status):
 
     def controlling_params(controlling_name, controlling_status):
         # 获取最新设备状态
-        device_params = device_get[1]
+        device_get = get_device_status.go(controlling_name)
+        device_params = device_get
 
         # 根据 controlling_name 判断必要参数的取值,对应 constant 文件内的 device_vs_contrl 字典
-        device_id = constant.device_vs_contrl[controlling_name]['id']  # "1000b2f8f1"
-        device_outlet = constant.device_vs_contrl[controlling_name]['outlet']  # 1 or 0
-        device_key1 = constant.device_vs_contrl[controlling_name]['params_key1']  # "switches" or "lock"
-        device_key2 = constant.device_vs_contrl[controlling_name]['params_key2']  # "switch" or "lock"
+        device_outlet = device_params['outlet']  # 1 or 0
+        device_key2 = device_params['key2']  # "switch" or "lock"
 
         # 状态更新
-        device_params[device_outlet][device_key2] = controlling_status
+        device_params['params'][device_outlet][device_key2] = controlling_status
+        print(device_params)
 
         concrol = {
             "action": "update",
             "apikey": 'fdd2c4a2-ee08-4b8a-a0cb-46dfd8c3e90a',
-            "deviceid": device_id,
+            "deviceid": device_params['id'],
             "userAgent": "app",
             "sequence": "1571141530101",
             "params": {
-                device_key1: device_params
+                device_params['key1']: device_params['params']
             },
         }
+
+        print(concrol)
         return concrol
 
     def on_message(ws, message):
         print("####### on_message #######")
-        print(ws)
         print(message)
 
     def on_error(ws, error):
@@ -99,6 +99,12 @@ def main(device_name, device_status):
     ws.on_open = on_open
     ws.run_forever()
 
+    # print(get_device_status.go(device_name))
+    return get_device_status.go(device_name)
+
 
 if __name__ == "__main__":
-    main(device_name='light1', device_status="on")
+    go(device_name='light_nothing', device_status="off")
+
+
+

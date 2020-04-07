@@ -16,13 +16,13 @@ class CollectController extends Controller
 
         //插入数据
         $py_data = ppython2("lanju_inside::Lanju_inside");
-        DB::table('lanju_insides')->insert($py_data);
+        DB::table('lanju_insides')->insert(array($py_data));
+//
+//        //读取最新数据
+//        $maxid = DB::table('lanju_insides')->max('id');
+//        $data_now = DB::table('lanju_insides')->where('id', '=', $maxid)->first()->toArray();
 
-        //读取最新数据
-        $maxid = DB::table('lanju_insides')->max('id');
-        $data_now = DB::table('lanju_insides')->where('id', '=', $maxid)->first();
-
-        return $py_data;
+        return array($py_data);
     }
 
     // 7小时历史数据
@@ -68,7 +68,6 @@ class CollectController extends Controller
     }
 
     public function array_change($originArray) {
-
         //定义必要的变量
         $part = 7;
         $ori = $originArray;
@@ -105,6 +104,5 @@ class CollectController extends Controller
 
         return $array_4 ;
     }
-
 
 }

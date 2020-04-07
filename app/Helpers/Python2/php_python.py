@@ -6,7 +6,9 @@ import socket
 import os
 
 import process
-import websocket45
+import lanju_inside
+import light_controller
+import get_device_status
 # -------------------------------------------------
 # 基本配置
 # -------------------------------------------------

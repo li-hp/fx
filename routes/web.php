@@ -26,9 +26,7 @@ Route::get('/huiyi', 'PagessController@huiyi')->name('huiyi');
 Route::get('/renyuan', 'PagessController@renyuan')->name('huiyi');
 Route::get('/test', 'PagessController@test')->name('test');
 
-// 灯光控制和模拟展示
-Route::get('/ledonoff', 'LedsController@update')->name('led.update');
-Route::get('/ledshow', 'LedsController@show')->name('led.show');
+
 
 Route::get('/socketpython/{id}', 'LedsController@socketpython')->name('led.socketpython');
 Route::get('/websocket_ppython2','LedsController@websocket_ppython')->name('yiwelink');
@@ -42,3 +40,6 @@ Route::get('/lanju_inside_n', 'CollectController@datathismoment')->name('lanju_i
 Route::get('/lanju_inside_h', 'CollectController@data7hour')->name('lanju_inside_h');
 Route::get('/lanju_inside_d', 'CollectController@data7day')->name('lanju_inside_d');
 Route::get('/axis', 'CollectController@axis')->name('axis');
+
+// 控制 2020.04.03
+Route::get('/light_controller/{id}', 'DevicesController@light')->name('light');
